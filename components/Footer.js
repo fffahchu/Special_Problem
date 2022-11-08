@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex bg-green px-[104px] pt-[55px] pb-[60px]">
+    <div className="grid grid-cols-6 bg-green px-[104px] pt-[55px] pb-[60px]">
       <div className="flex flex-col gap-[15px]">
         <img src="assets/logo.svg" alt="logo-footer" width="48" height="48" />
         <div className="text-sm">&#169; ComPort 2022</div>
