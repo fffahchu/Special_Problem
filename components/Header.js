@@ -37,7 +37,7 @@ const Header = () => {
           <div className="flex gap-2.5 mr-12">
             <img
               className="rounded-full"
-              src="assets/icons/mock-profile-image.png"
+              src="assets/images/mock-profile-image.png"
               alt="profile"
               width="38"
               height="38"
