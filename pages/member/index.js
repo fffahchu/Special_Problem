@@ -1,5 +1,7 @@
 import React from "react";
 import Card from "components/Card";
+import MoveToTop from "@components/MoveToTop";
+import Link from "next/link";
 
 const Member = () => {
   const activity = [
@@ -84,6 +86,7 @@ const Member = () => {
 
   return (
     <div>
+      <MoveToTop />
       <div className="relative">
         <img
           src="assets/images/gradient-background.png"
@@ -96,7 +99,7 @@ const Member = () => {
           className="mx-[108px] h-[184px] -mt-[184px]"
         />
         <div className="flex gap-9 absolute bottom-0 right-0 mx-[155px] my-[32px]">
-          <button className="flex items-center gap-2 py-3 px-6 rounded-full bg-orange">
+          <Link href="/create-portfolio" className="flex items-center gap-2 py-3 px-6 rounded-full bg-orange">
             <img
               src="assets/icons/plus.svg"
               alt="icon-plus"
@@ -104,7 +107,7 @@ const Member = () => {
               height="21"
             />
             <span className="font-semibold">สร้างแฟ้มสะสมผลงานใหม่</span>
-          </button>
+          </Link>
           <button className="flex items-center gap-2 py-3 px-6 rounded-full bg-orange">
             <img
               src="assets/icons/eye.svg"
@@ -238,7 +241,7 @@ const Member = () => {
                 <div className="text-[13px]">
                   การสร้างแฟ้มสะสะสมผลงาน กดปุ่ม
                 </div>
-                <button className="flex items-center gap-2 py-2 px-5 rounded-full bg-orange">
+                <Link href="/create-portfolio" className="flex items-center gap-2 py-2 px-5 rounded-full bg-orange">
                   <img
                     src="assets/icons/plus.svg"
                     alt="icon-plus"
@@ -248,7 +251,7 @@ const Member = () => {
                   <span className="text-[13px] font-semibold">
                     สร้างแฟ้มสะสมผลงานใหม่
                   </span>
-                </button>
+                </Link>
               </div>
             </div>
           </div>
