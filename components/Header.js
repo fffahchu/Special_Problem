@@ -12,7 +12,7 @@ const Header = () => {
     <div className="flex justify-between items-center py-2.5 px-[104px] bg-green">
       <div className="flex items-center">
         <div className="flex items-center gap-1.5 mr-16">
-          <img src="assets/logo.svg" alt="logo" className="py-1.5" width="24" height="24" />
+          <img src="/assets/logo.svg" alt="logo" className="py-1.5" width="24" height="24" />
           <div className="text-xl font-semibold">Comport</div>
         </div>
         <div className="flex items-center divide-x-[1px] divide-[#ABCCB6]">
@@ -20,7 +20,7 @@ const Header = () => {
             return (
               <button className="flex items-center px-3" key={item.icon}>
                 <img
-                  src={`assets/icons/${item.icon}.svg`}
+                  src={`/assets/icons/${item.icon}.svg`}
                   alt={`icon-${item.icon}`}
                   className="mr-1.5"
                   width="16"
@@ -37,19 +37,19 @@ const Header = () => {
           <div className="flex gap-2.5 mr-12">
             <img
               className="rounded-full"
-              src="assets/images/mock-profile-image.png"
+              src="/assets/images/mock-profile-image.png"
               alt="profile"
               width="38"
               height="38"
             />
             <img
-              src="assets/icons/arrow-point-to-down.svg"
+              src="/assets/icons/arrow-point-to-down.svg"
               alt="arrow-profile"
             />
           </div>
           <div>
             <img
-              src="assets/icons/bell.svg"
+              src="/assets/icons/bell.svg"
               alt="icon-search"
               width="20"
               height="20"
@@ -68,7 +68,7 @@ const Header = () => {
         </div> */}
         <div>
           <img
-            src="assets/icons/search.svg"
+            src="/assets/icons/search.svg"
             alt="icon-search"
             width="20"
             height="20"

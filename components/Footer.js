@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="grid grid-cols-12 gap-10 bg-green px-[104px] pt-[55px] pb-[60px]">
       <div className="flex flex-col gap-[15px] col-span-2">
-        <img src="assets/logo.svg" alt="logo-footer" width="48" height="48" />
+        <img src="/assets/logo.svg" alt="logo-footer" width="48" height="48" />
         <div className="text-sm">&#169; ComPort 2022</div>
       </div>
       <div className="flex flex-col gap-4 font-semibold col-span-2">
@@ -39,7 +39,7 @@ const Footer = () => {
           <div className="text-xl font-semibold">ติดตามเรา</div>
           <div className="flex gap-2">
             <img
-              src="assets/icons/line.svg"
+              src="/assets/icons/line.svg"
               alt="line"
               width="18"
               height="18"
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
           <div className="flex gap-2">
             <img
-              src="assets/icons/facebook.svg"
+              src="/assets/icons/facebook.svg"
               alt="line"
               width="18"
               height="18"
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
           <div className="flex gap-2">
             <img
-              src="assets/icons/instagram.svg"
+              src="/assets/icons/instagram.svg"
               alt="line"
               width="18"
               height="18"
@@ -66,7 +66,7 @@ const Footer = () => {
           </div>
           <div className="flex gap-2">
             <img
-              src="assets/icons/youtube.svg"
+              src="/assets/icons/youtube.svg"
               alt="line"
               width="18"
               height="18"
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
           <div className="flex gap-2">
             <img
-              src="assets/icons/twitter.svg"
+              src="/assets/icons/twitter.svg"
               alt="line"
               width="18"
               height="18"

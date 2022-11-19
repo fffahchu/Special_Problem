@@ -24,7 +24,7 @@ const StateCreate = ({ state }) => {
               <div>
                 {
                   index+1 < state ? (
-                    <img src="assets/icons/check-green.svg" alt="icon-check-green" width="56" height="56" className="rounded-full" />
+                    <img src="/assets/icons/check-green.svg" alt="icon-check-green" width="56" height="56" className="rounded-full" />
                   ) : (
                     <div
                   className={`flex justify-center items-center w-14 h-14 rounded-full ${

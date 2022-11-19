@@ -6,7 +6,7 @@ const MoveToTop = () => {
   }
   return (
     <div className="fixed bottom-10 right-5" onClick={scrollToTop}>
-      <img src="assets/icons/arrow-up-circle.svg" alt="arrow-up-circle" />
+      <img src="/assets/icons/arrow-up-circle.svg" alt="arrow-up-circle" />
     </div>
   );
 };
