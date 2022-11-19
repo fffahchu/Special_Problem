@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Breadcrumb from "@components/Breadcrumb";
 import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
+import Link from 'next/link'
 
 const CreateFrontCover = () => {
   const coverImage = "/assets/images/portfolio/portfolio-4.png";
@@ -105,15 +106,17 @@ const CreateFrontCover = () => {
       </div>
       <hr className="border-gray-4 mb-4" />
       <div className="flex justify-between items-center">
-        <button className="flex items-center px-5 py-2.5 border-[1px] rounded-[20px]">
-          <img
-            src="/assets/icons/arrow-left.svg"
-            alt="arrow-left"
-            width="28"
-            height="28"
-          />
-          ก่อนหน้า
-        </button>
+        <Link href="/create-portfolio">
+          <button className="flex items-center px-5 py-2.5 border-[1px] rounded-[20px]">
+            <img
+              src="/assets/icons/arrow-left.svg"
+              alt="arrow-left"
+              width="28"
+              height="28"
+            />
+            ก่อนหน้า
+          </button>
+        </Link>
         <button
           className="flex items-center px-5 py-2.5 border-[1px] rounded-[20px] opacity-[36%]"
           disabled

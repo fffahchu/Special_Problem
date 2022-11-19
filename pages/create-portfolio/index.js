@@ -3,6 +3,7 @@ import MoveToTop from "@components/MoveToTop";
 import StateCreate from "@components/StateCreate";
 import TemplatePortfolioCard from "@components/TemplatePortfolioCard";
 import React, { useState } from "react";
+import Link from 'next/link'
 
 const CreatePortfolio = () => {
   const [selectTemp, setSelectTemp] = useState(0);
@@ -84,15 +85,17 @@ const CreatePortfolio = () => {
           />
           ก่อนหน้า
         </button>
-        <button className="flex items-center px-5 py-2.5 border-[1px] rounded-[20px]">
-          ถัดไป
-          <img
-            src="assets/icons/arrow-right.svg"
-            alt="arrow-right"
-            width="28"
-            height="28"
-          />
-        </button>
+        <Link href="create-portfolio/front-cover">
+          <button className="flex items-center px-5 py-2.5 border-[1px] rounded-[20px]">
+            ถัดไป
+            <img
+              src="assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              width="28"
+              height="28"
+            />
+          </button>
+        </Link>
       </div>
     </div>
   );
