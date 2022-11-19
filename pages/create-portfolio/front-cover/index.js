@@ -26,7 +26,7 @@ const CreateFrontCover = () => {
       </div>
       <StateCreate state={2} />
       <div className="my-[72px] mx-auto max-w-[1232px]">
-        <div className="text-xl font-bold">หน้าปก</div>
+        <div className="text-xl font-bold mb-[30px]">หน้าปก</div>
         <div className="flex justify-between">
           <img
             src={coverImage}
