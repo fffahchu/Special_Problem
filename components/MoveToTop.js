@@ -5,7 +5,7 @@ const MoveToTop = () => {
     window.scrollTo({top: 0, behavior: 'smooth'});
   }
   return (
-    <div className="fixed bottom-10 right-5" onClick={scrollToTop}>
+    <div className="fixed bottom-10 right-5 cursor-pointer" onClick={scrollToTop}>
       <img src="/assets/icons/arrow-up-circle.svg" alt="arrow-up-circle" />
     </div>
   );

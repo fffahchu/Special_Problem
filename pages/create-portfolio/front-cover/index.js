@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Breadcrumb from "@components/Breadcrumb";
 import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
-import Link from 'next/link'
+import Link from "next/link";
 
 const CreateFrontCover = () => {
   const coverImage = "/assets/images/portfolio/portfolio-4.png";
@@ -117,18 +117,17 @@ const CreateFrontCover = () => {
             ก่อนหน้า
           </button>
         </Link>
-        <button
-          className="flex items-center px-5 py-2.5 border-[1px] rounded-[20px] opacity-[36%]"
-          disabled
-        >
-          ถัดไป
-          <img
-            src="/assets/icons/arrow-right.svg"
-            alt="arrow-right"
-            width="28"
-            height="28"
-          />
-        </button>
+        <Link href="/create-portfolio/introduction">
+          <button className="flex items-center px-5 py-2.5 border-[1px] rounded-[20px]">
+            ถัดไป
+            <img
+              src="/assets/icons/arrow-right.svg"
+              alt="arrow-right"
+              width="28"
+              height="28"
+            />
+          </button>
+        </Link>
       </div>
     </div>
   );
