@@ -65,7 +65,7 @@ const CreateIntroduction = () => {
             ก่อนหน้า
           </button>
         </Link>
-        <Link href="/create-portfolio//listofcontent">
+        <Link href="/create-portfolio/listofcontent">
           <button className="flex items-center px-5 py-2.5 border-[1px] rounded-[20px]">
             ถัดไป
             <img

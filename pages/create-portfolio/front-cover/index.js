@@ -29,63 +29,71 @@ const CreateFrontCover = () => {
       <div className="my-[72px] mx-auto max-w-[1232px]">
         <div className="text-xl font-bold mb-[30px]">หน้าปก</div>
         <div className="flex justify-between">
-          <img
-            src={coverImage}
-            alt={coverImage}
-            className="rounded-[6px] cursor-pointer w-[170px] h-[246px]"
-          />
+          <div className="shrink-0 relative w-[170px] h-[246px]">
+            <img
+              src={coverImage}
+              alt={coverImage}
+              className="rounded-[6px] cursor-pointer h-full"
+            />
+            <div className="absolute right-0 bottom-0 flex justify-center items-center w-[38px] h-[38px] bg-black rounded-[6px]">
+              <img
+                src="/assets/icons/zoom.svg"
+                alt="icon-zoom"
+                width="18"
+                height="18"
+              />
+            </div>
+          </div>
           <div className="flex">
-            <div className="mr-[45px]">
-              <div className="flex justify-center items-center ml-[200px] mb-[20px] w-[500px] h-[500px] bg-yellow rounded-[6px]">
+            <div className="flex flex-col mr-[45px]">
+              <div className="flex justify-center items-center self-end mb-[20px] w-[500px] h-[500px] bg-yellow rounded-[6px]">
                 <img
                   src="/assets/icons/camera-icon.svg"
                   alt="/assets/icons/camera-icon.svg"
                 />
               </div>
-              <form className="">
-                <div className="flex mb-2">
-                  <label
-                    for="first_name_thai"
-                    className="w-[200px] text-sm font-semibold text-gray-900 dark:text-white"
-                  >
-                    ชื่อ-นามสกุล ภาษาไทย
-                  </label>
-                  <input
-                    className="shadow appearance-none border rounded w-[500px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="first_name_thai"
-                    type="text"
-                    placeholder="เช่น สุธิดา มานะยิ่ง"
-                  />
-                </div>
-                <div className="flex mb-2">
-                  <label
-                    for="first_name_eng"
-                    className="w-[200px] text-sm font-semibold text-gray-900 dark:text-white"
-                  >
-                    ชื่อ-นามสกุล ภาษาอังกฤษ
-                  </label>
-                  <input
-                    className="shadow appearance-none border rounded w-[500px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="first_name_eng"
-                    type="text"
-                    placeholder="เช่น suthida"
-                  />
-                </div>
-                <div className="flex">
-                  <label
-                    for="school_name"
-                    className="w-[200px] text-sm font-semibold text-gray-900 dark:text-white"
-                  >
-                    โรงเรียน
-                  </label>
-                  <input
-                    className="shadow appearance-none border rounded w-[500px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="school_name"
-                    type="text"
-                    placeholder="เช่น สวนกุหลาบวิทยาลัย"
-                  />
-                </div>
-              </form>
+              <div className="flex items-center mb-2">
+                <label
+                  for="first_name_thai"
+                  className="w-[224px] text-lg font-bold pr-3 text-end"
+                >
+                  ชื่อ-นามสกุล ภาษาไทย
+                </label>
+                <input
+                  className="shadow appearance-none border rounded w-[500px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="first_name_thai"
+                  type="text"
+                  placeholder="เช่น สุธิดา มานะยิ่ง"
+                />
+              </div>
+              <div className="flex mb-2">
+                <label
+                  for="first_name_eng"
+                  className="w-[224px] text-lg font-bold pr-3 text-end"
+                >
+                  ชื่อ-นามสกุล ภาษาอังกฤษ
+                </label>
+                <input
+                  className="shadow appearance-none border rounded w-[500px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="first_name_eng"
+                  type="text"
+                  placeholder="เช่น suthida"
+                />
+              </div>
+              <div className="flex">
+                <label
+                  for="school_name"
+                  className="w-[224px] text-lg font-bold pr-3 text-end"
+                >
+                  โรงเรียน
+                </label>
+                <input
+                  className="shadow appearance-none border rounded w-[500px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="school_name"
+                  type="text"
+                  placeholder="เช่น สวนกุหลาบวิทยาลัย"
+                />
+              </div>
             </div>
             <div>
               <div className="text-lg font-bold">คำแนะนำ</div>

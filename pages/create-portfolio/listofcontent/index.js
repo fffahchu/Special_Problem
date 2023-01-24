@@ -24,6 +24,16 @@ const ListOfContent = () => {
     },
   ]);
 
+  const addTopics = () => {
+    setTopics([
+      ...topics,
+      {
+        name: "",
+        page: "1",
+      },
+    ]);
+  };
+
   return (
     <div className="px-[104px] py-[29px]">
       <MoveToTop />
@@ -50,7 +60,7 @@ const ListOfContent = () => {
               />
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-x-8">
+          <div className="grid grid-cols-2 gap-x-8 gap-y-4">
             {topics.map((item, index) => {
               return (
                 <>
@@ -91,7 +101,7 @@ const ListOfContent = () => {
                 </>
               );
             })}
-            <button className="w-[141px] h-[47px] ml-[74px] mt-16 bg-black py-[13px] px-[20px] rounded-[20px] text-white">
+            <button className="w-[141px] h-[47px] ml-[74px] mt-16 bg-black py-[13px] px-[20px] rounded-[20px] text-white" onClick={addTopics}>
               เพิ่มหัวข้อใหม่
             </button>
           </div>
@@ -110,7 +120,7 @@ const ListOfContent = () => {
             ก่อนหน้า
           </button>
         </Link>
-        <Link href="/create-portfolio//listofcontent">
+        <Link href="/create-portfolio/personal-record">
           <button className="flex items-center px-5 py-2.5 border-[1px] rounded-[20px]">
             ถัดไป
             <img
