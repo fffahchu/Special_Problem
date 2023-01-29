@@ -16,7 +16,7 @@ const StateCreate = ({ state }) => {
     <div className="flex">
       {menu.map((item, index) => {
         return (
-          <div className={`flex flex-col ${index > 0 ? `${index < menu.length-1 ? 'items-center':'grow items-start'}`:'grow items-end'}`}>
+          <div className={`flex flex-col ${index > 0 ? `${index < menu.length-1 ? 'items-center':'grow items-start'}`:'grow items-end'}`} key={`state-${index}`}>
             <div className="flex items-center">
               {index > 0 && (
                 <hr className={`border-[6px] w-[46px] ${index+1 <= state ? 'border-green-real':'border-gray-3' }`} />

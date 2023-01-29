@@ -25,7 +25,7 @@ const PersonalRecord = () => {
       </div>
       <StateCreate state={5} />
       <div className="my-[72px] mx-auto max-w-[1232px]">
-        <div className="text-xl font-bold mb-[30px]">คำนำ</div>
+        <div className="text-xl font-bold mb-[30px]">ประวัติส่วนตัว</div>
         <div className="flex gap-x-8">
           <div className="shrink-0 relative w-[170px] h-[246px]">
             <img

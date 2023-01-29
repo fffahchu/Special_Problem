@@ -6,7 +6,7 @@ const Breadcrumb = ({ route = [] }) => {
     {
         route.map((item, index) => {
             return (
-                <div className="flex gap-1.5">
+                <div className="flex gap-1.5" key={`breadcrumb-${index}`}>
                     <Link href={item.link}>
                     { item.title }
                     </Link>

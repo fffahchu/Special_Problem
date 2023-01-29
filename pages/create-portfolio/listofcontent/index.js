@@ -43,7 +43,7 @@ const ListOfContent = () => {
       </div>
       <StateCreate state={4} />
       <div className="my-[72px] mx-auto max-w-[1232px]">
-        <div className="text-xl font-bold mb-[30px]">คำนำ</div>
+        <div className="text-xl font-bold mb-[30px]">สารบัญ</div>
         <div className="flex gap-x-36">
           <div className="shrink-0 relative w-[170px] h-[246px]">
             <img
