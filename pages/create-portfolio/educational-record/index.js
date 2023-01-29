@@ -193,27 +193,10 @@ const PersonalRecord = () => {
         </div>
       </div>
       <hr className="border-gray-4 mb-4" />
-      <div className="flex justify-between items-center">
-        <Link href="/create-portfolio/personal-record">
-          <button className="flex items-center px-5 py-2.5 border-[1px] rounded-[20px]">
-            <img
-              src="/assets/icons/arrow-left.svg"
-              alt="arrow-left"
-              width="28"
-              height="28"
-            />
-            ก่อนหน้า
-          </button>
-        </Link>
+      <div className="flex justify-center items-center">
         <Link href="/create-portfolio/activities">
-          <button className="flex items-center px-5 py-2.5 border-[1px] rounded-[20px]">
-            ถัดไป
-            <img
-              src="/assets/icons/arrow-right.svg"
-              alt="arrow-right"
-              width="28"
-              height="28"
-            />
+          <button className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]">
+            บันทึกข้อมูล
           </button>
         </Link>
       </div>

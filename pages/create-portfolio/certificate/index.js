@@ -84,7 +84,7 @@ const Certificate = () => {
         </div>
       </div>
       <hr className="border-gray-4 mb-4" />
-      <div className="flex justify-between items-center">
+      {/* <div className="flex justify-between items-center">
         <Link href="/create-portfolio/activities">
           <button className="flex items-center px-5 py-2.5 border-[1px] rounded-[20px]">
             <img
@@ -107,7 +107,7 @@ const Certificate = () => {
             />
           </button>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
