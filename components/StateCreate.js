@@ -11,7 +11,7 @@ const StateCreate = ({ state }) => {
     },
     {
       title: "หน้าปก",
-      link: "create-portfolio/front-cover",
+      link: "/create-portfolio/front-cover",
       icon: "/assets/icons/state/front-cover.svg",
       icon_check: "/assets/icons/state/front-cover-check.svg",
     },
@@ -59,16 +59,12 @@ const StateCreate = ({ state }) => {
     },
   ];
   return (
-    <div className="flex border-2 border-b-0 border-[#C5C5C5] divide-x-2 divide-[#C5C5C5]">
+    <div className="flex gap-x-8 -ml-5">
       {menu.map((item, index) => {
         return (
           <Link href={item.link}>
             <button
-              className={`grow py-3 px-2.5 w-[143px] h-[90px] ${
-                state == index + 1
-                  ? "border-b-4 border-b-[#008DDB]"
-                  : "border-b-2 border-[#C5C5C5]"
-              }`}
+              className={`flex flex-col items-center w-[120px] h-[83px]`}
               key={`state-${index}`}
             >
               <img
@@ -78,7 +74,26 @@ const StateCreate = ({ state }) => {
                 height={32}
                 className="rounded-[6px] cursor-pointer mb-2"
               />
-              <div className="text-left">{item.title}</div>
+              <div
+                className={`font-bold mb-2 ${
+                  state == index + 1
+                    ? "text-[#008DDB]"
+                    : index != 0
+                    ? "text-[#C5C5C5]"
+                    : "text-[#00BA00]"
+                }`}
+              >
+                {item.title}
+              </div>
+              <div
+                className={` w-full rounded-full ${
+                  state == index + 1
+                    ? "border-2 border-[#008DDB]"
+                    : index != 0
+                    ? "border-2 border-[#C5C5C5]"
+                    : "border-2 border-[#00BA00]"
+                }`}
+              />
             </button>
           </Link>
         );
