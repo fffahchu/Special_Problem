@@ -23,7 +23,7 @@ const CreatePortfolio = () => {
     {
       image: "assets/images/portfolio/portfolio-1.png",
       title: "เทคโนโลยีสารสนเทศ",
-      desc: "เทมเพลตนี้เหมาะสำหรับผู้สนใจศึกษาต่อคณะ เทคโนโลยีสารสนเทศ",
+      desc: "เทมเพลตนี้เหมาะสำหรับผู้สนใจศึกษาต่อคณะเทคโนโลยีสารสนเทศ",
     },
     {
       image: "assets/images/portfolio/portfolio-2.png",
