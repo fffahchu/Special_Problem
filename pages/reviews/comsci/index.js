@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Breadcrumb from "@components/Breadcrumb";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
-import Card from "components/Card";
+import Cardsmall from "@components/Cardsmall";
 
 const ReviewComsci = () => {
   const route = [
@@ -26,11 +26,11 @@ const ReviewComsci = () => {
 
   const activity = [
     {
-      image: "../assets/images/activity/activity-1.png",
-      title: "TECH FESTIVAL",
+      image: "../assets/images/activity/activity-4.png",
+      title: "SUPER COM SCI ครั้งที่ 9",
       content:
-        "มหกรรมด้าน Computer และTechnology เรียนกับพี่แฮม Senior Software Engineer จากประเทศ Canada และ พี่เอิร์ท จบจาก ...",
-      expire_date: 1,
+        "กลับมาอีกครั้งกับค่าย Super com sci ที่ทำ ให้น้อง ๆ ได้เรียนผ่านการลงมือปฎิบัติ On-site วางแผนระบบ สร้าง App แนะแนวกา...",
+      expire_date: 4,
       link: "#",
     },
     {
@@ -47,14 +47,6 @@ const ReviewComsci = () => {
       content:
         "CREATIVE AI CAMP 2022 ปีนี้เรามาใน ธีม Anytime, Anywhere with AI 🤖 ในรูป แบบ Phenomena Work-based Learni...",
       expire_date: 3,
-      link: "#",
-    },
-    {
-      image: "../assets/images/activity/activity-4.png",
-      title: "SUPER COM SCI ครั้งที่ 9",
-      content:
-        "กลับมาอีกครั้งกับค่าย Super com sci ที่ทำ ให้น้อง ๆ ได้เรียนผ่านการลงมือปฎิบัติ On-site วางแผนระบบ สร้าง App แนะแนวกา...",
-      expire_date: 4,
       link: "#",
     },
   ];
@@ -206,12 +198,18 @@ const ReviewComsci = () => {
                 กิจกรรมที่กำลังจะมาถึง
               </div>
             </div>
-          <div className="grid grid-rows-4">
-            {activity.map((item) => {
-              return <Card item={item} type="activity" />;
-            })}
-          </div>
-            <div></div>
+
+            <div className="grid-rows-3 mt-[20px] ml-[66px]">
+              {activity.map((item) => {
+                return <Cardsmall item={item} type="activity" />;
+              })}
+            </div>
+
+            <div>
+              <a href="#" className="font-bold underline ml-[255px]">
+                ดูทั้งหมด
+              </a>
+            </div>
           </div>
         </div>
       </div>
