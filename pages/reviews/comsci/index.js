@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Breadcrumb from "@components/Breadcrumb";
-import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
-import Cardsmall from "@components/Cardsmall";
+import Card from "components/Card";
 
 const ReviewComsci = () => {
   const route = [
@@ -27,15 +26,15 @@ const ReviewComsci = () => {
 
   const activity = [
     {
-      image: "../assets/images/activity/activity-4.png",
-      title: "SUPER COM SCI ครั้งที่ 9",
+      image: "../assets/images/activity/activity-1.png",
+      title: "TECH FESTIVAL",
       content:
-        "กลับมาอีกครั้งกับค่าย Super com sci ที่ทำ ให้น้อง ๆ ได้เรียนผ่านการลงมือปฎิบัติ On-site วางแผนระบบ สร้าง App แนะแนวกา...",
-      expire_date: 4,
+        "มหกรรมด้าน Computer และTechnology เรียนกับพี่แฮม Senior Software Engineer จากประเทศ Canada และ พี่เอิร์ท จบจาก ...",
+      expire_date: 1,
       link: "#",
     },
     {
-      image: "assets/images/activity/activity-2.png",
+      image: "../assets/images/activity/activity-2.png",
       title: "Javascript Tier 2 SS2 // C Tier 2",
       content:
         "เหมาะสำหรับน้อง ๆ ที่อยากต่อยอดความรู้ HTML CSS JS ให้เก่งยิ่งขึ้นด้วย JS TIER 2 และ ยังมีคอร์สสำหรับน้อง ๆ ที่ต้องการเ...",
@@ -43,11 +42,19 @@ const ReviewComsci = () => {
       link: "#",
     },
     {
-      image: "assets/images/activity/activity-3.png",
+      image: "../assets/images/activity/activity-3.png",
       title: "CREATIVE AI CAMP 2022 🎉",
       content:
         "CREATIVE AI CAMP 2022 ปีนี้เรามาใน ธีม Anytime, Anywhere with AI 🤖 ในรูป แบบ Phenomena Work-based Learni...",
       expire_date: 3,
+      link: "#",
+    },
+    {
+      image: "../assets/images/activity/activity-4.png",
+      title: "SUPER COM SCI ครั้งที่ 9",
+      content:
+        "กลับมาอีกครั้งกับค่าย Super com sci ที่ทำ ให้น้อง ๆ ได้เรียนผ่านการลงมือปฎิบัติ On-site วางแผนระบบ สร้าง App แนะแนวกา...",
+      expire_date: 4,
       link: "#",
     },
   ];
@@ -199,18 +206,12 @@ const ReviewComsci = () => {
                 กิจกรรมที่กำลังจะมาถึง
               </div>
             </div>
-
-            <div className="grid-rows-3 mt-[20px] ml-[66px]">
-              {activity.map((item) => {
-                return <Cardsmall item={item} type="activity" />;
-              })}
-            </div>
-
-            <div>
-              <a href="#" className="font-bold underline ml-[255px]">
-                ดูทั้งหมด
-              </a>
-            </div>
+          <div className="grid grid-rows-4">
+            {activity.map((item) => {
+              return <Card item={item} type="activity" />;
+            })}
+          </div>
+            <div></div>
           </div>
         </div>
       </div>
