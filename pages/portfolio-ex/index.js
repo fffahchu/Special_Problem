@@ -26,7 +26,7 @@ const PortfolioExample = () => {
       <div className="grid grid-cols-4 gap-x-[1.125rem] mt-[40px] mb-[104px]">
         {/* col 1 */}
         <div className="flex flex-col gap-y-5">
-          <Link href="https://cscamp.net/">
+          <Link href="/portfolio-ex/example">
             <div class="relative overflow-hidden rounded-[20px]">
               <img
                 src="/assets/images/example/ex1.png"

@@ -12,7 +12,13 @@ const Header = () => {
     <div className="flex justify-between items-center py-2.5 px-[104px] bg-green">
       <div className="flex items-center">
         <div className="flex items-center gap-1.5 mr-16">
-          <img src="/assets/logo.svg" alt="logo" className="py-1.5" width="24" height="24" />
+          <img
+            src="/assets/logo.svg"
+            alt="logo"
+            className="py-1.5"
+            width="24"
+            height="24"
+          />
           <div className="text-xl font-semibold">Comport</div>
         </div>
         <div className="flex items-center divide-x-[1px] divide-[#ABCCB6]">
