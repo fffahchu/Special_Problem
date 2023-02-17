@@ -1,17 +1,16 @@
 import React from "react";
 
-const Card = ({ item, type }) => {
-    const nf = new Intl.NumberFormat('th-TH');
+const Cardsmall = ({ item, type }) => {
   return (
     <div>
       <img
         src={item.image}
         alt="activity-1"
-        width="264"
+        width="250"
         height="153"
         className="rounded-t-xl"
       />
-      <div className="flex w-[264px] h-[247px] rounded-b-xl px-6 pt-[43px] pb-6 bg-green relative">
+      <div className="flex w-[250px] h-[200px] rounded-b-xl px-2 pt-[40px] pb-2 bg-white relative gap-10">
         <div className="flex items-center justify-center w-[50px] h-[50px] rounded-full absolute -top-[28px] bg-white">
           <img
             src="../assets/logo.svg"
@@ -38,19 +37,9 @@ const Card = ({ item, type }) => {
                   width="18"
                   height="18"
                 />
-                <div className="text-[15px] text-red">
+                <div className="text-[12px] text-red">
                   อีก {item.expire_date} วัน
                 </div>
-              </div>
-            ) : type === "article" ? (
-              <div className="flex items-center gap-1">
-                <img
-                  src="assets/icons/eye-gray.svg"
-                  alt="icon-eye"
-                  width="18"
-                  height="18"
-                />
-                <div className="text-[15px] text-gray-2">{nf.format(item.views)}</div>
               </div>
             ) : (
               type === "course" && (
@@ -61,11 +50,13 @@ const Card = ({ item, type }) => {
                     width="18"
                     height="18"
                   />
-                  <div className="text-[15px] text-gray-2">{nf.format(item.persons)}</div>
+                  <div className="text-[15px] text-gray-2">
+                    {nf.format(item.persons)}
+                  </div>
                 </div>
               )
             )}
-            <button className="py-2 px-6 rounded-full border-[1px]">
+            <button className="py-1 px-2 rounded-full border-[1px]">
               อ่านเพิ่มเติม
             </button>
           </div>
@@ -75,4 +66,4 @@ const Card = ({ item, type }) => {
   );
 };
 
-export default Card;
+export default Cardsmall;
