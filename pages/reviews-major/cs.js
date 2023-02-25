@@ -63,6 +63,7 @@ const ReviewCs = () => {
           computer science
         </div>
       </div>
+
       <div className="flex">
         <div className="w-[750px] ml-[200px]">
           <div className="text-left text-[30px] font-bold drop-shadow-2xl shadow-black mt-[48px] pl-[45px]">
@@ -183,6 +184,7 @@ const ReviewCs = () => {
             ชั้นนำของประเทศไทย อัตราการได้งานทำตรงสาขาเกิน 95%”
           </div>
         </div>
+
         <div className="flex w-[378px] ml-[220px]">
           <div className="h-[1274px] w-[378px] rounded-xl mt-[48px] bg-[#f3f4f6]">
             <div className="bg-[#bbf7d0] w-[378px] h-[65px] rounded-t-xl">
