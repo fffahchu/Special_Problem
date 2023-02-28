@@ -3,7 +3,7 @@ import Breadcrumb from "@components/Breadcrumb";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
 
-const Faculty = () => {
+const AllFaculty = () => {
   const route = [
     {
       title: "หน้าหลัก",
@@ -317,4 +317,4 @@ const Faculty = () => {
   );
 };
 
-export default Faculty;
+export default AllFaculty;

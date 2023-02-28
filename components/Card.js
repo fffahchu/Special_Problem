@@ -46,7 +46,7 @@ const Card = ({ item, type }) => {
             ) : type === "article" ? (
               <div className="flex items-center gap-1">
                 <img
-                  src="assets/icons/eye-gray.svg"
+                  src="../assets/icons/eye-gray.svg"
                   alt="icon-eye"
                   width="18"
                   height="18"
@@ -60,7 +60,7 @@ const Card = ({ item, type }) => {
               type === "course" && (
                 <div className="flex items-center gap-1">
                   <img
-                    src="assets/icons/person.svg"
+                    src="../assets/icons/person.svg"
                     alt="icon-person"
                     width="18"
                     height="18"
@@ -71,13 +71,13 @@ const Card = ({ item, type }) => {
                   </div>{" "}
                 </div>
               )
-            )}{" "}
-            <button className="py-2 px-6 rounded-full border-[1px]">
-              อ่านเพิ่มเติม{" "}
-            </button>{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+            )}
+            <button className="py-2 px-6 rounded-full border-[1px] font-semibold">
+              อ่านเพิ่มเติม
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

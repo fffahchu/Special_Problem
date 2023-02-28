@@ -42,10 +42,10 @@ const Member = () => {
   const article = [
     {
       image: "assets/images/article/article-1.png",
-      title: "Portfolio 10 หนา ควรมีอะไรบ้าง?",
+      title: "Portfolio 10 หน้า ควรมีอะไรบ้าง?",
       content:
         "วันนี้พี่รวบรวมข้อมูล Portfolio 10 หน้า ควร มีอะไรบ้าง? มาฝากน้อง ๆ ให้ได้เตรียมตัวกัน ส่วนสำคัญของ Portfolio หน้าที่ 0 | หน้าป...",
-      views: 1576,
+      views: 44793,
       link: "#",
     },
     {
@@ -53,7 +53,7 @@ const Member = () => {
       title: "5 เทคนิค ทำข้อสอบเก่าให้ปัง",
       content:
         "วันนี้พี่รวบรวม 5 เทคนิค ทำข้อสอบเก่าให้ปัง มาฝากน้อง DEK66 ให้น้อง ๆ ได้ลองปรับตัว และทำตาม จะได้สอบติดคณะ สาขา และม...",
-      views: 722,
+      views:  27852,
       link: "#",
     },
     {
@@ -61,15 +61,15 @@ const Member = () => {
       title: "DEK66 เตรียมตัวก่อนสอบเข้า มหาวิทยาลัย",
       content:
         "ช่วงนี้น้อง ๆ DEK66 ต้องเริ่มเตรียมตัวก่อน เข้ามหาวิทยาลัยกันได้แล้วนะ ก่อนจะเตรียม ตัวไม่ทัน พี่เตือนแล้วนะ !! ศึกษาข้อมูล TC...",
-      views: 646,
+      views: 27494,
       link: "#",
     },
     {
       image: "assets/images/article/article-4.png",
       title: "HOW TO ตั้งใจเรียน",
       content:
-        "ในห้องเรียนแต่มันน่าเบื่อเหลือเกิน ทำยังไงให้ ตั้งใจเรียน เพื่อทักษะในการเรียนให้มีความสุข กับการเรียน 1.กำจัดสิ่งรบกวนสมาธิ มีหลา...",
-      views: 353,
+        "ในห้องเรียนแต่มันน่าเบื่อเหลือเกิน ทำยังไงให้ ตั้งใจเรียน เพื่อทักษะในการเรียนให้มีความสุข กับการเรียน 1.กำจัดสิ่งรบกวนสมา...",
+      views: 25172,
       link: "#",
     },
   ];
@@ -296,14 +296,14 @@ const Member = () => {
         <div className="flex-1">
           <div className="flex justify-between items-center">
             <div className="text-[25px] font-semibold">
-              กิจกรรมที่กำลังจะมาถึง
+              กิจกรรม/ค่ายที่กำลังจะมาถึง
             </div>
             <a href="#" className="font-semibold underline">
               ดูทั้งหมด
             </a>
           </div>
           <hr className="mt-[18px] mb-4" />
-          <div className="grid grid-cols-4">
+          <div className="grid grid-cols-4 gap-7">
             {activity.map((item) => {
               return <Card item={item} type="activity" />;
             })}
@@ -311,13 +311,13 @@ const Member = () => {
         </div>
         <div className="flex-1 mt-12">
           <div className="flex justify-between items-center">
-            <div className="text-[25px] font-semibold">บทความน่าสนใจ</div>
+            <div className="text-[25px] font-semibold">บทความยอดนิยม</div>
             <a href="#" className="font-semibold underline">
               ดูทั้งหมด
             </a>
           </div>
           <hr className="mt-[18px] mb-4" />
-          <div className="grid grid-cols-4">
+          <div className="grid grid-cols-4 gap-7">
             {article.map((item) => {
               return <Card item={item} type="article" />;
             })}
