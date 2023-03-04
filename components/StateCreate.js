@@ -59,7 +59,7 @@ const StateCreate = ({ state }) => {
     },
   ];
   return (
-    <div className="flex gap-x-8 -ml-12">
+    <div className="flex gap-x-6 -ml-4">
       {menu.map((item, index) => {
         return (
           <Link href={item.link}>
