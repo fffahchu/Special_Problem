@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import Breadcrumb from "@components/Breadcrumb";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
-import Breadcrumb from "@components/Breadcrumb";
+import Cardedu from "@components/Cardedu";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 const Learning = () => {
   const route = [
@@ -14,8 +20,64 @@ const Learning = () => {
       link: "/education/all",
     },
     {
-      title: "แบบฝึกหัด",
+      title: "คอร์สเรียนเสริม",
       link: "/education/learning",
+    },
+  ];
+  const course = [
+    {
+      image: "../assets/images/course/c1.jpg",
+      title: "การเขียนโปรแกรมภาษาซี",
+      content: "สจล.",
+      link: "#",
+    },
+    {
+      image: "../assets/images/course/c2.jpg",
+      title: "Become To Front-End Developer",
+      content: "borntodev.com",
+      link: "#",
+    },
+    {
+      image: "../assets/images/course/c3.jpg",
+      title: "Complete Arduino For Beginner",
+      content: "borntodev.com",
+      link: "#",
+    },
+    {
+      image: "../assets/images/course/c4.jpg",
+      title: "Complete Data Analytics Package",
+      content: "borntodev.com",
+      link: "#",
+    },
+    {
+      image: "../assets/images/course/c5.jpg",
+      title: "Programming For Everyone X",
+      content: "borntodev.com",
+      link: "#",
+    },
+    {
+      image: "../assets/images/course/c6.jpg",
+      title: "Fundamental Web Dev",
+      content: "borntodev.com",
+      link: "#",
+    },
+    {
+      image: "../assets/images/learning/python.png",
+      title: "Complete Python 3",
+      content: "borntodev.com",
+      link: "#",
+    },
+    {
+      image: "../assets/images/learning/game.png",
+      title: "Advanced Game Development",
+      content: "borntodev.com",
+      link: "#",
+    },
+    {
+      image: "../assets/images/learning/java.png",
+      title: "Complete Java Programming",
+      content: "borntodev.com",
+      link: "#",
     },
   ];
   return (
@@ -26,329 +88,116 @@ const Learning = () => {
       <div className="flex">
         <div className="flex-1">
           <div className="flex justify-between items-center mt-[80px]">
-            <div className="text-[23px] font-semibold">แบบฝึกหัด</div>
+            <div className="text-[23px] font-semibold">คอร์สเรียนเสริม</div>
           </div>
           <hr className="mt-[12px] mb-4" />
-
-          <div className="flex gap-[51px] px-[70px] pb-[80px]">
-            <div className="flex flex-col gap-12 w-[312px]">
-              <div>
-                <div className="mt-[30px] w-[450px]">
-                  <div className="flex w-[430px]">
-                    <div className="flex flex-col gap-2">
-                      <h1 className="underline text-[20px]">แบบฝึกหัดเรื่อง</h1>
-                      <div className="flex flex-col gap-2 mt-[5px]">
-                        <div className="text-[18px] mt-[14px]">
-                          <Link
-                            href="https://images-se-ed.com/ws/Storage/PDF/552230/001/5522300010435PDF.pdf"
-                            target="_blank"
-                            className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
-                          >
-                            <ur>
-                              1. หนังสือรวมโจทย์ภาษาซีในรูปแบบโอลิมปิกวิชาการ
-                            </ur>
-                          </Link>
-                        </div>
-
-                        <div className="text-[18px]">
-                          <Link
-                            href="http://portal5.udru.ac.th/ebook/pdf/upload/17QjQ6OQ38UCC3lCc238.pdf"
-                            target="_blank"
-                            className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
-                          >
-                            <ur>2. การเขียนโปรแกรมคอมพิวเตอร์</ur>
-                          </Link>
-                        </div>
-
-                        <div className="text-[18px]">
-                          <Link
-                            href="https://www.academia.edu/12327254/%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%82_%E0%B8%AD%E0%B8%AA%E0%B8%AD%E0%B8%9A_%E0%B8%A7%E0%B8%B4_%E0%B8%8A%E0%B8%B2_517111_%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%82%E0%B8%B5_%E0%B8%A2%E0%B8%99%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%B4_%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3_1_%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%A7%E0%B8%B4_%E0%B8%8A%E0%B8%B2%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%B4_%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3_%E0%B8%84%E0%B8%93%E0%B8%B0%E0%B8%A7%E0%B8%B4_%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3_%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4_%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1_%E0%B8%A2%E0%B8%A8%E0%B8%B4_%E0%B8%A5%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%A3_2557"
-                            target="_blank"
-                            className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
-                          >
-                            <ur>3. รวมข้อสอบการเขียนโปรแกรมคอมพิวเตอร์</ur>
-                          </Link>
-                        </div>
-
-                        <div className="text-[18px]">
-                          <Link
-                            href="https://www.facebook.com/tutortongpage/posts/1131111210286332/"
-                            target="_blank"
-                            className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
-                          >
-                            <ur>4. รวมโจทย์ C++ พร้อมเฉลย</ur>
-                          </Link>
-                        </div>
-
-                        <div className="text-[18px]">
-                          <Link
-                            href="https://www.dek-d.com/board/view/1852461/"
-                            target="_blank"
-                            className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
-                          >
-                            <ur>5. Lab#6 โจทย์ พร้อมเฉลย</ur>
-                          </Link>
-                        </div>
-
-                        <div className="text-[18px]">
-                          <Link
-                            href="https://sites.google.com/site/khxmphiwtexrm5/hnwy-kar-reiyn-ru1/kar-wikheraah-payha/kar-wikheraah-payha-p4"
-                            target="_blank"
-                            className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
-                          >
-                            <ur>6. ตัวอย่างโจทย์ปัญหา การวิเคราะห์ปัญหา</ur>
-                          </Link>
-                        </div>
-
-                        <div className="text-[18px]">
-                          <Link
-                            href="https://anyflip.com/kgfo/vixx/basic"
-                            target="_blank"
-                            className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
-                          >
-                            <ur>7. การออกแบบอัลกอรึทึม และการเขียนรหัสเทียม</ur>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between items-center mt-[100px]">
-                  <div className="flex items-center gap-1">
-                    <div className="text-xl font-semibold">ข่าวฮอต</div>
-                    <img
-                      src="../assets/icons/fire.svg"
-                      alt="icon-fire"
-                      width="24"
-                      height="24"
-                    />
-                  </div>
-                  <a href="#" className="font-semibold underline">
-                    ดูทั้งหมด
-                  </a>
-                </div>
-                <div className="flex flex-col gap-8 mt-7">
-                  <div className="flex flex-col gap-3">
-                    <img src="../assets/images/news/news-1.png" alt="news-1" />
-                    <div>
-                      ปฏิทิน 2566 : อัพเดท ตารางสอบ 'TCAS' ที่ 'DEK66'
-                      ต้องรู้ไว้ สมัครสอบ TGAT/TPAT และ
-                    </div>
-                  </div>
-                  <div className="flex flex-col gap-3">
-                    <img src="../assets/images/news/news-2.png" alt="news-2" />
-                    <div>
-                      ประกาศผล admission 65 TCAS รอบ 3 ครั้งที่ 2
-                      เช็กผลสอบที่นี่
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="grow pt-[51px]">
-              <div className="flex flex-col">
-                <div className="flex justify-center bg-[#fafafa] rounded-md shadow-inner w-[680px] h-[300px] ml-[150px]">
-                  <div className="inline-block w-[640px] pt-[20px]">
-                    <div className="text-[15px] indent-10">
-                      เมื่อพบใคร .. ที่สนใจการโปรแกรม (Programming)
-                      และเป็นผู้เริ่มต้น (Beginner) หรือจะเป็นนักพัฒนา
-                      (Developer) จะมีคำถามสำคัญ ที่ใช้ชวนพูดคุยกันว่า
-                      "อยากเขียนโปรแกรมบน แพลตฟอร์ม (Platform) ใด"
-                      ก็มักเริ่มจากการเลือก ระบบปฏิบัติการ คือ Windows, Linux,
-                      Android, iOS แล้วเลือก แหล่งที่ใช้โปรแกรม คือ Windows,
-                      Website หรือ Application แล้วก็ต้องเลือก ภาษาที่ใช้พัฒนา
-                      อาทิ PHP, JAVA, C, ASP, VB, Python
-                      ซึ่งมีบางภาษาที่พัฒนาแล้ว สามารถนำไปใช้ได้ในหลายแพลตฟอร์ม
-                    </div>
-                    <div className=" mt-[10px] text-[15px] indent-10">
-                      <a className="font-bold">การโปรแกรม</a> คือ
-                      การกำหนดขั้นตอนให้กับคอมพิวเตอร์ทำงานตามลำดับและรูปแบบที่กำหนด
-                      อัลกอริทึม (Algorithm) คือ
-                      กระบวนการแก้ปัญหาอย่างเป็นขั้นตอน
-                      หรือขั้นตอนวิธีอย่างมีลำดับ คือ กลุ่มของขั้นตอนวิธี
-                      หรือกฎเกณฑ์ที่จะนำพาไปสู่การแก้ปัญหา คือ
-                      ขั้นตอนวิธีที่ประกอบด้วยชุดคำสั่งเป็นขั้นเป็นตอนที่ชัดเจน
-                      และรับประกันว่าเมื่อปฏิบัติอย่างถูกต้องตามขั้นตอนจนครบ
-                      จะได้ผลลัพธ์ที่ถูกต้องตามที่ต้องการ คือ
-                      รูปแบบของการกำหนดการกระทำอย่างเป็นขั้นตอน
-                      ซึ่งผ่านการวิเคราะห์และแยกแยะ เพื่อการแก้ปัญหาตามลำดับขั้น
-                      อาจเลือกใช้ภาษาไทยหรือภาษาอังกฤษ
-                      เพื่อนำเสนอให้เข้าใจเป็นขั้นตอน
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-col gap-10 mt-[90px] ml-[150px]">
-                  <div className="flex justify-between ml-[30px] w-[515px]">
-                    <img
-                      className="w-[152px] h-[152px] rounded-md"
-                      src="../assets/images/course/exercise2.jpg"
-                      alt="../assets/images/course/exercise2.jpg"
-                    />
-                    <div className="ml-[35px]">
-                      <div className="text-[16px] font-bold">
-                        <Link
-                          href="https://www.w3schools.com/"
-                          target="_blank"
-                          className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-100"
-                        >
-                          <ur>W3schools.com</ur>
-                        </Link>
-                      </div>
-
-                      <div className="w-[350px]">
-                        <div className="text[8px] font-regular">
-                          เป็นหนึ่งในเว็บที่มีชื่อเสียงมากที่สุดสำหรับนักพัฒนาและโปรแกรมเมอร์ทุกคนที่ต้องการเรียนรู้ภาษาเขียนโปรแกรมแทบจะทุกภาษา
-                          ตั้งแต่การเขียนโปรแกรมบนเว็บ
-                          ไปจนถึงภาษาโปรแกรมมิ่งสำหรับฐานข้อมูลหรือโปรแกรมบนเดสก์ท็อป
-                          ซึ่งทุกหลักสูตรฟรีหมด
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex justify-between ml-[30px] mt-[15px] w-[515px]">
-                    <img
-                      className="w-[152px] h-[152px] rounded-md"
-                      src="../assets/images/course/exercise1.jpg"
-                      alt="../assets/images/course/exercise1.jpg"
-                    />
-                    <div className="ml-[35px]">
-                      <div className="text-[16px] font-bold">
-                        <Link
-                          href="https://teamtreehouse.com/"
-                          target="_blank"
-                          className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-100"
-                        >
-                          <ur>TeamTreeHouse.com</ur>
-                        </Link>
-                      </div>
-
-                      <div className="w-[350px]">
-                        <div className="text[8px] font-regular">
-                          เป็นหนึ่งในเว็บที่มีชื่อเสียงมากที่สุดสำหรับนักพัฒนาและโปรแกรมเมอร์ทุกคนที่ต้องการเรียนรู้ภาษาเขียนโปรแกรมแทบจะทุกภาษา
-                          ตั้งแต่การเขียนโปรแกรมบนเว็บ
-                          ไปจนถึงภาษาโปรแกรมมิ่งสำหรับฐานข้อมูลหรือโปรแกรมบนเดสก์ท็อป
-                          ซึ่งทุกหลักสูตรฟรีหมด
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex justify-between ml-[30px] mt-[15px] w-[520px]">
-                    <img
-                      className="w-[152px] h-[152px] rounded-md"
-                      src="../assets/images/course/exercise3.jpg"
-                      alt="../assets/images/course/exercise3.jpg"
-                    />
-                    <div className="ml-[35px]">
-                      <div className="text-[16px] font-bold">
-                        <Link
-                          href="https://www.codecademy.com/"
-                          target="_blank"
-                          className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-100"
-                        >
-                          <ur>CodeAcademy.com</ur>
-                        </Link>
-                      </div>
-
-                      <div className="w-[350px]">
-                        <div className="text[8px] font-regular">
-                          เป็นเว็บไซต์ที่มีชื่อเสียงมากในการสอนการเขียนโค้ดให้โปรแกรมเมอร์แบบอินเตอร์แอคทีฟ
-                          หลักสูตรที่มีนั้นได้แก่ PHP, Python, jQuery, Web
-                          Fundamentals, JavaScript, Ruby, API เป็นต้น
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex gap-2 justify-center mt-[60px] ml-[40px]">
-                  <Link href="#">
-                    <button className="w-[10px] h-[10px] text-black text-[16px] font-semibold bg-[#D9D9D9] rounded-full"></button>
-                  </Link>
-                  <Link href="#">
-                    <button className="w-[10px] h-[10px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full"></button>
-                  </Link>
-                  <Link href="#">
-                    <button className="w-[10px] h-[10px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full"></button>
-                  </Link>
-                  <Link href="#">
-                    <button className="w-[10px] h-[10px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full"></button>
-                  </Link>
-                  <Link href="#">
-                    <button className="w-[10px] h-[10px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full"></button>
-                  </Link>
-                </div>
-              </div>
+        </div>
+      </div>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+        style={{ marginLeft: 346, marginRight: 346, marginTop: 40 }}
+      >
+        <SwiperSlide>
+          <a href="https://www.borntodev.com/" target="_blank">
+            <img
+              className="object-fill w-[767px] h-[450px] rounded-[10px]"
+              src="../assets/images/learning/1.png"
+              alt="image slide 1"
+            />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="https://www.borntodev.com/" target="_blank">
+            <img
+              className="object-fill w-[767px] h-[450px] rounded-[10px]"
+              src="../assets/images/learning/2.png"
+              alt="image slide 2"
+            />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="https://www.borntodev.com/" target="_blank">
+            <img
+              className="object-fill w-[767px] h-[450px] rounded-[10px]"
+              src="../assets/images/learning/3.png"
+              alt="image slide 3"
+            />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="https://www.borntodev.com/" target="_blank">
+            <img
+              className="object-fill w-[767px] h-[450px] rounded-[10px]"
+              src="../assets/images/learning/4.png"
+              alt="image slide 3"
+            />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="https://www.borntodev.com/" target="_blank">
+            <img
+              className="object-fill w-[767px] h-[450px] rounded-[10px]"
+              src="../assets/images/learning/5.png"
+              alt="image slide 3"
+            />
+          </a>
+        </SwiperSlide>
+      </Swiper>
+      <div className="felx">
+        <div className="flex justify-between items-center mt-[80px]">
+          <div className="text-[16px] font-semibold">
+            คอร์สเรียนเสริมทั้งหมด (230)
+          </div>
+        </div>
+        <hr className="mt-[12px] mb-4" />
+        <div className="flex justify-center mt-12">
+          <div className="flex justify-center">
+            <div className="grid grid-cols-3 gap-28">
+              {course.map((item) => {
+                return <Cardedu item={item} type="course" />;
+              })}
             </div>
           </div>
         </div>
       </div>
-      <div className="flex w-[1400px]">
-        <div className="bg-[#fafafa] rounded-md shadow-inner w-[1384px] h-[321px] mr-[90px]">
-          <div className="text-[18px] text-[#facc15] font-bold text-center mt-[10px]">
-            แนะนำเครื่องมือที่ใช้เขียนโปรแกรม (โปรแกรม,เว็บไซต์)
-          </div>
-          <div className="grid grid-cols-4">
-            <div className="inline-block pt-[50px]">
-              <img
-                className="w-[224px] h-[128px] rounded rounded-xl"
-                src="../assets/images/course/logo1.jpg"
-                alt="vscode"
-              />
-              <div className="pl-[37px] mt-[10px]">
-                <Link href="https://code.visualstudio.com/" target="_blank">
-                  <a className="flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
-                    Visual Studio Code
-                  </a>{" "}
-                </Link>
-              </div>
-            </div>
-            <div className="inline-block pt-[50px] pl-[60px]">
-              <img
-                className="w-[224px] h-[128px] rounded rounded-xl"
-                src="../assets/images/course/logo1.jpg"
-                alt="vscode"
-              />
-              <div className="pl-[37px] mt-[10px]">
-                <Link href="https://code.visualstudio.com/" target="_blank">
-                  <a class="flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
-                    Visual Studio Code
-                  </a>{" "}
-                </Link>
-              </div>
-            </div>
-            <div className="inline-block pt-[50px] pl-[60px]">
-              <img
-                className="w-[224px] h-[128px] rounded rounded-xl"
-                src="../assets/images/course/logo1.jpg"
-                alt="vscode"
-              />
-              <div className="pl-[37px] mt-[10px]">
-                <Link href="https://code.visualstudio.com/" target="_blank">
-                  <a class="flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
-                    Visual Studio Code
-                  </a>{" "}
-                </Link>
-              </div>
-            </div>
-            <div className="inline-block pt-[50px] pl-[60px]">
-              <img
-                className="w-[224px] h-[128px] rounded rounded-xl"
-                src="../assets/images/course/logo1.jpg"
-                alt="vscode"
-              />
-              <div className="pl-[37px] mt-[10px]">
-                <Link href="https://code.visualstudio.com/" target="_blank">
-                  <a class="flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
-                    Visual Studio Code
-                  </a>{" "}
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="flex gap-3.5 justify-center  mt-[50px]">
+        <Link href="#">
+          <button className="w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#D9D9D9] rounded-full">
+            1
+          </button>
+        </Link>
+        <Link href="#">
+          <button className="w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full">
+            2
+          </button>
+        </Link>
+        <Link href="#">
+          <button className="w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full">
+            3
+          </button>
+        </Link>
+        <Link href="#">
+          <button className="w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full">
+            4
+          </button>
+        </Link>
+        <span className="text-[16px] font-semibold pt-4">...</span>
+        <Link href="#">
+          <button className="w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full">
+            5
+          </button>
+        </Link>
       </div>
     </div>
   );

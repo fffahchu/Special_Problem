@@ -3,6 +3,11 @@ import Breadcrumb from "@components/Breadcrumb";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
 import Cardsmall from "@components/Cardsmall";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 const ReviewCs = () => {
   const route = [
@@ -35,7 +40,7 @@ const ReviewCs = () => {
     },
     {
       image: "../assets/images/activity/activity-2.png",
-      title: "Javascript Tier 2 SS2 // C Tier 2",
+      title: "Javascript Tier 2 SS2",
       content:
         "เหมาะสำหรับน้อง ๆ ที่อยากต่อยอดความรู้ HTML CSS JS ให้เก่งยิ่งขึ้นด้วย JS TIER 2 และ ยังมีคอร์สสำหรับน้อง ๆ ที่ต้องการเ...",
       expire_date: 2,
@@ -63,6 +68,58 @@ const ReviewCs = () => {
           computer science
         </div>
       </div>
+
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+        style={{ marginLeft: 270, marginRight: 700, marginTop: 40 }}
+      >
+        <SwiperSlide>
+          <img
+            className="object-fill w-auto h-[346px] rounded-[10px]"
+            src="../assets/images/reviews/cs/1.jpg"
+            alt="image slide 1"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="object-fill w-auto h-[346px] rounded-[10px]"
+            src="../assets/images/reviews/cs/2.jpg"
+            alt="image slide 2"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="object-fill w-auto h-[346px] rounded-[10px]"
+            src="../assets/images/reviews/cs/3.jpg"
+            alt="image slide 3"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="object-fill w-auto h-[346px] rounded-[10px]"
+            src="../assets/images/reviews/cs/4.jpg"
+            alt="image slide 3"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="object-fill w-auto h-[346px] rounded-[10px]"
+            src="../assets/images/reviews/cs/5.jpg"
+            alt="image slide 3"
+          />
+        </SwiperSlide>
+      </Swiper>
 
       <div className="flex">
         <div className="w-[750px] ml-[200px]">
@@ -198,9 +255,12 @@ const ReviewCs = () => {
               })}
             </div>
             <div>
-              <a href="#" className="font-regular underline ml-[255px]">
+              <div
+                href="#"
+                className="font-regular underline ml-[255px] pt-[15px]"
+              >
                 ดูทั้งหมด
-              </a>
+              </div>
             </div>
           </div>
         </div>

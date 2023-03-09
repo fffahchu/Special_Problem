@@ -3,11 +3,12 @@ import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
 import Breadcrumb from "@components/Breadcrumb";
 
+
 const Exercise = () => {
   const route = [
     {
       title: "หน้าหลัก",
-      link: "#",
+      link: "member",
     },
     {
       title: "คลังความรู้",
@@ -287,21 +288,21 @@ const Exercise = () => {
       </div>
       <div className="flex w-[1400px]">
         <div className="bg-[#fafafa] rounded-md shadow-inner w-[1384px] h-[321px] mr-[90px]">
-          <div className="text-[18px] text-[#facc15] font-bold text-center mt-[18px]">
+          <div className="text-[18px] text-[#facc15] font-bold text-center mt-[30px]">
             แนะนำเครื่องมือที่ใช้เขียนโปรแกรม (โปรแกรม,เว็บไซต์)
           </div>
           <div className="grid grid-cols-4 mr-[20px]">
-            <div className="inline-block pt-[50px] ml-[60px]">
+            <div className="inline-block pt-[48px] ml-[60px]">
               <img
                 className="w-[224px] h-[128px] rounded rounded-xl"
                 src="../assets/images/course/logo1.jpg"
                 alt="vscode"
               />
-              <div className="pl-[37px] mt-[10px]">
+              <div className="pl-[36px] mt-[10px]">
                 <Link href="https://code.visualstudio.com/" target="_blank">
-                  <a className="flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
+                  <div className="flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
                     Visual Studio Code
-                  </a>{" "}
+                  </div>
                 </Link>
               </div>
             </div>
@@ -311,14 +312,14 @@ const Exercise = () => {
                 src="../assets/images/course/logo2.jpg"
                 alt="vscode"
               />
-              <div className="pl-[37px] mt-[10px]">
+              <div className="pl-[59px] mt-[10px]">
                 <Link
                   href="https://visualstudio.microsoft.com/"
                   target="_blank"
                 >
-                  <a class="flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
+                  <div class="flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
                     Visual Studio
-                  </a>{" "}
+                  </div>
                 </Link>
               </div>
             </div>
@@ -328,14 +329,14 @@ const Exercise = () => {
                 src="../assets/images/course/logo3.jpg"
                 alt="vscode"
               />
-              <div className="pl-[37px] mt-[10px]">
+              <div className="pl-[77px] mt-[10px]">
                 <Link
                   href="https://codelabs.developers.google.com/"
                   target="_blank"
                 >
-                  <a class="flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
+                  <div class="flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
                     Codelabs
-                  </a>{" "}
+                  </div>
                 </Link>
               </div>
             </div>
@@ -345,11 +346,11 @@ const Exercise = () => {
                 src="../assets/images/course/logo4.jpg"
                 alt="vscode"
               />
-              <div className="pl-[37px] mt-[10px]">
+              <div className="pl-[72px] mt-[10px]">
                 <Link href="https://www.codeply.com/" target="_blank">
-                  <a class="flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
+                  <div class="text-center flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
                     Codeply
-                  </a>{" "}
+                  </div>
                 </Link>
               </div>
             </div>

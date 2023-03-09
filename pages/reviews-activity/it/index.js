@@ -35,7 +35,7 @@ const ActivityIt = () => {
     },
     {
       image: "../assets/images/activity/activity-2.png",
-      title: "Javascript Tier 2 SS2 // C Tier 2",
+      title: "Javascript Tier 2 SS2",
       content:
         "เหมาะสำหรับน้อง ๆ ที่อยากต่อยอดความรู้ HTML CSS JS ให้เก่งยิ่งขึ้นด้วย JS TIER 2 และ ยังมีคอร์สสำหรับน้อง ๆ ที่ต้องการเ...",
       expire_date: 2,
@@ -71,13 +71,13 @@ const ActivityIt = () => {
 
           <div className=" text-[18px] font-regular mt-[30px]">
             เฮ้ยๆๆ เดินทางมา{" "}
-            <a class="text-sky-400 font-bold">
+            <div class="text-sky-400 font-bold">
               ครึ่งร้อย EP. แล้ว กับ “แคมป์รีวิว”
-            </a>
+            </div>
             สวัสดีจ้า น้องๆ แคมป์ฮับทุกคนเลย วันนี้แคมป์รีวิวตอนที่ 50
             (มาไกลเหมือนกันนะเนี่ย) จะมาขอเสนอค่ายที่น้องๆ
             สายคอมและไอทีอยากเข้ามากที่สุด ค่ายนึงเลย !! กับ{" "}
-            <a class="text-sky-400 font-bold">“IT CAMP”</a>
+            <div class="text-sky-400 font-bold">“IT CAMP”</div>
             ซึ่งก่อนที่จะไปเข้าค่ายกันในครั้งที่ 14 ในปีนี้ พี่ฟิวส์ พี่มน
             และพี่จ๊อบ ก็ขอพาน้องๆ ย้อนกลับไปสัมผัสบรรยากาศในครั้งที่ 13 กันก่อน
             มาดูกันซิว่า ปีที่แล้วมีกิจกรรมอะไรให้น้องๆ ร่วมกันสนุกเฮฮา
@@ -88,7 +88,7 @@ const ActivityIt = () => {
             <img src="../assets/images/reviews/it/it1.png"></img>
           </div>
           <div className="text-[25px] font-bold mt-[40px] text-sky-400 font-bold">
-            <a class="text-[#f87171] font-bold">รู้จัก</a> “ไอทีลาดกระบัง”
+            <div class="text-[#f87171] font-bold">รู้จัก</div> “ไอทีลาดกระบัง”
           </div>
           <div className="mt-[18px] ml-[10px]">
             <img src="../assets/images/reviews/it/it2.png"></img>
@@ -101,10 +101,10 @@ const ActivityIt = () => {
                 target="_blank"
                 className="flex text-blue-500 underline"
               >
-                <a class="text-sky-400 underline after:content-['_↗']">
+                <div class="text-sky-400 underline after:content-['_↗']">
                   คณะเทคโนโลยีสารสนเทศ
                   สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
-                </a>{" "}
+                </div>{" "}
               </Link>
               หรือที่เราเรียกสั้นๆ ว่า ไอทีลาดกระบัง ถูกสถาปนาเป็นส่วนราชการขึ้น
               เมื่อ 27 กุมภาพันธ์ 2539 ซึ่งเป็นโครงการที่ริเริ่มโดยศาสตราจารย์
@@ -118,9 +118,9 @@ const ActivityIt = () => {
             </div>
           </div>
           <div className="text-[25px] font-bold mt-[40px] text-sky-400 font-bold">
-            <a class="text-[#f87171] font-bold">
+            <div class="text-[#f87171] font-bold">
               มีอะไรบ้างให้เราได้เรียนรู้ใน
-            </a>{" "}
+            </div>{" "}
             “ไอทีลาดกระบัง”
           </div>
           <div className="mt-[18px] ml-[10px]">
@@ -128,32 +128,32 @@ const ActivityIt = () => {
           </div>
           <div className=" text-[18px] font-regular mt-[20px]">
             สำหรับหลักสูตรสำหรับน้องๆ ที่กำลังจะขึ้นมาศึกษาต่อในระดับปริญญาตรี
-            มี <a class="text-sky-400 font-bold">3 สาขา</a> ด้วยกัน ซึ่งน้องๆ
-            จะต้องเลือกกันตั้งแต่สอบเข้า ผ่านระบบ{" "}
-            <a class="text-sky-400 font-bold">TCAS</a> เลย ได้แก่…
+            มี <div class="text-sky-400 font-bold">3 สาขา</div> ด้วยกัน
+            ซึ่งน้องๆ จะต้องเลือกกันตั้งแต่สอบเข้า ผ่านระบบ{" "}
+            <div class="text-sky-400 font-bold">TCAS</div> เลย ได้แก่…
           </div>
           <div className=" text-[18px] font-regular mt-[15px]">
             <ul className="list-outside">
               <li>
                 -{" "}
-                <a class="text-sky-400 font-bold">
+                <div class="text-sky-400 font-bold">
                   Data Science and Business Analytics (DSBA)
-                </a>{" "}
+                </div>{" "}
                 สาขาวิชาเทคโนโลยีสารสนเทศทางธุรกิจ (หลักสูตรนานาชาติ)
               </li>
               <li>
                 -{" "}
-                <a class="text-sky-400 font-bold">
+                <div class="text-sky-400 font-bold">
                   Business Information Technology (BIT)
-                </a>{" "}
+                </div>{" "}
                 สาขาวิชาวิทยาการข้อมูลและการวิเคราะห์เชิงธุรกิจ
               </li>
             </ul>
           </div>
           <div className=" text-[18px] font-regular mt-[10px]">
-            <a class="text-sky-400 font-regular">
+            <div class="text-sky-400 font-regular">
               สองสาขาวิชาแรก เป็นสาขาวิชาน้องใหม่ล่าสุด
-            </a>
+            </div>
             {"  "} จากการปรับปรุงหลักสูตรในปี 2559
             และสำหรับใครที่แน่ใจว่าตัวเองไม่ใช่สายธุรกิจ หรือ Data Scientist
             แน่ๆ พี่มนขอแนะนำ…
@@ -163,9 +163,9 @@ const ActivityIt = () => {
             <ul className="list-outside">
               <li>
                 -{" "}
-                <a class="text-sky-400 font-bold">
+                <div class="text-sky-400 font-bold">
                   Information Technology (IT)
-                </a>{" "}
+                </div>{" "}
                 สาขาวิชาเทคโนโลยีสารสนเทศ
               </li>
             </ul>
@@ -178,21 +178,21 @@ const ActivityIt = () => {
           <div className=" text-[18px] font-regular mt-[15px]">
             <ul className="list-outside">
               <li>
-                - <a class="text-sky-400 font-bold">Software Engineering</a>{" "}
+                - <div class="text-sky-400 font-bold">Software Engineering</div>{" "}
                 แขนงวิชาวิศวกรรมซอฟต์แวร์
               </li>
               <li>
                 -{" "}
-                <a class="text-sky-400 font-bold">
+                <div class="text-sky-400 font-bold">
                   Network and System Technology
-                </a>{" "}
+                </div>{" "}
                 แขนงวิชาเทคโนโลยีเครือข่ายและระบบ
               </li>
               <li>
                 -{" "}
-                <a class="text-sky-400 font-bold">
+                <div class="text-sky-400 font-bold">
                   Multimedia and Game Development
-                </a>{" "}
+                </div>{" "}
                 แขนงวิชาการพัฒนาสื่อประสมและเกม
               </li>
             </ul>
@@ -236,9 +236,12 @@ const ActivityIt = () => {
               })}
             </div>
             <div>
-              <a href="#" className="font-regular underline ml-[255px]">
+              <div
+                href="#"
+                className="font-regular underline ml-[255px] pt-[15px]"
+              >
                 ดูทั้งหมด
-              </a>
+              </div>
             </div>
           </div>
         </div>

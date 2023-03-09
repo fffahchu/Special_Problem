@@ -35,7 +35,7 @@ const ActivityCe = () => {
     },
     {
       image: "../assets/images/activity/activity-2.png",
-      title: "Javascript Tier 2 SS2 // C Tier 2",
+      title: "Javascript Tier 2 SS2",
       content:
         "เหมาะสำหรับน้อง ๆ ที่อยากต่อยอดความรู้ HTML CSS JS ให้เก่งยิ่งขึ้นด้วย JS TIER 2 และ ยังมีคอร์สสำหรับน้อง ๆ ที่ต้องการเ...",
       expire_date: 2,
@@ -180,9 +180,12 @@ const ActivityCe = () => {
               })}
             </div>
             <div>
-              <a href="#" className="font-regular underline ml-[255px]">
+              <div
+                href="#"
+                className="font-regular underline ml-[255px] pt-[15px]"
+              >
                 ดูทั้งหมด
-              </a>
+              </div>
             </div>
           </div>
         </div>

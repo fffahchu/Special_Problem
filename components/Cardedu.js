@@ -10,7 +10,7 @@ const Cardedu = ({ item, type }) => {
         height="150"
         className="rounded-t-xl"
       />
-      <div className="flex w-[260px] h-[150px] pt-[18px] bg-yellow gap-10">
+      <div className="flex w-[260px] h-[150px] pt-[18px] bg-yellow gap-4">
         <div className="flex flex-col justify-between">
           <div>
             <div className="px-5 text-[14px] font-bold">{item.title}</div>
