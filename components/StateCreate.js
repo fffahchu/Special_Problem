@@ -59,12 +59,12 @@ const StateCreate = ({ state }) => {
     },
   ];
   return (
-    <div className="flex gap-x-8 -ml-5">
+    <div className="flex gap-x-6 -ml-4">
       {menu.map((item, index) => {
         return (
           <Link href={item.link}>
             <button
-              className={`flex flex-col items-center w-[120px] h-[83px]`}
+              className={`flex flex-col items-center w-[128px] h-[83px]`}
               key={`state-${index}`}
             >
               <img
