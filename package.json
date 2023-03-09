@@ -9,12 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "next": "13.0.2",
     "react": "18.2.0",
+    "react-bootstrap": "^2.7.2",
     "react-dom": "18.2.0",
     "react-easy-swipe": "^0.0.23",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.7.1",
+    "react-tabs": "^6.0.0",
+    "react-tabs-redux": "^4.0.0",
     "swiper": "^9.0.5",
+    "tailwindcss-stimulus-components": "^3.0.4",
     "tw-elements": "^1.0.0-beta1"
   },
   "devDependencies": {

@@ -39,8 +39,7 @@ const Card = ({ item, type }) => {
                   height="18"
                 />
                 <div className="text-[15px] text-red">
-                  อีก {item.expire_date}
-                  วัน{" "}
+                  อีก {item.expire_date} วัน{" "}
                 </div>{" "}
               </div>
             ) : type === "article" ? (

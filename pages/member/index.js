@@ -53,7 +53,7 @@ const Member = () => {
       title: "5 เทคนิค ทำข้อสอบเก่าให้ปัง",
       content:
         "วันนี้พี่รวบรวม 5 เทคนิค ทำข้อสอบเก่าให้ปัง มาฝากน้อง DEK66 ให้น้อง ๆ ได้ลองปรับตัว และทำตาม จะได้สอบติดคณะ สาขา และม...",
-      views:  27852,
+      views: 27852,
       link: "#",
     },
     {
@@ -179,16 +179,15 @@ const Member = () => {
             </div>
             <div className="flex flex-col gap-8 mt-7">
               <div className="flex flex-col gap-3">
-                <img src="assets/images/news/news-1.png" alt="news-1" />
+                <img src="assets/images/news/hotnews-1.jpg" alt="news-1" className="rounded-[11px] w-[312px] h-[187px]" />
                 <div>
-                  ปฏิทิน 2566 : อัพเดท ตารางสอบ 'TCAS' ที่ 'DEK66' ต้องรู้ไว้
-                  สมัครสอบ TGAT/TPAT และ
+                  รวมกำหนดการรอบ Portfolio #TCAS66 ตุลาคมนี้ รับเพียบ!
                 </div>
               </div>
               <div className="flex flex-col gap-3">
-                <img src="assets/images/news/news-2.png" alt="news-2" />
+                <img src="assets/images/news/hotnews-4.jpg" alt="news-2" className="rounded-[11px] w-[312px] h-[187px]" />
                 <div>
-                  ประกาศผล admission 65 TCAS รอบ 3 ครั้งที่ 2 เช็กผลสอบที่นี่
+                  TCAS66 รอบ 1 : สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
                 </div>
               </div>
             </div>
@@ -296,7 +295,7 @@ const Member = () => {
         <div className="flex-1">
           <div className="flex justify-between items-center">
             <div className="text-[25px] font-semibold">
-              กิจกรรม/ค่ายที่กำลังจะมาถึง
+              ค่าย/กิจกรรมที่กำลังจะมาถึง
             </div>
             <a href="#" className="font-semibold underline">
               ดูทั้งหมด

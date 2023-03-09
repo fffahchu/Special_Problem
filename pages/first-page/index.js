@@ -147,7 +147,7 @@ function FirstPage() {
             </div>
             <div className="px-[104px]">
                 <div className="flex justify-between items-center mt-[128px]">
-                    <div className="text-left text-[25px] font-semibold">กิจกรรม/ค่ายที่กำลังจะมาถึง</div>
+                    <div className="text-left text-[25px] font-semibold">ค่าย/กิจกรรมที่จะเปิดรับสมัครเร็ว ๆ นี้</div>
                     <a
                         href="/faculty/cs"
                         className="text-right text-[16px] font-semibold underline"

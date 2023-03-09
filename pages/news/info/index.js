@@ -24,34 +24,34 @@ function Info() {
         },
     ];
 
-    const message = [
+    const article = [
         {
-            image: "../assets/images/news/news-11.png",
-            title: "ปฏิทิน 2566 : อัพเดท ตารางสอบ TCAS สมัครสอบ TGAT/TPAT และ A-Level วันไหน?",
-            content: "",
-            views: 44793,
-            link: "#",
+            image: "../assets/images/news/hotnews-1.jpg",
+            title: "รวมกำหนดการรอบ Portfolio #TCAS66 ตุลาคมนี้ รับเพียบ!",
+            content: "สวัสดีค่ะ มีน้อง ๆ ถามมาเยอะว่ามหาวิทยาลั...",
+            views: 27498,
+            link: "https://www.dek-d.com/tcas/61249/",
         },
         {
-            image: "../assets/images/news/news-11.png",
-            title: "ประกาศผล admission 65 TCAS รอบ 3 ครั้งที่ 2 เช็กผลสอบที่นี่",
-            content: "",
-            views: 27852,
-            link: "#",
+            image: "../assets/images/news/hotnews-2.jpg",
+            title: "TCAS66 รอบ 1 : ม.ศรีนครินทรวิโรฒ 5 โครงการ",
+            content: "สวัสดีน้อง ๆ ทุกคนค่ะ รอบ Portfolio #TCA...",
+            views: 19529,
+            link: "https://www.dek-d.com/tcas/61445/",
         },
         {
-            image: "../assets/images/news/news-11.png",
-            title: "ประกาศผล admission 65 TCAS รอบ 3 ครั้งที่ 2 เช็กผลสอบที่นี่",
-            content: "",
-            views: 27852,
-            link: "#",
+            image: "../assets/images/news/hotnews-3.png",
+            title: "TCAS66 รอบ 1 : มหาวิทยาลัยธรรมศาสตร์ (Portfolio 1.2)",
+            content: "สวัสดีค่ะน้อง ๆ เมื่อสัปดาห์ก่อน มหาวิทยา...",
+            views: 15412,
+            link: "https://www.dek-d.com/tcas/61184/",
         },
         {
-            image: "../assets/images/news/news-11.png",
-            title: "ประกาศผล admission 65 TCAS รอบ 3 ครั้งที่ 2 เช็กผลสอบที่นี่",
-            content: "",
-            views: 27852,
-            link: "#",
+            image: "../assets/images/news/hotnews-4.jpg",
+            title: "TCAS66 รอบ 1 : สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
+            content: "สวัสดีค่ะน้อง ๆ ทางสถาบันเทคโนโลยีพระจ...",
+            views: 12822,
+            link: "https://www.dek-d.com/tcas/61381/",
         },
     ];
 
@@ -107,8 +107,8 @@ function Info() {
             <div className="px-[104px] pt-[29px]">
                 <div className="font-semibold text-[20px] mt-[75px] mb-[30px]">ข่าวฮอต</div>
                 <div className="grid grid-cols-4 gap-7">
-                    {message.map((item) => {
-                        return <Card item={item} type="message" />;
+                    {article.map((item) => {
+                        return <Card item={item} type="article" />;
                     })}
                 </div>
                 <div className="font-semibold text-[20px] mt-[75px] mb-[30px]">ข่าวทั้งหมด</div>
