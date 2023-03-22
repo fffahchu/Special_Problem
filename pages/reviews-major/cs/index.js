@@ -60,77 +60,40 @@ const ReviewCs = () => {
     <div className="px-[10px] py-[29px]">
       <MoveToTop />
       <Breadcrumb route={route} />
-      <div class="mt-[20px] bg-cover bg-[url('https://t3.ftcdn.net/jpg/02/27/91/24/240_F_227912451_kaWIwRyRndDYUIVwY4IPOj3DNcCc5Rkg.jpg')] h-[400px] w-full">
-        <div className="text-[#FED502] font-outline-2 text-center uppercase text-[50px] font-bold pt-[80px] pr-[28px]">
-          รีวิวคณะ / สาขา
-        </div>
-        <div className="text-[#FED502] font-outline-4 text-center uppercase text-[64px] font-extrabold pt-[20px] pr-[28px]">
-          computer science
-        </div>
+      <div className="mt-[20px] flex items-center justify-center">
+        <img
+          className="bg-cover h-[500px] w-full"
+          src="../assets/images/reviews/cs/cover.gif"
+        ></img>
       </div>
 
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 1500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
-        style={{ marginLeft: 270, marginRight: 700, marginTop: 40 }}
-      >
-        <SwiperSlide>
-          <img
-            className="object-fill w-auto h-[346px] rounded-[10px]"
-            src="../assets/images/reviews/cs/1.jpg"
-            alt="image slide 1"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="object-fill w-auto h-[346px] rounded-[10px]"
-            src="../assets/images/reviews/cs/2.jpg"
-            alt="image slide 2"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="object-fill w-auto h-[346px] rounded-[10px]"
-            src="../assets/images/reviews/cs/3.jpg"
-            alt="image slide 3"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="object-fill w-auto h-[346px] rounded-[10px]"
-            src="../assets/images/reviews/cs/4.jpg"
-            alt="image slide 3"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="object-fill w-auto h-[346px] rounded-[10px]"
-            src="../assets/images/reviews/cs/5.jpg"
-            alt="image slide 3"
-          />
-        </SwiperSlide>
-      </Swiper>
-
-      <div className="flex">
-        <div className="w-[750px] ml-[200px]">
-          <div className="text-left text-[30px] font-bold drop-shadow-2xl shadow-black mt-[48px] pl-[45px]">
-            Computer Science - วิทยาการคอมพิวเตอร์
-          </div>
-          <div className="text-center text-[20px] font-semibold mt-[15px]">
+      <div className="flex justify-center">
+        <div className="w-[750px] ml-[150px]">
+          <div className="text-center text-[30px] font-bold drop-shadow-2xl shadow-black mt-[48px]">
             รีวิวสาขาวิทยาการคอมพิวเตอร์
             สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
           </div>
-          <div className=" text-[18px] font-regular mt-[30px] indent-10">
+
+          <div className="grid grid-cols-2 gap-4 mt-[30px] ml-[10px]">
+            <img
+              className="rounded h-[250px] w-[550px]"
+              src="../assets/images/reviews/cs/5.jpg"
+            ></img>
+            <img
+              className="rounded h-[250px] w-[550px]"
+              src="../assets/images/reviews/cs/2.jpg"
+            ></img>
+            <img
+              className="rounded h-[250px] w-[550px]"
+              src="../assets/images/reviews/cs/3.jpg"
+            ></img>
+            <img
+              className="rounded h-[250px] w-[550px]"
+              src="../assets/images/reviews/cs/4.jpg"
+            ></img>
+          </div>
+
+          <div className="text-[18px] font-regular mt-[30px]">
             สาขาได้เล็งเห็นความเปลี่ยนแปลงที่สำคัญของงานด้านวิทยาการคอมพิวเตอร์
             จึงต้องการพัฒนาหลักสูตรให้มีประสิทธิภาพ สามารถทำให้น้องๆ
             ที่จบไปมีทักษะ ความรู้ที่ทันต่อเทคโนโลยีที่ทันสมัย
@@ -138,14 +101,14 @@ const ReviewCs = () => {
             จากพันธมิตรที่หลากหลาย เช่น กระแสความเปลี่ยนแปลงของเทคโนโลยี
             ความต้องการของบริษัท การสัมมนาต่างๆ เป็นต้น
           </div>
-          <div className=" text-[18px] font-regular mt-[30px] indent-10">
+          <div className="text-[18px] font-regular mt-[30px]">
             ในหลักสูตรที่น้องๆ จะได้เรียนนั้น
             เป็นหลักสูตรที่อัปเกรดขึ้นจากสาขาวิทยาการคอมพิวเตอร์ทั่วไปแล้ว
             จะมีการผนวกศาสตร์จากวิชาอื่นๆ ที่จำเป็นเข้ามาด้วย คือ
             ภาควิชาคณิตศาสตร์ สถิติ และคอมฯ เพื่อขยายขอบเขตการศึกษา
             และร่วมกันพัฒนากลุ่ม Data Science
           </div>
-          <div className=" text-[18px] font-regular mt-[30px] indent-10">
+          <div className="text-[18px] font-regular mt-[30px]">
             วิทย์คอม ลาดกระบัง จะเรียนไปทางด้านคอม คณิตศาสตร์และภาษาอังกฤษ
             (นิดหน่อย แล้วแต่โอกาส) โดยที่สำคัญมากสุดคือ คอม+คณิต
             เพราะทั้งคู่ต้องใช้ร่วมกันไปตลอด ใครที่หนีวิชาวิทย์ตั่งต่างมา
@@ -154,7 +117,7 @@ const ReviewCs = () => {
             สาขานี้หนีไม่พ้นแน่นอน แต่อย่าเพิ่งกลัวใจตัวเองกันค่ะ
             เพราะมันอาจไม่ยากอย่างที่คิดก็ได้ ถ้าเราตั้งใจและพยายามกับมันมากๆค่ะ
           </div>
-          <div className=" text-[18px] font-regular mt-[30px]">
+          <div className="text-[18px] font-regular mt-[30px]">
             ปัจจุบันตอนนี้ทางสาขามีการปรับหลักสูตรใหม่แล้วนะคะ
             รวมถึงลักษณะการเรียนต่างๆก็จะเปลี่ยนไปตามกาลเวลาและหลักสูตรค่ะ
             โดยสามารถเข้าไปดูหลักสูตรใหม่ (ปี 2564)
@@ -191,7 +154,7 @@ const ReviewCs = () => {
               </li>
             </ul>
           </div>
-          <div className=" text-[18px] font-regular mt-[30px]">
+          <div className="text-[18px] font-regular mt-[30px]">
             [ ทักษะ ] สามารถทำงานแบบวงจรคุณภาพ PDCA (Plan-Do-Check-Act)
             สามารถทำงานแบบวงจรชีวิตการพัฒนาระบบงาน (SDLC : System Development
             Life Cycle) สามารถทำงานที่มีกระบวนการอย่างเป็นระบบ (Systematic
@@ -199,11 +162,19 @@ const ReviewCs = () => {
             แก้ปัญหาได้ สามารถทำ Higher-order Thinking ( วิเคราะห์ สังเคราะห์
             ประเมินค่า สร้างสรรค์ได้ ) สร้างความตระหนักรู้
             ประเมินคุณค่าความน่าเชื่อถือของแหล่งข้อมูล (Social Network)
+            <div className="w-[350px] h-[350px] mt-[30px] ml-[130px]">
+              <img
+                className="rounded-lg"
+                src="../assets/images/reviews/cs/pdca.jpg"
+                alt="comeng"
+              ></img>
+            </div>
           </div>
-          <div className="text-left text-[20px] font-semibold mt-[30px]">
+
+          <div className="text-[20px] font-semibold pt-[40px]">
             โอกาสในการทำงาน{" "}
           </div>
-          <div className=" text-[18px] font-regular mt-[15px]">
+          <div className="text-[18px] font-regular mt-[15px]">
             <ul className="list-outside">
               <li>
                 - นักพัฒนาระบบงานสารสนเทศเชิงบูรณาการ (Web App.Developer,
@@ -214,7 +185,7 @@ const ReviewCs = () => {
               <li> - นักพัฒนาระบบงานธุรกิจขนาดใหญ่ (ERP Developer) </li>
               <li> - นักทดสอบระบบงาน (Tester) </li>
               <li>
-                - นักออกแบบและวิเคราะห์ข้อมูลขนาดใหญ่ (ฃBig Data Analytics)
+                - นักออกแบบและวิเคราะห์ข้อมูลขนาดใหญ่ (Big Data Analytics)
               </li>
               <li>
                 - นักออกแบบและวิเคราะห์คลังข้อมูล (Business Intelligence in Data
@@ -236,6 +207,34 @@ const ReviewCs = () => {
               </li>
             </ul>
           </div>
+
+          <div className="grid grid-cols-2 gap-4 mt-[30px] ml-[10px]">
+            <img
+              className="rounded h-[250px] w-[550px]"
+              src="../assets/images/reviews/cs/ex1.jpg"
+            ></img>
+            <img
+              className="rounded h-[250px] w-[550px]"
+              src="../assets/images/reviews/cs/ex2.jpg"
+            ></img>
+            <img
+              className="rounded h-[250px] w-[550px]"
+              src="../assets/images/reviews/cs/ex3.jpg"
+            ></img>
+            <img
+              className="rounded h-[250px] w-[550px]"
+              src="../assets/images/reviews/cs/ex4.jpg"
+            ></img>
+            <img
+              className="rounded h-[250px] w-[550px]"
+              src="../assets/images/reviews/cs/ex5.jpg"
+            ></img>
+            <img
+              className="rounded h-[250px] w-[550px]"
+              src="../assets/images/reviews/cs/ex6.png"
+            ></img>
+          </div>
+
           <div className="text-center text-[18px] font-bold mt-[15px]">
             “อัตราเงินเดือนตามเกณฑ์มาตรฐานของหลักสูตรด้านคอมพิวเตอร์
             ชั้นนำของประเทศไทย อัตราการได้งานทำตรงสาขาเกิน 95%”

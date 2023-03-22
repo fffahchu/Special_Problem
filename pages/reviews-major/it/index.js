@@ -55,19 +55,18 @@ const ReviewIt = () => {
     <div className="px-[10px] py-[29px]">
       <MoveToTop />
       <Breadcrumb route={route} />
-      <div class="mt-[20px] bg-cover bg-[url('https://t3.ftcdn.net/jpg/02/27/91/24/240_F_227912451_kaWIwRyRndDYUIVwY4IPOj3DNcCc5Rkg.jpg')] h-[400px] w-full">
-        <div className="text-[#FED502] font-outline-2 text-center uppercase text-[50px] font-bold pt-[80px] pr-[28px]">
-          รีวิวคณะ / สาขา
-        </div>
-        <div className="text-[#FED502] font-outline-4 text-center uppercase text-[64px] font-extrabold pt-[20px] pr-[28px]">
-          information technology
-        </div>
+      <div className="mt-[20px] flex items-center justify-center">
+        <img
+          className="bg-cover h-[500px] w-full"
+          src="../assets/images/reviews/it/cover.gif"
+        ></img>
       </div>
+
       <div className="flex">
         <div className="w-[750px] ml-[200px]">
           <div className="mt-[60px]">
             <img
-              className="h-[333px] w-[700px]"
+              className="h-[333px] w-[700px] rounded"
               src="../assets/images/reviews/it/1.jpg"
             ></img>
           </div>
@@ -79,9 +78,9 @@ const ReviewIt = () => {
             เช่นรายวิชา algorithm , principles of it , Discrete Mathematics
             เพื่อให้ท่านได้มีพื้นฐานในการที่จะเรียนในปีต่อไปหรือในเทอมต่อไป
           </div>
-          <div className="mt-[30px] pl-[120px]">
+          <div className="mt-[30px]">
             <img
-              className="w-[426px] h-[252px]"
+              className="rounded"
               src="../assets/images/reviews/it/2.jpg"
             ></img>
           </div>
@@ -97,9 +96,9 @@ const ReviewIt = () => {
             เพราะเป็นการเรียนเกี่ยวกับระบบของคอมพิวเตอร์
             และฐานข้อมูลที่ทำงานอยู่เบื้องหลังคอมพิวเตอร์ทุกเครื่อง
           </div>
-          <div className="mt-[30px] pl-[120px]">
+          <div className="mt-[30px]">
             <img
-              className="w-[426px] h-[252px]"
+              className="rounded"
               src="../assets/images/reviews/it/3.jpg"
             ></img>
           </div>
@@ -120,9 +119,9 @@ const ReviewIt = () => {
             สถิติและการวิจัยทางเทคโนโลยีสารสนเทศ
             รวมถึงการวิเคราะห์และออกแบบระบบสารสนเทศ
           </div>
-          <div className="mt-[30px] pl-[120px]">
+          <div className="mt-[30px]">
             <img
-              className="w-[426px] h-[252px]"
+              className="rounded"
               src="../assets/images/reviews/it/4.jpg"
             ></img>
           </div>
@@ -136,9 +135,9 @@ const ReviewIt = () => {
             และระบบสารสนเทศการจัดการทางธุรกิจ
             รวมไปถึงการทำโครงงานนิสิตทางเทคโนโลยีสารสนเทศ 1 ด้วย
           </div>
-          <div className="mt-[30px] pl-[120px]">
+          <div className="mt-[30px]">
             <img
-              className="w-[426px] h-[252px]"
+              className="rounded"
               src="../assets/images/reviews/it/6.jpg"
             ></img>
           </div>
@@ -147,9 +146,9 @@ const ReviewIt = () => {
             ก็จะได้ทำโครงงานนิสิตทางเทคโนโลยีสารสนเทศ 2 และกลุ่มวิชาเอกเลือก
             ส่วนภาคปลายนั้นก็จะได้ออกไปฝึกประสบการณ์วิชาชีพตลอดทั้งภาคเรียน
           </div>
-          <div className="mt-[30px] pl-[120px]">
+          <div className="mt-[30px]">
             <img
-              className="w-[426px] h-[252px]"
+              className="rounded"
               src="../assets/images/reviews/it/5.jpg"
             ></img>
           </div>

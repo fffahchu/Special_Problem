@@ -55,40 +55,38 @@ const ReviewCe = () => {
     <div className="px-[10px] py-[29px]">
       <MoveToTop />
       <Breadcrumb route={route} />
-
-      <div class="mt-[20px] bg-cover bg-[url('https://t3.ftcdn.net/jpg/02/27/91/24/240_F_227912451_kaWIwRyRndDYUIVwY4IPOj3DNcCc5Rkg.jpg')] h-[400px] w-full">
-        <div className="text-[#FED502] font-outline-2 text-center uppercase text-[50px] font-bold pt-[80px] pr-[28px]">
-          รีวิวคณะ/สาขา
-        </div>
-        <div className="text-[#FED502] font-outline-4 text-center uppercase text-[64px] font-extrabold pt-[20px] pr-[28px]">
-          computer engineering
-        </div>
+      <div className="mt-[20px]">
+        <img
+          className="bg-cover h-[500px] w-full"
+          src="../assets/images/reviews/ce/cover9.gif"
+        ></img>
       </div>
 
       <div className="flex">
-        <div className="w-[750px] ml-[200px]">
-          <div className="text-center text-[30px] font-bold drop-shadow-2xl shadow-black mt-[48px] pl-[45px]">
+        <div className="w-[750px] ml-[150px]">
+          <div className="text-center text-[28px] font-bold drop-shadow-2xl shadow-black mt-[48px]">
             สาขาวิชา “วิศวกรรมคอมพิวเตอร์” หรือ “Computer Engineering”
             เรียนอะไรบ้าง? จบมาทำงานอะไรได้บ้าง?
           </div>
 
-          <div className=" text-[18px] font-regular mt-[20px] indent-10">
+          <div className="mt-[30px]">
+            <img src="../assets/images/reviews/ce/re-ce.jpg"></img>
+          </div>
+
+          <div className="text-[18px] font-regular mt-[40px]">
             สวัสดีครับ น้องๆ ทั้งหลาย ที่มีความสนใจในวิชาชีพด้าน
             “วิศวกรรมศาสตร์” พี่คิดว่า น้องๆ หลายๆ คน
             ส่วนใหญ่คงมีความฝันที่อยากจะทำงานอาชีพเป็น “วิศวกร” กันใช่ไหมครับ
-            <div className="w-[484px] h-[349px] mt-[30px] ml-[120px]">
-              <img src="../assets/images/reviews/ce/re-ce.jpg"></img>
-            </div>
           </div>
 
-          <div className=" text-[18px] font-regular mt-[30px] indent-10">
+          <div className="text-[18px] font-regular mt-[30px]">
             ในหลักสูตรที่น้อง ๆ
             จะได้เรียนนั้นเป็นหลักสูตรที่อัปเกรดขึ้นจากสาขาวิทยาการคอมพิวเตอร์ทั่วไปแล้วจะมีการผนวกศาสตร์จากวิชาอื่น
             ๆ ที่จำเป็นเข้ามาด้วยคือภาควิชาคณิตศาสตร์ สถิติ และคอมฯ
             เพื่อขยายขอบเขตการศึกษาและร่วมกันพัฒนากลุ่ม Data Science
           </div>
 
-          <div className=" text-[18px] font-regular mt-[30px] indent-10">
+          <div className="text-[18px] font-regular mt-[30px]">
             สำหรับอาชีพ “วิศวกร” นั้น ก็จะมีหลากหลายด้าน และหลากหลายสาขา
             ซึ่งแต่ละสาขานั้น ก็จะทำงานในส่วนงานที่ตัวเองเป็นผู้เชี่ยวชาญ
             สำหรับปัจจุบันนี้ ซึ่งทุกๆ คน ก็รู้ดีกันอยู่แล้วใช่ไหมครับ
@@ -104,26 +102,33 @@ const ReviewCe = () => {
             “วิศวกรรมคอมพิวเตอร์” หรือ “Computer Engineering”
             เป็นสาขาวิชาที่ศึกษาเกี่ยวกับวิชาทางด้าน “วิทยาศาสตร์คอมพิวเตอร์”
             และ “วิศวกรรมไฟฟ้า”
+            <div className="mt-[30px] ml-[90px]">
+              <img
+                className="rounded-lg"
+                src="../assets/images/reviews/ce/cover4.jpg"
+                alt="comeng"
+              ></img>
+            </div>
           </div>
 
-          <div className=" text-[18px] font-regular mt-[30px] indent-10">
+          <div className="mt-[30px] text-[18px] font-regular">
             “วิศวกรรมคอมพิวเตอร์” สามารถแบ่งออกเป็น 2 ส่วนหลักๆ
             ในการเลือกที่จะศึกษานะครับ นั้นก็คือ“ระบบ Hardware” และ “ระบบ
             Software” เดี่ยวผมขออนุญาติอธิบายให้ น้องๆ ทุกๆ คน
             ได้รับทราบกันก่อนนะครับว่า ระหว่าง “ระบบ Hardware” และ “ระบบ
             Software” นั้นมีความแตกต่างกันอย่างไรบ้าง
           </div>
-          <div className=" text-[18px] font-regular mt-[20px]">
+          <div className="text-[18px] font-regular mt-[20px]">
             “ระบบ Hardware” คือ การศึกษาเกี่ยวกับการออกแบบ
             และปรับปรุงพัฒนาเทคโนโลยีของ อุปกรณ์ต่างๆ ระบบคอมพิวเตอร์
             เพื่อให้สอดคล้องกับความต้องการของวงการอุตสาหกรรม
           </div>
-          <div className=" text-[18px] font-regular mt-[20px]">
+          <div className="text-[18px] font-regular mt-[20px]">
             “ระบบ Software” คือ การศึกษาเกี่ยวกับการออกแบบ
             และปรับปรุงพัฒนาเทคโนโลยีของ โปรแกรมต่างๆ ของระบบคอมพิวเตอร์
             เพื่อให้สอดคล้องกับความต้องการของวงการอุตสาหกรรม
           </div>
-          <div className=" text-[18px] font-regular mt-[30px] indent-10">
+          <div className="text-[18px] font-regular mt-[30px]">
             ผมคิดว่า สาขาวิชา“วิศวกรรมคอมพิวเตอร์” จึงเป็นที่ต้องการมากๆ
             ของท้องตลาด ในยุคนี้ และในอนาคตอีกด้วย ครับผม หากน้องๆ
             มีความสนใจด้านนี้ และคิดว่าตัวเองมีความสามารถทางด้าน “คณิตศาสตร์”
@@ -131,27 +136,47 @@ const ReviewCe = () => {
             ก็เป็นอีกหนึ่งสาขาวิชา ที่น่าสนใจมากๆเลยทีเดียวครับผม
           </div>
 
-          <div className=" text-[18px] font-regular mt-[30px] indent-10">
+          <div className="text-[18px] font-regular mt-[30px]">
             สาขาวิชา“วิศวกรรมคอมพิวเตอร์” ที่เรียนจบใหม่ๆ
             ไม่มีประสบการณ์ในการทำงานเลย ส่วนใหญ่แล้วนะครับ
             จากที่ผมเคยสอบถามหลายๆ คนมา เงินเดือนก็จะเริ่มต้นอยู่ที่ประมาณ
             20,000 – 30,000 บาท ต่อ เดือน
             จะได้มากหรือน้อยก็ขึ้นอยู่กับความสามารถของแต่ละคนนะครับผม
           </div>
-          <div className=" text-[18px] font-regular mt-[20px]">
+          <div className="text-[18px] font-regular mt-[20px]">
             สำหรับอาชีพของคนที่เรียนจบ สาขาวิชา“วิศวกรรมคอมพิวเตอร์” ก็มีมากมาย
             เช่นกัน เพราะที่ไหนที่ต้องใช้คอมพิวเตอร์ ก็ต้องมี
             “วิศวกรคอมพิวเตอร์” เช่นกัน ครับผม ยกตัวอย่างเช่น
             หน่วยงานของรัฐบาลและเอกชน, โรงงานอุตสาหกรรม, ธนาคาร, โรงแรม,
             รีสอร์ท, โรงพยาบาล และอื่นๆ เป็นต้น
           </div>
-          <div className=" text-[18px] font-regular mt-[30px] indent-10">
+
+          <div className="grid grid-cols-2 gap-4 mt-[30px] ml-[10px]">
+            <img
+              className="rounded h-[250px] w-[550px]"
+              src="../assets/images/reviews/ce/ex1.jpg"
+            ></img>
+            <img
+              className="rounded h-[250px] w-[550px]"
+              src="../assets/images/reviews/ce/ex2.jpg"
+            ></img>
+            <img
+              className="rounded h-[250px] w-[550px]"
+              src="../assets/images/reviews/ce/ex3.jpg"
+            ></img>
+            <img
+              className="rounded h-[250px] w-[550px]"
+              src="../assets/images/reviews/ce/ex4.jpg"
+            ></img>
+          </div>
+
+          <div className="text-[18px] font-regular mt-[30px]">
             ส่วนตำแหน่งงาน ส่วนใหญ่ที่ผมเห็นนะครับ ก็จะมี Programmer, System
             Analyst, Project Manager, Software Engineer, Network Engineer,
             Computer Graphic, Robotic, Application Developer, Game Developer
             และอีกมากมายหลากหลาย
           </div>
-          <div className=" text-[18px] font-regular mt-[20px]">
+          <div className="text-[18px] font-regular mt-[20px]">
             หรือถ้าหากใครที่ต้องการที่จะไปประกอบธุรกิจส่วนตัวก็สามารถทำได้ไม่ยากครับ
             เช่น เปิดบริษัทรับจ้างวางระบบคอมพิวเตอร์, รับเขียนโปรแกรม,
             เปิดร้านซ่อมคอมพิวเตอร์ และ อื่นๆ ครับผม
