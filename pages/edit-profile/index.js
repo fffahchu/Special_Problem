@@ -127,11 +127,6 @@ const Editprofile = () => {
               id="password"
               type="text"
             ></input>
-            <img
-              className="w-[28px] h-[28py] ml-[560px]"
-              src="../assets/icons/eye.svg"
-              alt="../assets/icons/eye.svg"
-            />
           </div>
 
           <div className="ml-[370px] mt-[25px]">

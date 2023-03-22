@@ -53,12 +53,18 @@ const Modal = ({ isVisible, onClose }) => {
 
               <div className="flex gap-4 absolute bottom-2 right-2">
                 <div>
-                  <button className="w-[101px] h-[42px] rounded-2xl shadow-md transition ease-in-out  bg-[#d4d4d4] hover:-translate-y-1 hover:scale-110 hover:bg-[#FFCA61] duration-300">
+                  <button
+                    type="submit"
+                    className="w-[101px] h-[42px] rounded-2xl shadow-md transition ease-in-out  bg-[#d4d4d4] hover:-translate-y-1 hover:scale-110 hover:bg-[#FFCA61] duration-300"
+                  >
                     บันทึก
                   </button>
                 </div>
                 <div>
-                  <button className="w-[101px] h-[42px] rounded-2xl shadow-md transition ease-in-out  bg-[#d4d4d4] hover:-translate-y-1 hover:scale-110 hover:bg-[#FFCA61] duration-300">
+                  <button
+                    type="cancle"
+                    className="w-[101px] h-[42px] rounded-2xl shadow-md transition ease-in-out  bg-[#d4d4d4] hover:-translate-y-1 hover:scale-110 hover:bg-[#FFCA61] duration-300"
+                  >
                     ยกเลิก
                   </button>
                 </div>
