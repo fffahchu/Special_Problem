@@ -24,7 +24,7 @@ const route = [
     },
 ];
 
-function Course() {
+function TopicThree() {
 
     return (
         <div className="py-[29px]">
@@ -44,7 +44,7 @@ function Course() {
                         <a href="/course-ex/course" className="ml-[18px] my-[13px] py-[14px] px-[11px] rounded-[11px] bg-[#FFCA61]">
                             เข้าเรียน
                         </a>
-                        <a href="/course-ex/summary" className="pl-[29px] my-[13px] py-[14px] px-[11px]">
+                        <a href="#" className="pl-[29px] my-[13px] py-[14px] px-[11px]">
                             ผลการเรียน
                         </a>
                     </div>
@@ -60,37 +60,37 @@ function Course() {
                                             </svg>
 
                                         </div>
-                                        <a href="#" className="w-[339px] h-[48px] text-[#ffa400] ml-[12px] cursor-pointer">ดาวน์โหลดเอกสาร</a>
+                                        <a href="#" className="w-[339px] h-[48px] ml-[12px] cursor-pointer">ดาวน์โหลดเอกสาร</a>
                                     </div>
                                 </li>
-                                <li class="border-l-2 border-[#C5C5C5]">
+                                <li class="border-l-2 border-[#FFCA61]">
                                     <div class="md:flex flex-start">
-                                        <div class="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                                        <div class="bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-3 h-3">
                                                 <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                                             </svg>
                                         </div>
-                                        <div className="w-[200px] h-[96px] text-black ml-[28px]">บทที่ 1 การพัฒนาโปรแกรมคอมพิวเตอร์และการเขียนผังงานซี</div>
+                                        <a href="#" className="w-[200px] h-[96px] text-black ml-[28px]">บทที่ 1 การพัฒนาโปรแกรมคอมพิวเตอร์และการเขียนผังงานซี</a>
                                     </div>
                                 </li>
-                                <li class="border-l-2 border-[#C5C5C5]">
+                                <li class="border-l-2 border-[#FFCA61]">
                                     <div class="md:flex flex-start">
-                                        <div class="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                                        <div class="bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-3 h-3">
                                                 <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                                             </svg>
                                         </div>
-                                        <div className="w-[200px] h-[48px] text-black ml-[28px]">บทที่ 2 ทำความรู้จักกับภาษาซี</div>
+                                        <a href="#" className="w-[200px] h-[48px] text-black ml-[28px]">บทที่ 2 ทำความรู้จักกับภาษาซี</a>
                                     </div>
                                 </li>
-                                <li class="border-l-2 border-[#C5C5C5]">
+                                <li class="border-l-2 border-[#FFCA61]">
                                     <div class="md:flex flex-start">
-                                        <div class="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                                        <div class="bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-3 h-3">
                                                 <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                                             </svg>
                                         </div>
-                                        <div className="w-[200px] h-[96px] text-black ml-[28px]">บทที่ 3 การพัฒนาโปรแกรมคอมพิวเตอร์ที่ทำงานบนระบบปฏิบัติการดอสด้วยภาษาซี</div>
+                                        <a href="#" className="w-[200px] h-[96px] text-black ml-[28px] text-[color:#FFA400]">บทที่ 3 การพัฒนาโปรแกรมคอมพิวเตอร์ที่ทำงานบนระบบปฏิบัติการดอสด้วยภาษาซี</a>
                                     </div>
                                 </li>
                                 <li class="border-l-2 border-[#C5C5C5]">
@@ -127,22 +127,15 @@ function Course() {
                             </ol>
                         </div>
                         <div className="flex flex-col">
-                            <div className="text-[14px] text-black ml-[42px] mt-[24px]">ดาวน์โหลดเอกสารประกอบการเรียนทั้งหมดของหลักสูตรนี้</div>
-                            <div className="ml-[42px] mt-[14px] w-[746px] h-[145px] bg-white rounded-[11px] drop-shadow-[0px_4px_12px_rgba(0,0,0,0.25)]">
-                                <div className="flex flex-row">
-                                    <img src="../assets/icons/pdf.png" className="ml-[28px] my-[28px]" />
-                                    <div className="flex flex-col">
-                                        <div className="text-[22px] font-semibold ml-[56px] mt-[42px]">เอกสารประกอบการเรียน</div>
-                                        <div className="text-[16px] ml-[56px] mt-[18px]">3.16 MB</div>
-                                    </div>
-                                    <div className="flex flex-col pl-[208px]">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 mx-auto mt-[38px]">
-                                            <path fill-rule="evenodd" d="M12 2.25a.75.75 0 01.75.75v11.69l3.22-3.22a.75.75 0 111.06 1.06l-4.5 4.5a.75.75 0 01-1.06 0l-4.5-4.5a.75.75 0 111.06-1.06l3.22 3.22V3a.75.75 0 01.75-.75zm-9 13.5a.75.75 0 01.75.75v2.25a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5V16.5a.75.75 0 011.5 0v2.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V16.5a.75.75 0 01.75-.75z" clip-rule="evenodd" />
-                                        </svg>
-                                        <div className="text-[20px] mt-[18px]">ดาวน์โหลด</div>
-                                    </div>
-                                </div>
-                                <a href="/course-ex/topic1" className="flex items-center justify-center rounded-[8px] mt-[28px] ml-[639px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] bg-[#FFCA61] w-[108px] h-[41px]">
+                        <iframe width="800" height="450" src="https://www.youtube.com/embed/62BLWJdIUME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className="mt-[20px] ml-[15px] rounded-[11px]" allowfullscreen></iframe>
+                            <div className="flex justify-between items-center ml-[15px]">
+                                <a href="#" className="flex items-center justify-center rounded-[8px] mt-[15px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] bg-white border-[1px] border-[#AEAEAE] w-[108px] h-[41px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-[21px] h-[21px]">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+                                    </svg>
+                                    <div className="text-[16px] ml-[6px]">ก่อนหน้า</div>
+                                </a>
+                                <a href="/course-ex/topic4" className="flex items-center justify-center rounded-[8px] mt-[15px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] bg-[#FFCA61] w-[108px] h-[41px]">
                                     <div className="text-[16px] mr-[6px]">ถัดไป</div>
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-[21px] h-[21px]">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -157,4 +150,4 @@ function Course() {
     );
 }
 
-export default Course;
+export default TopicThree;

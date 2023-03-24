@@ -4,6 +4,7 @@ import 'react-tabs/style/react-tabs.css';
 import Breadcrumb from "@components/Breadcrumb";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
+import Download from "pages/create-portfolio/download";
 
 const route = [
     {
@@ -142,13 +143,13 @@ function Course() {
                                         <div className="text-[20px] mt-[18px]">ดาวน์โหลด</div>
                                     </div>
                                 </div>
-                                <a href="/course-ex/topic1" className="flex items-center justify-center rounded-[8px] mt-[28px] ml-[639px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] bg-[#FFCA61] w-[108px] h-[41px]">
-                                    <div className="text-[16px] mr-[6px]">ถัดไป</div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-[21px] h-[21px]">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                    </svg>
-                                </a>
                             </div>
+                            <a href="/course-ex/topic1" className="flex items-center justify-center rounded-[8px] mt-[42px] ml-[680px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] bg-[#FFCA61] w-[108px] h-[41px]">
+                                <div className="text-[16px] mr-[6px]">ถัดไป</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-[21px] h-[21px]">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>

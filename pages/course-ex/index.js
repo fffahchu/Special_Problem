@@ -38,15 +38,15 @@ function App() {
             <div className="px-[104px]">
                 <div className="grid grid-cols-1 w-full shadow-[0px_4px_20px_0px_rgba(0,0,0,0.25)] rounded-[11px]">
                     <div className="flex">
-                        <button className="ml-[20px] py-[14px] px-[11px] rounded-[11px] bg-[#FFCA61] my-[13px] font-semibold">
+                        <a href="/course-ex" className="ml-[31px] py-[14px] px-[11px] rounded-[11px] bg-[#FFCA61] my-[13px]">
                             รายละเอียดหลักสูตร
-                        </button>
-                        <button className="pl-[29px] my-[13px] font-semibold">
+                        </a>
+                        <a href="/course-ex/course" className="pl-[29px] my-[13px] py-[14px] px-[11px]">
                             เข้าเรียน
-                        </button>
-                        <button className="pl-[40px] my-[13px] font-semibold">
+                        </a>
+                        <a href="#" className="pl-[29px] my-[13px] py-[14px] px-[11px]">
                             ผลการเรียน
-                        </button>
+                        </a>
                     </div>
                     <hr className="border-1 border-black opacity-25 w-full" />
                     <div className="flex flex-col-3 w-full">
@@ -61,8 +61,8 @@ function App() {
                                     className="ml-[28px] w-[42px] h-[42px]"
                                 />
                                 <div className="ml-[30px] grid grid-rows-2">
-                                    <div className="font-semibold text-[15px]">วิทยากร</div>
-                                    <div className="font-semibold text-[16px]">คุณชนกชนม์ สังวรโยธิน</div>
+                                    <div className="text-[15px] text-[#ffa400]">วิทยากร</div>
+                                    <div className="text-[16px]">คุณชนกชนม์ สังวรโยธิน</div>
                                 </div>
                             </div>
                             <div className="flex flex-col-2 items-center">
@@ -71,8 +71,8 @@ function App() {
                                     className="ml-[28px] w-[42px] h-[42px]"
                                 />
                                 <div className="ml-[30px] grid grid-rows-2">
-                                    <div className="font-semibold text-[15px]">ระยะเวลารวม</div>
-                                    <div className="font-semibold text-[16px]">1 ชั่วโมง 45 นาที</div>
+                                    <div className="text-[15px] text-[#ffa400]">ระยะเวลารวม</div>
+                                    <div className="text-[16px]">1 ชั่วโมง 45 นาที</div>
                                 </div>
                             </div>
                             <div className="flex flex-col-2 items-center">
@@ -81,18 +81,18 @@ function App() {
                                     className="ml-[28px] w-[42px] h-[42px]"
                                 />
                                 <div className="ml-[30px] grid grid-rows-2">
-                                    <div className="font-semibold text-[15px]">ค่าธรรมเนียม</div>
-                                    <div className="font-semibold text-[16px]">ฟรี</div>
+                                    <div className="text-[15px] text-[#ffa400]">ค่าธรรมเนียม</div>
+                                    <div className="text-[16px] text-[#00ab89]">ฟรี</div>
                                 </div>
                             </div>
                         </div>
-                        <button className="font-semibold bg-[#FFCA61] ml-[20px] w-[217px] h-[48px] rounded-[11px] shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] mt-[28px]">
+                        <button className="bg-[#FFCA61] ml-[20px] w-[217px] h-[48px] rounded-[11px] shadow-[0_4px_4px_0px_rgba(0,0,0,0.25)] mt-[28px]">
                             เข้าเรียน
                         </button>
                     </div>
                     <div className="mx-[20px] mt-[64px]">
                         <Tabs defaultIndex={0}>
-                            <div className="font-semibold text-[18px] mb-[48px]">
+                            <div className="text-[18px] mb-[48px]">
                                 <TabList>
                                     <Tab>รายละเอียดหลักสูตร</Tab>
                                     <Tab>โครงสร้างหลักสูตร</Tab>
@@ -102,61 +102,61 @@ function App() {
                                 <div className="flex flex-col-2 items-center">
                                     <img
                                         src="../assets/icons/description.png"
-                                        className="ml-[10px] w-[32px] h-[32px]"
+                                        className="ml-[10px] w-[32px] h-[32px] fill-[#ffa400]"
                                     />
-                                    <div className="ml-[8px] font-semibold text-[18px]">คำอธิบายหลักสูตร</div>
+                                    <div className="ml-[8px] text-[18px] text-[#ffa400]">คำอธิบายหลักสูตร</div>
                                 </div>
-                                <p className="ml-[10px] mt-[26px] font-normal text-[18px]">ผู้เรียนจะได้เรียนรู้หลักการวิธีการออกแบบและพัฒนาโปรแกรมคอมพิวเตอร์พื้นฐานทางเทคโนโลยีและวิศวกรรมพัฒนา โดยใช้ผังงานและภาษาซี การเขียนโปรแกรมคอมพิวเตอร์ที่ทำงานบนระบบปฏิบัติการดอสไวยากรณ์ของภาษาซี โครงสร้างของข้อมูลและตัวแปรการดำเนินการทางคณิตศาสตร์และตรรกศาสตร์เชิงตัวเลข กระบวนการการทำงานแบบตัดสินใจและการทำงานแบบวนรอบ</p>
+                                <p className="ml-[10px] mt-[26px] text-[18px]">ผู้เรียนจะได้เรียนรู้หลักการวิธีการออกแบบและพัฒนาโปรแกรมคอมพิวเตอร์พื้นฐานทางเทคโนโลยีและวิศวกรรมพัฒนา โดยใช้ผังงานและภาษาซี การเขียนโปรแกรมคอมพิวเตอร์ที่ทำงานบนระบบปฏิบัติการดอสไวยากรณ์ของภาษาซี โครงสร้างของข้อมูลและตัวแปรการดำเนินการทางคณิตศาสตร์และตรรกศาสตร์เชิงตัวเลข กระบวนการการทำงานแบบตัดสินใจและการทำงานแบบวนรอบ</p>
                                 <p className="ml-[10px] mt-[28px] mb-[40px] opacity-50">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
                                 <div className="flex flex-col-2 items-center">
                                     <img
                                         src="../assets/icons/goal.png"
                                         className="ml-[10px] w-[32px] h-[32px]"
                                     />
-                                    <div className="ml-[8px] font-semibold text-[18px]">วัตถุประสงค์</div>
+                                    <div className="ml-[8px] text-[18px] text-[#ffa400]">วัตถุประสงค์</div>
                                 </div>
-                                <p className="ml-[10px] mt-[26px] font-normal text-[18px] text-justify">1. ผู้เรียนสามารถอธิบาย ประยุกต์ใช้และวิเคราะห์เกี่ยวกับแนวคิดการพัฒนาโปรแกรมคอมพิวเตอร์และหลักเกณฑ์ในการเขียนผังงานได้</p>
-                                <p className="ml-[10px] mt-[26px] font-normal text-[18px] text-justify">2. ผู้เรียนสามารถประยุกต์ใช้และวิเคราะห์เกี่ยวกับโครงสร้างและส่วนประกอบของภาษาซีได้</p>
-                                <p className="ml-[10px] mt-[26px] font-normal text-[18px] text-justify">3. ผู้เรียนสามารถวิเคราะห์เกี่ยวกับการพัฒนาโปรแกรมคอมพิวเตอร์ที่ทำงานบนระบบปฏิบัติการดอสด้วยภาษาซีได้</p>
-                                <p className="ml-[10px] mt-[26px] font-normal text-[18px] text-justify">4. ผู้เรียนสามารถประยุกต์ใช้และวิเคราะห์เกี่ยวกับการเขียนโปรแกรมแบบทางเลือกได้</p>
-                                <p className="ml-[10px] mt-[26px] font-normal text-[18px] text-justify">5. ผู้เรียนสามารถวิเคราะห์เกี่ยวกับการเขียนโปรแกรมแบบทำซ้ำได้</p>
+                                <p className="ml-[10px] mt-[26px] text-[18px] text-justify">1. ผู้เรียนสามารถอธิบาย ประยุกต์ใช้และวิเคราะห์เกี่ยวกับแนวคิดการพัฒนาโปรแกรมคอมพิวเตอร์และหลักเกณฑ์ในการเขียนผังงานได้</p>
+                                <p className="ml-[10px] mt-[26px] text-[18px] text-justify">2. ผู้เรียนสามารถประยุกต์ใช้และวิเคราะห์เกี่ยวกับโครงสร้างและส่วนประกอบของภาษาซีได้</p>
+                                <p className="ml-[10px] mt-[26px] text-[18px] text-justify">3. ผู้เรียนสามารถวิเคราะห์เกี่ยวกับการพัฒนาโปรแกรมคอมพิวเตอร์ที่ทำงานบนระบบปฏิบัติการดอสด้วยภาษาซีได้</p>
+                                <p className="ml-[10px] mt-[26px] text-[18px] text-justify">4. ผู้เรียนสามารถประยุกต์ใช้และวิเคราะห์เกี่ยวกับการเขียนโปรแกรมแบบทางเลือกได้</p>
+                                <p className="ml-[10px] mt-[26px] text-[18px] text-justify">5. ผู้เรียนสามารถวิเคราะห์เกี่ยวกับการเขียนโปรแกรมแบบทำซ้ำได้</p>
                                 <p className="ml-[10px] mt-[28px] mb-[40px] opacity-50">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
                                 <div className="flex flex-col-2 items-center">
                                     <img
                                         src="../assets/icons/user.png"
                                         className="ml-[10px] w-[32px] h-[32px]"
                                     />
-                                    <div className="ml-[8px] font-semibold text-[18px]">หลักสูตรนี้เหมาะสำหรับ</div>
+                                    <div className="ml-[8px] text-[18px] text-[#ffa400]">หลักสูตรนี้เหมาะสำหรับ</div>
                                 </div>
-                                <p className="ml-[10px] mt-[26px] font-normal text-[18px] text-justify">นักเรียน นักศึกษา และประชาชนทั่วไป ทุกเพศ ทุกวัย ที่สนใจสามารถเรียนได้</p>
+                                <p className="ml-[10px] mt-[26px] text-[18px] text-justify">นักเรียน นักศึกษา และประชาชนทั่วไป ทุกเพศ ทุกวัย ที่สนใจสามารถเรียนได้</p>
                                 <p className="ml-[10px] mt-[28px] mb-[40px] opacity-50">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
                                 <div className="flex flex-col-2 items-center mb-[26px]">
                                     <img
                                         src="../assets/icons/check-mark.png"
                                         className="ml-[10px] w-[32px] h-[32px]"
                                     />
-                                    <div className="ml-[8px] font-semibold text-[18px]">ระดับเนื้อหา</div>
+                                    <div className="ml-[8px] text-[18px] text-[#ffa400]">ระดับเนื้อหา</div>
                                 </div>
                                 <div className="flex flex-col-2 items-center mb-[10px]">
                                     <img
-                                        src="../assets/icons/check-mark.png"
+                                        src="../assets/icons/check-mark-1.png"
                                         className="ml-[42px] w-[32px] h-[32px]"
                                     />
-                                    <div className="ml-[8px] font-normal text-[18px]">ระดับพื้นฐาน (Basic)</div>
+                                    <div className="ml-[8px] text-[18px]">ระดับพื้นฐาน (Basic)</div>
                                 </div>
                                 <div className="flex flex-col-2 items-center mb-[10px]">
                                     <img
                                         src="../assets/icons/circle.png"
                                         className="ml-[42px] w-[32px] h-[32px]"
                                     />
-                                    <div className="ml-[8px] font-normal text-[18px]">ระดับกลาง (Intermediate)</div>
+                                    <div className="ml-[8px] text-[18px]">ระดับกลาง (Intermediate)</div>
                                 </div>
                                 <div className="flex flex-col-2 items-center">
                                     <img
                                         src="../assets/icons/circle.png"
                                         className="ml-[42px] w-[32px] h-[32px]"
                                     />
-                                    <div className="ml-[8px] font-normal text-[18px]">ระดับสูง (Advance)</div>
+                                    <div className="ml-[8px] text-[18px]">ระดับสูง (Advance)</div>
                                 </div>
                                 <p className="ml-[10px] mt-[28px] mb-[40px] opacity-50">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
                                 <div className="flex flex-col-2 items-center">
@@ -164,18 +164,18 @@ function App() {
                                         src="../assets/icons/certification.png"
                                         className="ml-[10px] w-[32px] h-[32px]"
                                     />
-                                    <div className="ml-[8px] font-semibold text-[18px]">การรับวุฒิบัตร</div>
+                                    <div className="ml-[8px] text-[18px] text-[#ffa400]">การรับวุฒิบัตร</div>
                                 </div>
-                                <p className="ml-[10px] mt-[26px] font-normal text-[18px] text-justify">เข้าเรียนไม่น้อยกว่า 80% ของเวลาเรียนทั้งหมด และสอบผ่านไม่น้อยกว่า 70% ของคะแนนโดยรวมทั้งหมด</p>
+                                <p className="ml-[10px] mt-[26px] text-[18px] text-justify">เข้าเรียนไม่น้อยกว่า 80% ของเวลาเรียนทั้งหมด และสอบผ่านไม่น้อยกว่า 70% ของคะแนนโดยรวมทั้งหมด</p>
                                 <p className="ml-[10px] mt-[28px] mb-[32px] opacity-50">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
                             </TabPanel>
                             <TabPanel>
-                                <span className="font-normal text-[18px]">การเขียนโปรแกรมคอมพิวเตอร์พื้นฐาน ด้วยภาษาซี 1</span>
-                                <span className="font-normal text-[18px] ml-[96px]">● บทที่ 1 การพัฒนาโปรแกรมคอมพิวเตอร์และการเขียนผังงานซี</span>
-                                <div className="font-normal text-[18px] ml-[477px] mt-[26px]">● บทที่ 2 ทำความรู้จักกับภาษาซี</div>
-                                <div className="font-normal text-[18px] ml-[477px] mt-[26px]">● บทที่ 3 การพัฒนาโปรแกรมคอมพิวเตอร์ที่ทำงานบนระบบปฏิบัติการดอสด้วยภาษาซี</div>
-                                <div className="font-normal text-[18px] ml-[477px] mt-[26px]">● บทที่ 4 การเขียนโปรแกรมแบบทางเลือก</div>
-                                <div className="font-normal text-[18px] ml-[477px] mt-[26px]">● บทที่ 5 การเขียนโปรแกรมแบบทำซ้ำ</div>
+                                <span className="text-[18px]">การเขียนโปรแกรมคอมพิวเตอร์พื้นฐาน ด้วยภาษาซี 1</span>
+                                <span className="text-[18px] ml-[96px]">● บทที่ 1 การพัฒนาโปรแกรมคอมพิวเตอร์และการเขียนผังงานซี</span>
+                                <div className="text-[18px] ml-[477px] mt-[26px]">● บทที่ 2 ทำความรู้จักกับภาษาซี</div>
+                                <div className="text-[18px] ml-[477px] mt-[26px]">● บทที่ 3 การพัฒนาโปรแกรมคอมพิวเตอร์ที่ทำงานบนระบบปฏิบัติการดอสด้วยภาษาซี</div>
+                                <div className="text-[18px] ml-[477px] mt-[26px]">● บทที่ 4 การเขียนโปรแกรมแบบทางเลือก</div>
+                                <div className="text-[18px] ml-[477px] mt-[26px]">● บทที่ 5 การเขียนโปรแกรมแบบทำซ้ำ</div>
                                 <p className="ml-[10px] mt-[28px] mb-[32px] opacity-50">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
                             </TabPanel>
                         </Tabs>
