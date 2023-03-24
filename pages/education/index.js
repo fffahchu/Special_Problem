@@ -17,9 +17,9 @@ const Alleducation = () => {
   ];
   const course = [
     {
-      image: "../assets/images/course/c1.jpg",
-      title: "การเขียนโปรแกรมภาษาซี",
-      content: "สจล.",
+      image: "../assets/images/course/c1.png",
+      title: "การเขียนโปรแกรมคอมพิวเตอร์พื้นฐาน ด้วยภาษาซี 1",
+      content: "",
       link: "#",
     },
     {
