@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Breadcrumb from "@components/Breadcrumb";
 import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
@@ -6,6 +6,11 @@ import Link from "next/link";
 
 const CreateFrontCover = () => {
   const coverImage = "/assets/images/portfolio/portfolio-4.png";
+  const [urlPreview, setUrlPreview] = useState("");
+  const [file, setFile] = useState(null);
+  const [nameTh, setNameTh] = useState("");
+  const [nameEng, setNameEng] = useState("");
+  const [school, setSchool] = useState("");
 
   const route = [
     {
@@ -17,6 +22,108 @@ const CreateFrontCover = () => {
       link: "/create-portfolio",
     },
   ];
+
+  useEffect(() => {
+    const idPort2 = localStorage.getItem("idPort2") || null;
+
+    if (idPort2) {
+      getPort(idPort2);
+    }
+  }, []);
+
+  const getPort = async (idPort) => {
+    await axios
+      .get(`http://localhost:3000/api/port-step-2/${idPort}`)
+      .then((data) => {
+        if (data.status === 200) {
+          setFile(data.data.attributes.profile);
+          setNameTh(data.data.attributes.fullnameTH);
+          setNameEng(data.data.attributes.fullnameEN);
+          setSchool(data.data.attributes.school);
+          const reader = new FileReader();
+
+          reader.addEventListener("load", () => {
+            setUrlPreview(reader.result);
+          });
+
+          if (data.data.attributes.profile) {
+            reader.readAsDataURL(data.data.attributes.profile);
+          }
+        }
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
+
+  const onPreviewImage = (e) => {
+    if (e.target.files.length > 0) {
+      const file = e.target.files[0];
+      const reader = new FileReader();
+
+      reader.addEventListener("load", () => {
+        setUrlPreview(reader.result);
+      });
+
+      if (file) {
+        reader.readAsDataURL(file);
+        setFile(file);
+      }
+    }
+  };
+
+  const onSubmit = async () => {
+    try {
+      const idPort = localStorage.getItem("idPort") || null;
+      let idPort2 = localStorage.getItem("idPort2") || null;
+
+      if (idPort) {
+        if (idPort2) {
+          let model = {
+            data: {
+              fullnameTH: nameTh,
+              fullnameEN: nameEng,
+              school: school,
+              idUser: 1,
+              idPort: idPort,
+            },
+          };
+          await axios
+            .put(`http://localhost:3000/port-step-2/${idPort2}`, model)
+            .then((data) => {
+              if (data.status === 200) {
+                localStorage.setItem("idPort2", data.data.id);
+              }
+            });
+        } else {
+          await axios
+            .post("http://localhost:3000/port-step-2", model)
+            .then((data) => {
+              if (data.status === 200) {
+                idPort2 = data.data.id;
+                localStorage.setItem("idPort2", data.data.id);
+              }
+            });
+        }
+        if (file) {
+          const form = new FormData();
+          form.append("files", file, `${idPort2}.jpg`);
+          form.append("ref", "api::port-step-2.port-step-2");
+          form.append("refId", idPort2);
+          form.append("field", "profile");
+          await axios
+            .post(`http://localhost:3000/api/upload`, form)
+            .then((data) => {
+              if (data.status === 200) {
+                localStorage.setItem("idFilePort2", data.data.id);
+              }
+            });
+        }
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  };
 
   return (
     <div className="px-[104px] py-[29px]">
@@ -46,15 +153,23 @@ const CreateFrontCover = () => {
           </div>
           <div className="flex">
             <div className="flex flex-col mr-[45px]">
-              <div className="flex justify-center items-center self-end mb-[20px] w-[500px] h-[500px] bg-yellow rounded-[6px]">
+              {urlPreview == "" ? (
+                <div className="flex justify-center items-center self-end mb-[20px] w-[500px] h-[500px] bg-yellow rounded-[6px]">
+                  <img
+                    src="/assets/icons/camera-icon.svg"
+                    alt="/assets/icons/camera-icon.svg"
+                  />
+                </div>
+              ) : (
                 <img
-                  src="/assets/icons/camera-icon.svg"
-                  alt="/assets/icons/camera-icon.svg"
+                  src={urlPreview}
+                  alt="preview-image"
+                  className="self-end mb-[20px] w-[500px] h-[500px] rounded-[6px] object-cover border"
                 />
-              </div>
+              )}
               <div className="flex items-center mb-2">
                 <label
-                  for="first_name_thai"
+                  htmlFor="first_name_thai"
                   className="w-[224px] text-lg font-bold pr-3 text-end"
                 >
                   ชื่อ-นามสกุล ภาษาไทย
@@ -64,11 +179,13 @@ const CreateFrontCover = () => {
                   id="first_name_thai"
                   type="text"
                   placeholder="เช่น สุธิดา มานะยิ่ง"
+                  value={nameTh}
+                  onChange={(e) => setNameTh(e.target.value)}
                 />
               </div>
               <div className="flex mb-2">
                 <label
-                  for="first_name_eng"
+                  htmlFor="first_name_eng"
                   className="w-[224px] text-lg font-bold pr-3 text-end"
                 >
                   ชื่อ-นามสกุล ภาษาอังกฤษ
@@ -78,11 +195,13 @@ const CreateFrontCover = () => {
                   id="first_name_eng"
                   type="text"
                   placeholder="เช่น suthida"
+                  value={nameEng}
+                  onChange={(e) => setNameEng(e.target.value)}
                 />
               </div>
               <div className="flex">
                 <label
-                  for="school_name"
+                  htmlFor="school_name"
                   className="w-[224px] text-lg font-bold pr-3 text-end"
                 >
                   โรงเรียน
@@ -92,6 +211,8 @@ const CreateFrontCover = () => {
                   id="school_name"
                   type="text"
                   placeholder="เช่น สวนกุหลาบวิทยาลัย"
+                  value={school}
+                  onChange={(e) => setSchool(e.target.value)}
                 />
               </div>
             </div>
@@ -102,12 +223,18 @@ const CreateFrontCover = () => {
                 <li>ขนาดรูปไม่เกิน 10 MB png หรือ jpg</li>
               </ul>
               <label
-                for="dropzone-file"
+                htmlFor="dropzone-file"
                 className="px-[30px] py-[9px] w-[165px] border-[1px] rounded-[20px] font-bold cursor-pointer"
               >
                 อัพโหลดรูป
               </label>
-              <input id="dropzone-file" type="file" className="hidden" />
+              <input
+                id="dropzone-file"
+                type="file"
+                className="hidden"
+                accept="image/*"
+                onChange={(e) => onPreviewImage(e)}
+              />
             </div>
           </div>
         </div>
@@ -115,7 +242,10 @@ const CreateFrontCover = () => {
       <hr className="border-gray-4 mb-4" />
       <div className="flex justify-center items-center">
         <Link href="/create-portfolio/introduction">
-          <button className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]">
+          <button
+            className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
+            onClick={onSubmit}
+          >
             บันทึกข้อมูล
           </button>
         </Link>

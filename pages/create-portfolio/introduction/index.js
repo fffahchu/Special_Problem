@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Breadcrumb from "@components/Breadcrumb";
 import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
@@ -16,6 +16,68 @@ const CreateIntroduction = () => {
       link: "/create-portfolio",
     },
   ];
+  const [preface, setPreface] = useState("");
+
+  useEffect(() => {
+    const idPort3 = localStorage.getItem("idPort3") || null;
+
+    if (idPort3) {
+      getPort(idPort3);
+    }
+  }, []);
+
+  const getPort = async (idPort) => {
+    await axios
+      .get(`http://localhost:3000/api/port-step-3/${idPort}`)
+      .then((data) => {
+        if (data.status === 200) {
+          setPreface(data.data.attributes.preface);
+        }
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
+
+  const onSubmit = async () => {
+    const idPort = localStorage.getItem("idPort") || null;
+    const idPort3 = localStorage.getItem("idPort3") || null;
+
+    if (idPort) {
+      let model = {
+        data: {
+          preface: preface,
+          idUser: 1,
+          idPort: idPort,
+        },
+      };
+
+      if (idPort3) {
+        await axios
+          .put(`http://localhost:3000/api/port-step-3/${idPort3}`, model)
+          .then((data) => {
+            if (data.status === 200) {
+              localStorage.setItem("idPort3", data.data.id);
+            }
+          })
+          .catch((e) => {
+            console.log(e);
+          });
+      } else {
+        await axios
+          .post("http://localhost:3000/api/port-step-3", model)
+          .then((data) => {
+            if (data.status === 200) {
+              localStorage.setItem("idPort3", data.data.id);
+            }
+          })
+          .catch((e) => {
+            console.log(e);
+          });
+      }
+    }
+  };
+
   return (
     <div className="px-[104px] py-[29px]">
       <MoveToTop />
@@ -48,6 +110,8 @@ const CreateIntroduction = () => {
               rows="15"
               cols="50"
               className="border-[1px] bg-white rounded-[6px]"
+              value={preface}
+              onChange={(e) => setPreface(e.target.value)}
             ></textarea>
           </div>
         </div>
@@ -55,7 +119,10 @@ const CreateIntroduction = () => {
       <hr className="border-gray-4 mb-4" />
       <div className="flex justify-center items-center">
         <Link href="/create-portfolio/listofcontent">
-          <button className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]">
+          <button
+            className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
+            onClick={onSubmit}
+          >
             บันทึกข้อมูล
           </button>
         </Link>

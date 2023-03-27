@@ -2,11 +2,20 @@ import Breadcrumb from "@components/Breadcrumb";
 import MoveToTop from "@components/MoveToTop";
 import StateCreate from "@components/StateCreate";
 import TemplatePortfolioCard from "@components/TemplatePortfolioCard";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import axios from "axios";
 
 const CreatePortfolio = () => {
   const [selectTemp, setSelectTemp] = useState(0);
+
+  useEffect(() => {
+    const idPort = localStorage.getItem("idPort") || null;
+
+    if (idPort) {
+      getPort(idPort);
+    }
+  }, []);
 
   const route = [
     {
@@ -41,6 +50,53 @@ const CreatePortfolio = () => {
       desc: "เทมเพลตนี้เหมาะสำหรับผู้สนใจศึกษาต่อคณะวิศวกรรมศาสตร์",
     },
   ];
+
+  const getPort = async (idPort) => {
+    await axios
+      .get(`http://localhost:3000/api/templates/${idPort}`)
+      .then((data) => {
+        if (data.status === 200) {
+          setSelectTemp(data.data.attributes.template);
+        }
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  };
+
+  const onSubmit = async () => {
+    let model = {
+      data: {
+        template: selectTemp,
+        idUser: 1,
+      },
+    };
+
+    const idPort = localStorage.getItem("idPort") || null;
+    if (idPort) {
+      await axios
+        .put(`http://localhost:3000/api/templates/${idPort}`, model)
+        .then((data) => {
+          if (data.status === 200) {
+            localStorage.setItem("idPort", data.data.id);
+          }
+        })
+        .catch((e) => {
+          console.log(e);
+        });
+    } else {
+      await axios
+        .post("http://localhost:3000/api/templates", model)
+        .then((data) => {
+          if (data.status === 200) {
+            localStorage.setItem("idPort", data.data.id);
+          }
+        })
+        .catch((e) => {
+          console.log(e);
+        });
+    }
+  };
 
   return (
     <div className="px-[104px] py-[29px]">
@@ -77,7 +133,10 @@ const CreatePortfolio = () => {
       <hr className="border-gray-4 mb-4" />
       <div className="flex justify-center items-center">
         <Link href="/create-portfolio/front-cover">
-          <button className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]">
+          <button
+            className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
+            onClick={onSubmit}
+          >
             บันทึกข้อมูล
           </button>
         </Link>
