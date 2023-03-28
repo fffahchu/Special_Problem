@@ -90,14 +90,14 @@ const Alleducation = () => {
           </div>
           <hr className="mt-[18px]" />
 
-          <div className="flex">
-            <div className="mt-[50px] bg-[#fafafa] rounded-md shadow-inner w-[435px] ml-[40px]">
+          <div className="flex w-[1232px] mx-auto">
+            <div className="mt-[50px] bg-[#fafafa] rounded-md shadow-inner w-[435px]">
               <div className="flex justify-center w-[430px]">
                 <div className="flex flex-col gap-2">
                   <h1 className="mt-[10px] underline text-[20px] text-center">
                     แบบฝึกหัดเรื่อง
                   </h1>
-                  <div className="flex flex-col gap-2 mt-[5px] ml-[10px]">
+                  <div className="flex flex-col gap-2 mt-[5px]">
                     <div className="text-[18px] mt-[14px]">
                       <Link
                         href="https://images-se-ed.com/ws/Storage/PDF/552230/001/5522300010435PDF.pdf"
@@ -173,7 +173,7 @@ const Alleducation = () => {
             </div>
             <div className="flex">
               <div className="flex ml-[200px]">
-                <div className="mt-[50px] bg-[#fafafa] rounded-md shadow-inner w-[600px] h-[420px]">
+                <div className="mt-[50px] bg-[#fafafa] rounded-md shadow-inner w-[600px] h-[420px] ">
                   <div>
                     <h1 className="mt-[10px] underline text-[20px] text-center">
                       เว็บไซต์แนะนำ
