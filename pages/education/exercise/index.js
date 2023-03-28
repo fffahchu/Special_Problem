@@ -25,91 +25,89 @@ const Exercise = () => {
       <Breadcrumb route={route} />
 
       <div className="flex justify-center">
-        <div className=" w-[1390px]">
-          <div className="flex justify-between items-center mt-[40px]">
+        <div>
+          <div className="mt-[40px]">
             <div className="text-[23px] font-semibold">แบบฝึกหัด</div>
           </div>
           <hr className="mt-[12px] mb-4" />
 
-          <div className="flex gap-[51px] px-[70px]">
+          <div className="flex gap-[51px] px-[45px]">
             <div className="flex flex-col gap-12 w-[312px]">
               <div>
-                <div className="mt-[30px]">
-                  <div className="flex w-[430px]">
-                    <div className="flex flex-col gap-2">
-                      <ur className="underline text-[20px]">แบบฝึกหัดเรื่อง</ur>
-                      <div className="flex flex-col gap-2 mt-[5px]">
-                        <div className="text-[18px] mt-[14px]">
-                          <Link
-                            href="https://images-se-ed.com/ws/Storage/PDF/552230/001/5522300010435PDF.pdf"
-                            target="_blank"
-                            className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
-                          >
-                            <ur>
-                              1. หนังสือรวมโจทย์ภาษาซีในรูปแบบโอลิมปิกวิชาการ
-                            </ur>
-                          </Link>
-                        </div>
+                <div className="flex w-[430px] mt-[30px]">
+                  <div className="flex flex-col gap-2">
+                    <ur className="underline text-[20px]">แบบฝึกหัดเรื่อง</ur>
+                    <div className="flex flex-col gap-2 mt-[5px]">
+                      <div className="text-[18px] mt-[14px]">
+                        <Link
+                          href="https://images-se-ed.com/ws/Storage/PDF/552230/001/5522300010435PDF.pdf"
+                          target="_blank"
+                          className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
+                        >
+                          <ur>
+                            1. หนังสือรวมโจทย์ภาษาซีในรูปแบบโอลิมปิกวิชาการ
+                          </ur>
+                        </Link>
+                      </div>
 
-                        <div className="text-[18px]">
-                          <Link
-                            href="http://portal5.udru.ac.th/ebook/pdf/upload/17QjQ6OQ38UCC3lCc238.pdf"
-                            target="_blank"
-                            className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
-                          >
-                            <ur>2. การเขียนโปรแกรมคอมพิวเตอร์</ur>
-                          </Link>
-                        </div>
+                      <div className="text-[18px]">
+                        <Link
+                          href="http://portal5.udru.ac.th/ebook/pdf/upload/17QjQ6OQ38UCC3lCc238.pdf"
+                          target="_blank"
+                          className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
+                        >
+                          <ur>2. การเขียนโปรแกรมคอมพิวเตอร์</ur>
+                        </Link>
+                      </div>
 
-                        <div className="text-[18px]">
-                          <Link
-                            href="https://www.academia.edu/12327254/%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%82_%E0%B8%AD%E0%B8%AA%E0%B8%AD%E0%B8%9A_%E0%B8%A7%E0%B8%B4_%E0%B8%8A%E0%B8%B2_517111_%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%82%E0%B8%B5_%E0%B8%A2%E0%B8%99%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%B4_%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3_1_%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%A7%E0%B8%B4_%E0%B8%8A%E0%B8%B2%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%B4_%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3_%E0%B8%84%E0%B8%93%E0%B8%B0%E0%B8%A7%E0%B8%B4_%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3_%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4_%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1_%E0%B8%A2%E0%B8%A8%E0%B8%B4_%E0%B8%A5%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%A3_2557"
-                            target="_blank"
-                            className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
-                          >
-                            <ur>3. รวมข้อสอบการเขียนโปรแกรมคอมพิวเตอร์</ur>
-                          </Link>
-                        </div>
+                      <div className="text-[18px]">
+                        <Link
+                          href="https://www.academia.edu/12327254/%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%82_%E0%B8%AD%E0%B8%AA%E0%B8%AD%E0%B8%9A_%E0%B8%A7%E0%B8%B4_%E0%B8%8A%E0%B8%B2_517111_%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%82%E0%B8%B5_%E0%B8%A2%E0%B8%99%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%B4_%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3_1_%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%A7%E0%B8%B4_%E0%B8%8A%E0%B8%B2%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%B4_%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3_%E0%B8%84%E0%B8%93%E0%B8%B0%E0%B8%A7%E0%B8%B4_%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3_%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4_%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1_%E0%B8%A2%E0%B8%A8%E0%B8%B4_%E0%B8%A5%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%A3_2557"
+                          target="_blank"
+                          className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
+                        >
+                          <ur>3. รวมข้อสอบการเขียนโปรแกรมคอมพิวเตอร์</ur>
+                        </Link>
+                      </div>
 
-                        <div className="text-[18px]">
-                          <Link
-                            href="https://www.facebook.com/tutortongpage/posts/1131111210286332/"
-                            target="_blank"
-                            className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
-                          >
-                            <ur>4. รวมโจทย์ C++ พร้อมเฉลย</ur>
-                          </Link>
-                        </div>
+                      <div className="text-[18px]">
+                        <Link
+                          href="https://www.facebook.com/tutortongpage/posts/1131111210286332/"
+                          target="_blank"
+                          className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
+                        >
+                          <ur>4. รวมโจทย์ C++ พร้อมเฉลย</ur>
+                        </Link>
+                      </div>
 
-                        <div className="text-[18px]">
-                          <Link
-                            href="https://www.dek-d.com/board/view/1852461/"
-                            target="_blank"
-                            className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
-                          >
-                            <ur>5. Lab#6 โจทย์ พร้อมเฉลย</ur>
-                          </Link>
-                        </div>
+                      <div className="text-[18px]">
+                        <Link
+                          href="https://www.dek-d.com/board/view/1852461/"
+                          target="_blank"
+                          className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
+                        >
+                          <ur>5. Lab#6 โจทย์ พร้อมเฉลย</ur>
+                        </Link>
+                      </div>
 
-                        <div className="text-[18px]">
-                          <Link
-                            href="https://sites.google.com/site/khxmphiwtexrm5/hnwy-kar-reiyn-ru1/kar-wikheraah-payha/kar-wikheraah-payha-p4"
-                            target="_blank"
-                            className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
-                          >
-                            <ur>6. ตัวอย่างโจทย์ปัญหา การวิเคราะห์ปัญหา</ur>
-                          </Link>
-                        </div>
+                      <div className="text-[18px]">
+                        <Link
+                          href="https://sites.google.com/site/khxmphiwtexrm5/hnwy-kar-reiyn-ru1/kar-wikheraah-payha/kar-wikheraah-payha-p4"
+                          target="_blank"
+                          className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
+                        >
+                          <ur>6. ตัวอย่างโจทย์ปัญหา การวิเคราะห์ปัญหา</ur>
+                        </Link>
+                      </div>
 
-                        <div className="text-[18px]">
-                          <Link
-                            href="https://anyflip.com/kgfo/vixx/basic"
-                            target="_blank"
-                            className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
-                          >
-                            <ur>7. การออกแบบอัลกอรึทึม และการเขียนรหัสเทียม</ur>
-                          </Link>
-                        </div>
+                      <div className="text-[18px]">
+                        <Link
+                          href="https://anyflip.com/kgfo/vixx/basic"
+                          target="_blank"
+                          className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
+                        >
+                          <ur>7. การออกแบบอัลกอรึทึม และการเขียนรหัสเทียม</ur>
+                        </Link>
                       </div>
                     </div>
                   </div>
