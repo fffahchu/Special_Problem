@@ -25,16 +25,16 @@ const Exercise = () => {
       <Breadcrumb route={route} />
 
       <div className="flex justify-center">
-        <div>
-          <div className="flex justify-between items-center mt-[80px]">
+        <div className=" w-[1390px]">
+          <div className="flex justify-between items-center mt-[40px]">
             <div className="text-[23px] font-semibold">แบบฝึกหัด</div>
           </div>
           <hr className="mt-[12px] mb-4" />
 
-          <div className="flex gap-[51px] px-[70px] pb-[80px]">
+          <div className="flex gap-[51px] px-[70px]">
             <div className="flex flex-col gap-12 w-[312px]">
-              <div className="">
-                <div className="mt-[30px] w-[450px]">
+              <div>
+                <div className="mt-[30px]">
                   <div className="flex w-[430px]">
                     <div className="flex flex-col gap-2">
                       <ur className="underline text-[20px]">แบบฝึกหัดเรื่อง</ur>
@@ -286,7 +286,7 @@ const Exercise = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-[1400px] mx-auto">
+      <div className="flex w-[1400px] mt-[40px] mx-auto">
         <div className="bg-[#fafafa] rounded-md shadow-inner w-[1384px] h-[321px] mr-[90px]">
           <div className="text-[18px] text-[#facc15] font-bold text-center mt-[30px]">
             แนะนำเครื่องมือที่ใช้เขียนโปรแกรม (โปรแกรม,เว็บไซต์)
