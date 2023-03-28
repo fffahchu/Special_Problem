@@ -283,13 +283,13 @@ const Exercise = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-[1400px] mt-[40px] mx-auto">
-        <div className="bg-[#fafafa] rounded-md shadow-inner w-[1384px] h-[321px] mr-[90px]">
+      <div className="flex items-center justify-center mt-[40px]">
+        <div className="bg-[#fafafa] rounded-md shadow-inner w-[1000px] h-[321px]  mx-auto">
           <div className="text-[18px] text-[#facc15] font-bold text-center mt-[30px]">
             แนะนำเครื่องมือที่ใช้เขียนโปรแกรม (โปรแกรม,เว็บไซต์)
           </div>
-          <div className="grid grid-cols-4 mr-[20px]">
-            <div className="inline-block pt-[48px] ml-[60px]">
+          <div className="ml-[12px] grid grid-cols-4 gap-4">
+            <div className="inline-block pt-[48px]">
               <img
                 className="w-[224px] h-[128px] rounded rounded-xl"
                 src="../assets/images/course/logo1.jpg"
@@ -303,7 +303,7 @@ const Exercise = () => {
                 </Link>
               </div>
             </div>
-            <div className="inline-block pt-[50px] pl-[60px]">
+            <div className="inline-block pt-[50px]">
               <img
                 className="w-[224px] h-[128px] rounded rounded-xl"
                 src="../assets/images/course/logo2.jpg"
@@ -320,7 +320,7 @@ const Exercise = () => {
                 </Link>
               </div>
             </div>
-            <div className="inline-block pt-[50px] pl-[60px]">
+            <div className="inline-block pt-[50px]">
               <img
                 className="w-[224px] h-[128px] rounded rounded-xl"
                 src="../assets/images/course/logo3.jpg"
@@ -337,7 +337,7 @@ const Exercise = () => {
                 </Link>
               </div>
             </div>
-            <div className="inline-block pt-[50px] pl-[60px]">
+            <div className="inline-block pt-[50px]">
               <img
                 className="w-[224px] h-[128px] rounded rounded-xl"
                 src="../assets/images/course/logo4.jpg"
