@@ -156,7 +156,7 @@ function FirstPage() {
                     </a>
                 </div>
                 <hr className="mt-[18px] mb-[16px]" />
-                <div className="grid grid-cols-4 gap-7 mt-[32px]">
+                <div className="grid grid-cols-4 gap-7 mt-[32px] mx-auto max-w-[1232px]">
                     {activity.map((item) => {
                         return <Card item={item} type="activity" />;
                     })}
@@ -171,7 +171,7 @@ function FirstPage() {
                     </a>
                 </div>
                 <hr className="mt-[18px] mb-[16px]" />
-                <div className="grid grid-cols-4 gap-x-[1.125rem] mt-[89px] mb-[250px]">
+                <div className="grid grid-cols-4 gap-x-[1.125rem] mt-[89px] mb-[250px] mx-auto max-w-[1232px]">
                     {/* col 1 */}
                     <div className="flex flex-col gap-y-5">
                         <Link href="/portfolio-ex/example">

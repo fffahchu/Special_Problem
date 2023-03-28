@@ -36,7 +36,7 @@ function App() {
                 การเขียนโปรแกรมคอมพิวเตอร์พื้นฐาน ด้วยภาษาซี 1
             </div>
             <div className="px-[104px]">
-                <div className="grid grid-cols-1 w-full shadow-[0px_4px_20px_0px_rgba(0,0,0,0.25)] rounded-[11px]">
+                <div className="grid grid-cols-1 mx-auto max-w-[1232px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.25)] rounded-[11px]">
                     <div className="flex">
                         <a href="/course-ex" className="ml-[31px] py-[14px] px-[11px] rounded-[11px] bg-[#FFCA61] my-[13px]">
                             รายละเอียดหลักสูตร

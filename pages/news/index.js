@@ -36,9 +36,9 @@ const AllNews = () => {
             </div>
             <hr className="mt-[18px] mb-[16px]" />
 
-            {/* col 1 */}
+            {/* row 1 */}
 
-            <div className="grid grid-cols-3 gap-14 mb-[104px] mx-auto max-w-[1232px]">
+            <div className="grid grid-cols-3 mb-[104px] mx-auto max-w-[1232px] gap-y-14">
                 <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
                     <img
                         src="https://www.camphub.in.th/wp-content/uploads/2023/02/CEC2Banner.jpg.webp"
@@ -65,7 +65,7 @@ const AllNews = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
+                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px] m-auto">
                     <img
                         src="https://www.camphub.in.th/wp-content/uploads/2023/02/Sphere_Graphic3_Camphub.jpg.webp"
                         className="w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]"
@@ -91,7 +91,7 @@ const AllNews = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
+                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px] ml-auto">
                     <img
                         src="https://www.camphub.in.th/wp-content/uploads/2023/02/%E0%B8%A7%E0%B8%B4%E0%B8%A8%E0%B8%A7%E0%B8%84%E0%B8%AD%E0%B8%A1-%E0%B8%A3%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B9%80%E0%B8%A2%E0%B8%B2%E0%B8%A7%E0%B9%8C-ss.3-1200-%C3%97-630-px.png"
                         className="w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]"
@@ -116,9 +116,9 @@ const AllNews = () => {
                     </div>
                 </div>
 
-                {/* col 1 */}
+                {/* row 1 */}
 
-                {/* col 2 */}
+                {/* row 2 */}
 
                 <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
                     <img
@@ -145,7 +145,7 @@ const AllNews = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
+                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px] m-auto">
                     <img
                         src="https://www.camphub.in.th/wp-content/uploads/2022/11/image_6483441-18.jpg.webp"
                         className="w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]"
@@ -170,7 +170,7 @@ const AllNews = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
+                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px] ml-auto">
                     <img
                         src="https://www.camphub.in.th/wp-content/uploads/2023/02/BannerAI-2.jpg.webp"
                         className="w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]"
@@ -196,7 +196,7 @@ const AllNews = () => {
                 </div>
             </div>
 
-            {/* col 2 */}
+            {/* row 2 */}
 
             {/* ข่าวสาร */}
 
@@ -210,9 +210,9 @@ const AllNews = () => {
                 </a>
             </div>
             <hr className="mt-[18px] mb-[16px]" />
-            <div className="grid grid-cols-3 gap-14 mb-[104px] mx-auto max-w-[1232px]">
+            <div className="grid grid-cols-3 gap-y-14 mb-[104px] mx-auto max-w-[1232px]">
 
-                {/* col 1 */}
+                {/* row 1 */}
 
                 <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
                     <img
@@ -240,7 +240,7 @@ const AllNews = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
+                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px] m-auto">
                     <img
                         src="https://image.bangkokbiznews.com/uploads/images/md/2023/02/O69PpFBHx6vk4kr8He14.webp?x-image-process=style/LG-webp"
                         className="w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]"
@@ -266,7 +266,7 @@ const AllNews = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
+                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px] ml-auto">
                     <img
                         src="https://image.bangkokbiznews.com/uploads/images/md/2022/11/t0hFirmzIp26PSGgOGEe.webp?x-image-process=style/LG-webp"
                         className="w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]"
@@ -292,9 +292,9 @@ const AllNews = () => {
                     </div>
                 </div>
 
-                {/* col 1 */}
+                {/* row 1 */}
 
-                {/* col 2 */}
+                {/* row 2 */}
 
                 <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
                     <img
@@ -322,7 +322,7 @@ const AllNews = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
+                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px] m-auto">
                     <img
                         src="https://www.ryt9.com/img/files/20221111/iq98485b868686ae360f95d1663403889a.jpg"
                         className="w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]"
@@ -348,7 +348,7 @@ const AllNews = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
+                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px] ml-auto">
                     <img
                         src="../assets/images/news/2.jpg"
                         className="w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]"
@@ -374,7 +374,7 @@ const AllNews = () => {
                     </div>
                 </div>
 
-                {/* col 2 */}
+                {/* row 2 */}
 
             </div>
 
@@ -392,7 +392,7 @@ const AllNews = () => {
                 </a>
             </div>
             <hr className="mt-[18px] mb-[16px]" />
-            <div className="grid grid-cols-3 gap-14 mx-auto max-w-[1232px]">
+            <div className="grid grid-cols-3 gap-y-14 mx-auto max-w-[1232px]">
 
                 {/* col 1 */}
 
@@ -422,7 +422,7 @@ const AllNews = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
+                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px] m-auto">
                     <img
                         src="http://www.admissionpremium.com/class/timthumb.php?a=t&zc=1&w=600&h=314&src=/uploads/contents/20210722181546usRjn22.jpg"
                         className="w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]"
@@ -448,7 +448,7 @@ const AllNews = () => {
                     </div>
                 </div>
 
-                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
+                <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px] ml-auto">
                     <img
                         src="http://www.admissionpremium.com/class/timthumb.php?a=t&zc=1&w=600&h=314&src=/uploads/contents/20210715182218tPQkhsR.jpg"
                         className="w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]"
