@@ -38,7 +38,7 @@ const AllNews = () => {
 
             {/* col 1 */}
 
-            <div className="grid grid-cols-3 gap-14 mb-[104px]">
+            <div className="grid grid-cols-3 gap-14 mb-[104px] mx-auto max-w-[1232px]">
                 <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
                     <img
                         src="https://www.camphub.in.th/wp-content/uploads/2023/02/CEC2Banner.jpg.webp"
@@ -210,7 +210,7 @@ const AllNews = () => {
                 </a>
             </div>
             <hr className="mt-[18px] mb-[16px]" />
-            <div className="grid grid-cols-3 gap-14 mb-[104px]">
+            <div className="grid grid-cols-3 gap-14 mb-[104px] mx-auto max-w-[1232px]">
 
                 {/* col 1 */}
 
@@ -392,7 +392,7 @@ const AllNews = () => {
                 </a>
             </div>
             <hr className="mt-[18px] mb-[16px]" />
-            <div className="grid grid-cols-3 gap-14">
+            <div className="grid grid-cols-3 gap-14 mx-auto max-w-[1232px]">
 
                 {/* col 1 */}
 

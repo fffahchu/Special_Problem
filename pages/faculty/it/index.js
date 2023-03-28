@@ -114,7 +114,7 @@ const facultyofInformationTechnology = () => {
       <div className="bg-[#FFCA61] rounded-[7px] text-left text-[25px] font-semibold py-[25px] pl-[8px] mt-[64px]">
         ข่าวประชาสัมพันธ์
       </div>
-      <div className="grid grid-cols-2 gap-14 mt-[40px] mb-[56px]">
+      <div className="grid grid-cols-2 gap-14 mt-[40px] mb-[56px] mx-auto max-w-[1232px]">
         <Link
           href="https://www.trueplookpanya.com/tcas/campnews/detail/1942"
           target="_blank"

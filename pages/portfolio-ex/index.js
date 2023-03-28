@@ -23,7 +23,7 @@ const PortfolioExample = () => {
         ตัวอย่างแฟ้มสะสมผลงาน
       </div>
       <hr className="mt-[39px] mb-[72px] border-[#BFBFBF]" />
-      <div className="grid grid-cols-4 gap-x-[1.125rem] mt-[40px] mb-[104px]">
+      <div className="grid grid-cols-4 mt-[40px] mb-[104px] mx-auto max-w-[1232px]">
         {/* col 1 */}
         <div className="flex flex-col gap-y-5">
           <Link href="/portfolio-ex/example">

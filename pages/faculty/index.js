@@ -84,7 +84,7 @@ const AllFaculty = () => {
           </span>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-14 mt-[40px] mb-[104px]">
+      <div className="grid grid-cols-2 gap-14 mt-[40px] mb-[104px] mx-auto max-w-[1232px]">
         <div className="flex-col">
           <Link href="https://cscamp.net/" target="_blank" className="flex-col">
             <img
@@ -177,7 +177,7 @@ const AllFaculty = () => {
           </span>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-14 mt-[40px] mb-[104px]">
+      <div className="grid grid-cols-2 gap-14 mt-[40px] mb-[104px] mx-auto max-w-[1232px]">
         <div className="flex-col">
           <Link
             href="https://www.camphub.in.th/cesca-18/"

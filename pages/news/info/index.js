@@ -106,13 +106,13 @@ function Info() {
             </Swiper>
             <div className="px-[104px] pt-[29px]">
                 <div className="font-semibold text-[20px] mt-[75px] mb-[30px]">ข่าวฮอต</div>
-                <div className="grid grid-cols-4 gap-7">
+                <div className="grid grid-cols-4 gap-7 mx-auto max-w-[1232px]">
                     {article.map((item) => {
                         return <Card item={item} type="article" />;
                     })}
                 </div>
                 <div className="font-semibold text-[20px] mt-[75px] mb-[30px]">ข่าวทั้งหมด</div>
-                <div className="grid grid-cols-3 gap-14">
+                <div className="grid grid-cols-3 gap-14 mx-auto max-w-[1232px]">
                     {/* col 1 */}
                     <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
                         <img
