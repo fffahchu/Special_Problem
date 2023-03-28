@@ -22,7 +22,7 @@ const Loginform = () => {
         <div className="text-center text-[28px] font-semibold my-12">
           เข้าสู่ระบบ
         </div>
-        <div className="flex-center shadow-inner shadow-[#bbf7d0] w-[354px] h-[573px] border-[1px] border-[#bbf7d0] rounded ml-[475px]">
+        <div className="flex-center shadow-inner shadow-[#bbf7d0] w-[354px] h-[573px] border-[1px] border-[#bbf7d0] rounded mx-auto">
           <div className="flex">
             <div className="flex flex-col">
               <div className="flex flex-wrap mb-5">

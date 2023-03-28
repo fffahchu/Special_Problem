@@ -23,161 +23,162 @@ const Registerform = () => {
         ลงทะเบียนเข้าใช้ ComPort
       </div>
 
-      <div className="w-[1000px]">
-        <div className="ml-[330px] grid grid-cols-2 gap-2">
-          <button
-            type="submit"
-            className="flex justify-between items-center pr-[45px] w-[306px] h-[48px] rounded-3xl shadow drop-shadow-lg text-[#FFFFFF] font-bold bg-[#3B5998]"
-          >
-            <div className="pl-[29px] items-center"></div>
-            <img
-              className="w-[28px] h-[28px] rouned-full"
-              src="../assets/images/fb-logo.png"
-              alt="fb login"
-            />
-            เข้าสู่ระบบด้วย Facebook
-          </button>
+      <div className="flex">
+        <div className="mx-auto w-[600px]">
+          <div className="grid grid-cols-2 gap-4">
+            <button
+              type="submit"
+              className="flex justify-between items-center pr-[45px] w-[306px] h-[48px] rounded-3xl shadow drop-shadow-lg text-[#FFFFFF] font-bold bg-[#3B5998]"
+            >
+              <div className="pl-[40px] items-center">
+                <img
+                  className="w-[28px] h-[28px] rouned-full"
+                  src="../assets/images/fb-logo.png"
+                  alt="fb login"
+                />
+              </div>
+              เข้าสู่ระบบด้วย Facebook
+            </button>
 
-          <button
-            type="submit"
-            className="flex justify-between items-center pr-[45px] w-[306px] h-[48px] rounded-3xl shadow drop-shadow-lg text-[#FFFFFF] font-bold bg-[#DD4B39]"
-          >
-            <div className="pl-[29px] items-center"></div>
-            <img
-              className="w-[28px] h-[28px] rouned-full"
-              src="../assets/images/gg-logo.png"
-              alt="fb login"
-            />
-            เข้าสู่ระบบด้วย Google+
-          </button>
-        </div>
+            <button
+              type="submit"
+              className="flex justify-between items-center pr-[45px] w-[306px] h-[48px] rounded-3xl shadow drop-shadow-lg text-[#FFFFFF] font-bold bg-[#DD4B39]"
+            >
+              <div className="pl-[40px] items-center">
+                {" "}
+                <img
+                  className="w-[28px] h-[28px] rouned-full"
+                  src="../assets/images/gg-logo.png"
+                  alt="fb login"
+                />
+              </div>
+              เข้าสู่ระบบด้วย Google+
+            </button>
+          </div>
 
-        <div className="flex items-center gap-4 mt-[40px] ml-[500px]">
-          <div className="h-[1px] w-[120px] border border-[#dcfce7]"></div>
-          <a className="text-[15px] font-bold inline-block">หรือ</a>
-          <div className="h-[1px] w-[120px] border border-[#dcfce7] mr-[26px]"></div>
-        </div>
+          <div className="flex items-center justify-center gap-4 mt-[40px]">
+            <div className="h-[1px] w-[120px] border border-[#dcfce7]"></div>
+            <a className="text-[15px] font-bold inline-block">หรือ</a>
+            <div className="h-[1px] w-[120px] border border-[#dcfce7] mr-[26px]"></div>
+          </div>
 
-        <div className="flex mt-[30px]">
-          <div className="shadow-inner shadow-[#bbf7d0] w-[560px] h-[933px] border-[1px] border-[#bbf7d0] rounded ml-[372px]">
-            <div className="flex">
-              <div className="flex flex-col">
-                <div className="mt-[30px] ml-[10px] grid grid-cols-2">
-                  <div className="flex flex-wrap mb-2">
-                    <label for="name" className="font-bold ml-[85px]">
-                      ชื่อ <a className="text-[#FF0000]">*</a>
-                    </label>
-                    <input
-                      className="py-2.5 px-3.5 ml-[85px] mt-[10px] w-[180px] h-[35px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
-                      type="text"
-                      id="name"
-                    ></input>
-                  </div>
-
-                  <div className="flex flex-wrap mb-2">
-                    <label for="name" className="font-bold">
-                      นามสกุล <a className="text-[#FF0000]">*</a>
-                    </label>
-                    <input
-                      className="py-2.5 px-3.5 mr-[40px] mt-[10px] w-[180px] h-[35px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
-                      type="text"
-                      id="name"
-                    ></input>
-                  </div>
-                </div>
-
-                <div className="mt-[15px] ml-[95px]">
-                  <label for="username" className="font-bold mt-[30px]">
-                    ชื่อผู้ใช้งาน <a className="text-[#FF0000]">*</a>
+          <div className="flex">
+            <div className="mx-auto max-w-[1232px] mt-[40px] shadow-inner shadow-[#bbf7d0] w-[560px] h-[933px] border-[1px] border-[#bbf7d0] rounded">
+              <div className="mt-[30px] ml-[10px] grid grid-cols-2">
+                <div className="flex flex-wrap mb-2">
+                  <label for="name" className="font-bold ml-[85px]">
+                    ชื่อ <a className="text-[#FF0000]">*</a>
                   </label>
                   <input
-                    className="py-2.5 px-3.5 flex flex-wrap w-[370px] h-[35px] mt-[8px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
-                    id="username"
+                    className="py-2.5 px-3.5 ml-[85px] mt-[10px] w-[180px] h-[35px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
                     type="text"
-                    placeholder="เช่น fffahch.62"
-                  ></input>
-                  <div className="text-[13px] font-light text-[#9ca3af] ml-[2px] mt-[5px]">
-                    คุณใช้ตัวอักษร ตัวเลข และจุดได้
-                  </div>
-                </div>
-
-                <div className="mt-[18px] ml-[95px]">
-                  <label for="email" className="font-bold mt-[30px]">
-                    อีเมล <a className="text-[#FF0000]">*</a>
-                  </label>
-                  <input
-                    className="py-2.5 px-3.5 flex flex-wrap w-[370px] h-[35px] mt-[8px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
-                    id="email"
-                    type="email"
+                    id="name"
                   ></input>
                 </div>
 
-                <div className="mt-[18px] ml-[95px]">
-                  <label for="password" className="font-bold mt-[30px]">
-                    รหัสผ่าน <a className="text-[#FF0000]">*</a>
+                <div className="flex flex-wrap mb-2">
+                  <label for="name" className="font-bold">
+                    นามสกุล <a className="text-[#FF0000]">*</a>
                   </label>
                   <input
-                    className="py-2.5 px-3.5 flex flex-wrap w-[370px] h-[35px] mt-[8px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
-                    id="password"
+                    className="py-2.5 px-3.5 mr-[40px] mt-[10px] w-[180px] h-[35px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
                     type="text"
+                    id="name"
                   ></input>
-                  <div className="text-[13px] font-light text-[#9ca3af] ml-[2px] mt-[5px]">
-                    ใช้อักขระ 8 ตัวขึ้นไปที่มีทั้งตัวอักษร ตัวเลข
-                    และสัญลักษณ์ผสมกัน
-                  </div>
                 </div>
+              </div>
 
-                <div className="mt-[18px] ml-[95px]">
-                  <label for="re_password" className="font-bold mt-[30px]">
-                    ป้อนรหัสผ่านอีกครั้ง <a className="text-[#FF0000]">*</a>
-                  </label>
+              <div className="mt-[15px] ml-[95px]">
+                <label for="username" className="font-bold mt-[30px]">
+                  ชื่อผู้ใช้งาน <a className="text-[#FF0000]">*</a>
+                </label>
+                <input
+                  className="py-2.5 px-3.5 flex flex-wrap w-[370px] h-[35px] mt-[8px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
+                  id="username"
+                  type="text"
+                  placeholder="เช่น fffahch.62"
+                ></input>
+                <div className="text-[13px] font-light text-[#9ca3af] ml-[2px] mt-[5px]">
+                  คุณใช้ตัวอักษร ตัวเลข และจุดได้
+                </div>
+              </div>
+
+              <div className="mt-[18px] ml-[95px]">
+                <label for="email" className="font-bold mt-[30px]">
+                  อีเมล <a className="text-[#FF0000]">*</a>
+                </label>
+                <input
+                  className="py-2.5 px-3.5 flex flex-wrap w-[370px] h-[35px] mt-[8px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
+                  id="email"
+                  type="email"
+                ></input>
+              </div>
+
+              <div className="mt-[18px] ml-[95px]">
+                <label for="password" className="font-bold mt-[30px]">
+                  รหัสผ่าน <a className="text-[#FF0000]">*</a>
+                </label>
+                <input
+                  className="py-2.5 px-3.5 flex flex-wrap w-[370px] h-[35px] mt-[8px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
+                  id="password"
+                  type="text"
+                ></input>
+                <div className="text-[13px] font-light text-[#9ca3af] ml-[2px] mt-[5px]">
+                  ใช้อักขระ 8 ตัวขึ้นไปที่มีทั้งตัวอักษร ตัวเลข
+                  และสัญลักษณ์ผสมกัน
+                </div>
+              </div>
+
+              <div className="mt-[18px] ml-[95px]">
+                <label for="re_password" className="font-bold mt-[30px]">
+                  ป้อนรหัสผ่านอีกครั้ง <a className="text-[#FF0000]">*</a>
+                </label>
+                <input
+                  className="py-2.5 px-3.5 flex flex-wrap w-[370px] h-[35px] mt-[8px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
+                  id="re_password"
+                  type="text"
+                ></input>
+              </div>
+
+              <div className="mt-[18px] ml-[95px]">
+                <label for="number" className="font-bold mt-[30px]">
+                  เบอร์โทรศัพท์ <a className="text-[#FF0000]">*</a>
+                </label>
+                <input
+                  className="py-2.5 px-3.5 flex flex-wrap w-[370px] h-[35px] mt-[8px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
+                  id="number"
+                  type="text"
+                ></input>
+              </div>
+
+              <div className="mt-[30px] ml-[95px] h-[1px] w-[371px] border border-[#dcfce7]"></div>
+              <div className="mt-[20px] ml-[95px] font-bold">
+                ข้อตกลงและเงื่อนไขในการใช้งาน ComPort
+              </div>
+              <div className="flex items-center mt-[15px] bg-[#C9F0D6] w-[371px] h-[104px] ml-[95px] rounded">
+                <div className="form-group form-check ml-[25px]">
                   <input
-                    className="py-2.5 px-3.5 flex flex-wrap w-[370px] h-[35px] mt-[8px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
-                    id="re_password"
-                    type="text"
-                  ></input>
-                </div>
-
-                <div className="mt-[18px] ml-[95px]">
-                  <label for="number" className="font-bold mt-[30px]">
-                    เบอร์โทรศัพท์ <a className="text-[#FF0000]">*</a>
-                  </label>
-                  <input
-                    className="py-2.5 px-3.5 flex flex-wrap w-[370px] h-[35px] mt-[8px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
-                    id="number"
-                    type="text"
-                  ></input>
-                </div>
-
-                <div className="mt-[30px] ml-[95px] h-[1px] w-[371px] border border-[#dcfce7]"></div>
-                <div className="mt-[20px] ml-[95px] font-bold">
-                  ข้อตกลงและเงื่อนไขในการใช้งาน ComPort
-                </div>
-                <div className="flex items-center mt-[15px] bg-[#C9F0D6] w-[371px] h-[104px] ml-[95px] rounded">
-                  <div className="form-group form-check ml-[25px]">
-                    <input
-                      type="checkbox"
-                      class="form-check-input appearance-none h-4 w-4 border border-gray-600 rounded-sm bg-[#f4f4f5] checked:bg-[#4b5563] checked:border-[#e4e4e7] focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                      id="exampleCheck2"
-                    />
-                    <label
-                      className="form-check-label inline-block flex flex-wrap font-md text-[15px] "
-                      for="exampleCheck2"
-                    >
-                      ฉันได้อ่านและยอมรับ{" "}
-                      <a className="underline">ข้อตกลงและเงื่อนไข</a> และ{" "}
-                      <a className="underline">นโยบายความเป็นส่วนตัว</a>
-                    </label>
-                  </div>
-                </div>
-                <div className="mt-[40px] ml-[195px]">
-                  <button
-                    type="submit"
-                    className="w-[152px] h-[44px] rounded-3xl shadow drop-shadow-lg font-bold transition ease-in-out bg-[#FFCA61] hover:-translate-y-1 hover:scale-110 hover:bg-[#FFEC85] duration-300"
+                    type="checkbox"
+                    class="form-check-input appearance-none h-4 w-4 border border-gray-600 rounded-sm bg-[#f4f4f5] checked:bg-[#4b5563] checked:border-[#e4e4e7] focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                    id="exampleCheck2"
+                  />
+                  <label
+                    className="form-check-label inline-block flex flex-wrap font-md text-[15px] "
+                    for="exampleCheck2"
                   >
-                    ลงทะเบียน
-                  </button>
+                    ฉันได้อ่านและยอมรับ{" "}
+                    <a className="underline">ข้อตกลงและเงื่อนไข</a> และ{" "}
+                    <a className="underline">นโยบายความเป็นส่วนตัว</a>
+                  </label>
                 </div>
+              </div>
+              <div className="mt-[40px] ml-[195px]">
+                <button
+                  type="submit"
+                  className="w-[152px] h-[44px] rounded-3xl shadow drop-shadow-lg font-bold transition ease-in-out bg-[#FFCA61] hover:-translate-y-1 hover:scale-110 hover:bg-[#FFEC85] duration-300"
+                >
+                  ลงทะเบียน
+                </button>
               </div>
             </div>
           </div>
