@@ -156,7 +156,7 @@ function FirstPage() {
                     </a>
                 </div>
                 <hr className="mt-[18px] mb-[16px]" />
-                <div className="grid grid-cols-4 gap-7 mt-[32px] mx-auto max-w-[1232px]">
+                <div className="grid grid-cols-4 gap-7 mt-[32px]">
                     {activity.map((item) => {
                         return <Card item={item} type="activity" />;
                     })}

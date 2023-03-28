@@ -295,7 +295,7 @@ const Member = () => {
         <div className="flex-1">
           <div className="flex justify-between items-center">
             <div className="text-[25px] font-semibold">
-              ค่าย/กิจกรรมที่กำลังจะมาถึง
+              ค่าย/กิจกรรมที่จะเปิดรับสมัครเร็ว ๆ นี้
             </div>
             <a href="#" className="font-semibold underline">
               ดูทั้งหมด
