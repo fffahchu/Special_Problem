@@ -41,8 +41,8 @@ const Upload = () => {
         </div>
         <hr className="mt-[18px] mb-4 border-[#d4d4d4]" />
 
-        <div className="flex">
-          <div className="flex flex-col ml-[330px] mt-[40px]">
+        <div className="flex justify-center">
+          <div className="flex flex-col mt-[40px]">
             <div className="flex justify-center items-center self-end mb-[20px] w-[321px] h-[427px] border rounded-[6px]">
               <img
                 src="/assets/icons/camera-icon.svg"

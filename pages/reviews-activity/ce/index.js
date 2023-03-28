@@ -63,7 +63,7 @@ const ActivityCe = () => {
         ></img>
       </div>
 
-      <div className="flex mt-[200px]">
+      <div className="flex justify-center mt-[200px]">
         <div className="w-[750px] ml-[200px]">
           <div className="bg-[#fb923c] rounded-lg shadow-gray shadow-sm text-center text-[25px] font-bold drop-shadow-2xl mt-[48px]">
             รีวิวค่าย CE Smart Camp#11 วิศวะคอม ลาดกระบัง [EP.58]

@@ -33,7 +33,7 @@ const Exercise = () => {
 
           <div className="flex gap-[51px] px-[70px] pb-[80px]">
             <div className="flex flex-col gap-12 w-[312px]">
-              <div>
+              <div mx-auto>
                 <div className="mt-[30px] w-[450px]">
                   <div className="flex w-[430px]">
                     <div className="flex flex-col gap-2">

@@ -62,7 +62,7 @@ const ReviewIt = () => {
         ></img>
       </div>
 
-      <div className="flex">
+      <div className="flex justify-center">
         <div className="w-[750px] ml-[200px]">
           <div className="mt-[60px]">
             <img

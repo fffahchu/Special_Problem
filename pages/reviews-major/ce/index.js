@@ -62,7 +62,7 @@ const ReviewCe = () => {
         ></img>
       </div>
 
-      <div className="flex">
+      <div className="flex justify-center">
         <div className="w-[750px] ml-[150px]">
           <div className="text-center text-[28px] font-bold drop-shadow-2xl shadow-black mt-[48px]">
             สาขาวิชา “วิศวกรรมคอมพิวเตอร์” หรือ “Computer Engineering”

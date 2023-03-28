@@ -21,7 +21,7 @@ const Editprofile = () => {
       <div className="text-center text-[28px] font-semibold my-12">
         โปรไฟล์ของฉัน
       </div>
-      <div className="flex">
+      <div className="flex justify-center">
         <div className="flex flex-col mr-[45px]">
           <div className="flex justify-center items-center w-[247px] h-[247px] bg-yellow rounded-full ml-[529px] mt-[30px]">
             <img
