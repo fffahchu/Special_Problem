@@ -34,8 +34,8 @@ const Exercise = () => {
           <div className="flex gap-[51px] px-[45px]">
             <div className="flex flex-col gap-12 w-[312px]">
               <div>
-                <div className="flex w-[430px] mt-[30px]">
-                  <div className="flex flex-col gap-2">
+                <div className="w-[390px] mt-[30px]">
+                  <div>
                     <ur className="underline text-[20px]">แบบฝึกหัดเรื่อง</ur>
                     <div className="flex flex-col gap-2 mt-[5px]">
                       <div className="text-[18px] mt-[14px]">
@@ -147,8 +147,8 @@ const Exercise = () => {
               </div>
             </div>
 
-            <div className="grow pt-[51px]">
-              <div className="flex flex-col">
+            <div>
+              <div className="flex flex-col pt-[51px]">
                 <div className="flex justify-center bg-[#fafafa] rounded-md shadow-inner w-[680px] h-[300px] ml-[150px]">
                   <div className="inline-block w-[640px] pt-[20px]">
                     <div className="text-[15px] indent-10">
@@ -226,11 +226,10 @@ const Exercise = () => {
                       </div>
 
                       <div className="w-[350px]">
-                        <div className="text[8px] font-regular">
-                          เป็นหนึ่งในเว็บที่มีชื่อเสียงมากที่สุดสำหรับนักพัฒนาและโปรแกรมเมอร์ทุกคนที่ต้องการเรียนรู้ภาษาเขียนโปรแกรมแทบจะทุกภาษา
-                          ตั้งแต่การเขียนโปรแกรมบนเว็บ
-                          ไปจนถึงภาษาโปรแกรมมิ่งสำหรับฐานข้อมูลหรือโปรแกรมบนเดสก์ท็อป
-                          ซึ่งทุกหลักสูตรฟรีหมด
+                        <div className="text-[16px] font-regular">
+                          เป็นโปรเจ็กต์สำหรับฝึกโปรแกรมเมอร์หน้าใหม่ที่ไร้ประสบการณ์โดยสิ้นเชิง
+                          เพื่อให้สามารถพัฒนาเว็บไซต์หรือแม้แต่แอพพลิเคชั่นเป็นของตนเองได้
+                          ด้วยผู้ใช้หลักหลายล้านที่เข้ามาเยี่ยมชมเว็บนี้ในแต่ละวัน
                         </div>
                       </div>
                     </div>
@@ -284,7 +283,7 @@ const Exercise = () => {
           </div>
         </div>
       </div>
-      <div className="flex w-[1400px] mt-[40px] mx-auto">
+      <div className="flex justify-center mt-[40px] mx-auto">
         <div className="bg-[#fafafa] rounded-md shadow-inner w-[1384px] h-[321px] mr-[90px]">
           <div className="text-[18px] text-[#facc15] font-bold text-center mt-[30px]">
             แนะนำเครื่องมือที่ใช้เขียนโปรแกรม (โปรแกรม,เว็บไซต์)
