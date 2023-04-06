@@ -3,6 +3,7 @@ import Breadcrumb from "@components/Breadcrumb";
 import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
+import axios from "axios";
 
 const CreateFrontCover = () => {
   const coverImage = "/assets/images/portfolio/portfolio-4.png";
@@ -33,13 +34,13 @@ const CreateFrontCover = () => {
 
   const getPort = async (idPort) => {
     await axios
-      .get(`http://localhost:3000/api/port-step-2/${idPort}`)
+      .get(`http://localhost:1337/api/port-step-2s/${idPort}`)
       .then((data) => {
         if (data.status === 200) {
-          setFile(data.data.attributes.profile);
-          setNameTh(data.data.attributes.fullnameTH);
-          setNameEng(data.data.attributes.fullnameEN);
-          setSchool(data.data.attributes.school);
+          setFile(data.data.data.attributes.profile);
+          setNameTh(data.data.data.attributes.fullnameTH);
+          setNameEng(data.data.data.attributes.fullnameEN);
+          setSchool(data.data.data.attributes.school);
           const reader = new FileReader();
 
           reader.addEventListener("load", () => {
@@ -47,7 +48,7 @@ const CreateFrontCover = () => {
           });
 
           if (data.data.attributes.profile) {
-            reader.readAsDataURL(data.data.attributes.profile);
+            reader.readAsDataURL(data.data.data.attributes.profile);
           }
         }
       })
@@ -73,49 +74,50 @@ const CreateFrontCover = () => {
   };
 
   const onSubmit = async () => {
+    console.log("create front-cover")
     try {
       const idPort = localStorage.getItem("idPort") || null;
       let idPort2 = localStorage.getItem("idPort2") || null;
 
       if (idPort) {
+        let model = {
+          data: {
+            fullnameTH: nameTh,
+            fullnameEN: nameEng,
+            school: school,
+            idUser: 1,
+            idPort: idPort,
+          },
+        };
         if (idPort2) {
-          let model = {
-            data: {
-              fullnameTH: nameTh,
-              fullnameEN: nameEng,
-              school: school,
-              idUser: 1,
-              idPort: idPort,
-            },
-          };
           await axios
-            .put(`http://localhost:3000/port-step-2/${idPort2}`, model)
+            .put(`http://localhost:1337/api/port-step-2s/${idPort2}`, model)
             .then((data) => {
               if (data.status === 200) {
-                localStorage.setItem("idPort2", data.data.id);
+                localStorage.setItem("idPort2", data.data.data.id);
               }
             });
         } else {
           await axios
-            .post("http://localhost:3000/port-step-2", model)
+            .post("http://localhost:1337/api/port-step-2s", model)
             .then((data) => {
               if (data.status === 200) {
-                idPort2 = data.data.id;
-                localStorage.setItem("idPort2", data.data.id);
+                idPort2 = data.data.data.id;
+                localStorage.setItem("idPort2", data.data.data.id);
               }
             });
         }
         if (file) {
           const form = new FormData();
-          form.append("files", file, `${idPort2}.jpg`);
+          form.append("files", file);
           form.append("ref", "api::port-step-2.port-step-2");
           form.append("refId", idPort2);
           form.append("field", "profile");
           await axios
-            .post(`http://localhost:3000/api/upload`, form)
+            .post(`http://localhost:1337/api/upload`, form)
             .then((data) => {
               if (data.status === 200) {
-                localStorage.setItem("idFilePort2", data.data.id);
+                localStorage.setItem("idFilePort2", data.data.data.id);
               }
             });
         }

@@ -1,0 +1,328 @@
+import React, { useState } from "react";
+import Breadcrumb from "@components/Breadcrumb";
+import MoveToTop from "@components/MoveToTop";
+import Link from "next/link";
+
+const Faculty = () => {
+    const route = [{
+            title: "หน้าหลัก",
+            link: "/member",
+        },
+        {
+            title: "แนะนำคณะ",
+            link: "/faculty/all-faculty",
+        },
+    ];
+
+    return ( <
+        div className = "px-[104px] py-[29px]" >
+        <
+        MoveToTop / >
+        <
+        Breadcrumb route = { route }
+        /> <
+        div className = "text-center text-[28px] font-semibold my-12" >
+        แนะนำคณะ <
+        /div> { /* วิทย์คอม */ } <
+        div className = "flex justify-between items-center" >
+        <
+        div className = "text-left text-[25px] font-semibold" > วิทย์ คอม < /div> <
+        a href = "/faculty/cs"
+        className = "text-right text-[16px] font-semibold underline" >
+        ดูทั้ งหมด <
+        /a> <
+        /div> <
+        hr className = "mt-[18px] mb-[16px]" / >
+        <
+        div className = "bg-[#FFCA61] rounded-[7px] text-left text-[25px] font-semibold py-[25px] pl-[8px]" >
+        หลั กสูตรของภาควิชาวิทยาการคอมพิวเตอร์ <
+        /div> <
+        div className = "bg-[#FFEC85] text-left text-[18px] font-semibold mt-[16px] py-[32px] pl-[8px]" >
+        หลั กสูตรวิทยาศาสตรบั ณฑิต สาขาวิทยาการคอมพิวเตอร์(Bachelor of Science Program in Computer Science) <
+        /div> <
+        div className = "bg-[#FAFAFA] shadow-md" >
+        <
+        div className = "text-[18px] font-semibold text-[#FFCA61] pt-[32px] pl-[32px]" >
+        ชื่ อหลั กสูตร <
+        /div> <
+        div className = "text-[18px] font-semibold my-[8px] pl-[56px]" >
+        ชื่ อภาษาไทย <
+        span className = "text-[18px] font-normal" >
+        : หลั กสูตรวิทยาศาสตรบั ณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์ <
+        /span> <
+        /div> <
+        div className = "text-[18px] font-semibold pl-[56px]" >
+        ชื่ อภาษาอั งกฤษ <
+        span className = "text-[18px] font-normal" >
+        : Bachelor of Science Program in Computer Science <
+        /span> <
+        /div> <
+        div className = "text-[18px] font-semibold text-[#FFCA61] pt-[24px] pl-[32px]" >
+        ชื่ อปริญญาและสาขาวิชา <
+        /div> <
+        div className = "text-[18px] font-semibold pl-[56px] my-[8px]" >
+        ชื่ อเต็ ม(ภาษาไทย) <
+        span className = "text-[18px] font-normal" >
+        : วิทยาศาสตรบั ณฑิต(วิทยาการคอมพิวเตอร์) <
+        /span> <
+        /div> <
+        div className = "text-[18px] font-semibold pl-[56px]" >
+        ชื่ อเต็ ม(ภาษาอั งกฤษ) <
+        span className = "text-[18px] font-normal" >
+        : Bachelor of Science Program in Computer Science <
+        /span> <
+        /div> <
+        div className = "text-[18px] font-semibold pl-[56px] my-[8px]" >
+        ชื่ อย่ อ(ภาษาไทย) <
+        span className = "text-[18px] font-normal" >
+        : วท.บ.(วิทยาการคอมพิวเตอร์) <
+        /span> <
+        /div> <
+        div className = "text-[18px] font-semibold pl-[56px] pb-[32px]" >
+        ชื่ อย่ อ(ภาษาอั งกฤษ) <
+        span className = "text-[18px] font-normal" >
+        : B.Sc.(Computer Science) <
+        /span> <
+        /div> <
+        /div> <
+        div className = "grid grid-cols-2 gap-14 mt-[40px] mb-[104px]" >
+        <
+        div className = "flex-col" >
+        <
+        Link href = "https://cscamp.net/"
+        target = "_blank"
+        className = "flex-col" >
+        <
+        img src = "https://cscamp.net/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogoCamp.4f75f67f.webp&w=828&q=100"
+        className = "w-[621px] h-[349px] rounded-[12px] hover:scale-110 transition duration-300 ease-in-out" /
+        >
+        <
+        div className = "text-center pt-2 font-semibold" >
+        CSCamp 15 ค่ ายวิทยาการคอมพิวเตอร์ พระจอมเกล้ าลาดกระบั ง <
+        /div> <
+        /Link> <
+        /div> <
+        div className = "flex-col" >
+        <
+        Link href = "https://www.trueplookpanya.com/tcas/campnews/detail/1940"
+        target = "_blank"
+        className = "flex-col" >
+        <
+        div className = "relative overflow-hidden rounded-[12px]" >
+        <
+        img src = "https://static.trueplookpanya.com/trueplookpanya/camp-news/file/1940/camp-news19405114.jpg"
+        className = "w-[621px] h-[349px] rounded-[12px] hover:scale-110 transition duration-300 ease-in-out" /
+        >
+        <
+        /div> <
+        div className = "text-center pt-2 font-semibold" >
+        Computer Science KU Open House 2022 <
+        /div> <
+        /Link> <
+        /div> <
+        /div> { /* วิทย์คอม */ } { /* วิศวะคอม */ } <
+        div className = "flex justify-between items-center" >
+        <
+        div className = "text-left text-[25px] font-semibold" > วิศวะคอม < /div> <
+        a href = "/faculty/ce"
+        className = "text-right text-[16px] font-semibold underline" >
+        ดูทั้ งหมด <
+        /a> <
+        /div> <
+        hr className = "mt-[18px] mb-[16px]" / >
+        <
+        div className = "bg-[#FFCA61] rounded-[7px] text-left text-[25px] font-semibold py-[25px] pl-[8px]" >
+        หลั กสูตรของภาควิชาวิศวกรรมคอมพิวเตอร์ <
+        /div> <
+        div className = "bg-[#FFEC85] text-left text-[18px] font-semibold mt-[16px] py-[32px] pl-[8px]" >
+        หลั กสูตรรวิศวกรรมศาสตรบั ณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์(Bachelor of Engineering Program in Computer Engineering) <
+        /div> <
+        div className = "bg-[#FAFAFA] shadow-md" >
+        <
+        div className = "text-[18px] font-semibold text-[#FFCA61] pt-[32px] pl-[32px]" >
+        ชื่ อหลั กสูตร <
+        /div> <
+        div className = "text-[18px] font-semibold my-[8px] pl-[56px]" >
+        ชื่ อภาษาไทย <
+        span className = "text-[18px] font-normal" >
+        : หลั กสูตรวิศวกรรมศาสตรบั ณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์ <
+        /span> <
+        /div> <
+        div className = "text-[18px] font-semibold pl-[56px]" >
+        ชื่ อภาษาอั งกฤษ <
+        span className = "text-[18px] font-normal" >
+        : Bachelor of Engineering Program in Computer Engineering <
+        /span> <
+        /div> <
+        div className = "text-[18px] font-semibold text-[#FFCA61] pt-[24px] pl-[32px]" >
+        ชื่ อปริญญาและสาขาวิชา <
+        /div> <
+        div className = "text-[18px] font-semibold pl-[56px] my-[8px]" >
+        ชื่ อเต็ ม(ภาษาไทย) <
+        span className = "text-[18px] font-normal" >
+        : วิศวกรรมศาสตร์ บั ญฑิต(วิศวกรรมคอมพิวเตอร์) <
+        /span> <
+        /div> <
+        div className = "text-[18px] font-semibold pl-[56px]" >
+        ชื่ อเต็ ม(ภาษาอั งกฤษ) <
+        span className = "text-[18px] font-normal" >
+        : Bachelor of Engineering Program in Computer Engineering <
+        /span> <
+        /div> <
+        div className = "text-[18px] font-semibold pl-[56px] my-[8px]" >
+        ชื่ อย่ อ(ภาษาไทย) <
+        span className = "text-[18px] font-normal" >
+        : วศ.บ.(วิศวกรรมคอมพิวเตอร์) <
+        /span> <
+        /div> <
+        div className = "text-[18px] font-semibold pl-[56px] pb-[32px]" >
+        ชื่ อย่ อ(ภาษาอั งกฤษ) <
+        span className = "text-[18px] font-normal" >
+        : B.Eng.(Computer Engineering) <
+        /span> <
+        /div> <
+        /div> <
+        div className = "grid grid-cols-2 gap-14 mt-[40px] mb-[104px]" >
+        <
+        div className = "flex-col" >
+        <
+        Link href = "https://www.camphub.in.th/cesca-18/"
+        target = "_blank"
+        className = "flex-col" >
+        <
+        div className = "relative overflow-hidden rounded-[12px]" >
+        <
+        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/CESCa18-Banner1200x630.png.webp"
+        className = "w-[621px] h-[349px] rounded-[12px] hover:scale-110 transition duration-300 ease-in-out" /
+        >
+        <
+        /div> <
+        div className = "text-center pt-2 font-semibold" >
+        CESCa ค่ ายเยาวชนวิศวกรรมคอมพิวเตอร์ ครั้ งที่ 18 <
+        /div> <
+        /Link> <
+        /div> <
+        div className = "flex-col" >
+        <
+        Link href = "https://www.camphub.in.th/comcamp-34/"
+        target = "_blank"
+        className = "flex-col" >
+        <
+        div className = "relative overflow-hidden rounded-[12px]" >
+        <
+        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/Banner_Camphub.jpg.webp"
+        className = "w-[621px] h-[349px] rounded-[12px] hover:scale-110 transition duration-300 ease-in-out" /
+        >
+        <
+        /div> <
+        div className = "text-center pt-2 font-semibold" >
+        Comcamp34 ค่ ายวิศวะคอมฯ มจธ. <
+        /div> <
+        /Link> <
+        /div> <
+        /div> { /* วิศวะคอม */ } { /* ไอที */ } <
+        div className = "flex justify-between items-center" >
+        <
+        div className = "text-left text-[25px] font-semibold" > ไอที < /div> <
+        a href = "/faculty/it"
+        className = "text-right text-[16px] font-semibold underline" >
+        ดูทั้ งหมด <
+        /a> <
+        /div> <
+        hr className = "mt-[18px] mb-[16px]" / >
+        <
+        div className = "bg-[#FFCA61] rounded-[7px] text-left text-[25px] font-semibold py-[25px] pl-[8px]" >
+        หลั กสูตรของภาควิชาเทคโนโลยีสารสนเทศ <
+        /div> <
+        div className = "bg-[#FFEC85] text-left text-[18px] font-semibold mt-[16px] py-[32px] pl-[8px]" >
+        หลั กสูตรวิทยาศาสตรบั ณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ(Bachelor of Science Program in Information Technology) <
+        /div> <
+        div className = "bg-[#FAFAFA] shadow-md" >
+        <
+        div className = "text-[18px] font-semibold text-[#FFCA61] pt-[32px] pl-[32px]" >
+        ชื่ อหลั กสูตร <
+        /div> <
+        div className = "text-[18px] font-semibold my-[8px] pl-[56px]" >
+        ชื่ อภาษาไทย <
+        span className = "text-[18px] font-normal" >
+        : หลั กสูตรวิทยาศาสตรบั ณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ <
+        /span> <
+        /div> <
+        div className = "text-[18px] font-semibold pl-[56px]" >
+        ชื่ อภาษาอั งกฤษ <
+        span className = "text-[18px] font-normal" >
+        : Bachelor of Science Program in Information Technology <
+        /span> <
+        /div> <
+        div className = "text-[18px] font-semibold text-[#FFCA61] pt-[24px] pl-[32px]" >
+        ชื่ อปริญญาและสาขาวิชา <
+        /div> <
+        div className = "text-[18px] font-semibold pl-[56px] my-[8px]" >
+        ชื่ อเต็ ม(ภาษาไทย) <
+        span className = "text-[18px] font-normal" >
+        : วิทยาศาสตรบั ณฑิต(เทคโนโลยีสารสนเทศ) <
+        /span> <
+        /div> <
+        div className = "text-[18px] font-semibold pl-[56px]" >
+        ชื่ อเต็ ม(ภาษาอั งกฤษ) <
+        span className = "text-[18px] font-normal" >
+        : Bachelor of Science(Information Technology) <
+        /span> <
+        /div> <
+        div className = "text-[18px] font-semibold pl-[56px] my-[8px]" >
+        ชื่ อย่ อ(ภาษาไทย) <
+        span className = "text-[18px] font-normal" >
+        : วท.บ.(เทคโนโลยีสารสนเทศ) <
+        /span> <
+        /div> <
+        div className = "text-[18px] font-semibold pl-[56px] pb-[32px]" >
+        ชื่ อย่ อ(ภาษาอั งกฤษ) <
+        span className = "text-[18px] font-normal" >
+        : B.Sc.(Information Technology) <
+        /span> <
+        /div> <
+        /div> <
+        div className = "grid grid-cols-2 gap-14 mt-[40px] mb-[104px]" >
+        <
+        div className = "flex flex-col" >
+        <
+        Link href = "https://www.trueplookpanya.com/tcas/campnews/detail/1942"
+        target = "_blank"
+        className = "flex-col" >
+        <
+        div className = "relative overflow-hidden rounded-[12px]" >
+        <
+        img src = "https://static.trueplookpanya.com/trueplookpanya/camp-news/file/1942/camp-news19428099.jpg"
+        className = "w-[621px] h-[349px] rounded-[12px] hover:scale-110 transition duration-300 ease-in-out" /
+        >
+        <
+        /div> <
+        div className = "text-center pt-2 font-semibold" >
+        ค่ าย ITCAMP MAEJO 2023 <
+        /div> <
+        /Link> <
+        /div> <
+        div className = "flex flex-col" >
+        <
+        Link href = "https://www.camphub.in.th/tobeit66-kmitl/"
+        target = "_blank"
+        className = "flex-col" >
+        <
+        div className = "relative overflow-hidden rounded-[12px]" >
+        <
+        img src = "https://www.camphub.in.th/wp-content/uploads/2022/05/Frame-7.jpg.webp"
+        className = "w-[621px] h-[349px] rounded-[12px] hover:scale-110 transition duration-300 ease-in-out" /
+        >
+        <
+        /div> <
+        div className = "text-center pt-2 font-semibold" >
+        ToBeIT’ 66 @KMITL เสริมความคิด ติดความรู้ ก้ าวเข้ าสู่ เด็ กไอที <
+        /div> <
+        /Link> <
+        /div> <
+        /div> { /* ไอที */ } <
+        /div>
+    );
+};
+
+export default Faculty;

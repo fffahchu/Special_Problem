@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
 import Breadcrumb from "@components/Breadcrumb";
-
+import Swal from "sweetalert2";
+import axios from "axios";
+import { useRouter } from 'next/navigation';
 
 const Registerform = () => {
+  const rounter = useRouter()
   const route = [
     {
       title: "หน้าแรก",
@@ -15,6 +18,71 @@ const Registerform = () => {
       link: "/register",
     },
   ];
+  const [name, setName] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [re_password, setRe_password] = useState("");
+  const [number, setNumber] = useState("");
+
+  // // const submit_button = document.querySelector(".button");
+  const submit_button = async (e) => {
+    e.preventDefault();
+
+    localStorage.setItem("name", name);
+    localStorage.setItem("lastName", lastname);
+    localStorage.setItem("username", username);
+    localStorage.setItem("number", number);
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
+    localStorage.setItem("re_password", re_password);
+
+    if (
+      name == "" ||
+      lastname == "" ||
+      username == "" ||
+      email == "" ||
+      password == "" ||
+      re_password == "" ||
+      number == ""
+    ) {
+      Swal.fire("Opps..!", "input field has no value!", "error");
+    } else {
+      if (password !== re_password) {
+        Swal.fire("Opps..!", "Password not matching!", "error");
+      } else {
+        Swal.fire("Good job!", "Register successful!", "success");
+
+        let model = {
+          data: {
+            name: name,
+            lastname: lastname,
+            user_name: username,
+            email: email,
+            password: password,
+            re_password: re_password,
+            phone: number,
+          },
+        };
+
+        await axios
+          .post("http://localhost:1337/api/registers", model)
+          .then((data) => {
+            if (data.status === 200) {
+              localStorage.setItem("idUser", data.data.data.id);
+            }
+            setTimeout(() => {
+              rounter.push("/member")
+            }, 2000);
+          })
+          .catch((e) => {
+            console.log(e);
+          });
+      }
+    }
+  };
+
   return (
     <div className="px-[104px] py-[29px]">
       <MoveToTop />
@@ -71,19 +139,25 @@ const Registerform = () => {
                   </label>
                   <input
                     className="py-2.5 px-3.5 ml-[85px] mt-[10px] w-[180px] h-[35px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
+                    required
                     type="text"
                     id="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                   ></input>
                 </div>
 
                 <div className="flex flex-wrap mb-2">
-                  <label for="name" className="font-bold">
+                  <label for="lastname" className="font-bold">
                     นามสกุล <a className="text-[#FF0000]">*</a>
                   </label>
                   <input
                     className="py-2.5 px-3.5 mr-[40px] mt-[10px] w-[180px] h-[35px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
+                    required
                     type="text"
-                    id="name"
+                    id="lastname"
+                    value={lastname}
+                    onChange={(e) => setLastname(e.target.value)}
                   ></input>
                 </div>
               </div>
@@ -95,8 +169,11 @@ const Registerform = () => {
                 <input
                   className="py-2.5 px-3.5 flex flex-wrap w-[370px] h-[35px] mt-[8px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
                   id="username"
+                  required
                   type="text"
                   placeholder="เช่น fffahch.62"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
                 ></input>
                 <div className="text-[13px] font-light text-[#9ca3af] ml-[2px] mt-[5px]">
                   คุณใช้ตัวอักษร ตัวเลข และจุดได้
@@ -110,7 +187,10 @@ const Registerform = () => {
                 <input
                   className="py-2.5 px-3.5 flex flex-wrap w-[370px] h-[35px] mt-[8px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
                   id="email"
+                  required
                   type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 ></input>
               </div>
 
@@ -121,7 +201,10 @@ const Registerform = () => {
                 <input
                   className="py-2.5 px-3.5 flex flex-wrap w-[370px] h-[35px] mt-[8px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
                   id="password"
-                  type="text"
+                  required
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 ></input>
                 <div className="text-[13px] font-light text-[#9ca3af] ml-[2px] mt-[5px]">
                   ใช้อักขระ 8 ตัวขึ้นไปที่มีทั้งตัวอักษร ตัวเลข
@@ -136,7 +219,10 @@ const Registerform = () => {
                 <input
                   className="py-2.5 px-3.5 flex flex-wrap w-[370px] h-[35px] mt-[8px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
                   id="re_password"
-                  type="text"
+                  required
+                  type="password"
+                  value={re_password}
+                  onChange={(e) => setRe_password(e.target.value)}
                 ></input>
               </div>
 
@@ -147,7 +233,10 @@ const Registerform = () => {
                 <input
                   className="py-2.5 px-3.5 flex flex-wrap w-[370px] h-[35px] mt-[8px] border-[1px] border-[#bbf7d0] rounded-lg shadow-md shadow-[#dcfce7]"
                   id="number"
+                  required
                   type="text"
+                  value={number}
+                  onChange={(e) => setNumber(e.target.value)}
                 ></input>
               </div>
 
@@ -175,6 +264,7 @@ const Registerform = () => {
               <div className="mt-[40px] ml-[195px]">
                 <button
                   type="submit"
+                  onClick={submit_button}
                   className="w-[152px] h-[44px] rounded-3xl shadow drop-shadow-lg font-bold transition ease-in-out bg-[#FFCA61] hover:-translate-y-1 hover:scale-110 hover:bg-[#FFEC85] duration-300"
                 >
                   ลงทะเบียน

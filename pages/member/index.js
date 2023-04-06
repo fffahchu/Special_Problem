@@ -99,7 +99,11 @@ const Member = () => {
           className="mx-[108px] h-[184px] -mt-[184px]"
         />
         <div className="flex gap-9 absolute bottom-0 right-0 mx-[155px] my-[32px]">
-          <Link href="/create-portfolio" className="flex items-center gap-2 py-3 px-6 rounded-full bg-orange">
+          <Link
+            href="/create-portfolio"
+            className="flex items-center gap-2 py-3 px-6 rounded-full bg-orange"
+            onClick={() => localStorage.clear()}
+          >
             <img
               src="assets/icons/plus.svg"
               alt="icon-plus"
@@ -115,6 +119,7 @@ const Member = () => {
               width="21"
               height="21"
             />
+
             <span className="font-semibold">ดูตัวอย่างแฟ้มสะสมผลงาน</span>
           </button>
           <button className="flex items-center gap-2 py-3 px-6 rounded-full bg-orange">
@@ -179,13 +184,19 @@ const Member = () => {
             </div>
             <div className="flex flex-col gap-8 mt-7">
               <div className="flex flex-col gap-3">
-                <img src="assets/images/news/hotnews-1.jpg" alt="news-1" className="rounded-[11px] w-[312px] h-[187px]" />
-                <div>
-                  รวมกำหนดการรอบ Portfolio #TCAS66 ตุลาคมนี้ รับเพียบ!
-                </div>
+                <img
+                  src="assets/images/news/hotnews-1.jpg"
+                  alt="news-1"
+                  className="rounded-[11px] w-[312px] h-[187px]"
+                />
+                <div>รวมกำหนดการรอบ Portfolio #TCAS66 ตุลาคมนี้ รับเพียบ!</div>
               </div>
               <div className="flex flex-col gap-3">
-                <img src="assets/images/news/hotnews-4.jpg" alt="news-2" className="rounded-[11px] w-[312px] h-[187px]" />
+                <img
+                  src="assets/images/news/hotnews-4.jpg"
+                  alt="news-2"
+                  className="rounded-[11px] w-[312px] h-[187px]"
+                />
                 <div>
                   TCAS66 รอบ 1 : สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
                 </div>
@@ -240,7 +251,10 @@ const Member = () => {
                 <div className="text-[13px]">
                   การสร้างแฟ้มสะสะสมผลงาน กดปุ่ม
                 </div>
-                <Link href="/create-portfolio" className="flex items-center gap-2 py-2 px-5 rounded-full bg-orange">
+                <Link
+                  href="/create-portfolio"
+                  className="flex items-center gap-2 py-2 px-5 rounded-full bg-orange"
+                >
                   <img
                     src="assets/icons/plus.svg"
                     alt="icon-plus"

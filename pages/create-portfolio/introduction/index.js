@@ -28,10 +28,10 @@ const CreateIntroduction = () => {
 
   const getPort = async (idPort) => {
     await axios
-      .get(`http://localhost:3000/api/port-step-3/${idPort}`)
+      .get(`http://localhost:1337/api/port-step-3s/${idPort}`)
       .then((data) => {
         if (data.status === 200) {
-          setPreface(data.data.attributes.preface);
+          setPreface(data.data.data.attributes.preface);
         }
       })
       .catch((e) => {
@@ -54,10 +54,10 @@ const CreateIntroduction = () => {
 
       if (idPort3) {
         await axios
-          .put(`http://localhost:3000/api/port-step-3/${idPort3}`, model)
+          .put(`http://localhost:1337/api/port-step-3s/${idPort3}`, model)
           .then((data) => {
             if (data.status === 200) {
-              localStorage.setItem("idPort3", data.data.id);
+              localStorage.setItem("idPort3", data.data.data.id);
             }
           })
           .catch((e) => {
@@ -65,10 +65,10 @@ const CreateIntroduction = () => {
           });
       } else {
         await axios
-          .post("http://localhost:3000/api/port-step-3", model)
+          .post("http://localhost:1337/api/port-step-3s", model)
           .then((data) => {
             if (data.status === 200) {
-              localStorage.setItem("idPort3", data.data.id);
+              localStorage.setItem("idPort3", data.data.data.id);
             }
           })
           .catch((e) => {

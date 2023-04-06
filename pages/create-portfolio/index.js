@@ -53,10 +53,10 @@ const CreatePortfolio = () => {
 
   const getPort = async (idPort) => {
     await axios
-      .get(`http://localhost:3000/api/templates/${idPort}`)
+      .get(`http://localhost:1337/api/templates/${idPort}`)
       .then((data) => {
         if (data.status === 200) {
-          setSelectTemp(data.data.attributes.template);
+          setSelectTemp(data.data.data.attributes.template);
         }
       })
       .catch((e) => {
@@ -75,10 +75,10 @@ const CreatePortfolio = () => {
     const idPort = localStorage.getItem("idPort") || null;
     if (idPort) {
       await axios
-        .put(`http://localhost:3000/api/templates/${idPort}`, model)
+        .put(`http://localhost:1337/api/templates/${idPort}`, model)
         .then((data) => {
           if (data.status === 200) {
-            localStorage.setItem("idPort", data.data.id);
+            localStorage.setItem("idPort", data.data.data.id);
           }
         })
         .catch((e) => {
@@ -86,10 +86,10 @@ const CreatePortfolio = () => {
         });
     } else {
       await axios
-        .post("http://localhost:3000/api/templates", model)
+        .post("http://localhost:1337/api/templates", model)
         .then((data) => {
           if (data.status === 200) {
-            localStorage.setItem("idPort", data.data.id);
+            localStorage.setItem("idPort", data.data.data.id);
           }
         })
         .catch((e) => {
