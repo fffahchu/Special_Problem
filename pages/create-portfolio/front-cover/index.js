@@ -26,13 +26,14 @@ const CreateFrontCover = () => {
 
   useEffect(() => {
     const idPort2 = localStorage.getItem("idPort2") || null;
+    const idFilePort2 = localStorage.getItem("idFilePort2") || null;
 
-    if (idPort2) {
-      getPort(idPort2);
+    if (idPort2 && idFilePort2) {
+      getPort(idPort2, idFilePort2);
     }
   }, []);
 
-  const getPort = async (idPort) => {
+  const getPort = async (idPort, idFilePort) => {
     await axios
       .get(`http://localhost:1337/api/port-step-2s/${idPort}`)
       .then((data) => {
@@ -41,6 +42,16 @@ const CreateFrontCover = () => {
           setNameTh(data.data.data.attributes.fullnameTH);
           setNameEng(data.data.data.attributes.fullnameEN);
           setSchool(data.data.data.attributes.school);
+        }
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+
+    await axios
+      .get(`http://localhost:1337/api/upload/files/${idFilePort}`)
+      .then((data) => {
+        if (data.status === 200) {
           const reader = new FileReader();
 
           reader.addEventListener("load", () => {
@@ -50,6 +61,8 @@ const CreateFrontCover = () => {
           if (data.data.attributes.profile) {
             reader.readAsDataURL(data.data.data.attributes.profile);
           }
+
+          setFile(data.data.data.attributes.profile)
         }
       })
       .catch((e) => {
@@ -74,7 +87,7 @@ const CreateFrontCover = () => {
   };
 
   const onSubmit = async () => {
-    console.log("create front-cover")
+    console.log("create front-cover");
     try {
       const idPort = localStorage.getItem("idPort") || null;
       let idPort2 = localStorage.getItem("idPort2") || null;

@@ -88,16 +88,13 @@ const Member = () => {
     <div>
       <MoveToTop />
       <div className="relative">
-        <img
-          src="assets/images/gradient-background.png"
-          alt="gradient-background"
-          className="w-full"
-        />
-        <img
-          src="assets/images/background-profile.png"
-          alt="gradient-background"
-          className="mx-[108px] h-[184px] -mt-[184px]"
-        />
+        <div className="w-full px-[110px] bg-gradient-to-br from-gray to-[#91CFDC]">
+          <img
+            src="assets/images/background-profile.png"
+            alt="gradient-background"
+            className="h-full w-full object-fill"
+          />
+        </div>
         <div className="flex gap-9 absolute bottom-0 right-0 mx-[155px] my-[32px]">
           <Link
             href="/create-portfolio"
