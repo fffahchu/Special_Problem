@@ -33,15 +33,17 @@ const Loginform = () => {
       }
       const res = await axios.get("http://localhost:1337/api/registers");
       if (res.status === 200) {
-        res.data.data.forEach((element, index) => {
+        for (var i = 0; i < res.data.data.length; i++) {
+          let element = res.data.data[i];
           if (
-            index == res.data.data.length - 1 &&
+            i == res.data.data.length - 1 &&
             (element.attributes.user_name != email ||
               element.attributes.email != email) &&
             element.attributes.password != password
           ) {
             Swal.fire("Opps..!", "Something is wrong!", "error");
           }
+
           if (
             (element.attributes.user_name == email ||
               element.attributes.email == email) &&
@@ -50,10 +52,11 @@ const Loginform = () => {
             Swal.fire("Good job!", "login successful!", "success");
             localStorage.setItem("idUser", element.id);
             setTimeout(() => {
-              location.href = "/first-page";
-            }, 1800);
+              location.href = "/member";
+            }, 1400);
+            return;
           }
-        });
+        }
       }
     } catch (e) {
       console.log(e);

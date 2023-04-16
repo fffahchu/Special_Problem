@@ -82,7 +82,9 @@ const PersonalRecord = () => {
       .get(`http://localhost:1337/api/upload/files/${idFilePort}`)
       .then((data) => {
         if (data.status === 200) {
-          setFile(data.data.data.attributes.profile);
+          if (data.data.url) {
+            setFile("http://localhost:1337"+data.data.url);
+          }
         }
       })
       .catch((e) => {
@@ -158,7 +160,7 @@ const PersonalRecord = () => {
             .post(`http://localhost:1337/api/upload`, form)
             .then((data) => {
               if (data.status === 200) {
-                localStorage.setItem("idFilePort5", data.data.data.id);
+                localStorage.setItem("idFilePort5", data.data[0].id);
               }
             });
         }
@@ -226,7 +228,7 @@ const PersonalRecord = () => {
                   </div>
                 ) : (
                   <img
-                    src={URL.createObjectURL(file)}
+                    src={typeof file == "string" ? file : typeof file == "object" ? URL.createObjectURL(file) : ""}
                     alt="preview-image"
                     className="w-[222px] h-[222px] rounded-[11px] object-cover border"
                   />

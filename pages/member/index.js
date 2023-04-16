@@ -84,6 +84,22 @@ const Member = () => {
     },
   ];
 
+  const clearLocalPort = () => {
+    localStorage.removeItem('idPort')
+    localStorage.removeItem('idPort2')
+    localStorage.removeItem('idFilePort2')
+    localStorage.removeItem('idPort3')
+    localStorage.removeItem('idPort4')
+    localStorage.removeItem('idPort5')
+    localStorage.removeItem('idFilePort5')
+    localStorage.removeItem('idPort6')
+    localStorage.removeItem('idFilePort6')
+    localStorage.removeItem('idPort7')
+    localStorage.removeItem('idFilePort7')
+    localStorage.removeItem('idPort8')
+    localStorage.removeItem('idFilePort8')
+  }
+
   return (
     <div>
       <MoveToTop />
@@ -94,12 +110,12 @@ const Member = () => {
             alt="gradient-background"
             className="h-full w-full object-fill"
           />
-        </div>
+        </div>{" "}
         <div className="flex gap-9 absolute bottom-0 right-0 mx-[155px] my-[32px]">
           <Link
             href="/create-portfolio"
             className="flex items-center gap-2 py-3 px-6 rounded-full bg-orange"
-            onClick={() => localStorage.clear()}
+            onClick={clearLocalPort}
           >
             <img
               src="assets/icons/plus.svg"
@@ -107,8 +123,8 @@ const Member = () => {
               width="21"
               height="21"
             />
-            <span className="font-semibold">สร้างแฟ้มสะสมผลงานใหม่</span>
-          </Link>
+            <span className="font-semibold"> สร้ างแฟ้ มสะสมผลงานใหม่ </span>{" "}
+          </Link>{" "}
           <button className="flex items-center gap-2 py-3 px-6 rounded-full bg-orange">
             <img
               src="assets/icons/eye.svg"
@@ -116,9 +132,8 @@ const Member = () => {
               width="21"
               height="21"
             />
-
-            <span className="font-semibold">ดูตัวอย่างแฟ้มสะสมผลงาน</span>
-          </button>
+            <span className="font-semibold"> ดูตั วอย่ างแฟ้ มสะสมผลงาน </span>{" "}
+          </button>{" "}
           <button className="flex items-center gap-2 py-3 px-6 rounded-full bg-orange">
             <img
               src="assets/icons/icon-image.svg"
@@ -126,10 +141,10 @@ const Member = () => {
               width="21"
               height="21"
             />
-            <span className="font-semibold">เพิ่มรูปผลงานใหม่</span>
-          </button>
-        </div>
-      </div>
+            <span className="font-semibold"> เพิ่ มรูปผลงานใหม่ </span>{" "}
+          </button>{" "}
+        </div>{" "}
+      </div>{" "}
       <div className="flex gap-[51px] px-[108px] pb-[110px]">
         <div className="flex flex-col gap-12 w-[312px]">
           <div>
@@ -141,44 +156,47 @@ const Member = () => {
                 width="120"
                 height="120"
               />
-              <div className="text-sm mt-[25px]">ยินดีต้อนรับสู่ ComPort!</div>
+              <div className="text-sm mt-[25px]">
+                {" "}
+                ยินดีต้ อนรั บสู่ ComPort!{" "}
+              </div>{" "}
               <div className="mt-1.5 bg-green rounded-full px-[15px] pb-1">
-                คุณ
-              </div>
+                คุณ{" "}
+              </div>{" "}
               <div className="mt-[10px] text-xl font-semibold">
-                สุธิดา มานะยิ่ง
-              </div>
-              <div className="mt-1 text-[11px] text-gray">@aom_suthida</div>
+                สุธิดา มานะยิ่ ง{" "}
+              </div>{" "}
+              <div className="mt-1 text-[11px] text-gray"> @aom_suthida </div>{" "}
               <div className="flex text-[11px] gap-[15px] mt-4">
                 <div className="flex items-center gap-1.5">
                   <img src="assets/icons/location.svg" alt="icon-location" />
-                  <div>ไม่ได้ระบุชื่อสถานศึกษา</div>
-                </div>
+                  <div> ไม่ ได้ ระบุชื่ อสถานศึกษา </div>{" "}
+                </div>{" "}
                 <div className="flex items-center gap-1.5">
                   <img src="assets/icons/calendar.svg" alt="icon-location" />
-                  <div>เข้าร่วมเมื่อ สิงหาคม 2565</div>
-                </div>
-              </div>
-            </div>
+                  <div> เข้ าร่ วมเมื่ อ สิงหาคม 2565 </div>{" "}
+                </div>{" "}
+              </div>{" "}
+            </div>{" "}
             <div className="flex justify-center text-lg font-semibold rounded-b-xl cursor-pointer bg-orange py-4">
-              แก้ไขโปรไฟล์
-            </div>
-          </div>
+              แก้ ไขโปรไฟล์{" "}
+            </div>{" "}
+          </div>{" "}
           <div>
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-1">
-                <div className="text-xl font-semibold">ข่าวฮอต</div>
+                <div className="text-xl font-semibold"> ข่ าวฮอต </div>{" "}
                 <img
                   src="assets/icons/fire.svg"
                   alt="icon-fire"
                   width="24"
                   height="24"
                 />
-              </div>
+              </div>{" "}
               <a href="#" className="font-semibold underline">
-                ดูทั้งหมด
-              </a>
-            </div>
+                ดูทั้ งหมด{" "}
+              </a>{" "}
+            </div>{" "}
             <div className="flex flex-col gap-8 mt-7">
               <div className="flex flex-col gap-3">
                 <img
@@ -186,8 +204,11 @@ const Member = () => {
                   alt="news-1"
                   className="rounded-[11px] w-[312px] h-[187px]"
                 />
-                <div>รวมกำหนดการรอบ Portfolio #TCAS66 ตุลาคมนี้ รับเพียบ!</div>
-              </div>
+                <div>
+                  {" "}
+                  รวมกำหนดการรอบ Portfolio# TCAS66 ตุลาคมนี้ รั บเพียบ!{" "}
+                </div>{" "}
+              </div>{" "}
               <div className="flex flex-col gap-3">
                 <img
                   src="assets/images/news/hotnews-4.jpg"
@@ -195,18 +216,19 @@ const Member = () => {
                   className="rounded-[11px] w-[312px] h-[187px]"
                 />
                 <div>
-                  TCAS66 รอบ 1 : สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                  TCAS66 รอบ 1: สถาบั นเทคโนโลยีพระจอมเกล้ าเจ้ าคุณทหารลาดกระบั
+                  ง{" "}
+                </div>{" "}
+              </div>{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
         <div className="grow pt-[51px] pr-1">
           <div>
             <div className="flex justify-between items-center">
               <div className="text-xl font-semibold">
-                แฟ้มสะสมผลงานของฉัน (0)
-              </div>
+                แฟ้ มสะสมผลงานของฉั น(0){" "}
+              </div>{" "}
               <div className="flex items-center gap-[18px]">
                 <div className="flex items-center gap-2">
                   <img
@@ -215,8 +237,8 @@ const Member = () => {
                     width="16"
                     height="16"
                   />
-                  <div className="text-sm">เสร็จแล้ว (0)</div>
-                </div>
+                  <div className="text-sm"> เสร็ จแล้ ว(0) </div>{" "}
+                </div>{" "}
                 <div className="flex items-center gap-2">
                   <img
                     src="assets/icons/edit.svg"
@@ -224,10 +246,10 @@ const Member = () => {
                     width="16"
                     height="16"
                   />
-                  <div className="text-sm">กำลังทำอยู่ (0)</div>
-                </div>
-              </div>
-            </div>
+                  <div className="text-sm"> กำลั งทำอยู่(0) </div>{" "}
+                </div>{" "}
+              </div>{" "}
+            </div>{" "}
             <hr className="mt-[18px]" />
             <div className="flex flex-col items-center py-[69px]">
               <div className="flex justify-center items-center w-[100px] h-[100px] rounded-full bg-yellow">
@@ -237,17 +259,17 @@ const Member = () => {
                   width="60"
                   height="60"
                 />
-              </div>
+              </div>{" "}
               <div className="text-[15px] font-semibold mt-[18px]">
-                คุณยังไม่ได้สร้างแฟ้มสะสมผลงาน
-              </div>
+                คุณยั งไม่ ได้ สร้ างแฟ้ มสะสมผลงาน{" "}
+              </div>{" "}
               <div className="text-[13px] mt-1">
-                มาสร้างแฟ้มสะสมผลงานชิ้นแรกกันเถอะ!
-              </div>
+                มาสร้ างแฟ้ มสะสมผลงานชิ้ นแรกกั นเถอะ!
+              </div>{" "}
               <div className="flex items-center mt-5 gap-[8px]">
                 <div className="text-[13px]">
-                  การสร้างแฟ้มสะสะสมผลงาน กดปุ่ม
-                </div>
+                  การสร้ างแฟ้ มสะสะสมผลงาน กดปุ่ ม{" "}
+                </div>{" "}
                 <Link
                   href="/create-portfolio"
                   className="flex items-center gap-2 py-2 px-5 rounded-full bg-orange"
@@ -259,14 +281,14 @@ const Member = () => {
                     height="16"
                   />
                   <span className="text-[13px] font-semibold">
-                    สร้างแฟ้มสะสมผลงานใหม่
-                  </span>
-                </Link>
-              </div>
-            </div>
-          </div>
+                    สร้ างแฟ้ มสะสมผลงานใหม่{" "}
+                  </span>{" "}
+                </Link>{" "}
+              </div>{" "}
+            </div>{" "}
+          </div>{" "}
           <div>
-            <div className="text-xl font-semibold">ผลงานของฉัน (0)</div>
+            <div className="text-xl font-semibold"> ผลงานของฉั น(0) </div>{" "}
             <hr className="mt-[18px]" />
             <div className="flex flex-col items-center py-[69px]">
               <div className="flex justify-center items-center w-[100px] h-[100px] rounded-full bg-yellow">
@@ -276,16 +298,16 @@ const Member = () => {
                   width="60"
                   height="60"
                 />
-              </div>
+              </div>{" "}
               <div className="text-[15px] font-semibold mt-[18px]">
-                คุณยังไม่มีผลงาน
-              </div>
+                คุณยั งไม่ มีผลงาน{" "}
+              </div>{" "}
               <div className="text-[13px] mt-1">
-                คุณสามารถเก็บรูปภาพ ผลงาน รางวัล เกียรติบัตร ฯลฯ ของคุณไว้ใน
-                ComPort
-              </div>
+                คุณสามารถเก็ บรูปภาพ ผลงาน รางวั ล เกียรติบั ตร ฯลฯ ของคุณไว้ ใน
+                ComPort{" "}
+              </div>{" "}
               <div className="flex items-center mt-5 gap-[8px]">
-                <div className="text-[13px]">การเพิ่มผลงาน กดปุ่ม</div>
+                <div className="text-[13px]"> การเพิ่ มผลงาน กดปุ่ ม </div>{" "}
                 <button className="flex items-center gap-2 py-2 px-5 rounded-full bg-orange">
                   <img
                     src="assets/icons/icon-image.svg"
@@ -294,62 +316,65 @@ const Member = () => {
                     height="16"
                   />
                   <span className="text-[13px] font-semibold">
-                    เพิ่มรูปผลงานใหม่
-                  </span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                    เพิ่ มรูปผลงานใหม่{" "}
+                  </span>{" "}
+                </button>{" "}
+              </div>{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
       <div className="px-[108px] pt-[88px] pb-[144px] mt-[110px] bg-green-light">
         <div className="flex-1">
           <div className="flex justify-between items-center">
             <div className="text-[25px] font-semibold">
-              ค่าย/กิจกรรมที่จะเปิดรับสมัครเร็ว ๆ นี้
-            </div>
+              ค่ าย / กิจกรรมที่ จะเปิดรั บสมั ครเร็ ว ๆ นี้{" "}
+            </div>{" "}
             <a href="#" className="font-semibold underline">
-              ดูทั้งหมด
-            </a>
-          </div>
+              ดูทั้ งหมด{" "}
+            </a>{" "}
+          </div>{" "}
           <hr className="mt-[18px] mb-4" />
           <div className="grid grid-cols-4 gap-7">
+            {" "}
             {activity.map((item) => {
               return <Card item={item} type="activity" />;
-            })}
-          </div>
-        </div>
+            })}{" "}
+          </div>{" "}
+        </div>{" "}
         <div className="flex-1 mt-12">
           <div className="flex justify-between items-center">
-            <div className="text-[25px] font-semibold">บทความยอดนิยม</div>
+            <div className="text-[25px] font-semibold"> บทความยอดนิยม </div>{" "}
             <a href="#" className="font-semibold underline">
-              ดูทั้งหมด
-            </a>
-          </div>
+              ดูทั้ งหมด{" "}
+            </a>{" "}
+          </div>{" "}
           <hr className="mt-[18px] mb-4" />
           <div className="grid grid-cols-4 gap-7">
+            {" "}
             {article.map((item) => {
               return <Card item={item} type="article" />;
-            })}
-          </div>
-        </div>
+            })}{" "}
+          </div>{" "}
+        </div>{" "}
         <div className="flex-1 mt-12">
           <div className="flex justify-between items-center">
             <div className="text-[25px] font-semibold">
-              คอร์สแนะนำจาก ComPort
-            </div>
+              คอร์ สแนะนำจาก ComPort{" "}
+            </div>{" "}
             <a href="#" className="font-semibold underline">
-              ดูทั้งหมด
-            </a>
-          </div>
+              ดูทั้ งหมด{" "}
+            </a>{" "}
+          </div>{" "}
           <hr className="mt-[18px] mb-4" />
           <div className="grid grid-cols-4">
+            {" "}
             {course.map((item) => {
               return <Card item={item} type="course" />;
-            })}
-          </div>
-        </div>
-      </div>
+            })}{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
     </div>
   );
 };

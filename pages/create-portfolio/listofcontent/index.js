@@ -46,7 +46,8 @@ const ListOfContent = () => {
 
   const getPort = async (idPorts) => {
     let arr = [];
-    idPorts.forEach(async (idport) => {
+    for (var i = 0; i < idPorts.length; i++) {
+      let idport = idPorts[i]
       await axios
         .get(`http://localhost:1337/api/port-step-4s/${idport}`)
         .then((data) => {
@@ -61,7 +62,23 @@ const ListOfContent = () => {
         .catch((e) => {
           console.log(e);
         });
-    });
+    }
+    // idPorts.forEach(async (idport) => {
+    //   await axios
+    //     .get(`http://localhost:1337/api/port-step-4s/${idport}`)
+    //     .then((data) => {
+    //       if (data.status === 200) {
+    //         arr.push({
+    //           id: data.data.data.id,
+    //           name: data.data.data.attributes.title,
+    //           page: data.data.data.attributes.number,
+    //         });
+    //       }
+    //     })
+    //     .catch((e) => {
+    //       console.log(e);
+    //     });
+    // });
 
     if (arr.length > 0) {
       setTopics(arr);
@@ -88,15 +105,15 @@ const ListOfContent = () => {
         },
       };
 
-      topics.forEach(async (topic) => {
-        model.data.title = topic.name;
-        model.data.number = topic.page;
-        if (topic.id >= 0) {
+      for (var i = 0; i < topics.length; i++) {
+        model.data.title = topics[i].name;
+        model.data.number = topics[i].page;
+        if (topics[i].id >= 0) {
           await axios
-            .put(`http://localhost:1337/api/port-step-4s/${topic.id}`, model)
+            .put(`http://localhost:1337/api/port-step-4s/${topics[i].id}`, model)
             .then((data) => {
               if (data.status === 200) {
-                console.log("update topic id => ", topic.id);
+                console.log("update topic id => ", topics[i].id);
               }
             })
             .catch((e) => {
@@ -114,7 +131,35 @@ const ListOfContent = () => {
               console.log(e);
             });
         }
-      });
+      }
+
+      // topics.forEach(async (topic) => {
+      //   model.data.title = topic.name;
+      //   model.data.number = topic.page;
+      //   if (topic.id >= 0) {
+      //     await axios
+      //       .put(`http://localhost:1337/api/port-step-4s/${topic.id}`, model)
+      //       .then((data) => {
+      //         if (data.status === 200) {
+      //           console.log("update topic id => ", topic.id);
+      //         }
+      //       })
+      //       .catch((e) => {
+      //         console.log(e);
+      //       });
+      //   } else {
+      //     await axios
+      //       .post("http://localhost:1337/api/port-step-4s", model)
+      //       .then((data) => {
+      //         if (data.status === 200) {
+      //           arrIdPort4.push(data.data.data.id);
+      //         }
+      //       })
+      //       .catch((e) => {
+      //         console.log(e);
+      //       });
+      //   }
+      // });
 
       if (arrIdPort4.length > 0) {
         localStorage.setItem("idPort4", arrIdPort4);

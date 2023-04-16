@@ -3,6 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState("");
+  const [user, setUser] = useState(false)
   const menuRef = useRef();
   const menu = [
     { title: "หน้าหลัก", icon: "home", location: "/member" },
@@ -44,6 +45,8 @@ const Header = () => {
       }
     };
 
+    checkUserLogin()
+
     document.addEventListener("mousedown", handler);
   });
 
@@ -53,6 +56,22 @@ const Header = () => {
     }
     return setShowDropdown(key);
   };
+
+  const checkUserLogin = () => {
+    if(localStorage.getItem("idUser") != null) {
+      return setUser(true)
+    }
+    return setUser(false)
+  }
+
+  const checkUserRegister = () => {
+    if(localStorage.getItem("idUser") != null) {
+      return setUser(true)
+    }
+    return setUser(false)
+  }
+
+  
 
   return (
     <div
@@ -168,77 +187,91 @@ const Header = () => {
         </div>
       </div>
       <div className="flex items-center">
-        <div className="flex items-center mr-[22px]">
-          <div
-            className="flex gap-2.5 mr-12 relative cursor-pointer"
-            onClick={() => openDropdown("profile")}
-          >
-            <img
-              className="rounded-full"
-              src="/assets/images/mock-profile-image.png"
-              alt="profile"
-              width="38"
-              height="38"
-            />
-            <img
-              src="/assets/icons/arrow-point-to-down.svg"
-              alt="arrow-profile"
-            />
+        {user ? (
+          <div className="flex items-center mr-[22px]">
             <div
-              className={`w-[200px] absolute top-[51px] left-0 z-20 bg-green`}
+              className="flex gap-2.5 mr-12 relative cursor-pointer"
+              onClick={() => openDropdown("profile")}
             >
-              {showDropdown == "profile" &&
-                profiles.map((value, index) => {
-                  return index < profiles.length - 1 ? (
-                    <Link href={value.location} key={`profiles-${index}`}>
-                      <div className={`flex pl-3 py-3`}>
-                        <img
-                          src={`/assets/icons/${value.icon}.svg`}
-                          alt={`icon-${value.icon}`}
-                          className="mr-2"
-                          width="16"
-                          height="16"
-                        />
-                        <div className=" hover:underline">{value.title}</div>
+              <img
+                className="rounded-full"
+                src="/assets/images/mock-profile-image.png"
+                alt="profile"
+                width="38"
+                height="38"
+              />
+              <img
+                src="/assets/icons/arrow-point-to-down.svg"
+                alt="arrow-profile"
+              />
+              <div
+                className={`w-[200px] absolute top-[51px] left-0 z-20 bg-green`}
+              >
+                {showDropdown == "profile" &&
+                  profiles.map((value, index) => {
+                    return index < profiles.length - 1 ? (
+                      <Link href={value.location} key={`profiles-${index}`}>
+                        <div className={`flex pl-3 py-3`}>
+                          <img
+                            src={`/assets/icons/${value.icon}.svg`}
+                            alt={`icon-${value.icon}`}
+                            className="mr-2"
+                            width="16"
+                            height="16"
+                          />
+                          <div className=" hover:underline">{value.title}</div>
+                        </div>
+                      </Link>
+                    ) : (
+                      <div>
+                        <hr className={`opacity-20`} />
+                        <div className={`flex pl-3 py-3`}>
+                          <img
+                            src={`/assets/icons/${value.icon}.svg`}
+                            alt={`icon-${value.icon}`}
+                            className="mr-2"
+                            width="16"
+                            height="16"
+                          />
+                          <div className=" hover:underline">{value.title}</div>
+                        </div>
                       </div>
-                    </Link>
-                  ) : (
-                    <div>
-                      <hr className={`opacity-20`} />
-                      <div className={`flex pl-3 py-3`}>
-                        <img
-                          src={`/assets/icons/${value.icon}.svg`}
-                          alt={`icon-${value.icon}`}
-                          className="mr-2"
-                          width="16"
-                          height="16"
-                        />
-                        <div className=" hover:underline">{value.title}</div>
-                      </div>
-                    </div>
-                  );
-                })}
+                    );
+                  })}
+              </div>
+            </div>
+            <div>
+              <img
+                src="/assets/icons/bell.svg"
+                alt="icon-search"
+                width="20"
+                height="20"
+              />
             </div>
           </div>
-          <div>
-            <img
-              src="/assets/icons/bell.svg"
-              alt="icon-search"
-              width="20"
-              height="20"
-            />
+        ) : (
+          <div className="flex items-center mr-[42px] gap-[15px]">
+            <button className="flex items-center rounded-full bg-orange py-2 px-[15px] gap-1.5">
+              <img
+                src="assets/icons/lock.svg"
+                alt="login"
+                width="20"
+                height="20"
+              />
+              <div className="font-semibold">เข้าสู่ระบบ</div>
+            </button>
+            <button className="flex items-center rounded-full bg-orange py-2 px-[15px] gap-1.5">
+              <img
+                src="assets/icons/arrow-circle-right.svg"
+                alt="login"
+                width="20"
+                height="20"
+              />
+              <div className="font-semibold">ลงทะเบียน</div>
+            </button>
           </div>
-        </div>
-        {/* <div className="flex items-center mr-[42px] gap-[15px]">
-            <button className="flex items-center rounded-full bg-orange py-2 px-[15px] gap-1.5">
-                <img src="assets/icons/lock.svg" alt="login" width="20" height="20" />
-                <div className="font-semibold">เข้าสู่ระบบ</div>
-            </button>
-            <button className="flex items-center rounded-full bg-orange py-2 px-[15px] gap-1.5">
-                <img src="assets/icons/arrow-circle-right.svg" alt="login" width="20" height="20" />
-                <div className="font-semibold">ลงทะเบียน</div>
-            </button>
-        </div> */}
+        )}
+
         <div>
           <img
             src="/assets/icons/search.svg"

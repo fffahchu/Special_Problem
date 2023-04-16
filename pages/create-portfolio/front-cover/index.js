@@ -37,7 +37,6 @@ const CreateFrontCover = () => {
       .get(`http://localhost:1337/api/port-step-2s/${idPort}`)
       .then((data) => {
         if (data.status === 200) {
-          setFile(data.data.data.attributes.profile);
           setNameTh(data.data.data.attributes.fullnameTH);
           setNameEng(data.data.data.attributes.fullnameEN);
           setSchool(data.data.data.attributes.school);
@@ -51,7 +50,9 @@ const CreateFrontCover = () => {
       .get(`http://localhost:1337/api/upload/files/${idFilePort}`)
       .then((data) => {
         if (data.status === 200) {
-          setFile(data.data.data.attributes.profile);
+          if (data.data.url) {
+            setFile("http://localhost:1337"+data.data.url);
+          }
         }
       })
       .catch((e) => {
@@ -69,7 +70,6 @@ const CreateFrontCover = () => {
   };
 
   const onSubmit = async () => {
-    console.log("create front-cover");
     try {
       const idPort = localStorage.getItem("idPort") || null;
       let idPort2 = localStorage.getItem("idPort2") || null;
@@ -80,7 +80,7 @@ const CreateFrontCover = () => {
             fullnameTH: nameTh,
             fullnameEN: nameEng,
             school: school,
-            idUser: 1,
+            iduser: 1,
             idPort: idPort,
           },
         };
@@ -112,7 +112,7 @@ const CreateFrontCover = () => {
             .post(`http://localhost:1337/api/upload`, form)
             .then((data) => {
               if (data.status === 200) {
-                localStorage.setItem("idFilePort2", data.data.data.id);
+                localStorage.setItem("idFilePort2", data.data[0].id);
               }
             });
         }
@@ -125,13 +125,13 @@ const CreateFrontCover = () => {
   return (
     <div className="px-[104px] py-[29px]">
       <MoveToTop />
-      <Breadcrumb route={route} />
+      <Breadcrumb route={route} />{" "}
       <div className="text-center text-[28px] font-semibold my-12">
-        สร้างแฟ้มสะสมผลงาน
-      </div>
-      <StateCreate state={2} />
+        สร้ างแฟ้ มสะสมผลงาน{" "}
+      </div>{" "}
+      <StateCreate state={2} />{" "}
       <div className="my-[72px] mx-auto max-w-[1232px]">
-        <div className="text-xl font-bold mb-[30px]">หน้าปก</div>
+        <div className="text-xl font-bold mb-[30px]"> หน้ าปก </div>{" "}
         <div className="flex justify-between">
           <div className="shrink-0 relative w-[170px] h-[246px]">
             <img
@@ -146,10 +146,11 @@ const CreateFrontCover = () => {
                 width="18"
                 height="18"
               />
-            </div>
-          </div>
+            </div>{" "}
+          </div>{" "}
           <div className="flex">
             <div className="flex flex-col mr-[45px]">
+              {" "}
               {file == "" ? (
                 <div className="flex justify-center items-center self-end mb-[20px] w-[500px] h-[500px] bg-yellow rounded-[6px]">
                   <img
@@ -159,18 +160,18 @@ const CreateFrontCover = () => {
                 </div>
               ) : (
                 <img
-                  src={URL.createObjectURL(file)}
+                  src={typeof file == "string" ? file : typeof file == "object" ? URL.createObjectURL(file) : ""}
                   alt="preview-image"
                   className="self-end mb-[20px] w-[500px] h-[500px] rounded-[6px] object-cover border"
                 />
-              )}
+              )}{" "}
               <div className="flex items-center mb-2">
                 <label
                   htmlFor="first_name_thai"
                   className="w-[224px] text-lg font-bold pr-3 text-end"
                 >
-                  ชื่อ-นามสกุล ภาษาไทย
-                </label>
+                  ชื่ อ - นามสกุล ภาษาไทย{" "}
+                </label>{" "}
                 <input
                   className="shadow appearance-none border rounded w-[500px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="first_name_thai"
@@ -178,15 +179,15 @@ const CreateFrontCover = () => {
                   placeholder="เช่น สุธิดา มานะยิ่ง"
                   value={nameTh}
                   onChange={(e) => setNameTh(e.target.value)}
-                />
-              </div>
+                />{" "}
+              </div>{" "}
               <div className="flex mb-2">
                 <label
                   htmlFor="first_name_eng"
                   className="w-[224px] text-lg font-bold pr-3 text-end"
                 >
-                  ชื่อ-นามสกุล ภาษาอังกฤษ
-                </label>
+                  ชื่ อ - นามสกุล ภาษาอั งกฤษ{" "}
+                </label>{" "}
                 <input
                   className="shadow appearance-none border rounded w-[500px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="first_name_eng"
@@ -194,15 +195,15 @@ const CreateFrontCover = () => {
                   placeholder="เช่น suthida"
                   value={nameEng}
                   onChange={(e) => setNameEng(e.target.value)}
-                />
-              </div>
+                />{" "}
+              </div>{" "}
               <div className="flex">
                 <label
                   htmlFor="school_name"
                   className="w-[224px] text-lg font-bold pr-3 text-end"
                 >
-                  โรงเรียน
-                </label>
+                  โรงเรียน{" "}
+                </label>{" "}
                 <input
                   className="shadow appearance-none border rounded w-[500px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="school_name"
@@ -210,32 +211,32 @@ const CreateFrontCover = () => {
                   placeholder="เช่น สวนกุหลาบวิทยาลัย"
                   value={school}
                   onChange={(e) => setSchool(e.target.value)}
-                />
-              </div>
-            </div>
+                />{" "}
+              </div>{" "}
+            </div>{" "}
             <div>
-              <div className="text-lg font-bold">คำแนะนำ</div>
+              <div className="text-lg font-bold"> คำแนะนำ </div>{" "}
               <ul className="list-disc ml-[30px] mb-[20px]">
-                <li>สำหรับรูปหน้าปก</li>
-                <li>ขนาดรูปไม่เกิน 10 MB png หรือ jpg</li>
-              </ul>
+                <li> สำหรั บรูปหน้ าปก </li>{" "}
+                <li> ขนาดรูปไม่ เกิน 10 MB png หรือ jpg </li>{" "}
+              </ul>{" "}
               <label
                 htmlFor="dropzone-file"
                 className="px-[30px] py-[9px] w-[165px] border-[1px] rounded-[20px] font-bold cursor-pointer"
               >
-                อัพโหลดรูป
-              </label>
+                อั พโหลดรูป{" "}
+              </label>{" "}
               <input
                 id="dropzone-file"
                 type="file"
                 className="hidden"
                 accept="image/*"
                 onChange={(e) => onPreviewImage(e)}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+              />{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
       <hr className="border-gray-4 mb-4" />
       <div className="flex justify-center items-center">
         <Link href="/create-portfolio/introduction">
@@ -243,10 +244,10 @@ const CreateFrontCover = () => {
             className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
             onClick={onSubmit}
           >
-            บันทึกข้อมูล
-          </button>
-        </Link>
-      </div>
+            บั นทึกข้ อมูล{" "}
+          </button>{" "}
+        </Link>{" "}
+      </div>{" "}
     </div>
   );
 };

@@ -67,39 +67,76 @@ const CreateCertificate = () => {
 
   const getPort = async (idPorts, idFilePorts) => {
     let arr = [];
-    idPorts.forEach(async (idport, index) => {
+    for (var i = 0; i < idPorts.length; i++) {
+      let index = i
+      let idport = idPorts[i]
       await axios
-        .get(`http://localhost:1337/api/port-step-8s/${idport}`)
-        .then(async (data) => {
-          if (data.status === 200) {
-            if (page == 3) {
-              setPage(data.data.data.attributes.numberPage);
-            }
-            let model = {
-              id: data.data.data.id,
-              title: data.data.data.attributes.title,
-            };
-
-            await axios
-              .get(
-                `http://localhost:1337/api/upload/files/${idFilePorts[index]}`
-              )
-              .then((data) => {
-                if (data.status === 200) {
-                  model.file = data.data.data.attributes.cerImage;
-                }
-              })
-              .catch((e) => {
-                console.log(e);
-              });
-
-            arr.push(model);
+      .get(`http://localhost:1337/api/port-step-8s/${idport}`)
+      .then(async (data) => {
+        if (data.status === 200) {
+          if (page == 3) {
+            setPage(data.data.data.attributes.numberPage);
           }
-        })
-        .catch((e) => {
-          console.log(e);
-        });
-    });
+          let model = {
+            id: data.data.data.id,
+            title: data.data.data.attributes.title,
+          };
+
+          await axios
+            .get(
+              `http://localhost:1337/api/upload/files/${idFilePorts[index]}`
+            )
+            .then((data) => {
+              if (data.status === 200) {
+                if (data.data.url) {
+                  model.file = "http://localhost:1337" + data.data.url;
+                }
+              }
+            })
+            .catch((e) => {
+              console.log(e);
+            });
+
+          arr.push(model);
+        }
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+    }
+    // idPorts.forEach(async (idport, index) => {
+    //   await axios
+    //     .get(`http://localhost:1337/api/port-step-8s/${idport}`)
+    //     .then(async (data) => {
+    //       if (data.status === 200) {
+    //         if (page == 3) {
+    //           setPage(data.data.data.attributes.numberPage);
+    //         }
+    //         let model = {
+    //           id: data.data.data.id,
+    //           title: data.data.data.attributes.title,
+    //         };
+
+    //         await axios
+    //           .get(
+    //             `http://localhost:1337/api/upload/files/${idFilePorts[index]}`
+    //           )
+    //           .then((data) => {
+    //             if (data.status === 200) {
+    //               model.file = data.data.data.attributes.cerImage;
+    //             }
+    //           })
+    //           .catch((e) => {
+    //             console.log(e);
+    //           });
+
+    //         arr.push(model);
+    //       }
+    //     })
+    //     .catch((e) => {
+    //       console.log(e);
+    //     });
+    // });
     if (arr.length > 0) {
       setCertificates(arr);
     }
@@ -120,12 +157,13 @@ const CreateCertificate = () => {
   const onSubmit = async () => {
     const idPort = localStorage.getItem("idPort") || null;
     const idPort8 = localStorage.getItem("idPort8") || null;
+    const idFilePort8 = localStorage.getItem("idFilePort8") || null;
 
     let arrIdPort8 = [];
     let arrIdFilePort8 = [];
 
-    if (idPort8) {
-      arrIdFilePort8 = idPort8.split(",");
+    if (idFilePort8) {
+      arrIdFilePort8 = idFilePort8.split(",");
     }
 
     if (idPort) {
@@ -137,9 +175,10 @@ const CreateCertificate = () => {
         },
       };
 
-      let arr = [...certificates];
+      // let arr = [...certificates];
 
-      arr.forEach(async (cer) => {
+      for (var i=0; i<certificates.length; i++){
+        let cer = certificates[i]
         model.data.title = cer.title;
         if (cer.id >= 0) {
           await axios
@@ -166,21 +205,66 @@ const CreateCertificate = () => {
             });
         }
 
-        if (cer.id >= 0 && cer.file) {
-          const form = new FormData();
-          form.append("files", cer.file);
-          form.append("ref", "api::port-step-8.port-step-8");
-          form.append("refId", cer.id);
-          form.append("field", "cerImage");
-          await axios
-            .post(`http://localhost:1337/api/upload`, form)
-            .then((data) => {
-              if (data.status === 200) {
-                arrIdFilePort8.push(data.data.data.id);
-              }
-            });
+        if(typeof cer.file == "object"){
+          if (cer.id >= 0 && cer.file) {
+            const form = new FormData();
+            form.append("files", cer.file);
+            form.append("ref", "api::port-step-8.port-step-8");
+            form.append("refId", cer.id);
+            form.append("field", "cerImage");
+            await axios
+              .post(`http://localhost:1337/api/upload`, form)
+              .then((data) => {
+                if (data.status === 200) {
+                  arrIdFilePort8.push(data.data[0].id);
+                }
+              });
+          }
         }
-      });
+      }
+
+      // arr.forEach(async (cer) => {
+      //   model.data.title = cer.title;
+      //   if (cer.id >= 0) {
+      //     await axios
+      //       .put(`http://localhost:1337/api/port-step-8s/${cer.id}`, model)
+      //       .then((data) => {
+      //         if (data.status === 200) {
+      //           console.log("update port step 8 id => ", data.data.data.id);
+      //         }
+      //       })
+      //       .catch((e) => {
+      //         console.log(e);
+      //       });
+      //   } else {
+      //     await axios
+      //       .post("http://localhost:1337/api/port-step-8s", model)
+      //       .then((data) => {
+      //         if (data.status === 200) {
+      //           arrIdPort8.push(data.data.data.id);
+      //           cer.id = data.data.data.id;
+      //         }
+      //       })
+      //       .catch((e) => {
+      //         console.log(e);
+      //       });
+      //   }
+
+      //   if (cer.id >= 0 && cer.file) {
+      //     const form = new FormData();
+      //     form.append("files", cer.file);
+      //     form.append("ref", "api::port-step-8.port-step-8");
+      //     form.append("refId", cer.id);
+      //     form.append("field", "cerImage");
+      //     await axios
+      //       .post(`http://localhost:1337/api/upload`, form)
+      //       .then((data) => {
+      //         if (data.status === 200) {
+      //           arrIdFilePort8.push(data.data.data.id);
+      //         }
+      //       });
+      //   }
+      // });
 
       if (arrIdPort8.length > 0) {
         localStorage.setItem("idPort8", arrIdPort8);
@@ -194,18 +278,18 @@ const CreateCertificate = () => {
   return (
     <div className="px-[104px] py-[29px]">
       <MoveToTop />
-      <Breadcrumb route={route} />
+      <Breadcrumb route={route} />{" "}
       <div className="text-center text-[28px] font-semibold my-12">
-        สร้างแฟ้มสะสมผลงาน
-      </div>
-      <StateCreate state={8} />
+        สร้ างแฟ้ มสะสมผลงาน{" "}
+      </div>{" "}
+      <StateCreate state={8} />{" "}
       <div className="mt-[72px] mb-[42px] mx-auto max-w-[1232px]">
         <div className="flex mb-[48px] gap-[5px]">
-          <div className="text-xl font-bold ">เกียรติบัตรที่ได้รับ</div>
+          <div className="text-xl font-bold "> เกียรติบั ตรที่ ได้ รั บ </div>{" "}
           <div className="text-lg bg-[#D9D9D9] py-[3px] px-1.5 rounded-full">
-            2 จาก 2
-          </div>
-        </div>
+            2 จาก 2{" "}
+          </div>{" "}
+        </div>{" "}
         <div className="flex gap-x-8">
           <div className="shrink-0 relative w-[170px] h-[246px]">
             <img
@@ -220,16 +304,16 @@ const CreateCertificate = () => {
                 width="18"
                 height="18"
               />
-            </div>
-          </div>
+            </div>{" "}
+          </div>{" "}
           <div className="grow">
             <div className="flex items-center">
               <label
                 className="w-[218px] text-lg font-bold text-end mr-8 "
                 htmlFor="page_number"
               >
-                หมายเลขหน้า
-              </label>
+                หมายเลขหน้ า{" "}
+              </label>{" "}
               <select
                 name="page_number"
                 className="shadow border rounded py-2.5 px-3.5 w-[531px]"
@@ -237,18 +321,17 @@ const CreateCertificate = () => {
                 value={page}
                 onChange={(e) => setPage(e.target.value)}
               >
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-            </div>
+                <option value="1"> 1 </option> <option value="2"> 2 </option>{" "}
+                <option value="3"> 3 </option> <option value="4"> 4 </option>{" "}
+              </select>{" "}
+            </div>{" "}
             {certificates.map((item, index) => {
               return (
                 <>
                   <hr className="border-[1px] border-black opacity-25 w-full my-[42px]" />
                   <div className="flex mb-6">
                     <div className="pl-[250px]">
+                      {" "}
                       {item.file == "" ? (
                         <div className="flex justify-center items-center w-[300px] h-[200px] rounded-[11px] bg-[#FFEC85]">
                           <img
@@ -256,41 +339,42 @@ const CreateCertificate = () => {
                             alt="/assets/icons/camera-icon.svg"
                             width={56}
                             height={56}
-                          />
+                          />{" "}
                         </div>
                       ) : (
                         <img
-                          src={URL.createObjectURL(item.file)}
+                          src={typeof item.file == "string" ? item.file : typeof item.file == "object" ? URL.createObjectURL(item.file) : ""}
                           alt="preview-image"
                           className="w-[300px] h-[200px] rounded-[11px] object-cover border"
                         />
-                      )}
-                    </div>
+                      )}{" "}
+                    </div>{" "}
                     <div className="ml-[30px]">
-                      <div className="font-bold mb-[13px]">คำแนะนำ</div>
-                      <div className="mb-[9px]">• สำหรับรูปโปรไฟล์</div>
+                      <div className="font-bold mb-[13px]"> คำแนะนำ </div>{" "}
+                      <div className="mb-[9px]"> •สำหรั บรูปโปรไฟล์ </div>{" "}
                       <div className="mb-[28px]">
-                        • ขนาดรูปไม่เกิน 10 MB png หรือ jpg
-                      </div>
+                        {" "}
+                        •ขนาดรูปไม่ เกิน 10 MB png หรือ jpg{" "}
+                      </div>{" "}
                       <label
                         htmlFor={`dropzone-file-${index}`}
                         className="py-3 px-[42px] border-[1px] rounded-full text-lg font-bold"
                       >
-                        อัพโหลดรูป
-                      </label>
+                        อั พโหลดรูป{" "}
+                      </label>{" "}
                       <input
                         id={`dropzone-file-${index}`}
                         type="file"
                         className="hidden"
                         accept="image/*"
                         onChange={(e) => onPreviewImage(e, index)}
-                      />
-                    </div>
-                  </div>
+                      />{" "}
+                    </div>{" "}
+                  </div>{" "}
                   <div className="flex items-center mb-3">
                     <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                      ชื่อเกียรติบัตร/งานอบรม {index + 1}
-                    </label>
+                      ชื่ อเกียรติบั ตร / งานอบรม {index + 1}{" "}
+                    </label>{" "}
                     <input
                       className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                       type="text"
@@ -300,11 +384,11 @@ const CreateCertificate = () => {
                         arr[index].title = e.target.value;
                         setCertificates(arr);
                       }}
-                    />
-                  </div>
+                    />{" "}
+                  </div>{" "}
                 </>
               );
-            })}
+            })}{" "}
             <div className="flex items-center mt-[88px]">
               <div className="w-[218px] mr-8" />
               <Link href="/create-portfolio/certificate/createCertificate">
@@ -318,13 +402,13 @@ const CreateCertificate = () => {
                     width="14"
                     height="14"
                   />
-                  สร้างหน้าใหม่
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
+                  สร้ างหน้ าใหม่{" "}
+                </button>{" "}
+              </Link>{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
       <hr className="border-gray-4 mb-4" />
       <div className="flex justify-center items-center">
         <Link href="/create-portfolio/download">
@@ -332,10 +416,10 @@ const CreateCertificate = () => {
             className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
             onClick={onSubmit}
           >
-            บันทึกข้อมูล
-          </button>
-        </Link>
-      </div>
+            บั นทึกข้ อมูล{" "}
+          </button>{" "}
+        </Link>{" "}
+      </div>{" "}
     </div>
   );
 };

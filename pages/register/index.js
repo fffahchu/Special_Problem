@@ -4,7 +4,7 @@ import Link from "next/link";
 import Breadcrumb from "@components/Breadcrumb";
 import Swal from "sweetalert2";
 import axios from "axios";
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 
 const Registerform = () => {
   const rounter = useRouter();
@@ -73,8 +73,8 @@ const Registerform = () => {
               localStorage.setItem("idUser", data.data.data.id);
             }
             setTimeout(() => {
-              rounter.push("/first-page");
-            }, 1800);
+              rounter.push("/member");
+            }, 1400);
           })
           .catch((e) => {
             console.log(e);
