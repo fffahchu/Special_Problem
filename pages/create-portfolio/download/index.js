@@ -3,6 +3,7 @@ import Breadcrumb from "@components/Breadcrumb";
 import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
+import axios from "axios";
 
 const Download = () => {
   const route = [
@@ -73,6 +74,21 @@ const Download = () => {
     setPort([...arrPort]);
   };
 
+  // const onButtonClick = () => {
+  //   // using Java Script method to get PDF file
+  //   fetch("portfolio-2022-04-01.pdf").then((response) => {
+  //     response.blob().then((blob) => {
+  //       // Creating new object of PDF file
+  //       const fileURL = window.URL.createObjectURL(blob);
+  //       // Setting various property values
+  //       let alink = document.createElement("a");
+  //       alink.href = fileURL;
+  //       alink.download = "portfolio-2022-04-01.pdf";
+  //       alink.click();
+  //     });
+  //   });
+  // };
+
   return (
     <div>
       <div className="px-[104px] py-[29px]">
@@ -83,7 +99,7 @@ const Download = () => {
         </div>
         <StateCreate state={9} />
       </div>
-      {port.length > 0 && (
+      {/* {port.length > 0 && (
         <div className="px-[104px] pt-[28px] pb-[38px] bg-[#FFEC85]">
           <div className="flex justify-center mb-[38px]">ดูตัวอย่าง</div>
           <div className="flex gap-x-[81px]">
@@ -118,9 +134,9 @@ const Download = () => {
             })}
           </div>
         </div>
-      )}
+      )} */}
       {(selectedPort < 0 || selectedPort >= port.length) && (
-        <div className="grid grid-cols-2 gap-x-9 px-[104px] pt-[42px] py-[34px]">
+        <div className="grid gap-y-9 px-[104px] pt-[42px] py-[34px]">
           <div className="flex flex-col items-center">
             <div className="flex items-center gap-x-[32px] mt-[13px] mb-[43px]">
               <div
@@ -152,9 +168,12 @@ const Download = () => {
               <div className="font-semibold mb-2">portfolio-2022-04-01.pdf</div>
               <div className="font-semibold mb-4">6.0 MB</div>
               <div className="flex justify-center">
-                <button className="text-lg text-white font-semibold bg-black py-[11px] px-[26px] rounded-full">
+                {/* <button className="text-lg text-white font-semibold bg-black py-[11px] px-[26px] rounded-full" onClick={onButtonClick}>
                   ดาวน์โหลดแฟ้มสะสมผลงาน
-                </button>
+                </button> */}
+                <a href="/assets/portfolio-2022-04-01.pdf" download className="text-lg text-white font-semibold bg-black py-[11px] px-[26px] rounded-full">
+                  ดาวน์โหลดแฟ้มสะสมผลงาน
+                </a>
               </div>
             </div>
             <hr className="border-[1px] border-black opacity-25 w-full my-[42px]" />
@@ -162,8 +181,8 @@ const Download = () => {
               แชร์แฟ้มสะสมผลงาน:
             </div>
             <div className="flex gap-x-[9px]">
-              <div className="flex bg-[#5D5D5D] rounded-[6px] divide-x-2 divide-[#4E4E4E] w-[144px]">
-                <div className="flex items-center py-3 px-2.5">
+              <div className="flex bg-[#5D5D5D] rounded-[6px] divide-x-2 divide-[#4E4E4E] cursor-pointer">
+                <div className="flex items-center py-3 px-3.5">
                   <img
                     src="/assets/icons/comport.svg"
                     alt="comport"
@@ -171,13 +190,13 @@ const Download = () => {
                     height={24}
                   />
                 </div>
-                <div className="py-2 px-2.5">
+                {/* <div className="py-2 px-2.5">
                   <div className="text-xs text-white">แชร์บน</div>
                   <div className="font-semibold text-white">Comport</div>
-                </div>
+                </div> */}
               </div>
-              <div className="flex bg-[#475993] rounded-[6px] divide-x-2 divide-[#3B4C7D] w-[144px]">
-                <div className="flex items-center py-3 px-2.5">
+              <div className="flex bg-[#475993] rounded-[6px] divide-x-2 divide-[#3B4C7D] cursor-pointer">
+                <div className="flex items-center py-3 px-3.5">
                   <img
                     src="/assets/icons/facebook-white.svg"
                     alt="comport"
@@ -185,13 +204,13 @@ const Download = () => {
                     height={24}
                   />
                 </div>
-                <div className="py-2 px-2.5">
+                {/* <div className="py-2 px-2.5">
                   <div className="text-xs text-white">แชร์บน</div>
                   <div className="font-semibold text-white">Facebook</div>
-                </div>
+                </div> */}
               </div>
-              <div className="flex bg-[#03A9F4] rounded-[6px] divide-x-2 divide-[#0690CF] w-[144px]">
-                <div className="flex items-center py-3 px-2.5">
+              <div className="flex bg-[#03A9F4] rounded-[6px] divide-x-2 divide-[#0690CF] cursor-pointer">
+                <div className="flex items-center py-3 px-3.5">
                   <img
                     src="/assets/icons/twitter-white.svg"
                     alt="comport"
@@ -199,13 +218,13 @@ const Download = () => {
                     height={24}
                   />
                 </div>
-                <div className="py-2 px-2.5">
+                {/* <div className="py-2 px-2.5">
                   <div className="text-xs text-white">แชร์บน</div>
                   <div className="font-semibold text-white">Twitter</div>
-                </div>
+                </div> */}
               </div>
-              <div className="flex bg-gradient-to-r from-[#94349F] via-[#FE1F1F] to-[#FD973C] rounded-[6px] divide-x-2 divide-[#C01A33] w-[144px]">
-                <div className="flex items-center py-3 px-2.5">
+              <div className="flex bg-gradient-to-br from-[#94349F] via-[#FE1F1F] to-[#FD973C] rounded-[6px] divide-x-2 divide-[#C01A33] cursor-pointer">
+                <div className="flex items-center py-3 px-3.5">
                   <img
                     src="/assets/icons/instagram-white.svg"
                     alt="comport"
@@ -213,16 +232,16 @@ const Download = () => {
                     height={24}
                   />
                 </div>
-                <div className="py-2 px-2.5">
+                {/* <div className="py-2 px-2.5">
                   <div className="text-xs text-white">แชร์บน</div>
                   <div className="font-semibold text-white">Instagram</div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
       )}
-      {selectedPort >= 0 && selectedPort < port.length && (
+      {/* {selectedPort >= 0 && selectedPort < port.length && (
         <div className="flex flex-col items-center px-[104px] pt-[36px] pb-[42px]">
           <div className="flex gap-x-[229px] mb-9">
             <Link href={port[selectedPort].link}>
@@ -244,7 +263,7 @@ const Download = () => {
             height={1008}
           />
         </div>
-      )}
+      )} */}
     </div>
   );
 };

@@ -65,7 +65,7 @@ const PersonalRecord = () => {
     let arr = [];
     idPorts.forEach(async (idport, index) => {
       await axios
-        .get(`http://localhost:1337/api/port-step-2s/${idport}`)
+        .get(`http://localhost:1337/api/port-step-6s/${idport}`)
         .then(async (data) => {
           if (data.status === 200) {
             if (page == 2) {
@@ -106,7 +106,6 @@ const PersonalRecord = () => {
   };
 
   const onPreviewImage = (e, index) => {
-    console.log(index);
     if (e.target.files.length > 0) {
       let arr = [...schools];
       const file = e.target.files[0];

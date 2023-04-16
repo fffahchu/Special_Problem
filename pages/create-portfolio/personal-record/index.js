@@ -3,6 +3,7 @@ import Breadcrumb from "@components/Breadcrumb";
 import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
+import axios from "axios";
 
 const PersonalRecord = () => {
   const coverImage = "/assets/images/portfolio/portfolio-4-4.png";
@@ -17,26 +18,25 @@ const PersonalRecord = () => {
     },
   ];
   const [page, setPage] = useState(1);
-  const [urlPreview, setUrlPreview] = useState;
-  const [file, setFile] = useState(null);
-  const [nameTh, setNameTh] = useState;
-  const [nickname, setNickname] = useState;
-  const [birthday, setBirthday] = useState;
-  const [ethnicity, setEthnicity] = useState;
-  const [nationality, setNationality] = useState;
-  const [religion, setReligion] = useState;
-  const [email, setEmail] = useState;
-  const [address, setAddress] = useState;
-  const [hobby, setHobby] = useState;
-  const [aptitude, setAptitude] = useState;
-  const [favoriteSubject, setFavoriteSubject] = useState;
-  const [nameFather, setNameFather] = useState;
-  const [workFather, setWorkFather] = useState;
-  const [telFather, setTelFather] = useState;
-  const [nameMother, setNameMother] = useState;
-  const [workMother, setWorkMother] = useState;
-  const [telMother, setTelMother] = useState;
-  const [tel, setTel] = useState;
+  const [file, setFile] = useState("");
+  const [nameTh, setNameTh] = useState("");
+  const [nickname, setNickname] = useState("");
+  const [birthday, setBirthday] = useState("");
+  const [ethnicity, setEthnicity] = useState("");
+  const [nationality, setNationality] = useState("");
+  const [religion, setReligion] = useState("");
+  const [email, setEmail] = useState("");
+  const [address, setAddress] = useState("");
+  const [hobby, setHobby] = useState("");
+  const [aptitude, setAptitude] = useState("");
+  const [favoriteSubject, setFavoriteSubject] = useState("");
+  const [nameFather, setNameFather] = useState("");
+  const [workFather, setWorkFather] = useState("");
+  const [telFather, setTelFather] = useState("");
+  const [nameMother, setNameMother] = useState("");
+  const [workMother, setWorkMother] = useState("");
+  const [telMother, setTelMother] = useState("");
+  const [tel, setTel] = useState("");
 
   useEffect(() => {
     const idPort5 = localStorage.getItem("idPort5") || null;
@@ -72,15 +72,6 @@ const PersonalRecord = () => {
           setWorkMother(data.data.data.attributes.workMother);
           setTelMother(data.data.data.attributes.telMother);
           setTel(data.data.data.attributes.tel);
-          const reader = new FileReader();
-
-          reader.addEventListener("load", () => {
-            setUrlPreview(reader.result);
-          });
-
-          if (data.data.attributes.profile) {
-            reader.readAsDataURL(data.data.data.attributes.profile);
-          }
         }
       })
       .catch((e) => {
@@ -91,16 +82,6 @@ const PersonalRecord = () => {
       .get(`http://localhost:1337/api/upload/files/${idFilePort}`)
       .then((data) => {
         if (data.status === 200) {
-          const reader = new FileReader();
-
-          reader.addEventListener("load", () => {
-            setUrlPreview(reader.result);
-          });
-
-          if (data.data.attributes.profile) {
-            reader.readAsDataURL(data.data.data.attributes.profile);
-          }
-
           setFile(data.data.data.attributes.profile);
         }
       })
@@ -112,14 +93,7 @@ const PersonalRecord = () => {
   const onPreviewImage = (e) => {
     if (e.target.files.length > 0) {
       const file = e.target.files[0];
-      const reader = new FileReader();
-
-      reader.addEventListener("load", () => {
-        setUrlPreview(reader.result);
-      });
-
       if (file) {
-        reader.readAsDataURL(file);
         setFile(file);
       }
     }
@@ -241,7 +215,7 @@ const PersonalRecord = () => {
             <hr className="border-[1px] border-black opacity-25 w-full my-[42px]" />
             <div className="flex mb-14">
               <div className="pl-[250px]">
-                {urlPreview == "" ? (
+                {file == "" ? (
                   <div className="flex justify-center items-center w-[222px] h-[222px] rounded-[11px] bg-[#FFEC85]">
                     <img
                       src="/assets/icons/camera-icon.svg"
@@ -252,7 +226,7 @@ const PersonalRecord = () => {
                   </div>
                 ) : (
                   <img
-                    src={urlPreview}
+                    src={URL.createObjectURL(file)}
                     alt="preview-image"
                     className="w-[222px] h-[222px] rounded-[11px] object-cover border"
                   />

@@ -7,8 +7,7 @@ import axios from "axios";
 
 const CreateFrontCover = () => {
   const coverImage = "/assets/images/portfolio/portfolio-4.png";
-  const [urlPreview, setUrlPreview] = useState("");
-  const [file, setFile] = useState(null);
+  const [file, setFile] = useState("");
   const [nameTh, setNameTh] = useState("");
   const [nameEng, setNameEng] = useState("");
   const [school, setSchool] = useState("");
@@ -52,17 +51,7 @@ const CreateFrontCover = () => {
       .get(`http://localhost:1337/api/upload/files/${idFilePort}`)
       .then((data) => {
         if (data.status === 200) {
-          const reader = new FileReader();
-
-          reader.addEventListener("load", () => {
-            setUrlPreview(reader.result);
-          });
-
-          if (data.data.attributes.profile) {
-            reader.readAsDataURL(data.data.data.attributes.profile);
-          }
-
-          setFile(data.data.data.attributes.profile)
+          setFile(data.data.data.attributes.profile);
         }
       })
       .catch((e) => {
@@ -73,14 +62,7 @@ const CreateFrontCover = () => {
   const onPreviewImage = (e) => {
     if (e.target.files.length > 0) {
       const file = e.target.files[0];
-      const reader = new FileReader();
-
-      reader.addEventListener("load", () => {
-        setUrlPreview(reader.result);
-      });
-
       if (file) {
-        reader.readAsDataURL(file);
         setFile(file);
       }
     }
@@ -168,7 +150,7 @@ const CreateFrontCover = () => {
           </div>
           <div className="flex">
             <div className="flex flex-col mr-[45px]">
-              {urlPreview == "" ? (
+              {file == "" ? (
                 <div className="flex justify-center items-center self-end mb-[20px] w-[500px] h-[500px] bg-yellow rounded-[6px]">
                   <img
                     src="/assets/icons/camera-icon.svg"
@@ -177,7 +159,7 @@ const CreateFrontCover = () => {
                 </div>
               ) : (
                 <img
-                  src={urlPreview}
+                  src={URL.createObjectURL(file)}
                   alt="preview-image"
                   className="self-end mb-[20px] w-[500px] h-[500px] rounded-[6px] object-cover border"
                 />
