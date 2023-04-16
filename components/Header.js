@@ -108,8 +108,9 @@ const Header = () => {
                     {advertises.map((value, i) => {
                       return (
                         <Link href={value.location} key={`advertise-${i}`}>
-                          <div className={`pl-3 pr-9 py-3`}>
-                            • {value.title}
+                          <div className={`flex pl-3 pr-3 py-3`}>
+                            <div className="mr-2">•</div>
+                            <div className="hover:underline">{value.title}</div>
                           </div>
                           <hr
                             className={`opacity-20 ${
@@ -126,8 +127,9 @@ const Header = () => {
                     {advices.map((value, i) => {
                       return (
                         <Link href={value.location} key={`advices-${i}`}>
-                          <div className={`pl-3 pr-8 py-3`}>
-                            • {value.title}
+                          <div className={`flex pl-3 pr-3 py-3`}>
+                            <div className="mr-2">•</div>
+                            <div className="hover:underline">{value.title}</div>
                           </div>
                           <hr
                             className={`opacity-20 ${
@@ -146,8 +148,9 @@ const Header = () => {
                     {books.map((value, i) => {
                       return (
                         <Link href={value.location} key={`books-${i}`}>
-                          <div className={`pl-3 pr-3 py-3`}>
-                            • {value.title}
+                          <div className={`flex pl-3 pr-3 py-3`}>
+                            <div className="mr-2">•</div>
+                            <div className="hover:underline">{value.title}</div>
                           </div>
                           <hr
                             className={`opacity-20 ${
@@ -192,11 +195,11 @@ const Header = () => {
                         <img
                           src={`/assets/icons/${value.icon}.svg`}
                           alt={`icon-${value.icon}`}
-                          className="mr-1.5"
+                          className="mr-2"
                           width="16"
                           height="16"
                         />
-                        {value.title}
+                        <div className=" hover:underline">{value.title}</div>
                       </div>
                     </Link>
                   ) : (
@@ -206,11 +209,11 @@ const Header = () => {
                         <img
                           src={`/assets/icons/${value.icon}.svg`}
                           alt={`icon-${value.icon}`}
-                          className="mr-1.5"
+                          className="mr-2"
                           width="16"
                           height="16"
                         />
-                        {value.title}
+                        <div className=" hover:underline">{value.title}</div>
                       </div>
                     </div>
                   );
