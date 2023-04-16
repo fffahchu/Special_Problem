@@ -39,7 +39,7 @@ const Learning = () => {
     },
     {
       image: "../assets/images/course/c3.jpg",
-      title: "Complete Arduino For Beginner",
+      title: "Complete Arduino htmlFor Beginner",
       content: "borntodev.com",
       link: "#",
     },
@@ -51,7 +51,7 @@ const Learning = () => {
     },
     {
       image: "../assets/images/course/c5.jpg",
-      title: "Programming For Everyone X",
+      title: "Programming htmlFor Everyone X",
       content: "borntodev.com",
       link: "#",
     },
@@ -84,15 +84,14 @@ const Learning = () => {
     <div className="px-[104px] py-[29px]">
       <MoveToTop />
       <Breadcrumb route={route} />
-
       <div className="flex">
         <div className="flex-1">
           <div className="flex justify-between items-center mt-[80px]">
-            <div className="text-[23px] font-semibold">คอร์สเรียนเสริม</div>
-          </div>
+            <div className="text-[23px] font-semibold"> คอร์ สเรียนเสริม </div>{" "}
+          </div>{" "}
           <hr className="mt-[12px] mb-4" />
-        </div>
-      </div>
+        </div>{" "}
+      </div>{" "}
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -115,8 +114,8 @@ const Learning = () => {
               src="../assets/images/learning/1.png"
               alt="image slide 1"
             />
-          </a>
-        </SwiperSlide>
+          </a>{" "}
+        </SwiperSlide>{" "}
         <SwiperSlide>
           <a href="https://www.borntodev.com/" target="_blank">
             <img
@@ -124,8 +123,8 @@ const Learning = () => {
               src="../assets/images/learning/2.png"
               alt="image slide 2"
             />
-          </a>
-        </SwiperSlide>
+          </a>{" "}
+        </SwiperSlide>{" "}
         <SwiperSlide>
           <a href="https://www.borntodev.com/" target="_blank">
             <img
@@ -133,8 +132,8 @@ const Learning = () => {
               src="../assets/images/learning/3.png"
               alt="image slide 3"
             />
-          </a>
-        </SwiperSlide>
+          </a>{" "}
+        </SwiperSlide>{" "}
         <SwiperSlide>
           <a href="https://www.borntodev.com/" target="_blank">
             <img
@@ -142,8 +141,8 @@ const Learning = () => {
               src="../assets/images/learning/4.png"
               alt="image slide 3"
             />
-          </a>
-        </SwiperSlide>
+          </a>{" "}
+        </SwiperSlide>{" "}
         <SwiperSlide>
           <a href="https://www.borntodev.com/" target="_blank">
             <img
@@ -151,54 +150,55 @@ const Learning = () => {
               src="../assets/images/learning/5.png"
               alt="image slide 3"
             />
-          </a>
-        </SwiperSlide>
-      </Swiper>
+          </a>{" "}
+        </SwiperSlide>{" "}
+      </Swiper>{" "}
       <div className="felx">
         <div className="flex justify-between items-center mt-[80px]">
           <div className="text-[16px] font-semibold">
-            คอร์สเรียนเสริมทั้งหมด (230)
-          </div>
-        </div>
+            คอร์ สเรียนเสริมทั้ งหมด(230){" "}
+          </div>{" "}
+        </div>{" "}
         <hr className="mt-[12px] mb-4" />
         <div className="flex justify-center mt-12">
           <div className="flex justify-center">
             <div className="grid grid-cols-3 gap-28">
+              {" "}
               {course.map((item) => {
                 return <Cardedu item={item} type="course" />;
-              })}
-            </div>
-          </div>
-        </div>
-      </div>
+              })}{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
       <div className="flex gap-3.5 justify-center  mt-[50px]">
         <Link href="#">
           <button className="w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#D9D9D9] rounded-full">
-            1
-          </button>
-        </Link>
+            1{" "}
+          </button>{" "}
+        </Link>{" "}
         <Link href="#">
           <button className="w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full">
-            2
-          </button>
-        </Link>
+            2{" "}
+          </button>{" "}
+        </Link>{" "}
         <Link href="#">
           <button className="w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full">
-            3
-          </button>
-        </Link>
+            3{" "}
+          </button>{" "}
+        </Link>{" "}
         <Link href="#">
           <button className="w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full">
-            4
-          </button>
-        </Link>
-        <span className="text-[16px] font-semibold pt-4">...</span>
+            4{" "}
+          </button>{" "}
+        </Link>{" "}
+        <span className="text-[16px] font-semibold pt-4"> ... </span>{" "}
         <Link href="#">
           <button className="w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full">
-            5
-          </button>
-        </Link>
-      </div>
+            5{" "}
+          </button>{" "}
+        </Link>{" "}
+      </div>{" "}
     </div>
   );
 };

@@ -56,7 +56,7 @@ const ActivityIt = () => {
       <MoveToTop />
       <Breadcrumb route={route} />
 
-      <div class="mt-[20px] bg-cover h-[400px] w-full">
+      <div className="mt-[20px] bg-cover h-[400px] w-full">
         <img
           className="h-[600px] w-full"
           src="../assets/images/reviews/it/acit-cover.png"
@@ -71,13 +71,13 @@ const ActivityIt = () => {
 
           <div className=" text-[18px] font-regular mt-[30px]">
             เฮ้ยๆๆ เดินทางมา{" "}
-            <div class="text-sky-400 font-bold">
+            <div className="text-sky-400 font-bold">
               ครึ่งร้อย EP. แล้ว กับ “แคมป์รีวิว”
             </div>
             สวัสดีจ้า น้องๆ แคมป์ฮับทุกคนเลย วันนี้แคมป์รีวิวตอนที่ 50
             (มาไกลเหมือนกันนะเนี่ย) จะมาขอเสนอค่ายที่น้องๆ
             สายคอมและไอทีอยากเข้ามากที่สุด ค่ายนึงเลย !! กับ{" "}
-            <div class="text-sky-400 font-bold">“IT CAMP”</div>
+            <div className="text-sky-400 font-bold">“IT CAMP”</div>
             ซึ่งก่อนที่จะไปเข้าค่ายกันในครั้งที่ 14 ในปีนี้ พี่ฟิวส์ พี่มน
             และพี่จ๊อบ ก็ขอพาน้องๆ ย้อนกลับไปสัมผัสบรรยากาศในครั้งที่ 13 กันก่อน
             มาดูกันซิว่า ปีที่แล้วมีกิจกรรมอะไรให้น้องๆ ร่วมกันสนุกเฮฮา
@@ -88,7 +88,7 @@ const ActivityIt = () => {
             <img src="../assets/images/reviews/it/it1.png"></img>
           </div>
           <div className="text-[25px] font-bold mt-[40px] text-sky-400 font-bold">
-            <div class="text-[#f87171] font-bold">รู้จัก</div> “ไอทีลาดกระบัง”
+            <div className="text-[#f87171] font-bold">รู้จัก</div> “ไอทีลาดกระบัง”
           </div>
           <div className="mt-[18px] ml-[10px]">
             <img src="../assets/images/reviews/it/it2.png"></img>
@@ -101,7 +101,7 @@ const ActivityIt = () => {
                 target="_blank"
                 className="flex text-blue-500 underline"
               >
-                <div class="text-sky-400 underline after:content-['_↗']">
+                <div className="text-sky-400 underline after:content-['_↗']">
                   คณะเทคโนโลยีสารสนเทศ
                   สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
                 </div>{" "}
@@ -118,7 +118,7 @@ const ActivityIt = () => {
             </div>
           </div>
           <div className="text-[25px] font-bold mt-[40px] text-sky-400 font-bold">
-            <div class="text-[#f87171] font-bold">
+            <div className="text-[#f87171] font-bold">
               มีอะไรบ้างให้เราได้เรียนรู้ใน
             </div>{" "}
             “ไอทีลาดกระบัง”
@@ -128,22 +128,22 @@ const ActivityIt = () => {
           </div>
           <div className=" text-[18px] font-regular mt-[20px]">
             สำหรับหลักสูตรสำหรับน้องๆ ที่กำลังจะขึ้นมาศึกษาต่อในระดับปริญญาตรี
-            มี <div class="text-sky-400 font-bold">3 สาขา</div> ด้วยกัน
+            มี <div className="text-sky-400 font-bold">3 สาขา</div> ด้วยกัน
             ซึ่งน้องๆ จะต้องเลือกกันตั้งแต่สอบเข้า ผ่านระบบ{" "}
-            <div class="text-sky-400 font-bold">TCAS</div> เลย ได้แก่…
+            <div className="text-sky-400 font-bold">TCAS</div> เลย ได้แก่…
           </div>
           <div className=" text-[18px] font-regular mt-[15px]">
             <ul className="list-outside">
               <li>
                 -{" "}
-                <div class="text-sky-400 font-bold">
+                <div className="text-sky-400 font-bold">
                   Data Science and Business Analytics (DSBA)
                 </div>{" "}
                 สาขาวิชาเทคโนโลยีสารสนเทศทางธุรกิจ (หลักสูตรนานาชาติ)
               </li>
               <li>
                 -{" "}
-                <div class="text-sky-400 font-bold">
+                <div className="text-sky-400 font-bold">
                   Business Information Technology (BIT)
                 </div>{" "}
                 สาขาวิชาวิทยาการข้อมูลและการวิเคราะห์เชิงธุรกิจ
@@ -151,7 +151,7 @@ const ActivityIt = () => {
             </ul>
           </div>
           <div className=" text-[18px] font-regular mt-[10px]">
-            <div class="text-sky-400 font-regular">
+            <div className="text-sky-400 font-regular">
               สองสาขาวิชาแรก เป็นสาขาวิชาน้องใหม่ล่าสุด
             </div>
             {"  "} จากการปรับปรุงหลักสูตรในปี 2559
@@ -163,7 +163,7 @@ const ActivityIt = () => {
             <ul className="list-outside">
               <li>
                 -{" "}
-                <div class="text-sky-400 font-bold">
+                <div className="text-sky-400 font-bold">
                   Information Technology (IT)
                 </div>{" "}
                 สาขาวิชาเทคโนโลยีสารสนเทศ
@@ -178,19 +178,19 @@ const ActivityIt = () => {
           <div className=" text-[18px] font-regular mt-[15px]">
             <ul className="list-outside">
               <li>
-                - <div class="text-sky-400 font-bold">Software Engineering</div>{" "}
+                - <div className="text-sky-400 font-bold">Software Engineering</div>{" "}
                 แขนงวิชาวิศวกรรมซอฟต์แวร์
               </li>
               <li>
                 -{" "}
-                <div class="text-sky-400 font-bold">
+                <div className="text-sky-400 font-bold">
                   Network and System Technology
                 </div>{" "}
                 แขนงวิชาเทคโนโลยีเครือข่ายและระบบ
               </li>
               <li>
                 -{" "}
-                <div class="text-sky-400 font-bold">
+                <div className="text-sky-400 font-bold">
                   Multimedia and Game Development
                 </div>{" "}
                 แขนงวิชาการพัฒนาสื่อประสมและเกม

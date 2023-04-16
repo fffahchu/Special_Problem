@@ -5,8 +5,7 @@ import Breadcrumb from "@components/Breadcrumb";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
 
-const route = [
-    {
+const route = [{
         title: "หน้าหลัก",
         link: "/member",
     },
@@ -26,196 +25,284 @@ const route = [
 
 function Test() {
 
-    return (
-        <div className="py-[29px]">
-            <div className="px-[104px]">
-                <MoveToTop />
-                <Breadcrumb route={route} />
-            </div>
-            <div className="grid bg-[#FFCA61] w-full h-[65px] text-center text-[28px] font-semibold mt-[15px] mb-[22px] items-center">
-                การเขียนโปรแกรมคอมพิวเตอร์พื้นฐาน ด้วยภาษาซี 1
-            </div>
-            <div className="px-[104px]">
-                <div className="grid grid-cols-1 w-full shadow-[0px_4px_20px_0px_rgba(0,0,0,0.25)] rounded-[11px]">
-                    <div className="flex">
-                        <a href="/course-ex" className="ml-[31px] py-[14px] px-[11px] my-[13px]">
-                            รายละเอียดหลักสูตร
-                        </a>
-                        <a href="/course-ex/course" className="ml-[18px] my-[13px] py-[14px] px-[11px] rounded-[11px] bg-[#FFCA61]">
-                            เข้าเรียน
-                        </a>
-                        <a href="#" className="pl-[29px] my-[13px] py-[14px] px-[11px]">
-                            ผลการเรียน
-                        </a>
-                    </div>
-                    <hr className="border-1 border-black opacity-25 w-full" />
-                    <div className="flex flex-row-2">
-                        <div className="flex w-[311px] h-[800px] bg-white drop-shadow-[4px_4px_4px_rgba(0,0,0,0.25)]">
-                            <ol className="ml-[40px] mt-[32px]">
-                                <li class="border-l-2 border-[#FFCA61]">
-                                    <div class="md:flex flex-start">
-                                        <div class="bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-5 h-5">
-                                                <path fill-rule="evenodd" d="M10 5a.75.75 0 01.75.75v6.638l1.96-2.158a.75.75 0 111.08 1.04l-3.25 3.5a.75.75 0 01-1.08 0l-3.25-3.5a.75.75 0 111.08-1.04l1.96 2.158V5.75A.75.75 0 0110 5z" clip-rule="evenodd" />
-                                            </svg>
+    return ( <
+        div className = "py-[29px]" >
+        <
+        div className = "px-[104px]" >
+        <
+        MoveToTop / >
+        <
+        Breadcrumb route = { route }
+        /> < /
+        div > <
+        div className = "grid bg-[#FFCA61] w-full h-[65px] text-center text-[28px] font-semibold mt-[15px] mb-[22px] items-center" >
+        การเขียนโปรแกรมคอมพิวเตอร์ พื้ นฐาน ด้ วยภาษาซี 1 <
+        /div> <
+        div className = "px-[104px]" >
+        <
+        div className = "grid grid-cols-1 w-full shadow-[0px_4px_20px_0px_rgba(0,0,0,0.25)] rounded-[11px]" >
+        <
+        div className = "flex" >
+        <
+        a href = "/course-ex"
+        className = "ml-[31px] py-[14px] px-[11px] my-[13px]" >
+        รายละเอียดหลั กสูตร <
+        /a> <
+        a href = "/course-ex/course"
+        className = "ml-[18px] my-[13px] py-[14px] px-[11px] rounded-[11px] bg-[#FFCA61]" >
+        เข้ าเรียน <
+        /a> <
+        a href = "#"
+        className = "pl-[29px] my-[13px] py-[14px] px-[11px]" >
+        ผลการเรียน <
+        /a> < /
+        div > <
+        hr className = "border-1 border-black opacity-25 w-full" / >
+        <
+        div className = "flex flex-row-2" >
+        <
+        div className = "flex w-[311px] h-[800px] bg-white drop-shadow-[4px_4px_4px_rgba(0,0,0,0.25)]" >
+        <
+        ol className = "ml-[40px] mt-[32px]" >
+        <
+        li className = "border-l-2 border-[#FFCA61]" >
+        <
+        div className = "md:flex flex-start" >
+        <
+        div className = "bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5" >
+        <
+        svg xmlns = "http://www.w3.org/2000/svg"
+        viewBox = "0 0 20 20"
+        fill = "white"
+        className = "w-5 h-5" >
+        <
+        path fill - rule = "evenodd"
+        d = "M10 5a.75.75 0 01.75.75v6.638l1.96-2.158a.75.75 0 111.08 1.04l-3.25 3.5a.75.75 0 01-1.08 0l-3.25-3.5a.75.75 0 111.08-1.04l1.96 2.158V5.75A.75.75 0 0110 5z"
+        clip - rule = "evenodd" / >
+        <
+        /svg>
 
-                                        </div>
-                                        <a href="#" className="w-[339px] h-[48px] ml-[12px] cursor-pointer">ดาวน์โหลดเอกสาร</a>
-                                    </div>
-                                </li>
-                                <li class="border-l-2 border-[#FFCA61]">
-                                    <div class="md:flex flex-start">
-                                        <div class="bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-3 h-3">
-                                                <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                                            </svg>
-                                        </div>
-                                        <a href="#" className="w-[200px] h-[96px] text-black ml-[28px]">บทที่ 1 การพัฒนาโปรแกรมคอมพิวเตอร์และการเขียนผังงานซี</a>
-                                    </div>
-                                </li>
-                                <li class="border-l-2 border-[#FFCA61]">
-                                    <div class="md:flex flex-start">
-                                        <div class="bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-3 h-3">
-                                                <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                                            </svg>
-                                        </div>
-                                        <a href="#" className="w-[200px] h-[48px] text-black ml-[28px]">บทที่ 2 ทำความรู้จักกับภาษาซี</a>
-                                    </div>
-                                </li>
-                                <li class="border-l-2 border-[#FFCA61]">
-                                    <div class="md:flex flex-start">
-                                        <div class="bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-3 h-3">
-                                                <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                                            </svg>
-                                        </div>
-                                        <a href="#" className="w-[200px] h-[96px] text-black ml-[28px]">บทที่ 3 การพัฒนาโปรแกรมคอมพิวเตอร์ที่ทำงานบนระบบปฏิบัติการดอสด้วยภาษาซี</a>
-                                    </div>
-                                </li>
-                                <li class="border-l-2 border-[#FFCA61]">
-                                    <div class="md:flex flex-start">
-                                        <div class="bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-3 h-3">
-                                                <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                                            </svg>
-                                        </div>
-                                        <a href="#" className="w-[200px] h-[72px] text-black ml-[28px]">บทที่ 4 การเขียนโปรแกรมแบบทางเลือก</a>
-                                    </div>
-                                </li>
-                                <li class="border-l-2 border-[#FFCA61]">
-                                    <div class="md:flex flex-start">
-                                        <div class="bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-3 h-3">
-                                                <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                                            </svg>
-                                        </div>
-                                        <a href="#" className="w-[200px] h-[72px] text-black ml-[28px]">บทที่ 5 การเขียนโปรแกรมแบบทำซ้ำ</a>
-                                    </div>
-                                </li>
-                                <li class="border-l-2 border-white">
-                                    <div class="md:flex flex-start">
-                                        <div class="bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-3 h-3">
-                                                <path d="M2.695 14.763l-1.262 3.154a.5.5 0 00.65.65l3.155-1.262a4 4 0 001.343-.885L17.5 5.5a2.121 2.121 0 00-3-3L3.58 13.42a4 4 0 00-.885 1.343z" />
-                                            </svg>
+        <
+        /div> <
+        a href = "#"
+        className = "w-[339px] h-[48px] ml-[12px] cursor-pointer" > ดาวน์ โหลดเอกสาร < /a> < /
+        div > <
+        /li> <
+        li className = "border-l-2 border-[#FFCA61]" >
+        <
+        div className = "md:flex flex-start" >
+        <
+        div className = "bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5" >
+        <
+        svg xmlns = "http://www.w3.org/2000/svg"
+        viewBox = "0 0 20 20"
+        fill = "white"
+        className = "w-3 h-3" >
+        <
+        path d = "M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" / >
+        <
+        /svg> < /
+        div > <
+        a href = "#"
+        className = "w-[200px] h-[96px] text-black ml-[28px]" > บทที่ 1 การพั ฒนาโปรแกรมคอมพิวเตอร์ และการเขียนผั งงานซี < /a> < /
+        div > <
+        /li> <
+        li className = "border-l-2 border-[#FFCA61]" >
+        <
+        div className = "md:flex flex-start" >
+        <
+        div className = "bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5" >
+        <
+        svg xmlns = "http://www.w3.org/2000/svg"
+        viewBox = "0 0 20 20"
+        fill = "white"
+        className = "w-3 h-3" >
+        <
+        path d = "M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" / >
+        <
+        /svg> < /
+        div > <
+        a href = "#"
+        className = "w-[200px] h-[48px] text-black ml-[28px]" > บทที่ 2 ทำความรู้ จั กกั บภาษาซี < /a> < /
+        div > <
+        /li> <
+        li className = "border-l-2 border-[#FFCA61]" >
+        <
+        div className = "md:flex flex-start" >
+        <
+        div className = "bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5" >
+        <
+        svg xmlns = "http://www.w3.org/2000/svg"
+        viewBox = "0 0 20 20"
+        fill = "white"
+        className = "w-3 h-3" >
+        <
+        path d = "M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" / >
+        <
+        /svg> < /
+        div > <
+        a href = "#"
+        className = "w-[200px] h-[96px] text-black ml-[28px]" > บทที่ 3 การพั ฒนาโปรแกรมคอมพิวเตอร์ ที่ ทำงานบนระบบปฏิบั ติการดอสด้ วยภาษาซี < /a> < /
+        div > <
+        /li> <
+        li className = "border-l-2 border-[#FFCA61]" >
+        <
+        div className = "md:flex flex-start" >
+        <
+        div className = "bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5" >
+        <
+        svg xmlns = "http://www.w3.org/2000/svg"
+        viewBox = "0 0 20 20"
+        fill = "white"
+        className = "w-3 h-3" >
+        <
+        path d = "M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" / >
+        <
+        /svg> < /
+        div > <
+        a href = "#"
+        className = "w-[200px] h-[72px] text-black ml-[28px]" > บทที่ 4 การเขียนโปรแกรมแบบทางเลือก < /a> < /
+        div > <
+        /li> <
+        li className = "border-l-2 border-[#FFCA61]" >
+        <
+        div className = "md:flex flex-start" >
+        <
+        div className = "bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5" >
+        <
+        svg xmlns = "http://www.w3.org/2000/svg"
+        viewBox = "0 0 20 20"
+        fill = "white"
+        className = "w-3 h-3" >
+        <
+        path d = "M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" / >
+        <
+        /svg> < /
+        div > <
+        a href = "#"
+        className = "w-[200px] h-[72px] text-black ml-[28px]" > บทที่ 5 การเขียนโปรแกรมแบบทำซ้ ำ < /a> < /
+        div > <
+        /li> <
+        li className = "border-l-2 border-white" >
+        <
+        div className = "md:flex flex-start" >
+        <
+        div className = "bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5" >
+        <
+        svg xmlns = "http://www.w3.org/2000/svg"
+        viewBox = "0 0 20 20"
+        fill = "white"
+        className = "w-3 h-3" >
+        <
+        path d = "M2.695 14.763l-1.262 3.154a.5.5 0 00.65.65l3.155-1.262a4 4 0 001.343-.885L17.5 5.5a2.121 2.121 0 00-3-3L3.58 13.42a4 4 0 00-.885 1.343z" / >
+        <
+        /svg>
 
-                                        </div>
-                                        <a href="#" className="w-[200px] h-[48px] text-[color:#FFA400] ml-[12px]">แบบทดสอบหลังเรียน</a>
-                                    </div>
-                                </li>
-                            </ol>
-                        </div>
-                        <div className="flex flex-col">
-                            <div className="font-semibold text-[22px] mt-[32px] mx-[310px]">แบบทดสอบหลังเรียน</div>
-                            <p className="mx-[20px] mt-[24px] opacity-50">---------------------------------------------------------------------------------------------------------------------------</p>
-                            <div className="font-semibold text-[20px] mt-[48px] underline ml-[42px]">คำชี้แจง</div>
-                            <div className="text-[18px] mt-[36px] mx-[42px]">แบบทดสอบชุดนี้จัดทำขึ้น โดยมีวัตถุประสงค์เพื่อประเมินความรู้ความเข้าใจในการเรียนผ่านระบบ Com-Port กรณีที่ต้องการขอรับวุฒิบัตร ท่านต้องสอบผ่านไม่น้อยกว่า 70% ของคะแนนโดยรวมทั้งหมด</div>
-                            <div className="flex flex-row">
-                                <div className="text-[18px] mt-[56px] ml-[42px]">จำนวนคำถาม</div>
-                                <div className="text-[18px] mt-[56px] ml-[147px]">5 ข้อ</div>
-                            </div>
-                            <p className="mx-[20px] mt-[25px] mx-[42px] opacity-50">--------------------------------------------------------------------------------------------------------------------</p>
-                            <div className="flex flex-row">
-                                <div className="text-[18px] mt-[25px] ml-[42px]">จำกัดเวลา</div>
-                                <div className="text-[18px] mt-[25px] ml-[171px]">15 นาที</div>
-                            </div>
-                            <p className="mx-[20px] mt-[25px] mx-[42px] opacity-50">--------------------------------------------------------------------------------------------------------------------</p>
-                            <div className="flex flex-row">
-                                <div className="text-[18px] mt-[25px] ml-[42px]">เกณฑ์การทำข้อสอบ</div>
-                                <div className="text-[18px] mt-[25px] ml-[96px]">ผู้เรียนต้องทำคะแนนให้ได้เกณฑ์มากกว่า 70 %</div>
-                            </div>
-                            <p className="mx-[20px] mt-[25px] mx-[42px] opacity-50">--------------------------------------------------------------------------------------------------------------------</p>
-                            <a href="#" className="text-[16px] mt-[20px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] text-center py-[14px] px-[26px] bg-[#FFCA61] rounded-[8px] mx-[338px] ">เริ่มแบบทดสอบ</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <
+        /div> <
+        a href = "#"
+        className = "w-[200px] h-[48px] text-[color:#FFA400] ml-[12px]" > แบบทดสอบหลั งเรียน < /a> < /
+        div > <
+        /li> < /
+        ol > <
+        /div> <
+        div className = "flex flex-col" >
+        <
+        div className = "font-semibold text-[22px] mt-[32px] mx-[310px]" > แบบทดสอบหลั งเรียน < /div> <
+        p className = "mx-[20px] mt-[24px] opacity-50" > -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- - < /p> <
+        div className = "font-semibold text-[20px] mt-[48px] underline ml-[42px]" > คำชี้ แจง < /div> <
+        div className = "text-[18px] mt-[36px] mx-[42px]" > แบบทดสอบชุดนี้ จั ดทำขึ้ น โดยมีวั ตถุประสงค์ เพื่ อประเมินความรู้ ความเข้ าใจในการเรียนผ่ านระบบ Com - Port กรณีที่ ต้ องการขอรั บวุฒิบั ตร ท่ านต้ องสอบผ่ านไม่ น้ อยกว่ า 70 % ของคะแนนโดยรวมทั้ งหมด < /div> <
+        div className = "flex flex-row" >
+        <
+        div className = "text-[18px] mt-[56px] ml-[42px]" > จำนวนคำถาม < /div> <
+        div className = "text-[18px] mt-[56px] ml-[147px]" > 5 ข้ อ < /div> < /
+        div > <
+        p className = "mx-[20px] mt-[25px] mx-[42px] opacity-50" > -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- < /p> <
+        div className = "flex flex-row" >
+        <
+        div className = "text-[18px] mt-[25px] ml-[42px]" > จำกั ดเวลา < /div> <
+        div className = "text-[18px] mt-[25px] ml-[171px]" > 15 นาที < /div> < /
+        div > <
+        p className = "mx-[20px] mt-[25px] mx-[42px] opacity-50" > -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- < /p> <
+        div className = "flex flex-row" >
+        <
+        div className = "text-[18px] mt-[25px] ml-[42px]" > เกณฑ์ การทำข้ อสอบ < /div> <
+        div className = "text-[18px] mt-[25px] ml-[96px]" > ผู้ เรียนต้ องทำคะแนนให้ ได้ เกณฑ์ มากกว่ า 70 % < /div> < /
+        div > <
+        p className = "mx-[20px] mt-[25px] mx-[42px] opacity-50" > -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- < /p> <
+        a href = "#"
+        className = "text-[16px] mt-[20px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] text-center py-[14px] px-[26px] bg-[#FFCA61] rounded-[8px] mx-[338px] " > เริ่ มแบบทดสอบ < /a> < /
+        div > <
+        /div> < /
+        div > <
+        /div> < /
+        div >
     );
 }
 
 export default Test;
 
-{/* <div class="flex gap-10">
-                    <div class="inline-flex items-center">
-                        <label
-                            class="relative flex cursor-pointer items-center rounded-full p-3"
-                            for="ripple-on"
-                            data-ripple-dark="true"
-                        >
-                            <input
-                                id="ripple-on"
-                                name="ripple"
-                                type="radio"
-                                class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-pink-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-pink-500 checked:before:bg-pink-500 hover:before:opacity-10"
-                                checked
-                            />
-                            <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-pink-500 opacity-0 transition-opacity peer-checked:opacity-100">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="h-3.5 w-3.5"
-                                    viewBox="0 0 16 16"
-                                    fill="currentColor"
-                                >
-                                    <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
-                                </svg>
-                            </div>
-                        </label>
-                        <label
-                            class="mt-px cursor-pointer select-none font-light text-gray-700"
-                            for="ripple-on"
-                        >
-                            Ripple Effect On
-                        </label>
-                    </div>
-                    <div class="inline-flex items-center">
-                        <label
-                            class="relative flex cursor-pointer items-center rounded-full p-3"
-                            for="ripple-off"
-                        >
-                            <input
-                                id="ripple-off"
-                                name="ripple"
-                                type="radio"
-                                class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-pink-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-pink-500 checked:before:bg-pink-500 hover:before:opacity-10"
-                            />
-                            <div class="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-pink-500 opacity-0 transition-opacity peer-checked:opacity-100">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="h-3.5 w-3.5"
-                                    viewBox="0 0 16 16"
-                                    fill="currentColor"
-                                >
-                                    <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
-                                </svg>
-                            </div>
-                        </label>
-                        <label
-                            class="mt-px cursor-pointer select-none font-light text-gray-700"
-                            for="ripple-off"
-                        >
-                            Ripple Effect Off
-                        </label>
-                    </div>
-                </div> */}
+{
+    /* <div className="flex gap-10">
+                        <div className="inline-flex items-center">
+                            <label
+                                className="relative flex cursor-pointer items-center rounded-full p-3"
+                                htmlFor="ripple-on"
+                                data-ripple-dark="true"
+                            >
+                                <input
+                                    id="ripple-on"
+                                    name="ripple"
+                                    type="radio"
+                                    className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-pink-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-pink-500 checked:before:bg-pink-500 hover:before:opacity-10"
+                                    checked
+                                />
+                                <div className="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-pink-500 opacity-0 transition-opacity peer-checked:opacity-100">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="h-3.5 w-3.5"
+                                        viewBox="0 0 16 16"
+                                        fill="currentColor"
+                                    >
+                                        <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                                    </svg>
+                                </div>
+                            </label>
+                            <label
+                                className="mt-px cursor-pointer select-none font-light text-gray-700"
+                                htmlFor="ripple-on"
+                            >
+                                Ripple Effect On
+                            </label>
+                        </div>
+                        <div className="inline-flex items-center">
+                            <label
+                                className="relative flex cursor-pointer items-center rounded-full p-3"
+                                htmlFor="ripple-off"
+                            >
+                                <input
+                                    id="ripple-off"
+                                    name="ripple"
+                                    type="radio"
+                                    className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-pink-500 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-pink-500 checked:before:bg-pink-500 hover:before:opacity-10"
+                                />
+                                <div className="pointer-events-none absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 text-pink-500 opacity-0 transition-opacity peer-checked:opacity-100">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="h-3.5 w-3.5"
+                                        viewBox="0 0 16 16"
+                                        fill="currentColor"
+                                    >
+                                        <circle data-name="ellipse" cx="8" cy="8" r="8"></circle>
+                                    </svg>
+                                </div>
+                            </label>
+                            <label
+                                className="mt-px cursor-pointer select-none font-light text-gray-700"
+                                htmlFor="ripple-off"
+                            >
+                                Ripple Effect Off
+                            </label>
+                        </div>
+                    </div> */
+}

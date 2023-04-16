@@ -125,13 +125,13 @@ const ListOfContent = () => {
   return (
     <div className="px-[104px] py-[29px]">
       <MoveToTop />
-      <Breadcrumb route={route} />
+      <Breadcrumb route={route} />{" "}
       <div className="text-center text-[28px] font-semibold my-12">
-        สร้างแฟ้มสะสมผลงาน
-      </div>
-      <StateCreate state={4} />
+        สร้ างแฟ้ มสะสมผลงาน{" "}
+      </div>{" "}
+      <StateCreate state={4} />{" "}
       <div className="my-[72px] mx-auto max-w-[1232px]">
-        <div className="text-xl font-bold mb-[30px]">สารบัญ</div>
+        <div className="text-xl font-bold mb-[30px]"> สารบั ญ </div>{" "}
         <div className="flex gap-x-36">
           <div className="shrink-0 relative w-[170px] h-[246px]">
             <img
@@ -146,16 +146,17 @@ const ListOfContent = () => {
                 width="18"
                 height="18"
               />
-            </div>
-          </div>
+            </div>{" "}
+          </div>{" "}
           <div className="grid grid-cols-2 gap-x-8 gap-y-4">
+            {" "}
             {topics.map((item, index) => {
               return (
                 <>
                   <div className="flex items-center h-[40px]" key={index}>
-                    <label for="topic" className="text-lg mr-8 font-bold">
-                      หัวข้อ
-                    </label>
+                    <label htmlFor="topic" className="text-lg mr-8 font-bold">
+                      หั วข้ อ{" "}
+                    </label>{" "}
                     <input
                       className="shadow border rounded py-2.5 px-3.5 w-[304px] "
                       id="topic"
@@ -168,11 +169,11 @@ const ListOfContent = () => {
                       }}
                       placeholder="เช่น ประวัติส่วนตัว"
                     />
-                  </div>
+                  </div>{" "}
                   <div className="flex items-center h-[40px]">
-                    <label for="page" className="text-lg mr-8 font-bold">
-                      หน้า
-                    </label>
+                    <label htmlFor="page" className="text-lg mr-8 font-bold">
+                      หน้ า{" "}
+                    </label>{" "}
                     <select
                       id="page"
                       name="page"
@@ -184,12 +185,12 @@ const ListOfContent = () => {
                         setTopics(arr);
                       }}
                     >
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                    </select>
-                  </div>
+                      <option value="1"> 1 </option>{" "}
+                      <option value="2"> 2 </option>{" "}
+                      <option value="3"> 3 </option>{" "}
+                      <option value="4"> 4 </option>{" "}
+                    </select>{" "}
+                  </div>{" "}
                 </>
               );
             })}

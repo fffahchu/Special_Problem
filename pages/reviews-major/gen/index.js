@@ -56,7 +56,7 @@ const ReviewGenneral = () => {
       <MoveToTop />
       <Breadcrumb route={route} />
 
-      <div class="mt-[20px] bg-cover h-[400px] w-full">
+      <div className="mt-[20px] bg-cover h-[400px] w-full">
         <img src="../assets/images/reviews/gen/cover.jpg"></img>
       </div>
 

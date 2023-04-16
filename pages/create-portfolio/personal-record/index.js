@@ -17,26 +17,26 @@ const PersonalRecord = () => {
     },
   ];
   const [page, setPage] = useState(1);
-  const [urlPreview, setUrlPreview] = useState("");
+  const [urlPreview, setUrlPreview] = useState;
   const [file, setFile] = useState(null);
-  const [nameTh, setNameTh] = useState("");
-  const [nickname, setNickname] = useState("");
-  const [birthday, setBirthday] = useState("");
-  const [ethnicity, setEthnicity] = useState("");
-  const [nationality, setNationality] = useState("");
-  const [religion, setReligion] = useState("");
-  const [email, setEmail] = useState("");
-  const [address, setAddress] = useState("");
-  const [hobby, setHobby] = useState("");
-  const [aptitude, setAptitude] = useState("");
-  const [favoriteSubject, setFavoriteSubject] = useState("");
-  const [nameFather, setNameFather] = useState("");
-  const [workFather, setWorkFather] = useState("");
-  const [telFather, setTelFather] = useState("");
-  const [nameMother, setNameMother] = useState("");
-  const [workMother, setWorkMother] = useState("");
-  const [telMother, setTelMother] = useState("");
-  const [tel, setTel] = useState("");
+  const [nameTh, setNameTh] = useState;
+  const [nickname, setNickname] = useState;
+  const [birthday, setBirthday] = useState;
+  const [ethnicity, setEthnicity] = useState;
+  const [nationality, setNationality] = useState;
+  const [religion, setReligion] = useState;
+  const [email, setEmail] = useState;
+  const [address, setAddress] = useState;
+  const [hobby, setHobby] = useState;
+  const [aptitude, setAptitude] = useState;
+  const [favoriteSubject, setFavoriteSubject] = useState;
+  const [nameFather, setNameFather] = useState;
+  const [workFather, setWorkFather] = useState;
+  const [telFather, setTelFather] = useState;
+  const [nameMother, setNameMother] = useState;
+  const [workMother, setWorkMother] = useState;
+  const [telMother, setTelMother] = useState;
+  const [tel, setTel] = useState;
 
   useEffect(() => {
     const idPort5 = localStorage.getItem("idPort5") || null;
@@ -197,13 +197,13 @@ const PersonalRecord = () => {
   return (
     <div className="px-[104px] py-[29px]">
       <MoveToTop />
-      <Breadcrumb route={route} />
+      <Breadcrumb route={route} />{" "}
       <div className="text-center text-[28px] font-semibold my-12">
-        สร้างแฟ้มสะสมผลงาน
-      </div>
-      <StateCreate state={5} />
+        สร้ างแฟ้ มสะสมผลงาน{" "}
+      </div>{" "}
+      <StateCreate state={5} />{" "}
       <div className="my-[72px] mx-auto max-w-[1232px]">
-        <div className="text-xl font-bold mb-[30px]">ประวัติส่วนตัว</div>
+        <div className="text-xl font-bold mb-[30px]"> ประวั ติส่ วนตั ว </div>{" "}
         <div className="flex gap-x-8">
           <div className="shrink-0 relative w-[170px] h-[246px]">
             <img
@@ -218,28 +218,26 @@ const PersonalRecord = () => {
                 width="18"
                 height="18"
               />
-            </div>
-          </div>
+            </div>{" "}
+          </div>{" "}
           <div className="grow">
             <div className="flex items-center">
               <label
                 className="w-[218px] text-lg font-bold text-end mr-8 "
                 htmlFor="page_number"
               >
-                หมายเลขหน้า
-              </label>
+                หมายเลขหน้ า{" "}
+              </label>{" "}
               <select
                 name="page_number"
                 className="shadow border rounded py-2.5 px-3.5 w-[531px]"
                 onChange={(e) => setPage(e.target.value)}
                 value={page}
               >
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-            </div>
+                <option value="1"> 1 </option> <option value="2"> 2 </option>{" "}
+                <option value="3"> 3 </option> <option value="4"> 4 </option>{" "}
+              </select>{" "}
+            </div>{" "}
             <hr className="border-[1px] border-black opacity-25 w-full my-[42px]" />
             <div className="flex mb-14">
               <div className="pl-[250px]">
@@ -261,8 +259,8 @@ const PersonalRecord = () => {
                 )}
               </div>
               <div className="ml-[30px]">
-                <div className="font-bold mb-[13px]">คำแนะนำ</div>
-                <div className="mb-[9px]">• สำหรับรูปโปรไฟล์</div>
+                <div className="font-bold mb-[13px]"> คำแนะนำ </div>{" "}
+                <div className="mb-[9px]"> •สำหรั บรูปโปรไฟล์ </div>{" "}
                 <div className="mb-[28px]">
                   • ขนาดรูปไม่เกิน 10 MB png หรือ jpg
                 </div>
@@ -283,8 +281,8 @@ const PersonalRecord = () => {
             </div>
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                ชื่อ-นานสกุล ภาษาไทย
-              </label>
+                ชื่ อ - นานสกุล ภาษาไทย{" "}
+              </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="text"
@@ -292,11 +290,11 @@ const PersonalRecord = () => {
                 value={nameTh}
                 onChange={(e) => setNameTh(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                ชื่อเล่น
-              </label>
+                ชื่ อเล่ น{" "}
+              </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="text"
@@ -304,11 +302,11 @@ const PersonalRecord = () => {
                 value={nickname}
                 onChange={(e) => setNickname(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                วัน/เดือน/ปีเกิด
-              </label>
+                วั น / เดือน / ปีเกิด{" "}
+              </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 placeholder:text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="date"
@@ -316,11 +314,11 @@ const PersonalRecord = () => {
                 value={birthday}
                 onChange={(e) => setBirthday(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                เชื้อชาติ
-              </label>
+                เชื้ อชาติ{" "}
+              </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="text"
@@ -328,11 +326,11 @@ const PersonalRecord = () => {
                 value={ethnicity}
                 onChange={(e) => setEthnicity(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                สัญชาติ
-              </label>
+                สั ญชาติ{" "}
+              </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="text"
@@ -340,11 +338,11 @@ const PersonalRecord = () => {
                 value={nationality}
                 onChange={(e) => setNationality(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                ศาสนา
-              </label>
+                ศาสนา{" "}
+              </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="text"
@@ -352,11 +350,11 @@ const PersonalRecord = () => {
                 value={religion}
                 onChange={(e) => setReligion(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                อีเมล
-              </label>
+                อีเมล{" "}
+              </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="email"
@@ -364,11 +362,11 @@ const PersonalRecord = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                เบอร์โทรศัพท์
-              </label>
+                เบอร์ โทรศั พท์{" "}
+              </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="tel"
@@ -376,11 +374,11 @@ const PersonalRecord = () => {
                 value={tel}
                 onChange={(e) => setTel(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                ที่อยู่ปัจจุบัน
-              </label>
+                ที่ อยู่ ปั จจุบั น{" "}
+              </label>{" "}
               <textarea
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline resize-none"
                 type="text"
@@ -389,11 +387,11 @@ const PersonalRecord = () => {
                 value={address}
                 onChange={(e) => setAddress(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                งานอดิเรก
-              </label>
+                งานอดิเรก{" "}
+              </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="text"
@@ -401,11 +399,11 @@ const PersonalRecord = () => {
                 value={hobby}
                 onChange={(e) => setHobby(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                ความถนัด/ทักษะที่มี
-              </label>
+                ความถนั ด / ทั กษะที่ มี{" "}
+              </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="text"
@@ -413,11 +411,11 @@ const PersonalRecord = () => {
                 value={aptitude}
                 onChange={(e) => setAptitude(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                วิชาที่ชอบ
-              </label>
+                วิชาที่ ชอบ{" "}
+              </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="text"
@@ -425,11 +423,11 @@ const PersonalRecord = () => {
                 value={favoriteSubject}
                 onChange={(e) => setFavoriteSubject(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                ชื่อบิดา
-              </label>
+                ชื่ อบิดา{" "}
+              </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="text"
@@ -437,11 +435,11 @@ const PersonalRecord = () => {
                 value={nameFather}
                 onChange={(e) => setNameFather(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                อาชีพบิดา
-              </label>
+                อาชีพบิดา{" "}
+              </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="text"
@@ -449,11 +447,11 @@ const PersonalRecord = () => {
                 value={workFather}
                 onChange={(e) => setWorkFather(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                เบอร์โทรศัพท์
-              </label>
+                เบอร์ โทรศั พท์{" "}
+              </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="tel"
@@ -461,11 +459,11 @@ const PersonalRecord = () => {
                 value={telFather}
                 onChange={(e) => setTelFather(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                ชื่อมารดา
-              </label>
+                ชื่ อมารดา{" "}
+              </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 type="text"
@@ -473,7 +471,7 @@ const PersonalRecord = () => {
                 value={nameMother}
                 onChange={(e) => setNameMother(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
                 อาชีพมารดา
@@ -485,7 +483,7 @@ const PersonalRecord = () => {
                 value={workMother}
                 onChange={(e) => setWorkMother(e.target.value)}
               />
-            </div>
+            </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
                 เบอร์โทรศัพท์
@@ -497,10 +495,10 @@ const PersonalRecord = () => {
                 value={telMother}
                 onChange={(e) => setTelMother(e.target.value)}
               />
-            </div>
-          </div>
-        </div>
-      </div>
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
       <hr className="border-gray-4 mb-4" />
       <div className="flex justify-center items-center">
         <Link href="/create-portfolio/educational-record">

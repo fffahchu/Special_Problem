@@ -7,7 +7,7 @@ import axios from "axios";
 import { useRouter } from 'next/navigation';
 
 const Registerform = () => {
-  const rounter = useRouter()
+  const rounter = useRouter();
   const route = [
     {
       title: "หน้าแรก",
@@ -73,8 +73,8 @@ const Registerform = () => {
               localStorage.setItem("idUser", data.data.data.id);
             }
             setTimeout(() => {
-              rounter.push("/member")
-            }, 2000);
+              rounter.push("/first-page");
+            }, 1800);
           })
           .catch((e) => {
             console.log(e);

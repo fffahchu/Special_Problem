@@ -56,7 +56,7 @@ const ActivityCe = () => {
       <MoveToTop />
       <Breadcrumb route={route} />
 
-      <div class="mt-[20px] bg-cover h-[400px] w-full">
+      <div className="mt-[20px] bg-cover h-[400px] w-full">
         <img
           className="h-[600px] w-full"
           src="../assets/images/reviews/ce/ac-ce.png"

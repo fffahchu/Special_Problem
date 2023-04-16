@@ -64,7 +64,7 @@ const Upload = () => {
           <div className="ml-[70px]">
             <div className="flex flex-col mb-6 mt-[80px]">
               <label
-                for="file_name"
+                htmlFor="file_name"
                 className="w-[278px] text-lg font-bold pt-[60px] text-start"
               >
                 ชื่อไฟล์
@@ -77,7 +77,7 @@ const Upload = () => {
               />
             </div>
             <label
-              for="dropzone-file"
+              htmlFor="dropzone-file"
               className="px-[20px] py-[6px] w-[165px] border-[1px] rounded-[20px] font-bold cursor-pointer"
             >
               อัพโหลดรูป

@@ -82,13 +82,13 @@ const CreateIntroduction = () => {
   return (
     <div className="px-[104px] py-[29px]">
       <MoveToTop />
-      <Breadcrumb route={route} />
+      <Breadcrumb route={route} />{" "}
       <div className="text-center text-[28px] font-semibold my-12">
-        สร้างแฟ้มสะสมผลงาน
-      </div>
-      <StateCreate state={3} />
+        สร้ างแฟ้ มสะสมผลงาน{" "}
+      </div>{" "}
+      <StateCreate state={3} />{" "}
       <div className="my-[72px] mx-auto max-w-[1232px]">
-        <div className="text-xl font-bold mb-[30px]">คำนำ</div>
+        <div className="text-xl font-bold mb-[30px]"> คำนำ </div>{" "}
         <div className="flex gap-x-36">
           <div className="relative w-[170px] h-[246px]">
             <img
@@ -103,20 +103,20 @@ const CreateIntroduction = () => {
                 width="18"
                 height="18"
               />
-            </div>
-          </div>
+            </div>{" "}
+          </div>{" "}
           <div className="flex gap-x-8">
-            <div className="text-lg font-bold">รายละเอียดคำนำ</div>
+            <div className="text-lg font-bold"> รายละเอียดคำนำ </div>{" "}
             <textarea
               rows="15"
               cols="50"
               className="border-[1px] bg-white rounded-[6px]"
               value={preface}
               onChange={(e) => setPreface(e.target.value)}
-            ></textarea>
-          </div>
-        </div>
-      </div>
+            ></textarea>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
       <hr className="border-gray-4 mb-4" />
       <div className="flex justify-center items-center">
         <Link href="/create-portfolio/listofcontent">
@@ -124,10 +124,10 @@ const CreateIntroduction = () => {
             className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
             onClick={onSubmit}
           >
-            บันทึกข้อมูล
-          </button>
-        </Link>
-      </div>
+            บั นทึกข้ อมูล{" "}
+          </button>{" "}
+        </Link>{" "}
+      </div>{" "}
     </div>
   );
 };

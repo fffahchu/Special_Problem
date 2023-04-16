@@ -23,20 +23,21 @@ const Exercise = () => {
     <div className="px-[104px] py-[29px]">
       <MoveToTop />
       <Breadcrumb route={route} />
-
       <div className="flex justify-center">
         <div>
           <div className="mt-[40px]">
-            <div className="text-[23px] font-semibold">แบบฝึกหัด</div>
-          </div>
+            <div className="text-[23px] font-semibold"> แบบฝึกหั ด </div>{" "}
+          </div>{" "}
           <hr className="mt-[12px] mb-4" />
-
           <div className="flex gap-[51px] px-[45px]">
             <div className="flex flex-col gap-12 w-[312px]">
               <div>
                 <div className="w-[390px] mt-[30px]">
                   <div>
-                    <ur className="underline text-[20px]">แบบฝึกหัดเรื่อง</ur>
+                    <ur className="underline text-[20px]">
+                      {" "}
+                      แบบฝึกหั ดเรื่ อง{" "}
+                    </ur>{" "}
                     <div className="flex flex-col gap-2 mt-[5px]">
                       <div className="text-[18px] mt-[14px]">
                         <Link
@@ -45,141 +46,138 @@ const Exercise = () => {
                           className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                         >
                           <ur>
-                            1. หนังสือรวมโจทย์ภาษาซีในรูปแบบโอลิมปิกวิชาการ
-                          </ur>
-                        </Link>
+                            1. หนั งสือรวมโจทย์ ภาษาซีในรูปแบบโอลิมปิกวิชาการ{" "}
+                          </ur>{" "}
+                        </Link>{" "}
                       </div>
-
                       <div className="text-[18px]">
                         <Link
                           href="http://portal5.udru.ac.th/ebook/pdf/upload/17QjQ6OQ38UCC3lCc238.pdf"
                           target="_blank"
                           className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                         >
-                          <ur>2. การเขียนโปรแกรมคอมพิวเตอร์</ur>
-                        </Link>
+                          <ur> 2. การเขียนโปรแกรมคอมพิวเตอร์ </ur>{" "}
+                        </Link>{" "}
                       </div>
-
                       <div className="text-[18px]">
                         <Link
                           href="https://www.academia.edu/12327254/%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%82_%E0%B8%AD%E0%B8%AA%E0%B8%AD%E0%B8%9A_%E0%B8%A7%E0%B8%B4_%E0%B8%8A%E0%B8%B2_517111_%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%82%E0%B8%B5_%E0%B8%A2%E0%B8%99%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%B4_%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3_1_%E0%B8%A0%E0%B8%B2%E0%B8%84%E0%B8%A7%E0%B8%B4_%E0%B8%8A%E0%B8%B2%E0%B8%84%E0%B8%AD%E0%B8%A1%E0%B8%9E%E0%B8%B4_%E0%B8%A7%E0%B9%80%E0%B8%95%E0%B8%AD%E0%B8%A3_%E0%B8%84%E0%B8%93%E0%B8%B0%E0%B8%A7%E0%B8%B4_%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A8%E0%B8%B2%E0%B8%AA%E0%B8%95%E0%B8%A3_%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4_%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1_%E0%B8%A2%E0%B8%A8%E0%B8%B4_%E0%B8%A5%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%A3_2557"
                           target="_blank"
                           className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                         >
-                          <ur>3. รวมข้อสอบการเขียนโปรแกรมคอมพิวเตอร์</ur>
-                        </Link>
+                          <ur> 3. รวมข้ อสอบการเขียนโปรแกรมคอมพิวเตอร์ </ur>{" "}
+                        </Link>{" "}
                       </div>
-
                       <div className="text-[18px]">
                         <Link
                           href="https://www.facebook.com/tutortongpage/posts/1131111210286332/"
                           target="_blank"
                           className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                         >
-                          <ur>4. รวมโจทย์ C++ พร้อมเฉลย</ur>
-                        </Link>
+                          <ur> 4. รวมโจทย์ C++พร้ อมเฉลย </ur>{" "}
+                        </Link>{" "}
                       </div>
-
                       <div className="text-[18px]">
                         <Link
                           href="https://www.dek-d.com/board/view/1852461/"
                           target="_blank"
                           className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                         >
-                          <ur>5. Lab#6 โจทย์ พร้อมเฉลย</ur>
+                          <ur> 5. Lab #6 โจทย์ พร้อมเฉลย</ur>
                         </Link>
                       </div>
-
                       <div className="text-[18px]">
                         <Link
                           href="https://sites.google.com/site/khxmphiwtexrm5/hnwy-kar-reiyn-ru1/kar-wikheraah-payha/kar-wikheraah-payha-p4"
                           target="_blank"
                           className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                         >
-                          <ur>6. ตัวอย่างโจทย์ปัญหา การวิเคราะห์ปัญหา</ur>
-                        </Link>
+                          <ur>
+                            {" "}
+                            6. ตั วอย่ างโจทย์ ปั ญหา การวิเคราะห์ ปั ญหา{" "}
+                          </ur>{" "}
+                        </Link>{" "}
                       </div>
-
                       <div className="text-[18px]">
                         <Link
                           href="https://anyflip.com/kgfo/vixx/basic"
                           target="_blank"
                           className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                         >
-                          <ur>7. การออกแบบอัลกอรึทึม และการเขียนรหัสเทียม</ur>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                          <ur>
+                            {" "}
+                            7. การออกแบบอั ลกอรึทึม และการเขียนรหั สเทียม{" "}
+                          </ur>{" "}
+                        </Link>{" "}
+                      </div>{" "}
+                    </div>{" "}
+                  </div>{" "}
+                </div>{" "}
+              </div>{" "}
               <div>
                 <div className="flex justify-between items-center mt-[100px]">
                   <div className="flex items-center gap-1">
-                    <div className="text-xl font-semibold">ข่าวฮอต</div>
+                    <div className="text-xl font-semibold"> ข่ าวฮอต </div>{" "}
                     <img
                       src="../assets/icons/fire.svg"
                       alt="icon-fire"
                       width="24"
                       height="24"
                     />
-                  </div>
+                  </div>{" "}
                   <a href="#" className="font-semibold underline">
-                    ดูทั้งหมด
-                  </a>
-                </div>
+                    ดูทั้ งหมด{" "}
+                  </a>{" "}
+                </div>{" "}
                 <div className="flex flex-col gap-8 mt-7">
                   <div className="flex flex-col gap-3">
                     <img src="../assets/images/news/news-1.png" alt="news-1" />
                     <div>
-                      ปฏิทิน 2566 : อัพเดท ตารางสอบ 'TCAS' ที่ 'DEK66'
-                      ต้องรู้ไว้ สมัครสอบ TGAT/TPAT และ
-                    </div>
-                  </div>
+                      ปฏิทิน 2566: อั พเดท ตารางสอบ 'TCAS' ที่ 'DEK66' ต้ องรู้
+                      ไว้ สมั ครสอบ TGAT / TPAT และ{" "}
+                    </div>{" "}
+                  </div>{" "}
                   <div className="flex flex-col gap-3">
                     <img src="../assets/images/news/news-2.png" alt="news-2" />
                     <div>
-                      ประกาศผล admission 65 TCAS รอบ 3 ครั้งที่ 2
-                      เช็กผลสอบที่นี่
-                    </div>
-                  </div>
-                </div>
-              </div>
+                      ประกาศผล admission 65 TCAS รอบ 3 ครั้ งที่ 2 เช็ กผลสอบที่
+                      นี่{" "}
+                    </div>{" "}
+                  </div>{" "}
+                </div>{" "}
+              </div>{" "}
             </div>
-
             <div>
               <div className="flex flex-col pt-[51px]">
                 <div className="flex justify-center bg-[#fafafa] rounded-md shadow-inner w-[680px] h-[300px] ml-[150px]">
                   <div className="inline-block w-[640px] pt-[20px]">
                     <div className="text-[15px] indent-10">
-                      เมื่อพบใคร .. ที่สนใจการโปรแกรม (Programming)
-                      และเป็นผู้เริ่มต้น (Beginner) หรือจะเป็นนักพัฒนา
-                      (Developer) จะมีคำถามสำคัญ ที่ใช้ชวนพูดคุยกันว่า
-                      "อยากเขียนโปรแกรมบน แพลตฟอร์ม (Platform) ใด"
-                      ก็มักเริ่มจากการเลือก ระบบปฏิบัติการ คือ Windows, Linux,
-                      Android, iOS แล้วเลือก แหล่งที่ใช้โปรแกรม คือ Windows,
-                      Website หรือ Application แล้วก็ต้องเลือก ภาษาที่ใช้พัฒนา
-                      อาทิ PHP, JAVA, C, ASP, VB, Python
-                      ซึ่งมีบางภาษาที่พัฒนาแล้ว สามารถนำไปใช้ได้ในหลายแพลตฟอร์ม
-                    </div>
+                      เมื่ อพบใคร..ที่ สนใจการโปรแกรม(Programming) และเป็ นผู้
+                      เริ่ มต้ น(Beginner) หรือจะเป็ นนั กพั ฒนา(Developer)
+                      จะมีคำถามสำคั ญ ที่ ใช้ ชวนพูดคุยกั นว่ า
+                      "อยากเขียนโปรแกรมบน แพลตฟอร์ม (Platform) ใด" ก็ มั กเริ่
+                      มจากการเลือก ระบบปฏิบั ติการ คือ Windows, Linux, Android,
+                      iOS แล้ วเลือก แหล่ งที่ ใช้ โปรแกรม คือ Windows, Website
+                      หรือ Application แล้ วก็ ต้ องเลือก ภาษาที่ ใช้ พั ฒนา
+                      อาทิ PHP, JAVA, C, ASP, VB, Python ซึ่ งมีบางภาษาที่ พั
+                      ฒนาแล้ ว สามารถนำไปใช้ ได้ ในหลายแพลตฟอร์ ม{" "}
+                    </div>{" "}
                     <div className=" mt-[10px] text-[15px] indent-10">
-                      <a className="font-bold">การโปรแกรม</a> คือ
-                      การกำหนดขั้นตอนให้กับคอมพิวเตอร์ทำงานตามลำดับและรูปแบบที่กำหนด
-                      อัลกอริทึม (Algorithm) คือ
-                      กระบวนการแก้ปัญหาอย่างเป็นขั้นตอน
-                      หรือขั้นตอนวิธีอย่างมีลำดับ คือ กลุ่มของขั้นตอนวิธี
-                      หรือกฎเกณฑ์ที่จะนำพาไปสู่การแก้ปัญหา คือ
-                      ขั้นตอนวิธีที่ประกอบด้วยชุดคำสั่งเป็นขั้นเป็นตอนที่ชัดเจน
-                      และรับประกันว่าเมื่อปฏิบัติอย่างถูกต้องตามขั้นตอนจนครบ
-                      จะได้ผลลัพธ์ที่ถูกต้องตามที่ต้องการ คือ
-                      รูปแบบของการกำหนดการกระทำอย่างเป็นขั้นตอน
-                      ซึ่งผ่านการวิเคราะห์และแยกแยะ เพื่อการแก้ปัญหาตามลำดับขั้น
-                      อาจเลือกใช้ภาษาไทยหรือภาษาอังกฤษ
-                      เพื่อนำเสนอให้เข้าใจเป็นขั้นตอน
-                    </div>
-                  </div>
+                      <a className="font-bold"> การโปรแกรม </a> คือ การกำหนดขั้
+                      นตอนให้ กั บคอมพิวเตอร์ ทำงานตามลำดั บและรูปแบบที่ กำหนด
+                      อั ลกอริทึม(Algorithm) คือ กระบวนการแก้ ปั ญหาอย่ างเป็
+                      นขั้ นตอน หรือขั้ นตอนวิธีอย่ างมีลำดั บ คือ กลุ่ มของขั้
+                      นตอนวิธี หรือกฎเกณฑ์ ที่ จะนำพาไปสู่ การแก้ ปั ญหา คือ ขั้
+                      นตอนวิธีที่ ประกอบด้ วยชุดคำสั่ งเป็ นขั้ นเป็ นตอนที่ ชั
+                      ดเจน และรั บประกั นว่ าเมื่ อปฏิบั ติอย่ างถูกต้ องตามขั้
+                      นตอนจนครบ จะได้ ผลลั พธ์ ที่ ถูกต้ องตามที่ ต้ องการ คือ
+                      รูปแบบของการกำหนดการกระทำอย่ างเป็ นขั้ นตอน ซึ่ งผ่
+                      านการวิเคราะห์ และแยกแยะ เพื่ อการแก้ ปั ญหาตามลำดั บขั้ น
+                      อาจเลือกใช้ ภาษาไทยหรือภาษาอั งกฤษ เพื่ อนำเสนอให้ เข้
+                      าใจเป็ นขั้ นตอน{" "}
+                    </div>{" "}
+                  </div>{" "}
                 </div>
-
                 <div className="flex flex-col gap-10 mt-[90px] ml-[150px]">
                   <div className="flex justify-between ml-[30px] w-[515px]">
                     <img
@@ -194,20 +192,21 @@ const Exercise = () => {
                           target="_blank"
                           className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-100"
                         >
-                          <ur>W3schools.com</ur>
-                        </Link>
+                          <ur> W3schools.com </ur>{" "}
+                        </Link>{" "}
                       </div>
-
                       <div className="w-[350px]">
                         <div className="text[8px] font-regular">
-                          เป็นหนึ่งในเว็บที่มีชื่อเสียงมากที่สุดสำหรับนักพัฒนาและโปรแกรมเมอร์ทุกคนที่ต้องการเรียนรู้ภาษาเขียนโปรแกรมแทบจะทุกภาษา
-                          ตั้งแต่การเขียนโปรแกรมบนเว็บ
-                          ไปจนถึงภาษาโปรแกรมมิ่งสำหรับฐานข้อมูลหรือโปรแกรมบนเดสก์ท็อป
-                          ซึ่งทุกหลักสูตรฟรีหมด
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                          เป็ นหนึ่ งในเว็ บที่ มีชื่ อเสียงมากที่ สุดสำหรั บนั
+                          กพั ฒนาและโปรแกรมเมอร์ ทุกคนที่ ต้ องการเรียนรู้
+                          ภาษาเขียนโปรแกรมแทบจะทุกภาษา ตั้ งแต่
+                          การเขียนโปรแกรมบนเว็ บ ไปจนถึงภาษาโปรแกรมมิ่ งสำหรั
+                          บฐานข้ อมูลหรือโปรแกรมบนเดสก์ ท็ อป ซึ่ งทุกหลั
+                          กสูตรฟรีหมด{" "}
+                        </div>{" "}
+                      </div>{" "}
+                    </div>{" "}
+                  </div>{" "}
                   <div className="flex justify-between ml-[30px] mt-[15px] w-[515px]">
                     <img
                       className="w-[152px] h-[152px] rounded-md"
@@ -221,19 +220,20 @@ const Exercise = () => {
                           target="_blank"
                           className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-100"
                         >
-                          <ur>TeamTreeHouse.com</ur>
-                        </Link>
+                          <ur> TeamTreeHouse.com </ur>{" "}
+                        </Link>{" "}
                       </div>
-
                       <div className="w-[350px]">
                         <div className="text-[16px] font-regular">
-                          เป็นโปรเจ็กต์สำหรับฝึกโปรแกรมเมอร์หน้าใหม่ที่ไร้ประสบการณ์โดยสิ้นเชิง
-                          เพื่อให้สามารถพัฒนาเว็บไซต์หรือแม้แต่แอพพลิเคชั่นเป็นของตนเองได้
-                          ด้วยผู้ใช้หลักหลายล้านที่เข้ามาเยี่ยมชมเว็บนี้ในแต่ละวัน
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                          เป็ นโปรเจ็ กต์ สำหรั บฝึกโปรแกรมเมอร์ หน้ าใหม่ ที่
+                          ไร้ ประสบการณ์ โดยสิ้ นเชิง เพื่ อให้ สามารถพั ฒนาเว็
+                          บไซต์ หรือแม้ แต่ แอพพลิเคชั่ นเป็ นของตนเองได้ ด้
+                          วยผู้ ใช้ หลั กหลายล้ านที่ เข้ ามาเยี่ ยมชมเว็ บนี้
+                          ในแต่ ละวั น{" "}
+                        </div>{" "}
+                      </div>{" "}
+                    </div>{" "}
+                  </div>{" "}
                   <div className="flex justify-between ml-[30px] mt-[15px] w-[520px]">
                     <img
                       className="w-[152px] h-[152px] rounded-md"
@@ -247,47 +247,57 @@ const Exercise = () => {
                           target="_blank"
                           className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-100"
                         >
-                          <ur>CodeAcademy.com</ur>
-                        </Link>
+                          <ur> CodeAcademy.com </ur>{" "}
+                        </Link>{" "}
                       </div>
-
                       <div className="w-[350px]">
                         <div className="text[8px] font-regular">
-                          เป็นเว็บไซต์ที่มีชื่อเสียงมากในการสอนการเขียนโค้ดให้โปรแกรมเมอร์แบบอินเตอร์แอคทีฟ
-                          หลักสูตรที่มีนั้นได้แก่ PHP, Python, jQuery, Web
-                          Fundamentals, JavaScript, Ruby, API เป็นต้น
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                          เป็ นเว็ บไซต์ ที่ มีชื่ อเสียงมากในการสอนการเขียนโค้
+                          ดให้ โปรแกรมเมอร์ แบบอินเตอร์ แอคทีฟ หลั กสูตรที่
+                          มีนั้ นได้ แก่ PHP, Python, jQuery, Web Fundamentals,
+                          JavaScript, Ruby, API เป็ นต้ น{" "}
+                        </div>{" "}
+                      </div>{" "}
+                    </div>{" "}
+                  </div>{" "}
+                </div>{" "}
                 <div className="flex gap-2 justify-center mt-[60px] ml-[40px]">
                   <Link href="#">
-                    <button className="w-[10px] h-[10px] text-black text-[16px] font-semibold bg-[#D9D9D9] rounded-full"></button>
-                  </Link>
+                    <button className="w-[10px] h-[10px] text-black text-[16px] font-semibold bg-[#D9D9D9] rounded-full">
+                      {" "}
+                    </button>{" "}
+                  </Link>{" "}
                   <Link href="#">
-                    <button className="w-[10px] h-[10px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full"></button>
-                  </Link>
+                    <button className="w-[10px] h-[10px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full">
+                      {" "}
+                    </button>{" "}
+                  </Link>{" "}
                   <Link href="#">
-                    <button className="w-[10px] h-[10px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full"></button>
-                  </Link>
+                    <button className="w-[10px] h-[10px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full">
+                      {" "}
+                    </button>{" "}
+                  </Link>{" "}
                   <Link href="#">
-                    <button className="w-[10px] h-[10px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full"></button>
-                  </Link>
+                    <button className="w-[10px] h-[10px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full">
+                      {" "}
+                    </button>{" "}
+                  </Link>{" "}
                   <Link href="#">
-                    <button className="w-[10px] h-[10px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full"></button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                    <button className="w-[10px] h-[10px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full">
+                      {" "}
+                    </button>{" "}
+                  </Link>{" "}
+                </div>{" "}
+              </div>{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
       <div className="flex items-center justify-center mt-[40px]">
         <div className="bg-[#fafafa] rounded-md shadow-inner w-[1000px] h-[321px]  mx-auto">
           <div className="text-[18px] text-[#facc15] font-bold text-center mt-[30px]">
-            แนะนำเครื่องมือที่ใช้เขียนโปรแกรม (โปรแกรม,เว็บไซต์)
-          </div>
+            แนะนำเครื่ องมือที่ ใช้ เขียนโปรแกรม(โปรแกรม, เว็ บไซต์){" "}
+          </div>{" "}
           <div className="ml-[12px] grid grid-cols-4 gap-4">
             <div className="inline-block pt-[48px]">
               <img
@@ -298,11 +308,11 @@ const Exercise = () => {
               <div className="pl-[36px] mt-[10px]">
                 <Link href="https://code.visualstudio.com/" target="_blank">
                   <div className="flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
-                    Visual Studio Code
-                  </div>
-                </Link>
-              </div>
-            </div>
+                    Visual Studio Code{" "}
+                  </div>{" "}
+                </Link>{" "}
+              </div>{" "}
+            </div>{" "}
             <div className="inline-block pt-[50px]">
               <img
                 className="w-[224px] h-[128px] rounded rounded-xl"
@@ -314,12 +324,12 @@ const Exercise = () => {
                   href="https://visualstudio.microsoft.com/"
                   target="_blank"
                 >
-                  <div class="flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
-                    Visual Studio
-                  </div>
-                </Link>
-              </div>
-            </div>
+                  <div className="flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
+                    Visual Studio{" "}
+                  </div>{" "}
+                </Link>{" "}
+              </div>{" "}
+            </div>{" "}
             <div className="inline-block pt-[50px]">
               <img
                 className="w-[224px] h-[128px] rounded rounded-xl"
@@ -331,12 +341,12 @@ const Exercise = () => {
                   href="https://codelabs.developers.google.com/"
                   target="_blank"
                 >
-                  <div class="flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
-                    Codelabs
-                  </div>
-                </Link>
-              </div>
-            </div>
+                  <div className="flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
+                    Codelabs{" "}
+                  </div>{" "}
+                </Link>{" "}
+              </div>{" "}
+            </div>{" "}
             <div className="inline-block pt-[50px]">
               <img
                 className="w-[224px] h-[128px] rounded rounded-xl"
@@ -345,15 +355,15 @@ const Exercise = () => {
               />
               <div className="pl-[72px] mt-[10px]">
                 <Link href="https://www.codeply.com/" target="_blank">
-                  <div class="text-center flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
-                    Codeply
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                  <div className="text-center flex transition text-[#facc15] hover:text-indigo-500 hover:underline duration-100 underline after:content-['_↗']">
+                    Codeply{" "}
+                  </div>{" "}
+                </Link>{" "}
+              </div>{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
     </div>
   );
 };
