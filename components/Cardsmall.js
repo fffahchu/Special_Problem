@@ -10,7 +10,7 @@ const Cardsmall = ({ item, type }) => {
         height="153"
         className="rounded-t-xl"
       />
-      <div className="flex w-[250px] h-[200px] rounded-b-xl px-2 pt-[40px] pb-2 bg-white relative gap-10">
+      <div className="flex w-[250px] h-[200px] ded-b-xl px-2 pt-[40px] pb-2 bg-white relative gap-10">
         <div className="flex items-center justify-center w-[50px] h-[50px] rounded-full absolute -top-[28px] bg-white">
           <img
             src="../assets/logo.svg"

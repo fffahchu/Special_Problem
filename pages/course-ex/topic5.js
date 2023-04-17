@@ -25,6 +25,49 @@ const route = [{
 
 function TopicFive() {
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+    return (
+        <div className="py-[29px]">
+            <div className="px-[104px]">
+                <MoveToTop />
+                <Breadcrumb route={route} />
+            </div>
+            <div className="grid bg-[#FFCA61] w-full h-[65px] text-center text-[28px] font-semibold mt-[15px] mb-[22px] items-center">
+                การเขียนโปรแกรมคอมพิวเตอร์พื้นฐาน ด้วยภาษาซี 1
+            </div>
+            <div className="px-[104px]">
+                <div className="grid grid-cols-1 w-full shadow-[0px_4px_20px_0px_rgba(0,0,0,0.25)] rounded-[11px]">
+                    <div className="flex">
+                        <a href="/course-ex" className="ml-[31px] py-[14px] px-[11px] my-[13px]">
+                            รายละเอียดหลักสูตร
+                        </a>
+                        <a href="/course-ex/course" className="ml-[18px] my-[13px] py-[14px] px-[11px] rounded-[11px] bg-[#FFCA61]">
+                            เข้าเรียน
+                        </a>
+                        <a href="#" className="pl-[29px] my-[13px] py-[14px] px-[11px]">
+                            ผลการเรียน
+                        </a>
+                    </div>
+                    <hr className="border-1 border-black opacity-25 w-full" />
+                    <div className="flex flex-row-2">
+                        <div className="flex w-[311px] h-[800px] bg-white drop-shadow-[4px_4px_4px_rgba(0,0,0,0.25)]">
+                            <ol className="ml-[40px] mt-[32px]">
+                                <li class="border-l-2 border-[#FFCA61]">
+                                    <div class="md:flex flex-start">
+                                        <div class="bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-5 h-5">
+                                                <path fillRule="evenodd" d="M10 5a.75.75 0 01.75.75v6.638l1.96-2.158a.75.75 0 111.08 1.04l-3.25 3.5a.75.75 0 01-1.08 0l-3.25-3.5a.75.75 0 111.08-1.04l1.96 2.158V5.75A.75.75 0 0110 5z" clipRule="evenodd" />
+                                            </svg>
+=======
+=======
+>>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
+=======
+>>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
+>>>>>>> Stashed changes
     return ( <
         div className = "py-[29px]" >
         <
@@ -81,6 +124,16 @@ function TopicFive() {
         clip - rule = "evenodd" / >
         <
         /svg>
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
+=======
+>>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
+=======
+>>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
+>>>>>>> Stashed changes
 
         <
         /div> <
@@ -198,6 +251,44 @@ function TopicFive() {
         <
         /svg>
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+                                        </div>
+                                        <div className="w-[200px] h-[48px] ml-[12px]">แบบทดสอบหลังเรียน</div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        <div className="flex flex-col mx-auto">
+                        <iframe width="800" height="450" src="https://www.youtube.com/embed/selH-JKRDk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className="mt-[20px] rounded-[11px]" allowfullscreen></iframe>
+                            <div className="flex justify-between items-center">
+                                <a href="#" className="flex items-center justify-center rounded-[8px] mt-[15px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] bg-white border-[1px] border-[#AEAEAE] w-[108px] h-[41px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-[21px] h-[21px]">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+                                    </svg>
+                                    <div className="text-[16px] ml-[6px]">ก่อนหน้า</div>
+                                </a>
+                                <a href="/course-ex/test" className="flex items-center justify-center rounded-[8px] mt-[15px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] bg-[#FFCA61] w-[108px] h-[41px]">
+                                    <div className="text-[16px] mr-[6px]">ถัดไป</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-[21px] h-[21px]">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+=======
+=======
+>>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
+=======
+>>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
+>>>>>>> Stashed changes
         <
         /div> <
         div className = "w-[200px] h-[48px] ml-[12px]" > แบบทดสอบหลั งเรียน < /div> <
@@ -257,6 +348,16 @@ function TopicFive() {
         /div> <
         /div> <
         /div>
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
+=======
+>>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
+=======
+>>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
+>>>>>>> Stashed changes
     );
 }
 
