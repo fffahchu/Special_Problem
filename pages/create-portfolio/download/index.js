@@ -172,15 +172,11 @@ const Download = () => {
                 {/* <button className="text-lg text-white font-semibold bg-black py-[11px] px-[26px] rounded-full" onClick={onButtonClick}>
                   ดาวน์โหลดแฟ้มสะสมผลงาน
                 </button> */}
-<<<<<<< Updated upstream
                 <a
                   href="/assets/portfolio-2022-04-01.pdf"
                   download
                   className="text-lg text-white font-semibold bg-black py-[11px] px-[26px] rounded-full"
                 >
-=======
-                <a href="/assets/portfolio-2022-04-01.pdf" download className="text-lg text-white font-semibold bg-black py-[11px] px-[26px] rounded-full">
->>>>>>> Stashed changes
                   ดาวน์โหลดแฟ้มสะสมผลงาน
                 </a>
               </div>
@@ -204,9 +200,10 @@ const Download = () => {
                   <div className="font-semibold text-white">Comport</div>
                 </div> */}
               </div>
-<<<<<<< Updated upstream
               <FacebookShareButton
-                url={"https://drive.google.com/drive/folders/19-LE3MBW0MSbloGQTlr1PQO7lhvqmTMd?usp=sharing"}
+                url={
+                  "https://drive.google.com/drive/folders/19-LE3MBW0MSbloGQTlr1PQO7lhvqmTMd?usp=sharing"
+                }
               >
                 <div className="flex bg-[#475993] rounded-[6px] divide-x-2 divide-[#3B4C7D] cursor-pointer">
                   <div className="flex items-center py-3 px-3.5">
@@ -223,22 +220,6 @@ const Download = () => {
                 </div> */}
                 </div>
               </FacebookShareButton>
-=======
-              <div className="flex bg-[#475993] rounded-[6px] divide-x-2 divide-[#3B4C7D] cursor-pointer">
-                <div className="flex items-center py-3 px-3.5">
-                  <img
-                    src="/assets/icons/facebook-white.svg"
-                    alt="comport"
-                    width={24}
-                    height={24}
-                  />
-                </div>
-                {/* <div className="py-2 px-2.5">
-                  <div className="text-xs text-white">แชร์บน</div>
-                  <div className="font-semibold text-white">Facebook</div>
-                </div> */}
-              </div>
->>>>>>> Stashed changes
               <div className="flex bg-[#03A9F4] rounded-[6px] divide-x-2 divide-[#0690CF] cursor-pointer">
                 <div className="flex items-center py-3 px-3.5">
                   <img

@@ -82,7 +82,12 @@ const Upload = () => {
             >
               อัพโหลดรูป
             </label>
-            <input id="dropzone-file" type="file" className="hidden" />
+            <input
+              id="dropzone-file"
+              type="file"
+              className="hidden"
+              accept="image/*"
+            />
           </div>
         </div>
         <div className="flex justify-between items-center mt-[80px]">
