@@ -85,19 +85,19 @@ const Member = () => {
   ];
 
   const clearLocalPort = () => {
-    localStorage.removeItem('idPort')
-    localStorage.removeItem('idPort2')
-    localStorage.removeItem('idFilePort2')
-    localStorage.removeItem('idPort3')
-    localStorage.removeItem('idPort4')
-    localStorage.removeItem('idPort5')
-    localStorage.removeItem('idFilePort5')
-    localStorage.removeItem('idPort6')
-    localStorage.removeItem('idFilePort6')
-    localStorage.removeItem('idPort7')
-    localStorage.removeItem('idFilePort7')
-    localStorage.removeItem('idPort8')
-    localStorage.removeItem('idFilePort8')
+    // localStorage.removeItem('idPort')
+    // localStorage.removeItem('idPort2')
+    // localStorage.removeItem('idFilePort2')
+    // localStorage.removeItem('idPort3')
+    // localStorage.removeItem('idPort4')
+    // localStorage.removeItem('idPort5')
+    // localStorage.removeItem('idFilePort5')
+    // localStorage.removeItem('idPort6')
+    // localStorage.removeItem('idFilePort6')
+    // localStorage.removeItem('idPort7')
+    // localStorage.removeItem('idFilePort7')
+    // localStorage.removeItem('idPort8')
+    // localStorage.removeItem('idFilePort8')
   }
 
   return (
@@ -150,7 +150,7 @@ const Member = () => {
           <div>
             <div className="flex flex-col items-center bg-green-light px-[13px] pb-[25px]">
               <img
-                src="assets/images/mock-profile-image.png"
+                src="assets/images/profile.png"
                 alt="profile-image"
                 className="-mt-[66px] rounded-full z-10"
                 width="120"

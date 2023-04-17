@@ -47,12 +47,12 @@ const Registerform = () => {
       re_password == "" ||
       number == ""
     ) {
-      Swal.fire("Opps..!", "input field has no value!", "error");
+      Swal.fire("โอ๊ะ..!", "ข้อมูลไม่ครบ!", "error");
     } else {
       if (password !== re_password) {
-        Swal.fire("Opps..!", "Password not matching!", "error");
+        Swal.fire("โอ๊ะ..!", "รหัสผ่านไม่ตรงกัน!", "error");
       } else {
-        Swal.fire("Good job!", "Register successful!", "success");
+        Swal.fire("เยี่ยม!", "ลงทะเบียนสำเร็จ", "success");
 
         let model = {
           data: {

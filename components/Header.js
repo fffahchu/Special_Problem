@@ -3,8 +3,9 @@ import Link from "next/link";
 
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState("");
-  const [user, setUser] = useState(false)
+  const [user, setUser] = useState(false);
   const menuRef = useRef();
+
   const menu = [
     { title: "หน้าหลัก", icon: "home", location: "/member" },
     { title: "ข่าวประชาสัมพันธ์", icon: "advertise", location: "/" },
@@ -13,29 +14,33 @@ const Header = () => {
   ];
 
   const advertises = [
-    { title: "ทั้งหมด", location: "/" },
-    { title: "ข่าวสาร", location: "/" },
-    { title: "กิจกรรม/ค่าย", location: "/" },
-    { title: "บทความ", location: "/" },
+    { title: "ทั้งหมด", location: "/news" },
+    { title: "ข่าวสาร", location: "/news/info" },
+    { title: "กิจกรรม/ค่าย", location: "/news/camp" },
+    { title: "บทความ", location: "/news/article" },
   ];
 
   const advices = [
-    { title: "ทั้งหมด", location: "/" },
-    { title: "วิทย์คอม", location: "/" },
-    { title: "วิศวะคอม", location: "/" },
-    { title: "ไอที", location: "/" },
+    { title: "ทั้งหมด", location: "/faculty/all-faculty" },
+    { title: "วิทย์คอม", location: "/faculty/cs" },
+    { title: "วิศวะคอม", location: "/faculty/ce" },
+    { title: "ไอที", location: "/faculty/it" },
   ];
 
   const books = [
-    { title: "ทั้งหมด", location: "/" },
-    { title: "คอร์สเรียนเสริม", location: "/" },
-    { title: "แบบฝึกหัด", location: "/" },
+    { title: "ทั้งหมด", location: "/education/all" },
+    { title: "คอร์สเรียนเสริม", location: "/education/learning" },
+    { title: "แบบฝึกหัด", location: "/education/exercise" },
   ];
 
   const profiles = [
-    { title: "แก้ไขโปรไฟล์", icon: "edit-1", location: "/member" },
+    { title: "แก้ไขโปรไฟล์", icon: "edit-1", location: "/edit-profile" },
     { title: "รายการที่ฉันสนใจ", icon: "edit-2", location: "/" },
-    { title: "ออกจากระบบ", icon: "logout", location: "/" },
+    {
+      title: "ออกจากระบบ",
+      icon: "logout",
+      location: "/login",
+    },
   ];
 
   useEffect(() => {
@@ -45,7 +50,7 @@ const Header = () => {
       }
     };
 
-    checkUserLogin()
+    checkUserLogin();
 
     document.addEventListener("mousedown", handler);
   });
@@ -58,20 +63,11 @@ const Header = () => {
   };
 
   const checkUserLogin = () => {
-    if(localStorage.getItem("idUser") != null) {
-      return setUser(true)
+    if (localStorage.getItem("idUser") != null) {
+      return setUser(true);
     }
-    return setUser(false)
-  }
-
-  const checkUserRegister = () => {
-    if(localStorage.getItem("idUser") != null) {
-      return setUser(true)
-    }
-    return setUser(false)
-  }
-
-  
+    return setUser(false);
+  };
 
   return (
     <div
@@ -195,7 +191,7 @@ const Header = () => {
             >
               <img
                 className="rounded-full"
-                src="/assets/images/mock-profile-image.png"
+                src="/assets/images/profile.png"
                 alt="profile"
                 width="38"
                 height="38"
@@ -223,9 +219,12 @@ const Header = () => {
                         </div>
                       </Link>
                     ) : (
-                      <div>
+                      <Link href={value.location} key={`profiles-${index}`}>
                         <hr className={`opacity-20`} />
-                        <div className={`flex pl-3 py-3`}>
+                        <div
+                          className={`flex pl-3 py-3`}
+                          onClick={() => localStorage.removeItem("idUser")}
+                        >
                           <img
                             src={`/assets/icons/${value.icon}.svg`}
                             alt={`icon-${value.icon}`}
@@ -235,7 +234,7 @@ const Header = () => {
                           />
                           <div className=" hover:underline">{value.title}</div>
                         </div>
-                      </div>
+                      </Link>
                     );
                   })}
               </div>
@@ -251,15 +250,19 @@ const Header = () => {
           </div>
         ) : (
           <div className="flex items-center mr-[42px] gap-[15px]">
-            <button className="flex items-center rounded-full bg-orange py-2 px-[15px] gap-1.5">
-              <img
-                src="assets/icons/lock.svg"
-                alt="login"
-                width="20"
-                height="20"
-              />
-              <div className="font-semibold">เข้าสู่ระบบ</div>
-            </button>
+            <Link href="/login">
+              {" "}
+              <button className="flex items-center rounded-full bg-orange py-2 px-[15px] gap-1.5">
+                <img
+                  src="assets/icons/lock.svg"
+                  alt="login"
+                  width="20"
+                  height="20"
+                />
+                <div className="font-semibold">เข้าสู่ระบบ</div>
+              </button>
+            </Link>
+
             <button className="flex items-center rounded-full bg-orange py-2 px-[15px] gap-1.5">
               <img
                 src="assets/icons/arrow-circle-right.svg"

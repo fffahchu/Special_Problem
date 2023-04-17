@@ -24,11 +24,11 @@ const Loginform = () => {
   // const [username, setUsername] = useState("");
 
   const submit_button = async (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     try {
       if (email == "" && password == "") {
-        Swal.fire("Opps..!", "input field has no value!", "error");
+        Swal.fire("โอ๊ะ..!", "ข้อมูลไม่ครบ!", "error");
         return;
       }
       const res = await axios.get("http://localhost:1337/api/registers");
@@ -41,7 +41,7 @@ const Loginform = () => {
               element.attributes.email != email) &&
             element.attributes.password != password
           ) {
-            Swal.fire("Opps..!", "Something is wrong!", "error");
+            Swal.fire("โอ๊ะ..!", "มีบางอย่างผิดพลาด!", "error");
           }
 
           if (
@@ -49,10 +49,10 @@ const Loginform = () => {
               element.attributes.email == email) &&
             element.attributes.password == password
           ) {
-            Swal.fire("Good job!", "login successful!", "success");
-            localStorage.setItem("idUser", element.id);
+            Swal.fire("เยี่ยม!", "เข้าสู่ระบบสำเร็จ!", "success");
             setTimeout(() => {
-              location.href = "/member";
+              localStorage.setItem("idUser", element.id);
+              rounter.push("/member");
             }, 1400);
             return;
           }
