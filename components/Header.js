@@ -45,7 +45,7 @@ const Header = () => {
 
   useEffect(() => {
     let handler = (e) => {
-      if (!menuRef.current.contains(e.target)) {
+      if (!menuRef.current?.contains(e.target)) {
         setShowDropdown("");
       }
     };
@@ -122,7 +122,7 @@ const Header = () => {
                   <div className={`absolute top-11 left-0 z-20 bg-green`}>
                     {advertises.map((value, i) => {
                       return (
-                        <Link href={value.location} key={`advertise-${i}`}>
+                        <Link href={value.location} key={`advertise-${i}`}  onClick={() => setShowDropdown("")}>
                           <div className={`flex pl-3 pr-3 py-3`}>
                             <div className="mr-2">•</div>
                             <div className="hover:underline">{value.title}</div>
@@ -141,7 +141,7 @@ const Header = () => {
                   <div className={`absolute top-11 left-0 z-20 bg-green`}>
                     {advices.map((value, i) => {
                       return (
-                        <Link href={value.location} key={`advices-${i}`}>
+                        <Link href={value.location} key={`advices-${i}`}  onClick={() => setShowDropdown("")}>
                           <div className={`flex pl-3 pr-3 py-3`}>
                             <div className="mr-2">•</div>
                             <div className="hover:underline">{value.title}</div>
@@ -162,7 +162,7 @@ const Header = () => {
                   >
                     {books.map((value, i) => {
                       return (
-                        <Link href={value.location} key={`books-${i}`}>
+                        <Link href={value.location} key={`books-${i}`}  onClick={() => setShowDropdown("")}>
                           <div className={`flex pl-3 pr-3 py-3`}>
                             <div className="mr-2">•</div>
                             <div className="hover:underline">{value.title}</div>
@@ -206,7 +206,7 @@ const Header = () => {
                 {showDropdown == "profile" &&
                   profiles.map((value, index) => {
                     return index < profiles.length - 1 ? (
-                      <Link href={value.location} key={`profiles-${index}`}>
+                      <Link href={value.location} key={`profiles-${index}`}  onClick={() => setShowDropdown("")}>
                         <div className={`flex pl-3 py-3`}>
                           <img
                             src={`/assets/icons/${value.icon}.svg`}
@@ -262,16 +262,17 @@ const Header = () => {
                 <div className="font-semibold">เข้าสู่ระบบ</div>
               </button>
             </Link>
-
-            <button className="flex items-center rounded-full bg-orange py-2 px-[15px] gap-1.5">
-              <img
-                src="assets/icons/arrow-circle-right.svg"
-                alt="login"
-                width="20"
-                height="20"
-              />
-              <div className="font-semibold">ลงทะเบียน</div>
-            </button>
+            <Link href="/register">
+              <button className="flex items-center rounded-full bg-orange py-2 px-[15px] gap-1.5">
+                <img
+                  src="assets/icons/arrow-circle-right.svg"
+                  alt="login"
+                  width="20"
+                  height="20"
+                />
+                <div className="font-semibold">ลงทะเบียน</div>
+              </button>
+            </Link>
           </div>
         )}
 
