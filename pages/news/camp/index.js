@@ -7,10 +7,10 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import Breadcrumb from "@components/Breadcrumb";
 import Link from "next/link";
 import Card from "@components/Card";
-//
 
 function Camp() {
-    const route = [{
+    const route = [
+        {
             title: "หน้าหลัก",
             link: "/member",
         },
@@ -24,209 +24,102 @@ function Camp() {
         },
     ];
 
-    const activity = [{
+    const activity = [
+        {
             image: "../assets/images/activity/activity-1.png",
             title: "TECH FESTIVAL",
-            content: "มหกรรมด้าน Computer และTechnology เรียนกับพี่แฮม Senior Software Engineer จากประเทศ Canada และ พี่เอิร์ท จบจาก ...",
+            content:
+                "มหกรรมด้าน Computer และTechnology เรียนกับพี่แฮม Senior Software Engineer จากประเทศ Canada และ พี่เอิร์ท จบจาก ...",
             expire_date: 1,
             link: "#",
         },
         {
             image: "../assets/images/activity/activity-2.png",
             title: "Javascript Tier 2 SS2 // C Tier 2",
-            content: "เหมาะสำหรับน้อง ๆ ที่อยากต่อยอดความรู้ HTML CSS JS ให้เก่งยิ่งขึ้นด้วย JS TIER 2 และ ยังมีคอร์สสำหรับน้อง ๆ ที่ต้องการเ...",
+            content:
+                "เหมาะสำหรับน้อง ๆ ที่อยากต่อยอดความรู้ HTML CSS JS ให้เก่งยิ่งขึ้นด้วย JS TIER 2 และ ยังมีคอร์สสำหรับน้อง ๆ ที่ต้องการเ...",
             expire_date: 2,
             link: "#",
         },
         {
             image: "../assets/images/activity/activity-3.png",
             title: "CREATIVE AI CAMP 2022 🎉",
-            content: "CREATIVE AI CAMP 2022 ปีนี้เรามาใน ธีม Anytime, Anywhere with AI 🤖 ในรูป แบบ Phenomena Work-based Learni...",
+            content:
+                "CREATIVE AI CAMP 2022 ปีนี้เรามาใน ธีม Anytime, Anywhere with AI 🤖 ในรูป แบบ Phenomena Work-based Learni...",
             expire_date: 3,
             link: "#",
         },
         {
             image: "../assets/images/activity/activity-4.png",
             title: "SUPER COM SCI ครั้งที่ 9",
-            content: "กลับมาอีกครั้งกับค่าย Super com sci ที่ทำ ให้น้อง ๆ ได้เรียนผ่านการลงมือปฎิบัติ On-site วางแผนระบบ สร้าง App แนะแนวกา...",
+            content:
+                "กลับมาอีกครั้งกับค่าย Super com sci ที่ทำ ให้น้อง ๆ ได้เรียนผ่านการลงมือปฎิบัติ On-site วางแผนระบบ สร้าง App แนะแนวกา...",
             expire_date: 4,
             link: "#",
         },
     ];
 
-    return ( <
-        >
-        <
-        div className = "px-[104px] pt-[29px]" >
-        <
-        Breadcrumb route = { route }
-        /> <
-        div className = "font-semibold text-[30px] text-center mt-[38px] mb-[48px]" > กิจกรรม / ค่ าย < /div> < /
-        div > <
-        Swiper spaceBetween = { 30 }
-        centeredSlides = { true }
-        autoplay = {
-            {
-                delay: 2500,
-                disableOnInteraction: false,
-            }
-        }
-        pagination = {
-            {
-                clickable: true,
-            }
-        }
-        navigation = { true }
-        modules = {
-            [Autoplay, Pagination, Navigation]
-        }
-        className = "mySwiper"
-        style = {
-            { marginLeft: 346, marginRight: 346, marginTop: 10 }
-        } >
-        <
-        SwiperSlide >
-        <
-        a href = "https://www.dek-d.com/tcas/61701/"
-        target = "_blank" >
-        <
-        img className = "object-fill w-auto h-[346px] rounded-[10px]"
-        src = "https://www.camphub.in.th/wp-content/uploads/2023/02/Banner_Camphub.jpg.webp"
-        alt = "image slide 1" /
-        >
-        <
-        /a> < /
-        SwiperSlide > <
-        SwiperSlide >
-        <
-        a href = "https://www.dek-d.com/tcas/61028/"
-        target = "_blank" >
-        <
-        img className = "object-fill w-auto h-[346px] rounded-[10px]"
-        src = "https://www.camphub.in.th/wp-content/uploads/2023/02/JAVA-CAMP.png.webp"
-        alt = "image slide 2" /
-        >
-        <
-        /a> < /
-        SwiperSlide > <
-        SwiperSlide >
-        <
-        a href = "https://www.dek-d.com/tcas/60936/"
-        target = "_blank" >
-        <
-        img className = "object-fill w-auto h-[346px] rounded-[10px]"
-        src = "https://www.camphub.in.th/wp-content/uploads/2023/02/MicrosoftTeams-image-2.jpg.webp"
-        alt = "image slide 3" /
-        >
-        <
-        /a> < /
-        SwiperSlide > <
-        /Swiper> <
-        div className = "px-[104px] pt-[29px]" >
-        <
-        div className = "font-semibold text-[20px] mt-[75px] mb-[30px]" > ค่ าย / กิจกรรมที่ จะเปิดรั บสมั ครเร็ ว ๆ นี้ < /div> <
-        div className = "flex-1" >
-        <
-        div className = "grid grid-cols-4 gap-7 mx-auto max-w-[1232px]" > {
-            activity.map((item) => {
-                return <Card item = { item }
-                type = "activity" / > ;
-            })
-        } <
-        /div> < /
-        div > <
-        div className = "font-semibold text-[20px] mt-[75px] mb-[30px]" > ค่ าย / กิจกรรมทั้ งหมด < /div> <
-        div className = "grid grid-cols-3 gap-14 mx-auto max-w-[1232px]" >
+    return (
+        <>
+            <div className="px-[104px] pt-[29px]">
+                <Breadcrumb route={route} />
+                <div className="font-semibold text-[30px] text-center mt-[38px] mb-[48px]">กิจกรรม/ค่าย</div>
+            </div>
+            <Swiper
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                pagination={{
+                    clickable: true,
+                }}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
+                className="mySwiper"
+                style={{ marginLeft: 346, marginRight: 346, marginTop: 10 }}
+            >
+                <SwiperSlide>
+                    <a href="https://www.dek-d.com/tcas/61701/" target="_blank">
+                        <img
+                            className="object-fill w-auto h-[346px] rounded-[10px]"
+                            src="https://www.camphub.in.th/wp-content/uploads/2023/02/Banner_Camphub.jpg.webp"
+                            alt="image slide 1"
+                        />
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <a href="https://www.dek-d.com/tcas/61028/" target="_blank">
+                        <img
+                            className="object-fill w-auto h-[346px] rounded-[10px]"
+                            src="https://www.camphub.in.th/wp-content/uploads/2023/02/JAVA-CAMP.png.webp"
+                            alt="image slide 2"
+                        />
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <a href="https://www.dek-d.com/tcas/60936/" target="_blank">
+                        <img
+                            className="object-fill w-auto h-[346px] rounded-[10px]"
+                            src="https://www.camphub.in.th/wp-content/uploads/2023/02/MicrosoftTeams-image-2.jpg.webp"
+                            alt="image slide 3"
+                        />
+                    </a>
+                </SwiperSlide>
+            </Swiper>
+            <div className="px-[104px] pt-[29px]">
+                <div className="font-semibold text-[20px] mt-[75px] mb-[30px] mx-auto max-w-[1232px]">ค่าย/กิจกรรมที่จะเปิดรับสมัครเร็ว ๆ นี้</div>
+                <div className="flex-1">
+                    <div className="grid grid-cols-4 gap-7 mx-auto max-w-[1232px]">
+                        {activity.map((item) => {
+                            return <Card item={item} type="activity" />;
+                        })}
+                    </div>
+                </div>
+                <div className="font-semibold text-[20px] mt-[75px] mb-[30px] mx-auto max-w-[1232px]">ค่าย/กิจกรรมทั้งหมด</div>
+                <div className="grid grid-cols-3 gap-14 mx-auto max-w-[1232px]">
 
-<<<<<<< Updated upstream
-        { /* col 1 */ } <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/CEC2Banner.jpg.webp"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-        Computer Engineering Camp htmlFor TCAS Portfolio SS2 <
-        /div> <
-        div className = "flex justify-between items-center mt-[55px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path d = "M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" / >
-        <
-        path fill - rule = "evenodd"
-        d = "M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        3 เม.ย .66 <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/computer-engineering-camp-htmlFor-tcas-portfolio-ss2/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/Sphere_Graphic3_Camphub.jpg.webp"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-        How To Be A Graphic Designer รุ่ น 3 <
-        /div> <
-        div className = "flex justify-between items-center mt-[80px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path d = "M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" / >
-        <
-        path fill - rule = "evenodd"
-        d = "M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        02 พ.ค 66 <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/how-to-be-a-graphic-designer-3/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/%E0%B8%A7%E0%B8%B4%E0%B8%A8%E0%B8%A7%E0%B8%84%E0%B8%AD%E0%B8%A1-%E0%B8%A3%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B9%80%E0%B8%A2%E0%B8%B2%E0%B8%A7%E0%B9%8C-ss.3-1200-%C3%97-630-px.png"
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
                     {/* col 1 */}
                     <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
                         <img
@@ -240,7 +133,7 @@ function Camp() {
                             <div className="flex flex-row items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#525252" class="ml-[22px] w-[18px] h-[18px]">
                                     <path d="M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" />
-                                    <path fillRule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clipRule="evenodd" />
+                                    <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
                                 </svg>
                                 <div className="pl-[4px] text-[15px] font-normal text-[#525252]">
                                     3 เม.ย. 66
@@ -266,7 +159,7 @@ function Camp() {
                             <div className="flex flex-row items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#525252" class="ml-[22px] w-[18px] h-[18px]">
                                     <path d="M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" />
-                                    <path fillRule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clipRule="evenodd" />
+                                    <path fill-rule="evenodd" d="M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z" clip-rule="evenodd" />
                                 </svg>
                                 <div className="pl-[4px] text-[15px] font-normal text-[#525252]">
                                     02 พ.ค 66
@@ -291,7 +184,7 @@ function Camp() {
                         <div className="flex justify-between items-center mt-[55px]">
                             <div className="flex flex-row items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#525252" class="ml-[22px] w-[18px] h-[18px]">
-                                    <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clipRule="evenodd" />
+                                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
                                 </svg>
                                 <div className="pl-[4px] text-[15px] font-normal text-[#525252]">
                                     ปิดรับสมัครแล้ว
@@ -304,480 +197,11 @@ function Camp() {
                             </a>
                         </div>
                     </div>
-=======
-        { /* col 1 */ } <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/CEC2Banner.jpg.webp"
-=======
-        { /* col 1 */ } <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/CEC2Banner.jpg.webp"
-=======
-        { /* col 1 */ } <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/CEC2Banner.jpg.webp"
->>>>>>> Stashed changes
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-<<<<<<< Updated upstream
-        ค่ าย ONSITE วิศวคอมพิวเตอร์ รุ่ นเยาว์ COMPUTER ENGINEER รุ่ น 3 <
-=======
-        Computer Engineering Camp htmlFor TCAS Portfolio SS2 <
->>>>>>> Stashed changes
-        /div> <
-        div className = "flex justify-between items-center mt-[55px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-<<<<<<< Updated upstream
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-=======
-        path d = "M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" / >
-        <
-        path fill - rule = "evenodd"
-        d = "M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
->>>>>>> Stashed changes
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-<<<<<<< Updated upstream
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/onces-onsite-computer-engineer-mar2023/"
-=======
-        3 เม.ย .66 <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/computer-engineering-camp-htmlFor-tcas-portfolio-ss2/"
->>>>>>> Stashed changes
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
 
-<<<<<<< Updated upstream
-        { /* col 1 */ }
+                    {/* col 1 */}
 
-        { /* col 2 */ }
+                    {/* col 2 */}
 
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/%E0%B8%9B%E0%B8%81%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%99%E0%B8%AD%E0%B8%99-2.png"
-=======
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/Sphere_Graphic3_Camphub.jpg.webp"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-        How To Be A Graphic Designer รุ่ น 3 <
-        /div> <
-        div className = "flex justify-between items-center mt-[80px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path d = "M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" / >
-        <
-        path fill - rule = "evenodd"
-        d = "M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        02 พ.ค 66 <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/how-to-be-a-graphic-designer-3/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/%E0%B8%A7%E0%B8%B4%E0%B8%A8%E0%B8%A7%E0%B8%84%E0%B8%AD%E0%B8%A1-%E0%B8%A3%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B9%80%E0%B8%A2%E0%B8%B2%E0%B8%A7%E0%B9%8C-ss.3-1200-%C3%97-630-px.png"
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-<<<<<<< HEAD
-        Computer Engineering Camp htmlFor TCAS Portfolio SS2 <
-=======
-        ค่ าย ONSITE วิศวคอมพิวเตอร์ รุ่ นเยาว์ COMPUTER ENGINEER รุ่ น 3 <
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        /div> <
-        div className = "flex justify-between items-center mt-[55px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-<<<<<<< HEAD
-        path d = "M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" / >
-        <
-        path fill - rule = "evenodd"
-        d = "M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
-=======
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-<<<<<<< HEAD
-        3 เม.ย .66 <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/computer-engineering-camp-htmlFor-tcas-portfolio-ss2/"
-=======
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/onces-onsite-computer-engineer-mar2023/"
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-<<<<<<< HEAD
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/Sphere_Graphic3_Camphub.jpg.webp"
->>>>>>> Stashed changes
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-<<<<<<< Updated upstream
-        HERO PROGRAMMING <
-=======
-        How To Be A Graphic Designer รุ่ น 3 <
->>>>>>> Stashed changes
-        /div> <
-        div className = "flex justify-between items-center mt-[80px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-<<<<<<< Updated upstream
-=======
-        path d = "M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" / >
-        <
-        path fill - rule = "evenodd"
-        d = "M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        02 พ.ค 66 <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/how-to-be-a-graphic-designer-3/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/%E0%B8%A7%E0%B8%B4%E0%B8%A8%E0%B8%A7%E0%B8%84%E0%B8%AD%E0%B8%A1-%E0%B8%A3%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B9%80%E0%B8%A2%E0%B8%B2%E0%B8%A7%E0%B9%8C-ss.3-1200-%C3%97-630-px.png"
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-<<<<<<< HEAD
-        Computer Engineering Camp htmlFor TCAS Portfolio SS2 <
-=======
-        ค่ าย ONSITE วิศวคอมพิวเตอร์ รุ่ นเยาว์ COMPUTER ENGINEER รุ่ น 3 <
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        /div> <
-        div className = "flex justify-between items-center mt-[55px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-<<<<<<< HEAD
-        path d = "M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" / >
-        <
-        path fill - rule = "evenodd"
-        d = "M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
-=======
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-<<<<<<< HEAD
-        3 เม.ย .66 <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/computer-engineering-camp-htmlFor-tcas-portfolio-ss2/"
-=======
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/onces-onsite-computer-engineer-mar2023/"
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-<<<<<<< HEAD
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/Sphere_Graphic3_Camphub.jpg.webp"
-=======
-        { /* col 1 */ }
-
-        { /* col 2 */ }
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/%E0%B8%9B%E0%B8%81%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%99%E0%B8%AD%E0%B8%99-2.png"
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-<<<<<<< HEAD
-        How To Be A Graphic Designer รุ่ น 3 <
-=======
-        HERO PROGRAMMING <
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        /div> <
-        div className = "flex justify-between items-center mt-[80px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-<<<<<<< HEAD
-        path d = "M12.75 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM7.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8.25 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM9.75 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM10.5 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM12.75 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM14.25 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 17.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 15.75a.75.75 0 100-1.5.75.75 0 000 1.5zM15 12.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM16.5 13.5a.75.75 0 100-1.5.75.75 0 000 1.5z" / >
-        <
-        path fill - rule = "evenodd"
-        d = "M6.75 2.25A.75.75 0 017.5 3v1.5h9V3A.75.75 0 0118 3v1.5h.75a3 3 0 013 3v11.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V7.5a3 3 0 013-3H6V3a.75.75 0 01.75-.75zm13.5 9a1.5 1.5 0 00-1.5-1.5H5.25a1.5 1.5 0 00-1.5 1.5v7.5a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5v-7.5z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        02 พ.ค 66 <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/how-to-be-a-graphic-designer-3/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/%E0%B8%A7%E0%B8%B4%E0%B8%A8%E0%B8%A7%E0%B8%84%E0%B8%AD%E0%B8%A1-%E0%B8%A3%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B9%80%E0%B8%A2%E0%B8%B2%E0%B8%A7%E0%B9%8C-ss.3-1200-%C3%97-630-px.png"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-        ค่ าย ONSITE วิศวคอมพิวเตอร์ รุ่ นเยาว์ COMPUTER ENGINEER รุ่ น 3 <
-        /div> <
-        div className = "flex justify-between items-center mt-[55px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-=======
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
->>>>>>> Stashed changes
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-<<<<<<< Updated upstream
-        a href = "https://www.camphub.in.th/hero-programming/"
-=======
-<<<<<<< HEAD
-        a href = "https://www.camphub.in.th/onces-onsite-computer-engineer-mar2023/"
-=======
-        a href = "https://www.camphub.in.th/hero-programming/"
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
->>>>>>> Stashed changes
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-<<<<<<< Updated upstream
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2022/11/image_6483441-18.jpg.webp"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-        SUPER COM SCI <
-        /div> <
-        div className = "flex justify-between items-center mt-[80px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/super-com-sci-nov2022/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/BannerAI-2.jpg.webp"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-        Basic AI Gen9 - สร้ างโมเดลปั ญญาประดิษฐ์ พื้ นฐานภายใน 6 ชั่ วโมง <
-        /div> <
-        div className = "flex justify-between items-center mt-[55px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/basic-ai-gen-9/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-        { /* col 2 */ }
-
-        { /* col 3 */ }
-=======
-<<<<<<< HEAD
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-
-        { /* col 1 */ }
-
-        { /* col 2 */ }
-
-<<<<<<< HEAD
                     <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
                         <img
                             src="https://www.camphub.in.th/wp-content/uploads/2023/02/%E0%B8%9B%E0%B8%81%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%99%E0%B8%AD%E0%B8%99-2.png"
@@ -789,7 +213,7 @@ function Camp() {
                         <div className="flex justify-between items-center mt-[80px]">
                             <div className="flex flex-row items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#525252" class="ml-[22px] w-[18px] h-[18px]">
-                                    <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clipRule="evenodd" />
+                                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
                                 </svg>
                                 <div className="pl-[4px] text-[15px] font-normal text-[#525252]">
                                     ปิดรับสมัครแล้ว
@@ -814,7 +238,7 @@ function Camp() {
                         <div className="flex justify-between items-center mt-[80px]">
                             <div className="flex flex-row items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#525252" class="ml-[22px] w-[18px] h-[18px]">
-                                    <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clipRule="evenodd" />
+                                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
                                 </svg>
                                 <div className="pl-[4px] text-[15px] font-normal text-[#525252]">
                                     ปิดรับสมัครแล้ว
@@ -839,7 +263,7 @@ function Camp() {
                         <div className="flex justify-between items-center mt-[55px]">
                             <div className="flex flex-row items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#525252" class="ml-[22px] w-[18px] h-[18px]">
-                                    <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clipRule="evenodd" />
+                                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
                                 </svg>
                                 <div className="pl-[4px] text-[15px] font-normal text-[#525252]">
                                     ปิดรับสมัครแล้ว
@@ -852,413 +276,11 @@ function Camp() {
                             </a>
                         </div>
                     </div>
-=======
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/%E0%B8%9B%E0%B8%81%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%99%E0%B8%AD%E0%B8%99-2.png"
-=======
-        { /* col 1 */ }
 
-        { /* col 2 */ }
+                    {/* col 2 */}
 
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/%E0%B8%9B%E0%B8%81%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%99%E0%B8%AD%E0%B8%99-2.png"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-        HERO PROGRAMMING <
-        /div> <
-        div className = "flex justify-between items-center mt-[80px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/hero-programming/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-=======
->>>>>>> Stashed changes
+                    {/* col 3 */}
 
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-<<<<<<< Updated upstream
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/TFUBanner.jpg.webp"
-=======
-        img src = "https://www.camphub.in.th/wp-content/uploads/2022/11/image_6483441-18.jpg.webp"
->>>>>>> Stashed changes
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-<<<<<<< Updated upstream
-        Technology Test htmlFor University <
-=======
-        SUPER COM SCI <
->>>>>>> Stashed changes
-        /div> <
-        div className = "flex justify-between items-center mt-[80px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-<<<<<<< Updated upstream
-        a href = "https://www.camphub.in.th/hamster-hub-tfu/"
-=======
-        a href = "https://www.camphub.in.th/super-com-sci-nov2022/"
->>>>>>> Stashed changes
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-<<<<<<< Updated upstream
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/poster-16.jpg.webp"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" > “CS Camp 15” ค่ ายวิทยาการคอมพิวเตอร์ พระจอมเกล้ าลาดกระบั ง <
-        /div> <
-        div className = "flex justify-between items-center mt-[55px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/cs-camp-15/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/%E0%B8%9B%E0%B8%81%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%99%E0%B8%AD%E0%B8%99-1-1.png"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-        Zero To Hero Javascript & Typescript <
-        /div> <
-        div className = "flex justify-between items-center mt-[80px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/zero-to-hero-javascript-feb2023/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-        { /* col 3 */ }
-
-        <
-=======
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/BannerAI-2.jpg.webp"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-        Basic AI Gen9 - สร้ างโมเดลปั ญญาประดิษฐ์ พื้ นฐานภายใน 6 ชั่ วโมง <
-        /div> <
-        div className = "flex justify-between items-center mt-[55px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/basic-ai-gen-9/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-        { /* col 2 */ }
-
-        { /* col 3 */ }
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-<<<<<<< HEAD
-        img src = "https://www.camphub.in.th/wp-content/uploads/2022/11/image_6483441-18.jpg.webp"
-=======
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/TFUBanner.jpg.webp"
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-<<<<<<< HEAD
-        SUPER COM SCI <
-=======
-        Technology Test htmlFor University <
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        /div> <
-        div className = "flex justify-between items-center mt-[80px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-<<<<<<< HEAD
-        a href = "https://www.camphub.in.th/super-com-sci-nov2022/"
-=======
-        a href = "https://www.camphub.in.th/hamster-hub-tfu/"
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-<<<<<<< HEAD
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/BannerAI-2.jpg.webp"
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-<<<<<<< HEAD
-        HERO PROGRAMMING <
-        /div> <
-        div className = "flex justify-between items-center mt-[80px]" >
-=======
-        Basic AI Gen9 - สร้ างโมเดลปั ญญาประดิษฐ์ พื้ นฐานภายใน 6 ชั่ วโมง <
-        /div> <
-        div className = "flex justify-between items-center mt-[55px]" >
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-<<<<<<< HEAD
-        a href = "https://www.camphub.in.th/hero-programming/"
-=======
-        a href = "https://www.camphub.in.th/basic-ai-gen-9/"
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-<<<<<<< HEAD
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2022/11/image_6483441-18.jpg.webp"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-        SUPER COM SCI <
-        /div> <
-        div className = "flex justify-between items-center mt-[80px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/super-com-sci-nov2022/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/BannerAI-2.jpg.webp"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-        Basic AI Gen9 - สร้ างโมเดลปั ญญาประดิษฐ์ พื้ นฐานภายใน 6 ชั่ วโมง <
-        /div> <
-        div className = "flex justify-between items-center mt-[55px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/basic-ai-gen-9/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-
-        { /* col 2 */ }
-
-        { /* col 3 */ }
-
-<<<<<<< HEAD
                     <div className="flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]">
                         <img
                             src="https://www.camphub.in.th/wp-content/uploads/2023/02/TFUBanner.jpg.webp"
@@ -1270,7 +292,7 @@ function Camp() {
                         <div className="flex justify-between items-center mt-[80px]">
                             <div className="flex flex-row items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#525252" class="ml-[22px] w-[18px] h-[18px]">
-                                    <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clipRule="evenodd" />
+                                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
                                 </svg>
                                 <div className="pl-[4px] text-[15px] font-normal text-[#525252]">
                                     ปิดรับสมัครแล้ว
@@ -1295,7 +317,7 @@ function Camp() {
                         <div className="flex justify-between items-center mt-[55px]">
                             <div className="flex flex-row items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#525252" class="ml-[22px] w-[18px] h-[18px]">
-                                    <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clipRule="evenodd" />
+                                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
                                 </svg>
                                 <div className="pl-[4px] text-[15px] font-normal text-[#525252]">
                                     ปิดรับสมัครแล้ว
@@ -1320,7 +342,7 @@ function Camp() {
                         <div className="flex justify-between items-center mt-[80px]">
                             <div className="flex flex-row items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#525252" class="ml-[22px] w-[18px] h-[18px]">
-                                    <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clipRule="evenodd" />
+                                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z" clip-rule="evenodd" />
                                 </svg>
                                 <div className="pl-[4px] text-[15px] font-normal text-[#525252]">
                                     ปิดรับสมัครแล้ว
@@ -1333,341 +355,40 @@ function Camp() {
                             </a>
                         </div>
                     </div>
-=======
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/TFUBanner.jpg.webp"
-=======
-        { /* col 2 */ }
-=======
 
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/poster-16.jpg.webp"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" > “CS Camp 15” ค่ ายวิทยาการคอมพิวเตอร์ พระจอมเกล้ าลาดกระบั ง <
-        /div> <
-        div className = "flex justify-between items-center mt-[55px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/cs-camp-15/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
+                    {/* col 3 */}
 
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/%E0%B8%9B%E0%B8%81%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%99%E0%B8%AD%E0%B8%99-1-1.png"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-        Zero To Hero Javascript & Typescript <
-        /div> <
-        div className = "flex justify-between items-center mt-[80px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/zero-to-hero-javascript-feb2023/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-
-        { /* col 3 */ }
-
-        <
-<<<<<<< HEAD
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/TFUBanner.jpg.webp"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-        Technology Test htmlFor University <
-        /div> <
-        div className = "flex justify-between items-center mt-[80px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/hamster-hub-tfu/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/poster-16.jpg.webp"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" > “CS Camp 15” ค่ ายวิทยาการคอมพิวเตอร์ พระจอมเกล้ าลาดกระบั ง <
-        /div> <
-        div className = "flex justify-between items-center mt-[55px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/cs-camp-15/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/%E0%B8%9B%E0%B8%81%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%99%E0%B8%AD%E0%B8%99-1-1.png"
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-<<<<<<< HEAD
-        Technology Test htmlFor University <
-=======
-        Zero To Hero Javascript & Typescript <
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        /div> <
-        div className = "flex justify-between items-center mt-[80px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-<<<<<<< HEAD
-        a href = "https://www.camphub.in.th/hamster-hub-tfu/"
-=======
-        a href = "https://www.camphub.in.th/zero-to-hero-javascript-feb2023/"
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-<<<<<<< HEAD
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/poster-16.jpg.webp"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" > “CS Camp 15” ค่ ายวิทยาการคอมพิวเตอร์ พระจอมเกล้ าลาดกระบั ง <
-        /div> <
-        div className = "flex justify-between items-center mt-[55px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/cs-camp-15/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
-
-        <
-        div className = "flex flex-col w-[341px] h-[417px] bg-[#F2F3EE] rounded-[10px]" >
-        <
-        img src = "https://www.camphub.in.th/wp-content/uploads/2023/02/%E0%B8%9B%E0%B8%81%E0%B9%81%E0%B8%99%E0%B8%A7%E0%B8%99%E0%B8%AD%E0%B8%99-1-1.png"
-        className = "w-[341px] h-[213px] rounded-tl-[10px] rounded-tr-[10px]" /
-        >
-        <
-        div className = "mx-[22px] mt-[24px] text-[17px] font-semibold" >
-        Zero To Hero Javascript & Typescript <
-        /div> <
-        div className = "flex justify-between items-center mt-[80px]" >
-        <
-        div className = "flex flex-row items-center" >
-        <
-        svg xmlns = "http://www.w3.org/2000/svg"
-        viewBox = "0 0 24 24"
-        fill = "#525252"
-        className = "ml-[22px] w-[18px] h-[18px]" >
-        <
-        path fill - rule = "evenodd"
-        d = "M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm3 10.5a.75.75 0 000-1.5H9a.75.75 0 000 1.5h6z"
-        clip - rule = "evenodd" / >
-        <
-        /svg> <
-        div className = "pl-[4px] text-[15px] font-normal text-[#525252]" >
-        ปิดรั บสมั ครแล้ ว <
-        /div> < /
-        div > <
-        a href = "https://www.camphub.in.th/zero-to-hero-javascript-feb2023/"
-        target = "_blank" >
-        <
-        button className = "font-semibold mr-[22px] py-2 px-6 rounded-full border-[1px]" >
-        อ่ านเพิ่ มเติม <
-        /button> < /
-        a > <
-        /div> < /
-        div >
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-
-        { /* col 3 */ }
-
-        <
-=======
-        { /* col 3 */ }
-
-        <
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
-=======
->>>>>>> a01ec60f481445841d2765697049ef40c98fa8df
->>>>>>> Stashed changes
-        /div> <
-        div className = "flex gap-3.5 justify-center mt-[42px] mb-[0px]" >
-        <
-        Link href = "#" >
-        <
-        button className = "w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#D9D9D9] rounded-full" >
-        1 <
-        /button> < /
-        Link > <
-        Link href = "#" >
-        <
-        button className = "w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full" >
-        2 <
-        /button> < /
-        Link > <
-        Link href = "#" >
-        <
-        button className = "w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full" >
-        3 <
-        /button> < /
-        Link > <
-        Link href = "#" >
-        <
-        button className = "w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full" >
-        4 <
-        /button> < /
-        Link > <
-        span className = "text-[16px] font-semibold pt-4" > ... < /span> <
-        Link href = "#" >
-        <
-        button className = "w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full" >
-        5 <
-        /button> < /
-        Link > <
-        /div> < /
-        div > <
-        />
+                </div>
+                <div className="flex gap-3.5 justify-center mt-[42px] mb-[0px]">
+                    <Link href="#">
+                        <button className="w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#D9D9D9] rounded-full">
+                            1
+                        </button>
+                    </Link>
+                    <Link href="#">
+                        <button className="w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full">
+                            2
+                        </button>
+                    </Link>
+                    <Link href="#">
+                        <button className="w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full">
+                            3
+                        </button>
+                    </Link>
+                    <Link href="#">
+                        <button className="w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full">
+                            4
+                        </button>
+                    </Link>
+                    <span className="text-[16px] font-semibold pt-4">...</span>
+                    <Link href="#">
+                        <button className="w-[37px] h-[37px] text-black text-[16px] font-semibold bg-[#F5F5F5] rounded-full">
+                            5
+                        </button>
+                    </Link>
+                </div>
+            </div>
+        </>
     );
 }
 
