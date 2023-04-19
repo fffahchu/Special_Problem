@@ -51,7 +51,7 @@ const CreateFrontCover = () => {
       .then((data) => {
         if (data.status === 200) {
           if (data.data.url) {
-            setFile("http://localhost:1337"+data.data.url);
+            setFile("http://localhost:1337" + data.data.url);
           }
         }
       })
@@ -160,7 +160,13 @@ const CreateFrontCover = () => {
                 </div>
               ) : (
                 <img
-                  src={typeof file == "string" ? file : typeof file == "object" ? URL.createObjectURL(file) : ""}
+                  src={
+                    typeof file == "string"
+                      ? file
+                      : typeof file == "object"
+                      ? URL.createObjectURL(file)
+                      : ""
+                  }
                   alt="preview-image"
                   className="self-end mb-[20px] w-[500px] h-[500px] rounded-[6px] object-cover border"
                 />

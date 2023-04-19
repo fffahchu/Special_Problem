@@ -70,11 +70,11 @@ const StateCreate = ({ state }) => {
   ]);
 
   useEffect(() => {
-    getIdPort()
+    getIdPort();
   }, []);
 
   const getIdPort = () => {
-    let arr = [...menu]
+    let arr = [...menu];
     arr.forEach((item, index) => {
       if (typeof window !== "undefined") {
         const idPort = localStorage.getItem(
@@ -83,12 +83,12 @@ const StateCreate = ({ state }) => {
         if (idPort != null) {
           arr[index].status = true;
         }
-      }else {
+      } else {
         arr[index].status = false;
       }
-    })
+    });
 
-    setMenu(arr)
+    setMenu(arr);
   };
 
   return (
@@ -96,7 +96,7 @@ const StateCreate = ({ state }) => {
       {menu.map((item, index) => {
         return (
           <Link className="flex flex-1" href={item.link} key={`state-${index}`}>
-            <button className={`flex flex-col items-center w-full h-full`}>
+            <button className={`flex flex-col items-center w-[128px] h-full`}>
               <img
                 src={
                   state == index + 1
