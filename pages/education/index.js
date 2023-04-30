@@ -59,14 +59,14 @@ const Alleducation = () => {
       <MoveToTop />
       <Breadcrumb route={route} />{" "}
       <div className="text-center text-[28px] font-semibold my-12">
-        คลั งความรู้{" "}
+        คลังความรู้{" "}
       </div>
       <div className="flex">
         <div className="flex-1">
           <div className="flex justify-between items-center">
-            <div className="text-[25px] font-semibold"> คอร์ สเรียนเสริม </div>{" "}
+            <div className="text-[25px] font-semibold"> คอร์สเรียนเสริม </div>{" "}
             <a href="education/learning" className="font-semibold underline">
-              ดูทั้ งหมด{" "}
+              ดูทั้งหมด{" "}
             </a>{" "}
           </div>
           <hr className="mt-[18px] mb-4" />
@@ -83,7 +83,7 @@ const Alleducation = () => {
           <div className="flex justify-between items-center mt-[150px]">
             <div className="text-[25px] font-semibold"> แบบฝึกหั ด </div>{" "}
             <a href="education/exercise" className="font-semibold underline">
-              ดูทั้ งหมด{" "}
+              ดูทั้งหมด{" "}
             </a>{" "}
           </div>{" "}
           <hr className="mt-[18px]" />
@@ -92,7 +92,7 @@ const Alleducation = () => {
               <div className="flex justify-center w-[430px]">
                 <div className="flex flex-col gap-2">
                   <h1 className="mt-[10px] underline text-[20px] text-center">
-                    แบบฝึกหั ดเรื่ อง{" "}
+                    แบบฝึกหัดเรื่อง{" "}
                   </h1>{" "}
                   <div className="flex flex-col gap-2 mt-[5px]">
                     <div className="text-[18px] mt-[14px]">
@@ -103,7 +103,7 @@ const Alleducation = () => {
                       >
                         <ur>
                           {" "}
-                          1. หนั งสือรวมโจทย์ ภาษาซีในรูปแบบโอลิมปิกวิชาการ{" "}
+                          1. หนังสือรวมโจทย์ภาษาซีในรูปแบบโอลิมปิกวิชาการ{" "}
                         </ur>{" "}
                       </Link>{" "}
                     </div>
@@ -122,7 +122,7 @@ const Alleducation = () => {
                         target="_blank"
                         className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                       >
-                        <ur> 3. รวมข้ อสอบการเขียนโปรแกรมคอมพิวเตอร์ </ur>{" "}
+                        <ur> 3. รวมข้อสอบการเขียนโปรแกรมคอมพิวเตอร์ </ur>{" "}
                       </Link>{" "}
                     </div>
                     <div className="text-[18px]">
@@ -131,7 +131,7 @@ const Alleducation = () => {
                         target="_blank"
                         className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                       >
-                        <ur> 4. รวมโจทย์ C++พร้ อมเฉลย </ur>{" "}
+                        <ur> 4. รวมโจทย์ C++ พร้อมเฉลย </ur>{" "}
                       </Link>{" "}
                     </div>
                     <div className="text-[18px]">
@@ -140,7 +140,7 @@ const Alleducation = () => {
                         target="_blank"
                         className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                       >
-                        <ur> 5. Lab #6 โจทย์ พร้อมเฉลย</ur>
+                        <ur> 5. Lab #6 โจทย์พร้อมเฉลย</ur>
                       </Link>
                     </div>
                     <div className="text-[18px]">
@@ -149,7 +149,7 @@ const Alleducation = () => {
                         target="_blank"
                         className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                       >
-                        <ur> 6. ตั วอย่ างโจทย์ ปั ญหา การวิเคราะห์ ปั ญหา </ur>{" "}
+                        <ur> 6. ตัวอย่างโจทย์ปัญหาการวิเคราะห์ปัญหา </ur>{" "}
                       </Link>{" "}
                     </div>
                     <div className="text-[18px]">
@@ -158,7 +158,7 @@ const Alleducation = () => {
                         target="_blank"
                         className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                       >
-                        <ur> 7. การออกแบบอั ลกอรึทึม และการเขียนรหั สเทียม </ur>{" "}
+                        <ur> 7. การออกแบบอัลกอรึทึมและการเขียนรหัสเทียม </ur>{" "}
                       </Link>{" "}
                     </div>{" "}
                   </div>{" "}
@@ -170,7 +170,7 @@ const Alleducation = () => {
                 <div className="mt-[50px] bg-[#fafafa] rounded-md shadow-inner w-[600px] h-[420px] ">
                   <div>
                     <h1 className="mt-[10px] underline text-[20px] text-center">
-                      เว็ บไซต์ แนะนำ{" "}
+                      เว็บไซต์แนะนำ{" "}
                     </h1>{" "}
                   </div>{" "}
                   <div className="flex flex-col gap-2 mt-[20px] ml-[10px]">
@@ -192,12 +192,10 @@ const Alleducation = () => {
                         </div>
                         <div className="w-[350px]">
                           <div className="text[8px] font-regular">
-                            เป็ นหนึ่ งในเว็ บที่ มีชื่ อเสียงมากที่ สุดสำหรั
-                            บนั กพั ฒนาและโปรแกรมเมอร์ ทุกคนที่ ต้ องการเรียนรู้
-                            ภาษาเขียนโปรแกรมแทบจะทุกภาษา ตั้ งแต่
-                            การเขียนโปรแกรมบนเว็ บ ไปจนถึงภาษาโปรแกรมมิ่ งสำหรั
-                            บฐานข้ อมูลหรือโปรแกรมบนเดสก์ ท็ อป ซึ่ งทุกหลั
-                            กสูตรฟรีหมด{" "}
+                            เป็นหนึ่งในเว็บที่มีชื่อเสียงมากที่สุดสำหรับนักพัฒนาและโปรแกรมเมอร์
+                            ทุกคนที่ต้องการเรียนรู้ ภาษาเขียนโปรแกรมแทบจะทุกภาษา
+                            ตั้งแต่ การเขียนโปรแกรมบนเว็บ
+                            ไปจนถึงภาษาโปรแกรมมิ่งสำหรับฐานข้อมูลหรือโปรแกรมบนเดสก์ท็อปซึ่งทุกหลักสูตรฟรีหมด{" "}
                           </div>{" "}
                         </div>{" "}
                       </div>{" "}
@@ -220,12 +218,11 @@ const Alleducation = () => {
                         </div>
                         <div className="w-[350px]">
                           <div className="text[8px] font-regular">
-                            เป็ นหนึ่ งในเว็ บที่ มีชื่ อเสียงมากที่ สุดสำหรั
-                            บนั กพั ฒนาและโปรแกรมเมอร์ ทุกคนที่ ต้ องการเรียนรู้
-                            ภาษาเขียนโปรแกรมแทบจะทุกภาษา ตั้ งแต่
-                            การเขียนโปรแกรมบนเว็ บ ไปจนถึงภาษาโปรแกรมมิ่ งสำหรั
-                            บฐานข้ อมูลหรือโปรแกรมบนเดสก์ ท็ อป ซึ่ งทุกหลั
-                            กสูตรฟรีหมด{" "}
+                            เป็นโปรเจ็กต์สำหรับฝึกโปรแกรมเมอร์หน้าใหม่ ที่
+                            ไร้ประสบการณ์โดยสิ้นเชิง เพื่อให้สามารถพัฒนาเว็บไซต์
+                            หรือแม้แต่แอพพลิเคชั่นเป็นของตนเองได้ด้วย
+                            ผู้ใช้หลากหลายล้านที่เข้ามาเยี่ยมชมเว็บนี้
+                            ในแต่ละวัน{" "}
                           </div>{" "}
                         </div>{" "}
                       </div>{" "}

@@ -19,7 +19,7 @@ const Editprofile = () => {
       <MoveToTop />
       <Breadcrumb route={route} />{" "}
       <div className="text-center text-[28px] font-semibold my-12">
-        โปรไฟล์ ของฉั น{" "}
+        โปรไฟล์ของฉัน{" "}
       </div>{" "}
       <div className="flex justify-center">
         <div className="flex flex-col mr-[45px]">
@@ -44,12 +44,12 @@ const Editprofile = () => {
             {" "}
           </div>{" "}
           <div className="mt-[30px] ml-[55px] font-bold text-[25px]">
-            ข้ อมูลส่ วนตั ว{" "}
+            ข้อมูลส่วนตัว{" "}
           </div>
           <div className="ml-[118px] mt-[40px] grid grid-cols-2">
             <div className="pl-[168px] mb-2">
               <label htmlFor="name" className="font-bold ml-[85px]">
-                ชื่ อ{" "}
+                ชื่อ{" "}
               </label>{" "}
               <input
                 className="flex flex-wrap py-2.5 px-3.5 ml-[85px] mt-[10px] w-[288px] h-[44px] border-[1px] border-[#d4d4d8] rounded-lg shadow-lg shadow-[#d4d4d8]"
@@ -69,7 +69,7 @@ const Editprofile = () => {
             </div>
             <div className="pl-[168px] mt-[25px]">
               <label htmlFor="username" className="font-bold ml-[85px]">
-                ชื่ อผู้ ใช้ งาน{" "}
+                ชื่อผู้ใช้งาน{" "}
               </label>{" "}
               <input
                 className="flex flex-wrap py-2.5 px-3.5 ml-[85px] mt-[10px] w-[288px] h-[44px] border-[1px] border-[#d4d4d8] rounded-lg shadow-lg shadow-[#d4d4d8]"
@@ -90,7 +90,7 @@ const Editprofile = () => {
           </div>
           <div className="ml-[370px] mt-[25px]">
             <label htmlFor="number" className="font-bold mt-[30px]">
-              เบอร์ โทรศั พท์{" "}
+              เบอร์โทรศัพท์{" "}
             </label>{" "}
             <input
               className="flex flex-wrap py-2.5 px-3.5 w-[597px] h-[44px] mt-[10px] border-[1px] border-[#d4d4d8] rounded-lg shadow-lg shadow-[#d4d4d8]"
@@ -113,11 +113,11 @@ const Editprofile = () => {
             {" "}
           </div>{" "}
           <div className="mt-[30px] ml-[55px] font-bold text-[25px]">
-            เปลี่ ยนรหั สผ่ าน{" "}
+            เปลี่ยนรหัสผ่าน{" "}
           </div>{" "}
           <div className="ml-[370px] mt-[25px]">
             <label htmlFor="password" className="font-bold mt-[30px]">
-              รหั สผ่ าน <a className="text-[#FF0000]"> * </a>{" "}
+              รหัสผ่าน <a className="text-[#FF0000]"> * </a>{" "}
             </label>{" "}
             <input
               className="flex flex-wrap py-2.5 px-3.5 w-[597px] h-[44px] mt-[10px] border-[1px] border-[#d4d4d8] rounded-lg shadow-lg shadow-[#d4d4d8]"
@@ -127,7 +127,7 @@ const Editprofile = () => {
           </div>
           <div className="ml-[370px] mt-[25px]">
             <label htmlFor="re_password" className="font-bold mt-[30px]">
-              ป้ อนรหั สผ่ านอีกครั้ ง <a className="text-[#FF0000]"> * </a>{" "}
+              ป้อนรหัสผ่านอีกครั้ง <a className="text-[#FF0000]"> * </a>{" "}
             </label>{" "}
             <input
               className="flex flex-wrap py-2.5 px-3.5 w-[597px] h-[44px] mt-[10px] border-[1px] border-[#d4d4d8] rounded-lg shadow-lg shadow-[#d4d4d8]"
@@ -136,10 +136,10 @@ const Editprofile = () => {
             ></input>{" "}
           </div>
           <div className="ml-[710px] text-[15px] font-md mt-[15px]">
-            คำแนะนำในการตั้ งรหั สผ่ าน{" "}
+            คำแนะนำในการตั้งรหัสผ่าน{" "}
             <ur>
-              <li> รหั สผ่ านต้ องมีตั วอั กษรตั้ งแต่ 6 - 20 ตั ว </li>{" "}
-              <li> ใช้ ตั วหนั งสือหรือตั วเลขเท่ านั้ น </li>{" "}
+              <li> รหัสผ่านต้องมีตัวอักษรตั้งแต่ 6-20 ตัว </li>{" "}
+              <li> ใช้ตัวหนังสือหรือตัวเลขเท่านั้น </li>{" "}
             </ur>{" "}
           </div>{" "}
           <div className="ml-[55px] mt-[65px] w-[1189px] border border-[#a1a1aa]">
@@ -150,18 +150,17 @@ const Editprofile = () => {
             PDPA{" "}
           </div>{" "}
           <div className="mt-[15px] ml-[370px] text-[16px] font-md">
-            คุณได้ ยอมรั บข้ อตกลงและเงื่ อนไขและนโยบายความเป็ นส่ วนตั วแล้ ว{" "}
+            คุณได้ยอมรับข้อตกลงและเงื่อนไขและนโยบายความเป็นส่วนตัวแล้ว{" "}
           </div>{" "}
           <div className="mt-[12px] ml-[370px] text-[16px] font-md">
-            หากมีข้ อสงสั ยหรือต้ องการยกเลิกการเป็ นสมาชิกกรุณาติดต่ อ เจ้ าหน้
-            าที่ คุ้ มครองข้ อมูลส่ วนบุคคล{" "}
+            หากมีข้อสงสัยหรือต้องการยกเลิกการเป็นสมาชิกกรุณาติดต่อเจ้าหน้าที่คุ้มครองข้อมูลส่วนบุคคล{" "}
           </div>{" "}
           <div className="mt-[60px] ml-[595px]">
             <button
               type="submit"
               className="w-[152px] h-[44px] rounded-3xl shadow drop-shadow-lg font-bold transition ease-in-out bg-[#FFCA61] hover:-translate-y-1 hover:scale-110 hover:bg-[#FFEC85] duration-300"
             >
-              บั นทึกข้ อมูล{" "}
+              บันทึกข้อมูล{" "}
             </button>{" "}
           </div>{" "}
         </div>{" "}

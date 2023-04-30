@@ -84,7 +84,7 @@ const CreateIntroduction = () => {
       <MoveToTop />
       <Breadcrumb route={route} />{" "}
       <div className="text-center text-[28px] font-semibold my-12">
-        สร้ างแฟ้ มสะสมผลงาน{" "}
+        สร้างแฟ้มสะสมผลงาน{" "}
       </div>{" "}
       <StateCreate state={3} />{" "}
       <div className="my-[72px] mx-auto max-w-[1232px]">
@@ -124,7 +124,7 @@ const CreateIntroduction = () => {
             className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
             onClick={onSubmit}
           >
-            บั นทึกข้ อมูล{" "}
+            บันทึกข้อมูล{" "}
           </button>{" "}
         </Link>{" "}
       </div>{" "}

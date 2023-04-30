@@ -75,7 +75,7 @@ const Upload = () => {
         <MoveToTop />
         <Breadcrumb route={route} />{" "}
         <div className="text-center text-[28px] font-semibold my-12">
-          ผลงานของฉั น{" "}
+          ผลงานของฉัน{" "}
         </div>{" "}
         <hr className="mt-[18px] mb-4 border-[#d4d4d4]" />
         <div className="flex">
@@ -86,7 +86,7 @@ const Upload = () => {
             >
               <img src="../assets/icons/plus-circle.svg" alt="plus-circle" />{" "}
               {""}
-              เพิ่ มอั ลบั ม{" "}
+              เพิ่มอัลบัม{" "}
             </button>{" "}
           </div>{" "}
         </div>{" "}
@@ -120,7 +120,7 @@ const Upload = () => {
                   className="w-[101px] h-[42px] rounded-2xl shadow-md transition ease-in-out  bg-[#d4d4d4] hover:-translate-y-1 hover:scale-110 hover:bg-[#FFCA61] duration-300"
                   onClick={onSubmit}
                 >
-                  บั นทึก{" "}
+                  บันทึก{" "}
                 </button>{" "}
               </div>{" "}
             </div>{" "}
@@ -131,7 +131,7 @@ const Upload = () => {
                 htmlFor="file_name"
                 className="w-[278px] text-lg font-bold pt-[60px] text-start"
               >
-                ชื่ อไฟล์{" "}
+                ชื่อไฟล์{" "}
               </label>{" "}
               <input
                 className="mt-[8px] shadow appearance-none border rounded-lg w-[278px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -146,7 +146,7 @@ const Upload = () => {
               htmlFor="dropzone-file"
               className="px-[20px] py-[6px] w-[165px] border-[1px] rounded-[20px] font-bold cursor-pointer"
             >
-              อั พโหลดรูป{" "}
+              อัพโหลดรูป{" "}
             </label>{" "}
             <input
               id="dropzone-file"
@@ -158,10 +158,7 @@ const Upload = () => {
           </div>{" "}
         </div>{" "}
         <div className="flex justify-between items-center mt-[80px]">
-          <div className="text-[20px] font-semibold">
-            {" "}
-            ผลงานของฉั นทั้ งหมด{" "}
-          </div>{" "}
+          <div className="text-[20px] font-semibold"> ผลงานของฉันทั้งหมด </div>{" "}
         </div>{" "}
         <hr className="mt-[12px] mb-4 border-[#d4d4d4]" />
       </div>{" "}

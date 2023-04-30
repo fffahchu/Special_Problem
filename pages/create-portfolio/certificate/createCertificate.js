@@ -280,12 +280,12 @@ const CreateCertificate = () => {
       <MoveToTop />
       <Breadcrumb route={route} />{" "}
       <div className="text-center text-[28px] font-semibold my-12">
-        สร้ างแฟ้ มสะสมผลงาน{" "}
+        สร้างแฟ้มสะสมผลงาน{" "}
       </div>{" "}
       <StateCreate state={8} />{" "}
       <div className="mt-[72px] mb-[42px] mx-auto max-w-[1232px]">
         <div className="flex mb-[48px] gap-[5px]">
-          <div className="text-xl font-bold "> เกียรติบั ตรที่ ได้ รั บ </div>{" "}
+          <div className="text-xl font-bold "> เกียรติบัตรที่ได้รับ </div>{" "}
           <div className="text-lg bg-[#D9D9D9] py-[3px] px-1.5 rounded-full">
             2 จาก 2{" "}
           </div>{" "}
@@ -312,7 +312,7 @@ const CreateCertificate = () => {
                 className="w-[218px] text-lg font-bold text-end mr-8 "
                 htmlFor="page_number"
               >
-                หมายเลขหน้ า{" "}
+                หมายเลขหน้า{" "}
               </label>{" "}
               <select
                 name="page_number"
@@ -343,7 +343,13 @@ const CreateCertificate = () => {
                         </div>
                       ) : (
                         <img
-                          src={typeof item.file == "string" ? item.file : typeof item.file == "object" ? URL.createObjectURL(item.file) : ""}
+                          src={
+                            typeof item.file == "string"
+                              ? item.file
+                              : typeof item.file == "object"
+                              ? URL.createObjectURL(item.file)
+                              : ""
+                          }
                           alt="preview-image"
                           className="w-[300px] h-[200px] rounded-[11px] object-cover border"
                         />
@@ -351,16 +357,16 @@ const CreateCertificate = () => {
                     </div>{" "}
                     <div className="ml-[30px]">
                       <div className="font-bold mb-[13px]"> คำแนะนำ </div>{" "}
-                      <div className="mb-[9px]"> •สำหรั บรูปโปรไฟล์ </div>{" "}
+                      <div className="mb-[9px]"> •สำหรับรูปโปรไฟล์ </div>{" "}
                       <div className="mb-[28px]">
                         {" "}
-                        •ขนาดรูปไม่ เกิน 10 MB png หรือ jpg{" "}
+                        •ขนาดรูปไม่เกิน 10 MB png หรือ jpg{" "}
                       </div>{" "}
                       <label
                         htmlFor={`dropzone-file-${index}`}
                         className="py-3 px-[42px] border-[1px] rounded-full text-lg font-bold"
                       >
-                        อั พโหลดรูป{" "}
+                        อัพโหลดรูป{" "}
                       </label>{" "}
                       <input
                         id={`dropzone-file-${index}`}
@@ -373,7 +379,7 @@ const CreateCertificate = () => {
                   </div>{" "}
                   <div className="flex items-center mb-3">
                     <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                      ชื่ อเกียรติบั ตร / งานอบรม {index + 1}{" "}
+                      ชื่อเกียรติบัตร/งานอบรม {index + 1}{" "}
                     </label>{" "}
                     <input
                       className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -402,7 +408,7 @@ const CreateCertificate = () => {
                     width="14"
                     height="14"
                   />
-                  สร้ างหน้ าใหม่{" "}
+                  สร้างหน้าใหม่{" "}
                 </button>{" "}
               </Link>{" "}
             </div>{" "}
@@ -416,7 +422,7 @@ const CreateCertificate = () => {
             className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
             onClick={onSubmit}
           >
-            บั นทึกข้ อมูล{" "}
+            บันทึกข้อมูล{" "}
           </button>{" "}
         </Link>{" "}
       </div>{" "}

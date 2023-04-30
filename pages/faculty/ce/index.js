@@ -39,7 +39,7 @@ const FacultyofEngineering = () => {
               className="w-[125px] h-[125px] rounded-full hover:scale-110 transition duration-300 ease-in-out"
             />
           </div>{" "}
-          <div className="font-semibold pt-[48px]"> รีวิวคณะ / สาขา </div>{" "}
+          <div className="font-semibold pt-[48px]"> รีวิวคณะ/สาขา </div>{" "}
         </Link>{" "}
         <Link href="#" className="flex flex-row gap-2">
           <div className="relative overflow-hidden rounded-full">
@@ -48,7 +48,7 @@ const FacultyofEngineering = () => {
               className="w-[125px] h-[125px] hover:scale-110 transition duration-300 ease-in-out rounded-full"
             />
           </div>{" "}
-          <div className="font-semibold pt-[48px]"> รีวิวกิจกรรม / ค่ าย </div>{" "}
+          <div className="font-semibold pt-[48px]"> รีวิวกิจกรรม/ค่าย </div>{" "}
         </Link>{" "}
         <Link href="#" className="flex flex-row gap-2">
           <div className="relative overflow-hidden rounded-full">
@@ -57,62 +57,62 @@ const FacultyofEngineering = () => {
               className="w-[125px] h-[125px] rounded-full hover:scale-110 transition duration-300 ease-in-out"
             />
           </div>{" "}
-          <div className="font-semibold pt-[48px]"> รีวิวทั่ วไป </div>{" "}
+          <div className="font-semibold pt-[48px]"> รีวิวทั่วไป </div>{" "}
         </Link>{" "}
       </div>{" "}
       <div className="bg-[#FFCA61] rounded-[7px] text-left text-[25px] font-semibold py-[25px] pl-[8px]">
-        หลั กสูตรของภาควิชาวิศวกรรมคอมพิวเตอร์{" "}
+        หลักสูตรของภาควิชาวิศวกรรมคอมพิวเตอร์{" "}
       </div>{" "}
       <div className="bg-[#FFEC85] text-left text-[18px] font-semibold mt-[16px] py-[32px] pl-[8px]">
-        หลั กสูตรรวิศวกรรมศาสตรบั ณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์(Bachelor of
+        หลักสูตรรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์ (Bachelor of
         Engineering Program in Computer Engineering){" "}
       </div>{" "}
       <div className="bg-[#FAFAFA] shadow-md">
         <div className="text-[18px] font-semibold text-[#FFCA61] pt-[32px] pl-[32px]">
-          ชื่ อหลั กสูตร{" "}
+          ชื่อหลักสูตร{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold my-[8px] pl-[56px]">
-          ชื่ อภาษาไทย{" "}
+          ชื่อภาษาไทย{" "}
           <span className="text-[18px] font-normal">
-            : หลั กสูตรวิศวกรรมศาสตรบั ณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์{" "}
+            : หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์{" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px]">
-          ชื่ อภาษาอั งกฤษ{" "}
+          ชื่อภาษาอังกฤษ{" "}
           <span className="text-[18px] font-normal">
             : Bachelor of Engineering Program in Computer Engineering{" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold text-[#FFCA61] pt-[24px] pl-[32px]">
-          ชื่ อปริญญาและสาขาวิชา{" "}
+          ชื่อปริญญาและสาขาวิชา{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] my-[8px]">
-          ชื่ อเต็ ม(ภาษาไทย){" "}
+          ชื่อเต็ม (ภาษาไทย){" "}
           <span className="text-[18px] font-normal">
-            : วิศวกรรมศาสตร์ บั ญฑิต(วิศวกรรมคอมพิวเตอร์){" "}
+            : วิศวกรรมศาสตร์บัญฑิต (วิศวกรรมคอมพิวเตอร์){" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px]">
-          ชื่ อเต็ ม(ภาษาอั งกฤษ){" "}
+          ชื่อเต็ม (ภาษาอังกฤษ){" "}
           <span className="text-[18px] font-normal">
             : Bachelor of Engineering Program in Computer Engineering{" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] my-[8px]">
-          ชื่ อย่ อ(ภาษาไทย){" "}
+          ชื่อย่อ (ภาษาไทย){" "}
           <span className="text-[18px] font-normal">
-            : วศ.บ.(วิศวกรรมคอมพิวเตอร์){" "}
+            : วศ.บ. (วิศวกรรมคอมพิวเตอร์){" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] pb-[32px]">
-          ชื่ อย่ อ(ภาษาอั งกฤษ){" "}
+          ชื่อย่อ (ภาษาอังกฤษ){" "}
           <span className="text-[18px] font-normal">
             : B.Eng.(Computer Engineering){" "}
           </span>{" "}
         </div>{" "}
       </div>{" "}
       <div className="bg-[#FFCA61] rounded-[7px] text-left text-[25px] font-semibold py-[25px] pl-[8px] mt-[64px]">
-        ข่ าวประชาสั มพั นธ์{" "}
+        ข่าวประชาสัมพันธ์{" "}
       </div>{" "}
       <div className="grid grid-cols-2 gap-14 mt-[40px] mb-[56px] mx-auto max-w-[1232px]">
         <Link
@@ -127,7 +127,7 @@ const FacultyofEngineering = () => {
             />
           </div>{" "}
           <div className="text-center pt-2 font-semibold">
-            CESCa ค่ ายเยาวชนวิศวกรรมคอมพิวเตอร์ ครั้ งที่ 18{" "}
+            CESCa ค่ายเยาวชนวิศวกรรมคอมพิวเตอร์ ครั้งที่ 18{" "}
           </div>{" "}
         </Link>{" "}
         <Link
@@ -143,7 +143,7 @@ const FacultyofEngineering = () => {
           </div>{" "}
           <div className="text-center pt-2 font-semibold">
             {" "}
-            Comcamp34 ค่ ายวิศวะคอมฯ มจธ.{" "}
+            Comcamp34 ค่ายวิศวะคอมฯ มจธ.{" "}
           </div>{" "}
         </Link>{" "}
         <Link
@@ -158,7 +158,7 @@ const FacultyofEngineering = () => {
             />
           </div>{" "}
           <div className="text-center pt-2 font-semibold">
-            Click Camp 13 ภาควิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลั ยมหิดล{" "}
+            Click Camp 13 ภาควิชาวิศวกรรมคอมพิวเตอร์มหาวิทยาลัยมหิดล{" "}
           </div>{" "}
         </Link>{" "}
         <Link
@@ -173,7 +173,7 @@ const FacultyofEngineering = () => {
             />
           </div>{" "}
           <div className="text-center pt-2 font-semibold">
-            To Gear 66 CE KMITL– ค่ ายพอร์ ตแนะนำพอร์ ตวิศวะคอม สจล.💻{" "}
+            To Gear 66 CE KMITL– ค่ายพอร์ตแนะนำพอร์ตวิศวะคอม สจล.💻{" "}
           </div>{" "}
         </Link>{" "}
         <Link
@@ -188,7 +188,7 @@ const FacultyofEngineering = () => {
             />
           </div>{" "}
           <div className="text-center pt-2 font-semibold">
-            ค่ ายลองของ Let Me Tired Camp #2 💻⚙️
+            ค่ายลองของ Let Me Tired Camp #2 💻⚙️
           </div>
         </Link>
         <Link
@@ -203,7 +203,7 @@ const FacultyofEngineering = () => {
             />
           </div>{" "}
           <div className="text-center pt-2 font-semibold">
-            ค่ ายถึงบิตถึงไบต์ ครั้ งที่ 12 จั งหวั ดน่ าน{" "}
+            ค่ายถึงบิตถึงไบต์ ครั้งที่ 12 จังหวัดน่าน{" "}
           </div>{" "}
         </Link>{" "}
       </div>{" "}

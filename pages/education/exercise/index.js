@@ -26,7 +26,7 @@ const Exercise = () => {
       <div className="flex justify-center">
         <div>
           <div className="mt-[40px]">
-            <div className="text-[23px] font-semibold"> แบบฝึกหั ด </div>{" "}
+            <div className="text-[23px] font-semibold"> แบบฝึกหัด </div>{" "}
           </div>{" "}
           <hr className="mt-[12px] mb-4" />
           <div className="flex gap-[51px] px-[45px]">
@@ -34,10 +34,7 @@ const Exercise = () => {
               <div>
                 <div className="w-[390px] mt-[30px]">
                   <div>
-                    <ur className="underline text-[20px]">
-                      {" "}
-                      แบบฝึกหั ดเรื่ อง{" "}
-                    </ur>{" "}
+                    <ur className="underline text-[20px]"> แบบฝึกหัดเรื่อง </ur>{" "}
                     <div className="flex flex-col gap-2 mt-[5px]">
                       <div className="text-[18px] mt-[14px]">
                         <Link
@@ -46,7 +43,7 @@ const Exercise = () => {
                           className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                         >
                           <ur>
-                            1. หนั งสือรวมโจทย์ ภาษาซีในรูปแบบโอลิมปิกวิชาการ{" "}
+                            1. หนังสือรวมโจทย์ภาษาซีในรูปแบบโอลิมปิกวิชาการ{" "}
                           </ur>{" "}
                         </Link>{" "}
                       </div>
@@ -65,7 +62,7 @@ const Exercise = () => {
                           target="_blank"
                           className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                         >
-                          <ur> 3. รวมข้ อสอบการเขียนโปรแกรมคอมพิวเตอร์ </ur>{" "}
+                          <ur> 3. รวมข้อสอบการเขียนโปรแกรมคอมพิวเตอร์ </ur>{" "}
                         </Link>{" "}
                       </div>
                       <div className="text-[18px]">
@@ -74,7 +71,7 @@ const Exercise = () => {
                           target="_blank"
                           className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                         >
-                          <ur> 4. รวมโจทย์ C++พร้ อมเฉลย </ur>{" "}
+                          <ur> 4. รวมโจทย์ C++ พร้อมเฉลย </ur>{" "}
                         </Link>{" "}
                       </div>
                       <div className="text-[18px]">
@@ -83,7 +80,7 @@ const Exercise = () => {
                           target="_blank"
                           className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                         >
-                          <ur> 5. Lab #6 โจทย์ พร้อมเฉลย</ur>
+                          <ur> 5. Lab #6 โจทย์พร้อมเฉลย</ur>
                         </Link>
                       </div>
                       <div className="text-[18px]">
@@ -92,10 +89,7 @@ const Exercise = () => {
                           target="_blank"
                           className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                         >
-                          <ur>
-                            {" "}
-                            6. ตั วอย่ างโจทย์ ปั ญหา การวิเคราะห์ ปั ญหา{" "}
-                          </ur>{" "}
+                          <ur> 6. ตัวอย่างโจทย์ปัญหาการวิเคราะห์ปัญหา </ur>{" "}
                         </Link>{" "}
                       </div>
                       <div className="text-[18px]">
@@ -104,10 +98,7 @@ const Exercise = () => {
                           target="_blank"
                           className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                         >
-                          <ur>
-                            {" "}
-                            7. การออกแบบอั ลกอรึทึม และการเขียนรหั สเทียม{" "}
-                          </ur>{" "}
+                          <ur> 7. การออกแบบอัลกอรึทึมและการเขียนรหัสเทียม </ur>{" "}
                         </Link>{" "}
                       </div>{" "}
                     </div>{" "}
@@ -117,7 +108,7 @@ const Exercise = () => {
               <div>
                 <div className="flex justify-between items-center mt-[100px]">
                   <div className="flex items-center gap-1">
-                    <div className="text-xl font-semibold"> ข่ าวฮอต </div>{" "}
+                    <div className="text-xl font-semibold"> ข่าวฮอต </div>{" "}
                     <img
                       src="../assets/icons/fire.svg"
                       alt="icon-fire"
@@ -126,21 +117,21 @@ const Exercise = () => {
                     />
                   </div>{" "}
                   <a href="#" className="font-semibold underline">
-                    ดูทั้ งหมด{" "}
+                    ดูทั้งหมด{" "}
                   </a>{" "}
                 </div>{" "}
                 <div className="flex flex-col gap-8 mt-7">
                   <div className="flex flex-col gap-3">
                     <img src="../assets/images/news/news-1.png" alt="news-1" />
                     <div>
-                      ปฏิทิน 2566: อั พเดท ตารางสอบ 'TCAS' ที่ 'DEK66' ต้ องรู้
-                      ไว้ สมั ครสอบ TGAT / TPAT และ{" "}
+                      ปฏิทิน 2566: อัพเดทตารางสอบ 'TCAS' ที่ 'DEK66' ต้องรู้ ไว้
+                      สมัครสอบ TGAT / TPAT และ{" "}
                     </div>{" "}
                   </div>{" "}
                   <div className="flex flex-col gap-3">
                     <img src="../assets/images/news/news-2.png" alt="news-2" />
                     <div>
-                      ประกาศผล admission 65 TCAS รอบ 3 ครั้ งที่ 2 เช็ กผลสอบที่
+                      ประกาศผล admission 65 TCAS รอบ 3 ครั้งที่ 2 เช็กผลสอบที่
                       นี่{" "}
                     </div>{" "}
                   </div>{" "}
@@ -152,29 +143,31 @@ const Exercise = () => {
                 <div className="flex justify-center bg-[#fafafa] rounded-md shadow-inner w-[680px] h-[300px] ml-[150px]">
                   <div className="inline-block w-[640px] pt-[20px]">
                     <div className="text-[15px] indent-10">
-                      เมื่ อพบใคร..ที่ สนใจการโปรแกรม(Programming) และเป็ นผู้
-                      เริ่ มต้ น(Beginner) หรือจะเป็ นนั กพั ฒนา(Developer)
-                      จะมีคำถามสำคั ญ ที่ ใช้ ชวนพูดคุยกั นว่ า
-                      "อยากเขียนโปรแกรมบน แพลตฟอร์ม (Platform) ใด" ก็ มั กเริ่
-                      มจากการเลือก ระบบปฏิบั ติการ คือ Windows, Linux, Android,
-                      iOS แล้ วเลือก แหล่ งที่ ใช้ โปรแกรม คือ Windows, Website
-                      หรือ Application แล้ วก็ ต้ องเลือก ภาษาที่ ใช้ พั ฒนา
-                      อาทิ PHP, JAVA, C, ASP, VB, Python ซึ่ งมีบางภาษาที่ พั
-                      ฒนาแล้ ว สามารถนำไปใช้ ได้ ในหลายแพลตฟอร์ ม{" "}
+                      เมื่อพบใคร.. ที่สนใจการโปรแกรม (Programming) และเป็นผู้
+                      เริ่มต้น (Beginner) หรือจะเป็นนักพัฒนา(Developer)
+                      จะมีคำถามสำคัญที่ใช้ชวนพูดคุยกันว่า
+                      "อยากเขียนโปรแกรมบนแพลตฟอร์ม (Platform) ใด"
+                      ก็มักเริ่มจากการเลือกระบบปฏิบัติการ คือ Windows, Linux,
+                      Android, iOS แล้วเลือกแหล่งที่ใช้โปรแกรม คือ Windows,
+                      Website หรือ Application แล้วก็ต้องเลือกภาษาที่ใช้พัฒนา
+                      อาทิ PHP, JAVA, C, ASP, VB, Python
+                      ซึ่งมีบางภาษาที่พัฒนาแล้วสามารถนำไปใช้ได้ในหลายแพลตฟอร์ม{" "}
                     </div>{" "}
                     <div className=" mt-[10px] text-[15px] indent-10">
-                      <a className="font-bold"> การโปรแกรม </a> คือ การกำหนดขั้
-                      นตอนให้ กั บคอมพิวเตอร์ ทำงานตามลำดั บและรูปแบบที่ กำหนด
-                      อั ลกอริทึม(Algorithm) คือ กระบวนการแก้ ปั ญหาอย่ างเป็
-                      นขั้ นตอน หรือขั้ นตอนวิธีอย่ างมีลำดั บ คือ กลุ่ มของขั้
-                      นตอนวิธี หรือกฎเกณฑ์ ที่ จะนำพาไปสู่ การแก้ ปั ญหา คือ ขั้
-                      นตอนวิธีที่ ประกอบด้ วยชุดคำสั่ งเป็ นขั้ นเป็ นตอนที่ ชั
-                      ดเจน และรั บประกั นว่ าเมื่ อปฏิบั ติอย่ างถูกต้ องตามขั้
-                      นตอนจนครบ จะได้ ผลลั พธ์ ที่ ถูกต้ องตามที่ ต้ องการ คือ
-                      รูปแบบของการกำหนดการกระทำอย่ างเป็ นขั้ นตอน ซึ่ งผ่
-                      านการวิเคราะห์ และแยกแยะ เพื่ อการแก้ ปั ญหาตามลำดั บขั้ น
-                      อาจเลือกใช้ ภาษาไทยหรือภาษาอั งกฤษ เพื่ อนำเสนอให้ เข้
-                      าใจเป็ นขั้ นตอน{" "}
+                      <a className="font-bold"> การโปรแกรม </a> คือ
+                      การกำหนดขั้นตอนให้กับคอมพิวเตอร์ทำงานตามลำดับและรูปแบบที่
+                      กำหนด อัลกอริทึม(Algorithm) คือ
+                      กระบวนการแก้ปัญหาอย่างเป็นขั้นตอนหรือขั้นตอนวิธีอย่างมีลำดับ
+                      คือ
+                      กลุ่มของขั้นตอนวิธีหรือกฎเกณฑ์ที่จะนำพาไปสู่การแก้ปัญหา
+                      คือ ขั้นตอนวิธีที่ประกอบด้วยชุดคำสั่งเป็นขั้นเป็นตอนที่
+                      ชัดเจนและรับประกันว่าเมื่อปฏิบัติอย่างถูกต้องตามขั้นตอนจนครบ
+                      จะได้ผลลัพธ์ที่ถูกต้องตามที่ต้องการ คือ
+                      รูปแบบของการกำหนดการกระทำอย่างเป็นขั้นตอน
+                      ซึ่งผ่านการวิเคราะห์ และแยกแยะ
+                      เพื่อการแก้ปัญหาตามลำดับขั้น
+                      อาจเลือกใช้ภาษาไทยหรือภาษาอังกฤษ เพื่อนำเสนอให้
+                      เข้าใจเป็นขั้นตอน{" "}
                     </div>{" "}
                   </div>{" "}
                 </div>
@@ -197,12 +190,10 @@ const Exercise = () => {
                       </div>
                       <div className="w-[350px]">
                         <div className="text[8px] font-regular">
-                          เป็ นหนึ่ งในเว็ บที่ มีชื่ อเสียงมากที่ สุดสำหรั บนั
-                          กพั ฒนาและโปรแกรมเมอร์ ทุกคนที่ ต้ องการเรียนรู้
-                          ภาษาเขียนโปรแกรมแทบจะทุกภาษา ตั้ งแต่
-                          การเขียนโปรแกรมบนเว็ บ ไปจนถึงภาษาโปรแกรมมิ่ งสำหรั
-                          บฐานข้ อมูลหรือโปรแกรมบนเดสก์ ท็ อป ซึ่ งทุกหลั
-                          กสูตรฟรีหมด{" "}
+                          เป็นหนึ่งในเว็บที่มีชื่อเสียงมากที่สุดสำหรับนักพัฒนาและโปรแกรมเมอร์
+                          ทุกคนที่ต้องการเรียนรู้ ภาษาเขียนโปรแกรมแทบจะทุกภาษา
+                          ตั้งแต่ การเขียนโปรแกรมบนเว็บ
+                          ไปจนถึงภาษาโปรแกรมมิ่งสำหรับฐานข้อมูลหรือโปรแกรมบนเดสก์ท็อปซึ่งทุกหลักสูตรฟรีหมด{" "}
                         </div>{" "}
                       </div>{" "}
                     </div>{" "}
@@ -225,11 +216,10 @@ const Exercise = () => {
                       </div>
                       <div className="w-[350px]">
                         <div className="text-[16px] font-regular">
-                          เป็ นโปรเจ็ กต์ สำหรั บฝึกโปรแกรมเมอร์ หน้ าใหม่ ที่
-                          ไร้ ประสบการณ์ โดยสิ้ นเชิง เพื่ อให้ สามารถพั ฒนาเว็
-                          บไซต์ หรือแม้ แต่ แอพพลิเคชั่ นเป็ นของตนเองได้ ด้
-                          วยผู้ ใช้ หลั กหลายล้ านที่ เข้ ามาเยี่ ยมชมเว็ บนี้
-                          ในแต่ ละวั น{" "}
+                          เป็นโปรเจ็กต์สำหรับฝึกโปรแกรมเมอร์หน้าใหม่ ที่
+                          ไร้ประสบการณ์โดยสิ้นเชิง เพื่อให้สามารถพัฒนาเว็บไซต์
+                          หรือแม้แต่แอพพลิเคชั่นเป็นของตนเองได้ด้วย
+                          ผู้ใช้หลากหลายล้านที่เข้ามาเยี่ยมชมเว็บนี้ ในแต่ละวัน{" "}
                         </div>{" "}
                       </div>{" "}
                     </div>{" "}
@@ -252,10 +242,10 @@ const Exercise = () => {
                       </div>
                       <div className="w-[350px]">
                         <div className="text[8px] font-regular">
-                          เป็ นเว็ บไซต์ ที่ มีชื่ อเสียงมากในการสอนการเขียนโค้
-                          ดให้ โปรแกรมเมอร์ แบบอินเตอร์ แอคทีฟ หลั กสูตรที่
-                          มีนั้ นได้ แก่ PHP, Python, jQuery, Web Fundamentals,
-                          JavaScript, Ruby, API เป็ นต้ น{" "}
+                          เป็นเว็บไซต์
+                          ที่มีชื่อเสียงมากในการสอนการเขียนโค้ดให้โปรแกรมเมอร์แบบอินเตอร์แอคทีฟ
+                          หลักสูตรที่ มีนั้นได้แก่ PHP, Python, jQuery, Web
+                          Fundamentals, JavaScript, Ruby, API เป็นต้ น{" "}
                         </div>{" "}
                       </div>{" "}
                     </div>{" "}
@@ -296,7 +286,7 @@ const Exercise = () => {
       <div className="flex items-center justify-center mt-[40px]">
         <div className="bg-[#fafafa] rounded-md shadow-inner w-[1000px] h-[321px]  mx-auto">
           <div className="text-[18px] text-[#facc15] font-bold text-center mt-[30px]">
-            แนะนำเครื่ องมือที่ ใช้ เขียนโปรแกรม(โปรแกรม, เว็ บไซต์){" "}
+            แนะนำเครื่องมือที่ใช้เขียนโปรแกรม (โปรแกรม, เว็บไซต์){" "}
           </div>{" "}
           <div className="ml-[12px] grid grid-cols-4 gap-4">
             <div className="inline-block pt-[48px]">

@@ -320,11 +320,11 @@ const PersonalRecord = () => {
       <MoveToTop />
       <Breadcrumb route={route} />{" "}
       <div className="text-center text-[28px] font-semibold my-12">
-        สร้ างแฟ้ มสะสมผลงาน{" "}
+        สร้างแฟ้มสะสมผลงาน{" "}
       </div>{" "}
       <StateCreate state={6} />{" "}
       <div className="my-[72px] mx-auto max-w-[1232px]">
-        <div className="text-xl font-bold mb-[30px]"> ประวั ติการศึกษา </div>{" "}
+        <div className="text-xl font-bold mb-[30px]"> ประวัติการศึกษา </div>{" "}
         <div className="flex gap-x-8">
           <div className="shrink-0 relative w-[170px] h-[246px]">
             <img
@@ -347,7 +347,7 @@ const PersonalRecord = () => {
                 className="w-[218px] text-lg font-bold text-end mr-8 "
                 htmlFor="page_number"
               >
-                หมายเลขหน้ า{" "}
+                หมายเลขหน้า{" "}
               </label>{" "}
               <select
                 name="page_number"
@@ -378,7 +378,13 @@ const PersonalRecord = () => {
                         </div>
                       ) : (
                         <img
-                          src={typeof item.file == "string" ? item.file : typeof item.file == "object" ? URL.createObjectURL(item.file) : ""}
+                          src={
+                            typeof item.file == "string"
+                              ? item.file
+                              : typeof item.file == "object"
+                              ? URL.createObjectURL(item.file)
+                              : ""
+                          }
                           alt="preview-image"
                           className="w-[144px] h-[144px] rounded-[11px] object-cover border"
                         />
@@ -386,16 +392,16 @@ const PersonalRecord = () => {
                     </div>{" "}
                     <div className="ml-[30px]">
                       <div className="font-bold mb-[13px]"> คำแนะนำ </div>{" "}
-                      <div className="mb-[9px]"> •สำหรั บรูปโปรไฟล์ </div>{" "}
+                      <div className="mb-[9px]"> •สำหรับรูปโปรไฟล์ </div>{" "}
                       <div className="mb-[28px]">
                         {" "}
-                        • ขนาดรูปไม่ เกิน 10 MB png หรือ jpg{" "}
+                        • ขนาดรูปไม่เกิน 10 MB png หรือ jpg{" "}
                       </div>{" "}
                       <label
                         htmlFor={`dropzone-file-${index}`}
                         className="py-3 px-[42px] border-[1px] rounded-full text-lg font-bold"
                       >
-                        อั พโหลดรูป{" "}
+                        อัพโหลดรูป{" "}
                       </label>{" "}
                       <input
                         id={`dropzone-file-${index}`}
@@ -408,7 +414,7 @@ const PersonalRecord = () => {
                   </div>{" "}
                   <div className="flex items-center mb-3">
                     <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                      ชื่ อโรงเรียน{" "}
+                      ชื่อโรงเรียน{" "}
                     </label>{" "}
                     <input
                       className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -424,7 +430,7 @@ const PersonalRecord = () => {
                   </div>{" "}
                   <div className="flex items-center mb-3">
                     <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                      ระดั บการศึกษาที่ เรียนจบ{" "}
+                      ระดับการศึกษาที่เรียนจบ{" "}
                     </label>{" "}
                     <input
                       className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -440,7 +446,7 @@ const PersonalRecord = () => {
                   </div>{" "}
                   <div className="flex items-center mb-3">
                     <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                      ปีที่ จบการศึกษา{" "}
+                      ปีที่จบการศึกษา{" "}
                     </label>{" "}
                     <input
                       className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -456,7 +462,7 @@ const PersonalRecord = () => {
                   </div>{" "}
                   <div className="flex items-center mb-3">
                     <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                      สายการเรียน / สาขาวิชา{" "}
+                      สายการเรียน/สาขาวิชา{" "}
                     </label>{" "}
                     <input
                       className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -472,7 +478,7 @@ const PersonalRecord = () => {
                   </div>{" "}
                   <div className="flex items-center mb-3">
                     <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                      เกรดเฉลี่ ยสะสม(เทอมล่ าสุด){" "}
+                      เกรดเฉลี่ยสะสม{" "}
                     </label>{" "}
                     <input
                       className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -493,7 +499,7 @@ const PersonalRecord = () => {
                         className="rounded-full bg-red text-white text-lg font-bold px-[20px] py-[13px]"
                         onClick={() => removeSchool(index)}
                       >
-                        ลบข้ อมูล{" "}
+                        ลบข้อมูล{" "}
                       </button>{" "}
                     </div>
                   )}{" "}
@@ -506,7 +512,7 @@ const PersonalRecord = () => {
                 className="rounded-full bg-black text-white text-lg font-bold px-[20px] py-[13px]"
                 onClick={addSchool}
               >
-                เพิ่ มโรงเรียนใหม่{" "}
+                เพิ่มโรงเรียนใหม่{" "}
               </button>{" "}
             </div>{" "}
           </div>{" "}
@@ -519,7 +525,7 @@ const PersonalRecord = () => {
             className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
             onClick={onSubmit}
           >
-            บั นทึกข้ อมูล{" "}
+            บันทึกข้อมูล{" "}
           </button>{" "}
         </Link>{" "}
       </div>{" "}

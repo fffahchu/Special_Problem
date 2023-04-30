@@ -175,11 +175,11 @@ const PersonalRecord = () => {
       <MoveToTop />
       <Breadcrumb route={route} />{" "}
       <div className="text-center text-[28px] font-semibold my-12">
-        สร้ างแฟ้ มสะสมผลงาน{" "}
+        สร้างแฟ้มสะสมผลงาน{" "}
       </div>{" "}
       <StateCreate state={5} />{" "}
       <div className="my-[72px] mx-auto max-w-[1232px]">
-        <div className="text-xl font-bold mb-[30px]"> ประวั ติส่ วนตั ว </div>{" "}
+        <div className="text-xl font-bold mb-[30px]"> ประวัติส่วนตัว </div>{" "}
         <div className="flex gap-x-8">
           <div className="shrink-0 relative w-[170px] h-[246px]">
             <img
@@ -202,7 +202,7 @@ const PersonalRecord = () => {
                 className="w-[218px] text-lg font-bold text-end mr-8 "
                 htmlFor="page_number"
               >
-                หมายเลขหน้ า{" "}
+                หมายเลขหน้า{" "}
               </label>{" "}
               <select
                 name="page_number"
@@ -228,7 +228,13 @@ const PersonalRecord = () => {
                   </div>
                 ) : (
                   <img
-                    src={typeof file == "string" ? file : typeof file == "object" ? URL.createObjectURL(file) : ""}
+                    src={
+                      typeof file == "string"
+                        ? file
+                        : typeof file == "object"
+                        ? URL.createObjectURL(file)
+                        : ""
+                    }
                     alt="preview-image"
                     className="w-[222px] h-[222px] rounded-[11px] object-cover border"
                   />
@@ -236,7 +242,7 @@ const PersonalRecord = () => {
               </div>
               <div className="ml-[30px]">
                 <div className="font-bold mb-[13px]"> คำแนะนำ </div>{" "}
-                <div className="mb-[9px]"> •สำหรั บรูปโปรไฟล์ </div>{" "}
+                <div className="mb-[9px]"> •สำหรับรูปโปรไฟล์ </div>{" "}
                 <div className="mb-[28px]">
                   • ขนาดรูปไม่เกิน 10 MB png หรือ jpg
                 </div>
@@ -257,7 +263,7 @@ const PersonalRecord = () => {
             </div>
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                ชื่ อ - นานสกุล ภาษาไทย{" "}
+                ชื่อ - นานสกุล ภาษาไทย{" "}
               </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -269,7 +275,7 @@ const PersonalRecord = () => {
             </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                ชื่ อเล่ น{" "}
+                ชื่อเล่น{" "}
               </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -281,7 +287,7 @@ const PersonalRecord = () => {
             </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                วั น / เดือน / ปีเกิด{" "}
+                วัน/เดือน/ปีเกิด{" "}
               </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 placeholder:text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -293,7 +299,7 @@ const PersonalRecord = () => {
             </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                เชื้ อชาติ{" "}
+                เชื้อชาติ{" "}
               </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -305,7 +311,7 @@ const PersonalRecord = () => {
             </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                สั ญชาติ{" "}
+                สัญชาติ{" "}
               </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -341,7 +347,7 @@ const PersonalRecord = () => {
             </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                เบอร์ โทรศั พท์{" "}
+                เบอร์โทรศัพท์{" "}
               </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -353,7 +359,7 @@ const PersonalRecord = () => {
             </div>{" "}
             <div className="flex mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                ที่ อยู่ ปั จจุบั น{" "}
+                ที่อยู่ปัจจุบัน{" "}
               </label>{" "}
               <textarea
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline resize-none"
@@ -378,7 +384,7 @@ const PersonalRecord = () => {
             </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                ความถนั ด / ทั กษะที่ มี{" "}
+                ความถนัด/ทักษะที่มี{" "}
               </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -390,7 +396,7 @@ const PersonalRecord = () => {
             </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                วิชาที่ ชอบ{" "}
+                วิชาที่ชอบ{" "}
               </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -402,7 +408,7 @@ const PersonalRecord = () => {
             </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                ชื่ อบิดา{" "}
+                ชื่อบิดา{" "}
               </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -426,7 +432,7 @@ const PersonalRecord = () => {
             </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                เบอร์ โทรศั พท์{" "}
+                เบอร์โทรศัพท์{" "}
               </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -438,7 +444,7 @@ const PersonalRecord = () => {
             </div>{" "}
             <div className="flex items-center mb-3">
               <label className="w-[218px] text-lg font-bold mr-8 text-end">
-                ชื่ อมารดา{" "}
+                ชื่อมารดา{" "}
               </label>{" "}
               <input
                 className="shadow appearance-none border rounded w-[531px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"

@@ -123,7 +123,7 @@ const Member = () => {
               width="21"
               height="21"
             />
-            <span className="font-semibold"> สร้ างแฟ้ มสะสมผลงานใหม่ </span>{" "}
+            <span className="font-semibold"> สร้างแฟ้มสะสมผลงานใหม่ </span>{" "}
           </Link>{" "}
           <button className="flex items-center gap-2 py-3 px-6 rounded-full bg-orange">
             <img
@@ -132,7 +132,7 @@ const Member = () => {
               width="21"
               height="21"
             />
-            <span className="font-semibold"> ดูตั วอย่ างแฟ้ มสะสมผลงาน </span>{" "}
+            <span className="font-semibold"> ดูตัวอย่างแฟ้มสะสมผลงาน </span>{" "}
           </button>{" "}
           <button className="flex items-center gap-2 py-3 px-6 rounded-full bg-orange">
             <img
@@ -141,7 +141,7 @@ const Member = () => {
               width="21"
               height="21"
             />
-            <span className="font-semibold"> เพิ่ มรูปผลงานใหม่ </span>{" "}
+            <span className="font-semibold"> เพิ่มรูปผลงานใหม่ </span>{" "}
           </button>{" "}
         </div>{" "}
       </div>{" "}
@@ -158,34 +158,34 @@ const Member = () => {
               />
               <div className="text-sm mt-[25px]">
                 {" "}
-                ยินดีต้ อนรั บสู่ ComPort!{" "}
+                ยินดีต้อนรับสู่ ComPort!{" "}
               </div>{" "}
               <div className="mt-1.5 bg-green rounded-full px-[15px] pb-1">
                 คุณ{" "}
               </div>{" "}
               <div className="mt-[10px] text-xl font-semibold">
-                สุธิดา มานะยิ่ ง{" "}
+                สุธิดา มานะยิ่ง{" "}
               </div>{" "}
               <div className="mt-1 text-[11px] text-gray"> @aom_suthida </div>{" "}
               <div className="flex text-[11px] gap-[15px] mt-4">
                 <div className="flex items-center gap-1.5">
                   <img src="assets/icons/location.svg" alt="icon-location" />
-                  <div> ไม่ ได้ ระบุชื่ อสถานศึกษา </div>{" "}
+                  <div> ไม่ได้ระบุชื่อสถานศึกษา </div>{" "}
                 </div>{" "}
                 <div className="flex items-center gap-1.5">
                   <img src="assets/icons/calendar.svg" alt="icon-location" />
-                  <div> เข้ าร่ วมเมื่ อ สิงหาคม 2565 </div>{" "}
+                  <div> เข้าร่วมเมื่อ สิงหาคม 2565 </div>{" "}
                 </div>{" "}
               </div>{" "}
             </div>{" "}
             <div className="flex justify-center text-lg font-semibold rounded-b-xl cursor-pointer bg-orange py-4">
-              แก้ ไขโปรไฟล์{" "}
+              แก้ไขโปรไฟล์{" "}
             </div>{" "}
           </div>{" "}
           <div>
             <div className="flex justify-between items-center">
               <div className="flex items-center gap-1">
-                <div className="text-xl font-semibold"> ข่ าวฮอต </div>{" "}
+                <div className="text-xl font-semibold"> ข่าวฮอต </div>{" "}
                 <img
                   src="assets/icons/fire.svg"
                   alt="icon-fire"
@@ -194,7 +194,7 @@ const Member = () => {
                 />
               </div>{" "}
               <a href="#" className="font-semibold underline">
-                ดูทั้ งหมด{" "}
+                ดูทั้งหมด{" "}
               </a>{" "}
             </div>{" "}
             <div className="flex flex-col gap-8 mt-7">
@@ -204,10 +204,7 @@ const Member = () => {
                   alt="news-1"
                   className="rounded-[11px] w-[312px] h-[187px]"
                 />
-                <div>
-                  {" "}
-                  รวมกำหนดการรอบ Portfolio# TCAS66 ตุลาคมนี้ รั บเพียบ!{" "}
-                </div>{" "}
+                <div> รวมกำหนดการรอบ Portfolio# TCAS66 ตุลาคมนี้รับเพียบ! </div>{" "}
               </div>{" "}
               <div className="flex flex-col gap-3">
                 <img
@@ -216,8 +213,7 @@ const Member = () => {
                   className="rounded-[11px] w-[312px] h-[187px]"
                 />
                 <div>
-                  TCAS66 รอบ 1: สถาบั นเทคโนโลยีพระจอมเกล้ าเจ้ าคุณทหารลาดกระบั
-                  ง{" "}
+                  TCAS66 รอบ 1: สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง{" "}
                 </div>{" "}
               </div>{" "}
             </div>{" "}
@@ -227,7 +223,7 @@ const Member = () => {
           <div>
             <div className="flex justify-between items-center">
               <div className="text-xl font-semibold">
-                แฟ้ มสะสมผลงานของฉั น(0){" "}
+                แฟ้มสะสมผลงานของฉัน(0){" "}
               </div>{" "}
               <div className="flex items-center gap-[18px]">
                 <div className="flex items-center gap-2">
@@ -237,7 +233,7 @@ const Member = () => {
                     width="16"
                     height="16"
                   />
-                  <div className="text-sm"> เสร็ จแล้ ว(0) </div>{" "}
+                  <div className="text-sm"> เสร็จแล้ว(0) </div>{" "}
                 </div>{" "}
                 <div className="flex items-center gap-2">
                   <img
@@ -246,7 +242,7 @@ const Member = () => {
                     width="16"
                     height="16"
                   />
-                  <div className="text-sm"> กำลั งทำอยู่(0) </div>{" "}
+                  <div className="text-sm"> กำลังทำอยู่(0) </div>{" "}
                 </div>{" "}
               </div>{" "}
             </div>{" "}
@@ -261,14 +257,14 @@ const Member = () => {
                 />
               </div>{" "}
               <div className="text-[15px] font-semibold mt-[18px]">
-                คุณยั งไม่ ได้ สร้ างแฟ้ มสะสมผลงาน{" "}
+                คุณยังไม่ได้สร้างแฟ้มสะสมผลงาน{" "}
               </div>{" "}
               <div className="text-[13px] mt-1">
-                มาสร้ างแฟ้ มสะสมผลงานชิ้ นแรกกั นเถอะ!
+                มาสร้างแฟ้มสะสมผลงานชิ้นแรกกันเถอะ!
               </div>{" "}
               <div className="flex items-center mt-5 gap-[8px]">
                 <div className="text-[13px]">
-                  การสร้ างแฟ้ มสะสะสมผลงาน กดปุ่ ม{" "}
+                  การสร้างแฟ้มสะสะสมผลงาน กดปุ่ม{" "}
                 </div>{" "}
                 <Link
                   href="/create-portfolio"
@@ -281,14 +277,14 @@ const Member = () => {
                     height="16"
                   />
                   <span className="text-[13px] font-semibold">
-                    สร้ างแฟ้ มสะสมผลงานใหม่{" "}
+                    สร้างแฟ้มสะสมผลงานใหม่{" "}
                   </span>{" "}
                 </Link>{" "}
               </div>{" "}
             </div>{" "}
           </div>{" "}
           <div>
-            <div className="text-xl font-semibold"> ผลงานของฉั น(0) </div>{" "}
+            <div className="text-xl font-semibold"> ผลงานของฉัน(0) </div>{" "}
             <hr className="mt-[18px]" />
             <div className="flex flex-col items-center py-[69px]">
               <div className="flex justify-center items-center w-[100px] h-[100px] rounded-full bg-yellow">
@@ -300,14 +296,14 @@ const Member = () => {
                 />
               </div>{" "}
               <div className="text-[15px] font-semibold mt-[18px]">
-                คุณยั งไม่ มีผลงาน{" "}
+                คุณยังไม่มีผลงาน{" "}
               </div>{" "}
               <div className="text-[13px] mt-1">
-                คุณสามารถเก็ บรูปภาพ ผลงาน รางวั ล เกียรติบั ตร ฯลฯ ของคุณไว้ ใน
+                คุณสามารถเก็บรูปภาพผลงาน รางวัล เกียรติบัตร ฯลฯ ของคุณไว้ใน
                 ComPort{" "}
               </div>{" "}
               <div className="flex items-center mt-5 gap-[8px]">
-                <div className="text-[13px]"> การเพิ่ มผลงาน กดปุ่ ม </div>{" "}
+                <div className="text-[13px]"> การเพิ่มผลงาน กดปุ่ม </div>{" "}
                 <button className="flex items-center gap-2 py-2 px-5 rounded-full bg-orange">
                   <img
                     src="assets/icons/icon-image.svg"
@@ -316,7 +312,7 @@ const Member = () => {
                     height="16"
                   />
                   <span className="text-[13px] font-semibold">
-                    เพิ่ มรูปผลงานใหม่{" "}
+                    เพิ่มรูปผลงานใหม่{" "}
                   </span>{" "}
                 </button>{" "}
               </div>{" "}
@@ -328,10 +324,10 @@ const Member = () => {
         <div className="flex-1">
           <div className="flex justify-between items-center">
             <div className="text-[25px] font-semibold">
-              ค่ าย / กิจกรรมที่ จะเปิดรั บสมั ครเร็ ว ๆ นี้{" "}
+              ค่าย/กิจกรรมที่จะเปิดรับสมัครเร็ว ๆ นี้{" "}
             </div>{" "}
             <a href="#" className="font-semibold underline">
-              ดูทั้ งหมด{" "}
+              ดูทั้งหมด{" "}
             </a>{" "}
           </div>{" "}
           <hr className="mt-[18px] mb-4" />
@@ -346,7 +342,7 @@ const Member = () => {
           <div className="flex justify-between items-center">
             <div className="text-[25px] font-semibold"> บทความยอดนิยม </div>{" "}
             <a href="#" className="font-semibold underline">
-              ดูทั้ งหมด{" "}
+              ดูทั้งหมด{" "}
             </a>{" "}
           </div>{" "}
           <hr className="mt-[18px] mb-4" />
@@ -360,10 +356,10 @@ const Member = () => {
         <div className="flex-1 mt-12">
           <div className="flex justify-between items-center">
             <div className="text-[25px] font-semibold">
-              คอร์ สแนะนำจาก ComPort{" "}
+              คอร์สแนะนำจาก ComPort{" "}
             </div>{" "}
             <a href="#" className="font-semibold underline">
-              ดูทั้ งหมด{" "}
+              ดูทั้งหมด{" "}
             </a>{" "}
           </div>{" "}
           <hr className="mt-[18px] mb-4" />

@@ -39,7 +39,7 @@ const FacultyofScience = () => {
               className="w-[125px] h-[125px] rounded-full hover:scale-110 transition duration-300 ease-in-out"
             />
           </div>{" "}
-          <div className="font-semibold pt-[48px]"> รีวิวคณะ / สาขา </div>{" "}
+          <div className="font-semibold pt-[48px]"> รีวิวคณะ/สาขา </div>{" "}
         </Link>{" "}
         <Link href="#" className="flex flex-row gap-2">
           <div className="relative overflow-hidden rounded-full">
@@ -48,7 +48,7 @@ const FacultyofScience = () => {
               className="w-[125px] h-[125px] hover:scale-110 transition duration-300 ease-in-out rounded-full"
             />
           </div>{" "}
-          <div className="font-semibold pt-[48px]"> รีวิวกิจกรรม / ค่ าย </div>{" "}
+          <div className="font-semibold pt-[48px]"> รีวิวกิจกรรม/ค่าย </div>{" "}
         </Link>{" "}
         <Link href="#" className="flex flex-row gap-2">
           <div className="relative overflow-hidden rounded-full">
@@ -57,62 +57,62 @@ const FacultyofScience = () => {
               className="w-[125px] h-[125px] rounded-full hover:scale-110 transition duration-300 ease-in-out"
             />
           </div>{" "}
-          <div className="font-semibold pt-[48px]"> รีวิวทั่ วไป </div>{" "}
+          <div className="font-semibold pt-[48px]"> รีวิวทั่วไป </div>{" "}
         </Link>{" "}
       </div>{" "}
       <div className="bg-[#FFCA61] rounded-[7px] text-left text-[25px] font-semibold py-[25px] pl-[8px]">
-        หลั กสูตรของภาควิชาวิทยาการคอมพิวเตอร์{" "}
+        หลักสูตรของภาควิชาวิทยาการคอมพิวเตอร์{" "}
       </div>{" "}
       <div className="bg-[#FFEC85] text-left text-[18px] font-semibold mt-[16px] py-[32px] pl-[8px]">
-        หลั กสูตรวิทยาศาสตรบั ณฑิต สาขาวิทยาการคอมพิวเตอร์(Bachelor of Science
+        หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิทยาการคอมพิวเตอร์ (Bachelor of Science
         Program in Computer Science){" "}
       </div>{" "}
       <div className="bg-[#FAFAFA] shadow-md">
         <div className="text-[18px] font-semibold text-[#FFCA61] pt-[32px] pl-[32px]">
-          ชื่ อหลั กสูตร{" "}
+          ชื่อหลักสูตร{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold my-[8px] pl-[56px]">
-          ชื่ อภาษาไทย{" "}
+          ชื่อภาษาไทย{" "}
           <span className="text-[18px] font-normal">
-            : หลั กสูตรวิทยาศาสตรบั ณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์{" "}
+            : หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์{" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px]">
-          ชื่ อภาษาอั งกฤษ{" "}
+          ชื่อภาษาอังกฤษ{" "}
           <span className="text-[18px] font-normal">
             : Bachelor of Science Program in Computer Science{" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold text-[#FFCA61] pt-[24px] pl-[32px]">
-          ชื่ อปริญญาและสาขาวิชา{" "}
+          ชื่อปริญญาและสาขาวิชา{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] my-[8px]">
-          ชื่ อเต็ ม(ภาษาไทย){" "}
+          ชื่อเต็ม(ภาษาไทย){" "}
           <span className="text-[18px] font-normal">
-            : วิทยาศาสตรบั ณฑิต(วิทยาการคอมพิวเตอร์){" "}
+            : วิทยาศาสตรบัณฑิต(วิทยาการคอมพิวเตอร์){" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px]">
-          ชื่ อเต็ ม(ภาษาอั งกฤษ){" "}
+          ชื่อเต็ม (ภาษาอังกฤษ){" "}
           <span className="text-[18px] font-normal">
             : Bachelor of Science Program in Computer Science{" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] my-[8px]">
-          ชื่ อย่ อ(ภาษาไทย){" "}
+          ชื่อย่อ (ภาษาไทย){" "}
           <span className="text-[18px] font-normal">
             : วท.บ.(วิทยาการคอมพิวเตอร์){" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] pb-[32px]">
-          ชื่ อย่ อ(ภาษาอั งกฤษ){" "}
+          ชื่อย่อ (ภาษาอังกฤษ){" "}
           <span className="text-[18px] font-normal">
             : B.Sc.(Computer Science){" "}
           </span>{" "}
         </div>{" "}
       </div>{" "}
       <div className="bg-[#FFCA61] rounded-[7px] text-left text-[25px] font-semibold py-[25px] pl-[8px] mt-[64px]">
-        ข่ าวประชาสั มพั นธ์{" "}
+        ข่าวประชาสัมพันธ์{" "}
       </div>{" "}
       <div className="grid grid-cols-2 gap-14 mt-[40px] mb-[56px] mx-auto max-w-[1232px]">
         <Link href="https://cscamp.net/" target="_blank" className="flex-col">
@@ -121,7 +121,7 @@ const FacultyofScience = () => {
             className="w-[621px] h-[349px] rounded-[12px] hover:scale-110 transition duration-300 ease-in-out"
           />
           <div className="text-center pt-2 font-semibold">
-            CSCamp 15 ค่ ายวิทยาการคอมพิวเตอร์ พระจอมเกล้ าลาดกระบั ง{" "}
+            CSCamp 15 ค่ายวิทยาการคอมพิวเตอร์ พระจอมเกล้าลาดกระบั ง{" "}
           </div>{" "}
         </Link>{" "}
         <Link
@@ -151,8 +151,8 @@ const FacultyofScience = () => {
             />
           </div>{" "}
           <div className="text-center pt-2 font-semibold">
-            ภาควิชาวิทยาการคอมพิวเตอร์ เปิดรั บสมั ครผู้ สนใจเข้ าร่ วมค่ าย
-            Young Computer Scientist Camp #1 ในหัวข้อ Social Media And Beyond
+            ภาควิชาวิทยาการคอมพิวเตอร์ เปิดรับสมัครผู้สนใจเข้าร่วมค่าย Young
+            Computer Scientist Camp #1 ในหัวข้อ Social Media And Beyond
             ระหว่างวันที่ 16 – 20 มีนาคม 2563
           </div>
         </Link>
@@ -168,7 +168,7 @@ const FacultyofScience = () => {
             />
           </div>{" "}
           <div className="text-center pt-2 font-semibold">
-            ค่ ายยุวชนคอมพิวเตอร์ ครั้ งที่ 18 ม.แม่ โจ้{" "}
+            ค่ายยุวชนคอมพิวเตอร์ ครั้งที่ 18 ม.แม่โจ้{" "}
           </div>{" "}
         </Link>{" "}
         <Link
@@ -183,8 +183,8 @@ const FacultyofScience = () => {
             />
           </div>{" "}
           <div className="text-center pt-2 font-semibold">
-            22 - 23 ธั นวาคม 2562: ขอเชิญนั กเรียนและผู้ สนใจเข้ าร่ วมงาน Open
-            House Computer Science{" "}
+            22 - 23 ธันวาคม 2562: ขอเชิญนักเรียนและผู้สนใจเข้าร่วมงาน Open House
+            Computer Science{" "}
           </div>{" "}
         </Link>{" "}
         <Link

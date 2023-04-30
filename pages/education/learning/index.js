@@ -156,7 +156,7 @@ const Learning = () => {
       <div className="felx">
         <div className="flex justify-between items-center mt-[80px]">
           <div className="text-[16px] font-semibold">
-            คอร์ สเรียนเสริมทั้ งหมด(230){" "}
+            คอร์สเรียนเสริมทั้งหมด(230){" "}
           </div>{" "}
         </div>{" "}
         <hr className="mt-[12px] mb-4" />

@@ -127,11 +127,11 @@ const CreateFrontCover = () => {
       <MoveToTop />
       <Breadcrumb route={route} />{" "}
       <div className="text-center text-[28px] font-semibold my-12">
-        สร้ างแฟ้ มสะสมผลงาน{" "}
+        สร้างแฟ้มสะสมผลงาน{" "}
       </div>{" "}
       <StateCreate state={2} />{" "}
       <div className="my-[72px] mx-auto max-w-[1232px]">
-        <div className="text-xl font-bold mb-[30px]"> หน้ าปก </div>{" "}
+        <div className="text-xl font-bold mb-[30px]"> หน้าปก </div>{" "}
         <div className="flex justify-between">
           <div className="shrink-0 relative w-[170px] h-[246px]">
             <img
@@ -176,7 +176,7 @@ const CreateFrontCover = () => {
                   htmlFor="first_name_thai"
                   className="w-[224px] text-lg font-bold pr-3 text-end"
                 >
-                  ชื่ อ - นามสกุล ภาษาไทย{" "}
+                  ชื่อ-นามสกุล ภาษาไทย{" "}
                 </label>{" "}
                 <input
                   className="shadow appearance-none border rounded w-[500px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -192,7 +192,7 @@ const CreateFrontCover = () => {
                   htmlFor="first_name_eng"
                   className="w-[224px] text-lg font-bold pr-3 text-end"
                 >
-                  ชื่ อ - นามสกุล ภาษาอั งกฤษ{" "}
+                  ชื่อ-นามสกุล ภาษาอังกฤษ{" "}
                 </label>{" "}
                 <input
                   className="shadow appearance-none border rounded w-[500px] py-[6px] px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -223,14 +223,14 @@ const CreateFrontCover = () => {
             <div>
               <div className="text-lg font-bold"> คำแนะนำ </div>{" "}
               <ul className="list-disc ml-[30px] mb-[20px]">
-                <li> สำหรั บรูปหน้ าปก </li>{" "}
-                <li> ขนาดรูปไม่ เกิน 10 MB png หรือ jpg </li>{" "}
+                <li> สำหรับรูปหน้าปก </li>{" "}
+                <li> ขนาดรูปไม่เกิน 10 MB png หรือ jpg </li>{" "}
               </ul>{" "}
               <label
                 htmlFor="dropzone-file"
                 className="px-[30px] py-[9px] w-[165px] border-[1px] rounded-[20px] font-bold cursor-pointer"
               >
-                อั พโหลดรูป{" "}
+                อัพโหลดรูป{" "}
               </label>{" "}
               <input
                 id="dropzone-file"
@@ -250,7 +250,7 @@ const CreateFrontCover = () => {
             className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
             onClick={onSubmit}
           >
-            บั นทึกข้ อมูล{" "}
+            บันทึกข้อมูล{" "}
           </button>{" "}
         </Link>{" "}
       </div>{" "}

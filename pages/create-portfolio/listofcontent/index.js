@@ -172,11 +172,11 @@ const ListOfContent = () => {
       <MoveToTop />
       <Breadcrumb route={route} />{" "}
       <div className="text-center text-[28px] font-semibold my-12">
-        สร้ างแฟ้ มสะสมผลงาน{" "}
+        สร้างแฟ้มสะสมผลงาน{" "}
       </div>{" "}
       <StateCreate state={4} />{" "}
       <div className="my-[72px] mx-auto max-w-[1232px]">
-        <div className="text-xl font-bold mb-[30px]"> สารบั ญ </div>{" "}
+        <div className="text-xl font-bold mb-[30px]"> สารบัญ </div>{" "}
         <div className="flex gap-x-36">
           <div className="shrink-0 relative w-[170px] h-[246px]">
             <img
@@ -200,7 +200,7 @@ const ListOfContent = () => {
                 <>
                   <div className="flex items-center h-[40px]" key={index}>
                     <label htmlFor="topic" className="text-lg mr-8 font-bold">
-                      หั วข้ อ{" "}
+                      หัวข้อ{" "}
                     </label>{" "}
                     <input
                       className="shadow border rounded py-2.5 px-3.5 w-[304px] "
@@ -217,7 +217,7 @@ const ListOfContent = () => {
                   </div>{" "}
                   <div className="flex items-center h-[40px]">
                     <label htmlFor="page" className="text-lg mr-8 font-bold">
-                      หน้ า{" "}
+                      หน้า{" "}
                     </label>{" "}
                     <select
                       id="page"
@@ -251,7 +251,10 @@ const ListOfContent = () => {
       <hr className="border-gray-4 mb-4" />
       <div className="flex justify-center items-center">
         <Link href="/create-portfolio/personal-record">
-          <button className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]" onClick={onSubmit}>
+          <button
+            className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
+            onClick={onSubmit}
+          >
             บันทึกข้อมูล
           </button>
         </Link>

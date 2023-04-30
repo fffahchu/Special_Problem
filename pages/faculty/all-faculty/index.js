@@ -24,63 +24,63 @@ const Faculty = () => {
       </div>{" "}
       {/* วิทย์คอม */}{" "}
       <div className="flex justify-between items-center">
-        <div className="text-left text-[25px] font-semibold"> วิทย์ คอม </div>{" "}
+        <div className="text-left text-[25px] font-semibold"> วิทย์คอม </div>{" "}
         <a
           href="/faculty/cs"
           className="text-right text-[16px] font-semibold underline"
         >
-          ดูทั้ งหมด{" "}
+          ดูทั้งหมด{" "}
         </a>{" "}
       </div>{" "}
       <hr className="mt-[18px] mb-[16px]" />
       <div className="bg-[#FFCA61] rounded-[7px] text-left text-[25px] font-semibold py-[25px] pl-[8px]">
-        หลั กสูตรของภาควิชาวิทยาการคอมพิวเตอร์{" "}
+        หลักสูตรของภาควิชาวิทยาการคอมพิวเตอร์{" "}
       </div>{" "}
       <div className="bg-[#FFEC85] text-left text-[18px] font-semibold mt-[16px] py-[32px] pl-[8px]">
-        หลั กสูตรวิทยาศาสตรบั ณฑิต สาขาวิทยาการคอมพิวเตอร์(Bachelor of Science
+        หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิทยาการคอมพิวเตอร์ (Bachelor of Science
         Program in Computer Science){" "}
       </div>{" "}
       <div className="bg-[#FAFAFA] shadow-md">
         <div className="text-[18px] font-semibold text-[#FFCA61] pt-[32px] pl-[32px]">
-          ชื่ อหลั กสูตร{" "}
+          ชื่อหลักสูตร{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold my-[8px] pl-[56px]">
-          ชื่ อภาษาไทย{" "}
+          ชื่อภาษาไทย{" "}
           <span className="text-[18px] font-normal">
-            : หลั กสูตรวิทยาศาสตรบั ณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์{" "}
+            : หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์{" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px]">
-          ชื่ อภาษาอั งกฤษ{" "}
+          ชื่อภาษาอังกฤษ{" "}
           <span className="text-[18px] font-normal">
             : Bachelor of Science Program in Computer Science{" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold text-[#FFCA61] pt-[24px] pl-[32px]">
-          ชื่ อปริญญาและสาขาวิชา{" "}
+          ชื่อปริญญาและสาขาวิชา{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] my-[8px]">
-          ชื่ อเต็ ม(ภาษาไทย){" "}
+          ชื่อเต็ม (ภาษาไทย){" "}
           <span className="text-[18px] font-normal">
-            : วิทยาศาสตรบั ณฑิต(วิทยาการคอมพิวเตอร์){" "}
+            : วิทยาศาสตรบัณฑิต (วิทยาการคอมพิวเตอร์){" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px]">
-          ชื่ อเต็ ม(ภาษาอั งกฤษ){" "}
+          ชื่อเต็ม (ภาษาอังกฤษ){" "}
           <span className="text-[18px] font-normal">
             : Bachelor of Science Program in Computer Science{" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] my-[8px]">
-          ชื่ อย่ อ(ภาษาไทย){" "}
+          ชื่อย่อ (ภาษาไทย){" "}
           <span className="text-[18px] font-normal">
-            : วท.บ.(วิทยาการคอมพิวเตอร์){" "}
+            : วท.บ. (วิทยาการคอมพิวเตอร์){" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] pb-[32px]">
-          ชื่ อย่ อ(ภาษาอั งกฤษ){" "}
+          ชื่อย่อ (ภาษาอังกฤษ){" "}
           <span className="text-[18px] font-normal">
-            : B.Sc.(Computer Science){" "}
+            : B.Sc. (Computer Science){" "}
           </span>{" "}
         </div>{" "}
       </div>{" "}
@@ -92,7 +92,7 @@ const Faculty = () => {
               className="w-[621px] h-[349px] rounded-[12px] hover:scale-110 transition duration-300 ease-in-out"
             />
             <div className="text-center pt-2 font-semibold">
-              CSCamp 15 ค่ ายวิทยาการคอมพิวเตอร์ พระจอมเกล้ าลาดกระบั ง{" "}
+              CSCamp 15 ค่ายวิทยาการคอมพิวเตอร์พระจอมเกล้าลาดกระบั ง{" "}
             </div>{" "}
           </Link>{" "}
         </div>{" "}
@@ -121,58 +121,58 @@ const Faculty = () => {
           href="/faculty/ce"
           className="text-right text-[16px] font-semibold underline"
         >
-          ดูทั้ งหมด{" "}
+          ดูทั้งหมด{" "}
         </a>{" "}
       </div>{" "}
       <hr className="mt-[18px] mb-[16px]" />
       <div className="bg-[#FFCA61] rounded-[7px] text-left text-[25px] font-semibold py-[25px] pl-[8px]">
-        หลั กสูตรของภาควิชาวิศวกรรมคอมพิวเตอร์{" "}
+        หลักสูตรของภาควิชาวิศวกรรมคอมพิวเตอร์{" "}
       </div>{" "}
       <div className="bg-[#FFEC85] text-left text-[18px] font-semibold mt-[16px] py-[32px] pl-[8px]">
-        หลั กสูตรรวิศวกรรมศาสตรบั ณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์(Bachelor of
+        หลักสูตรรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์ (Bachelor of
         Engineering Program in Computer Engineering){" "}
       </div>{" "}
       <div className="bg-[#FAFAFA] shadow-md">
         <div className="text-[18px] font-semibold text-[#FFCA61] pt-[32px] pl-[32px]">
-          ชื่ อหลั กสูตร{" "}
+          ชื่อหลักสูตร{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold my-[8px] pl-[56px]">
-          ชื่ อภาษาไทย{" "}
+          ชื่อภาษาไทย{" "}
           <span className="text-[18px] font-normal">
-            : หลั กสูตรวิศวกรรมศาสตรบั ณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์{" "}
+            : หลักสูตรวิศวกรรมศาสตรบัณฑิต สาขาวิชาวิศวกรรมคอมพิวเตอร์{" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px]">
-          ชื่ อภาษาอั งกฤษ{" "}
+          ชื่อภาษาอังกฤษ{" "}
           <span className="text-[18px] font-normal">
             : Bachelor of Engineering Program in Computer Engineering{" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold text-[#FFCA61] pt-[24px] pl-[32px]">
-          ชื่ อปริญญาและสาขาวิชา{" "}
+          ชื่อปริญญาและสาขาวิชา{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] my-[8px]">
-          ชื่ อเต็ ม(ภาษาไทย){" "}
+          ชื่อเต็ม (ภาษาไทย){" "}
           <span className="text-[18px] font-normal">
-            : วิศวกรรมศาสตร์ บั ญฑิต(วิศวกรรมคอมพิวเตอร์){" "}
+            : วิศวกรรมศาสตร์บัญฑิต (วิศวกรรมคอมพิวเตอร์){" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px]">
-          ชื่ อเต็ ม(ภาษาอั งกฤษ){" "}
+          ชื่อเต็ม (ภาษาอังกฤษ){" "}
           <span className="text-[18px] font-normal">
             : Bachelor of Engineering Program in Computer Engineering{" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] my-[8px]">
-          ชื่ อย่ อ(ภาษาไทย){" "}
+          ชื่อย่อ (ภาษาไทย){" "}
           <span className="text-[18px] font-normal">
             : วศ.บ.(วิศวกรรมคอมพิวเตอร์){" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] pb-[32px]">
-          ชื่ อย่ อ(ภาษาอั งกฤษ){" "}
+          ชื่อย่อ (ภาษาอั งกฤษ){" "}
           <span className="text-[18px] font-normal">
-            : B.Eng.(Computer Engineering){" "}
+            : B.Eng. (Computer Engineering){" "}
           </span>{" "}
         </div>{" "}
       </div>{" "}
@@ -190,7 +190,7 @@ const Faculty = () => {
               />
             </div>{" "}
             <div className="text-center pt-2 font-semibold">
-              CESCa ค่ ายเยาวชนวิศวกรรมคอมพิวเตอร์ ครั้ งที่ 18{" "}
+              CESCa ค่ายเยาวชนวิศวกรรมคอมพิวเตอร์ ครั้งที่ 18{" "}
             </div>{" "}
           </Link>{" "}
         </div>{" "}
@@ -207,7 +207,7 @@ const Faculty = () => {
               />
             </div>{" "}
             <div className="text-center pt-2 font-semibold">
-              Comcamp34 ค่ ายวิศวะคอมฯ มจธ.{" "}
+              Comcamp34 ค่ายวิศวะคอมฯ มจธ.{" "}
             </div>{" "}
           </Link>{" "}
         </div>{" "}
@@ -219,58 +219,58 @@ const Faculty = () => {
           href="/faculty/it"
           className="text-right text-[16px] font-semibold underline"
         >
-          ดูทั้ งหมด{" "}
+          ดูทั้งหมด{" "}
         </a>{" "}
       </div>{" "}
       <hr className="mt-[18px] mb-[16px]" />
       <div className="bg-[#FFCA61] rounded-[7px] text-left text-[25px] font-semibold py-[25px] pl-[8px]">
-        หลั กสูตรของภาควิชาเทคโนโลยีสารสนเทศ{" "}
+        หลักสูตรของภาควิชาเทคโนโลยีสารสนเทศ{" "}
       </div>{" "}
       <div className="bg-[#FFEC85] text-left text-[18px] font-semibold mt-[16px] py-[32px] pl-[8px]">
-        หลั กสูตรวิทยาศาสตรบั ณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ(Bachelor of Science
+        หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ (Bachelor of Science
         Program in Information Technology){" "}
       </div>{" "}
       <div className="bg-[#FAFAFA] shadow-md">
         <div className="text-[18px] font-semibold text-[#FFCA61] pt-[32px] pl-[32px]">
-          ชื่ อหลั กสูตร{" "}
+          ชื่อหลักสูตร{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold my-[8px] pl-[56px]">
-          ชื่ อภาษาไทย{" "}
+          ชื่อภาษาไทย{" "}
           <span className="text-[18px] font-normal">
-            : หลั กสูตรวิทยาศาสตรบั ณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ{" "}
+            : หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ{" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px]">
-          ชื่ อภาษาอั งกฤษ{" "}
+          ชื่อภาษาอังกฤษ{" "}
           <span className="text-[18px] font-normal">
             : Bachelor of Science Program in Information Technology{" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold text-[#FFCA61] pt-[24px] pl-[32px]">
-          ชื่ อปริญญาและสาขาวิชา{" "}
+          ชื่อปริญญาและสาขาวิชา{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] my-[8px]">
-          ชื่ อเต็ ม(ภาษาไทย){" "}
+          ชื่อเต็ม (ภาษาไทย){" "}
           <span className="text-[18px] font-normal">
-            : วิทยาศาสตรบั ณฑิต(เทคโนโลยีสารสนเทศ){" "}
+            : วิทยาศาสตรบัณฑิต (เทคโนโลยีสารสนเทศ){" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px]">
-          ชื่ อเต็ ม(ภาษาอั งกฤษ){" "}
+          ชื่อเต็ม (ภาษาอังกฤษ){" "}
           <span className="text-[18px] font-normal">
-            : Bachelor of Science(Information Technology){" "}
+            : Bachelor of Science (Information Technology){" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] my-[8px]">
-          ชื่ อย่ อ(ภาษาไทย){" "}
+          ชื่อย่อ (ภาษาไทย){" "}
           <span className="text-[18px] font-normal">
-            : วท.บ.(เทคโนโลยีสารสนเทศ){" "}
+            : วท.บ. (เทคโนโลยีสารสนเทศ){" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] pb-[32px]">
-          ชื่ อย่ อ(ภาษาอั งกฤษ){" "}
+          ชื่อย่อ (ภาษาอังกฤษ){" "}
           <span className="text-[18px] font-normal">
-            : B.Sc.(Information Technology){" "}
+            : B.Sc. (Information Technology){" "}
           </span>{" "}
         </div>{" "}
       </div>{" "}
@@ -288,7 +288,7 @@ const Faculty = () => {
               />
             </div>{" "}
             <div className="text-center pt-2 font-semibold">
-              ค่ าย ITCAMP MAEJO 2023{" "}
+              ค่าย ITCAMP MAEJO 2023{" "}
             </div>{" "}
           </Link>{" "}
         </div>{" "}
@@ -305,7 +305,7 @@ const Faculty = () => {
               />
             </div>{" "}
             <div className="text-center pt-2 font-semibold">
-              ToBeIT’ 66 @KMITL เสริมความคิด ติดความรู้ ก้ าวเข้ าสู่ เด็ กไอที{" "}
+              ToBeIT’ 66 @KMITL เสริมความคิด ติดความรู้ ก้าวเข้าสู่เด็กไอที{" "}
             </div>{" "}
           </Link>{" "}
         </div>{" "}
