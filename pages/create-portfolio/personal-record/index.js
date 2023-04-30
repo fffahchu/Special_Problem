@@ -4,9 +4,11 @@ import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const PersonalRecord = () => {
   const coverImage = "/assets/images/portfolio/portfolio-4-4.png";
+  const router = useRouter();
   const route = [
     {
       title: "หน้าหลัก",
@@ -83,7 +85,7 @@ const PersonalRecord = () => {
       .then((data) => {
         if (data.status === 200) {
           if (data.data.url) {
-            setFile("http://localhost:1337"+data.data.url);
+            setFile("http://localhost:1337" + data.data.url);
           }
         }
       })
@@ -102,72 +104,70 @@ const PersonalRecord = () => {
   };
 
   const onSubmit = async () => {
-    try {
-      const idPort = localStorage.getItem("idPort") || null;
-      let idPort5 = localStorage.getItem("idPort5") || null;
+    const idPort = localStorage.getItem("idPort") || null;
+    let idPort5 = localStorage.getItem("idPort5") || null;
+    const idUser = localStorage.getItem("idUser") || null;
 
-      if (idPort) {
-        let model = {
-          data: {
-            numberPage: page,
-            fullnameTH: nameTh,
-            nickname: nickname,
-            birthday: birthday,
-            ethnicity: ethnicity,
-            nationality: nationality,
-            religion: religion,
-            email: email,
-            address: address,
-            hobby: hobby,
-            aptitude: aptitude,
-            favoriteSubject: favoriteSubject,
-            nameFather: nameFather,
-            workFather: workFather,
-            telFather: telFather,
-            nameMother: nameMother,
-            workMother: workMother,
-            telMother: telMother,
-            tel: tel,
-            iduser: 1,
-            idPort: idPort,
-          },
-        };
-        if (idPort5) {
-          await axios
-            .put(`http://localhost:1337/api/port-step-5s/${idPort5}`, model)
-            .then((data) => {
-              if (data.status === 200) {
-                localStorage.setItem("idPort5", data.data.data.id);
-              }
-            });
-        } else {
-          await axios
-            .post("http://localhost:1337/api/port-step-5s", model)
-            .then((data) => {
-              if (data.status === 200) {
-                idPort5 = data.data.data.id;
-                localStorage.setItem("idPort5", data.data.data.id);
-              }
-            });
-        }
-        if (file) {
-          const form = new FormData();
-          form.append("files", file);
-          form.append("ref", "api::port-step-5.port-step-5");
-          form.append("refId", idPort5);
-          form.append("field", "profile");
-          await axios
-            .post(`http://localhost:1337/api/upload`, form)
-            .then((data) => {
-              if (data.status === 200) {
-                localStorage.setItem("idFilePort5", data.data[0].id);
-              }
-            });
-        }
+    if (idPort) {
+      let model = {
+        data: {
+          numberPage: page,
+          fullnameTH: nameTh,
+          nickname: nickname,
+          birthday: birthday,
+          ethnicity: ethnicity,
+          nationality: nationality,
+          religion: religion,
+          email: email,
+          address: address,
+          hobby: hobby,
+          aptitude: aptitude,
+          favoriteSubject: favoriteSubject,
+          nameFather: nameFather,
+          workFather: workFather,
+          telFather: telFather,
+          nameMother: nameMother,
+          workMother: workMother,
+          telMother: telMother,
+          tel: tel,
+          iduser: idUser,
+          idPort: idPort,
+        },
+      };
+      if (idPort5) {
+        await axios
+          .put(`http://localhost:1337/api/port-step-5s/${idPort5}`, model)
+          .then((data) => {
+            if (data.status === 200) {
+              localStorage.setItem("idPort5", data.data.data.id);
+            }
+          });
+      } else {
+        await axios
+          .post("http://localhost:1337/api/port-step-5s", model)
+          .then((data) => {
+            if (data.status === 200) {
+              idPort5 = data.data.data.id;
+              localStorage.setItem("idPort5", data.data.data.id);
+            }
+          });
       }
-    } catch (e) {
-      console.log(e);
+      if (file) {
+        const form = new FormData();
+        form.append("files", file);
+        form.append("ref", "api::port-step-5.port-step-5");
+        form.append("refId", idPort5);
+        form.append("field", "profile");
+        await axios
+          .post(`http://localhost:1337/api/upload`, form)
+          .then((data) => {
+            if (data.status === 200) {
+              localStorage.setItem("idFilePort5", data.data[0].id);
+            }
+          });
+      }
     }
+    router.push("/create-portfolio/educational-record");
   };
 
   return (
@@ -483,14 +483,12 @@ const PersonalRecord = () => {
       </div>{" "}
       <hr className="border-gray-4 mb-4" />
       <div className="flex justify-center items-center">
-        <Link href="/create-portfolio/educational-record">
-          <button
-            className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
-            onClick={onSubmit}
-          >
-            บันทึกข้อมูล
-          </button>
-        </Link>
+        <button
+          className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
+          onClick={onSubmit}
+        >
+          บันทึกข้อมูล
+        </button>
       </div>
     </div>
   );

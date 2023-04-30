@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import Breadcrumb from "@components/Breadcrumb";
 import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
-import Link from "next/link";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const PersonalRecord = () => {
   const coverImage = "/assets/images/portfolio/portfolio-4-5.png";
+  const router = useRouter();
   const route = [
     {
       title: "หน้าหลัก",
@@ -161,19 +162,20 @@ const PersonalRecord = () => {
     const idPort = localStorage.getItem("idPort") || null;
     const idPort6 = localStorage.getItem("idPort6") || null;
     const idPortFile6 = localStorage.getItem("idPortFile6") || null;
+    const idUser = localStorage.getItem("idUser") || null;
 
     let arrIdPort6 = [];
     let arrIdFilePort6 = [];
 
     if (idPortFile6) {
-      arrIdFilePort6 = idPortFile6.split(",")
+      arrIdFilePort6 = idPortFile6.split(",");
     }
 
     if (idPort) {
       let model = {
         data: {
           numberPage: page,
-          iduser: 1,
+          iduser: idUser,
           idPort: idPort,
         },
       };
@@ -181,9 +183,9 @@ const PersonalRecord = () => {
       // let arr = [...schools];
 
       for (var i = 0; i < schools.length; i++) {
-        let school = schools[i]
-        console.log(JSON.stringify(school))
-        console.log(school.file)
+        let school = schools[i];
+        console.log(JSON.stringify(school));
+        console.log(school.file);
         model.data.school = school.name;
         model.data.educationLevel = school.level;
         model.data.year = school.year;
@@ -280,9 +282,9 @@ const PersonalRecord = () => {
       // });
 
       if (idPort6) {
-        let idPort6s = idPort6.split(",")
-        for (var i = 0; i<idPort6.split(",").length; i++) {
-          let idPort = idPort6s[i]
+        let idPort6s = idPort6.split(",");
+        for (var i = 0; i < idPort6.split(",").length; i++) {
+          let idPort = idPort6s[i];
           if (!arrIdPort6.includes(idPort)) {
             await axios
               .delete(`http://localhost:1337/api/port-step-6s/${idPort}`)
@@ -313,6 +315,7 @@ const PersonalRecord = () => {
         localStorage.setItem("idFilePort6", arrIdFilePort6);
       }
     }
+    router.push("/create-portfolio/activities");
   };
 
   return (
@@ -520,14 +523,12 @@ const PersonalRecord = () => {
       </div>{" "}
       <hr className="border-gray-4 mb-4" />
       <div className="flex justify-center items-center">
-        <Link href="/create-portfolio/activities">
-          <button
-            className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
-            onClick={onSubmit}
-          >
-            บันทึกข้อมูล{" "}
-          </button>{" "}
-        </Link>{" "}
+        <button
+          className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
+          onClick={onSubmit}
+        >
+          บันทึกข้อมูล{" "}
+        </button>{" "}
       </div>{" "}
     </div>
   );

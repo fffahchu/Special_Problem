@@ -4,9 +4,11 @@ import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const CreateCertificate = () => {
   const coverImage = "/assets/images/portfolio/portfolio-4-7.png";
+  const router = useRouter();
   const route = [
     {
       title: "หน้าหลัก",
@@ -68,41 +70,41 @@ const CreateCertificate = () => {
   const getPort = async (idPorts, idFilePorts) => {
     let arr = [];
     for (var i = 0; i < idPorts.length; i++) {
-      let index = i
-      let idport = idPorts[i]
+      let index = i;
+      let idport = idPorts[i];
       await axios
-      .get(`http://localhost:1337/api/port-step-8s/${idport}`)
-      .then(async (data) => {
-        if (data.status === 200) {
-          if (page == 3) {
-            setPage(data.data.data.attributes.numberPage);
-          }
-          let model = {
-            id: data.data.data.id,
-            title: data.data.data.attributes.title,
-          };
+        .get(`http://localhost:1337/api/port-step-8s/${idport}`)
+        .then(async (data) => {
+          if (data.status === 200) {
+            if (page == 3) {
+              setPage(data.data.data.attributes.numberPage);
+            }
+            let model = {
+              id: data.data.data.id,
+              title: data.data.data.attributes.title,
+            };
 
-          await axios
-            .get(
-              `http://localhost:1337/api/upload/files/${idFilePorts[index]}`
-            )
-            .then((data) => {
-              if (data.status === 200) {
-                if (data.data.url) {
-                  model.file = "http://localhost:1337" + data.data.url;
+            await axios
+              .get(
+                `http://localhost:1337/api/upload/files/${idFilePorts[index]}`
+              )
+              .then((data) => {
+                if (data.status === 200) {
+                  if (data.data.url) {
+                    model.file = "http://localhost:1337" + data.data.url;
+                  }
                 }
-              }
-            })
-            .catch((e) => {
-              console.log(e);
-            });
+              })
+              .catch((e) => {
+                console.log(e);
+              });
 
-          arr.push(model);
-        }
-      })
-      .catch((e) => {
-        console.log(e);
-      });
+            arr.push(model);
+          }
+        })
+        .catch((e) => {
+          console.log(e);
+        });
     }
     // idPorts.forEach(async (idport, index) => {
     //   await axios
@@ -158,6 +160,7 @@ const CreateCertificate = () => {
     const idPort = localStorage.getItem("idPort") || null;
     const idPort8 = localStorage.getItem("idPort8") || null;
     const idFilePort8 = localStorage.getItem("idFilePort8") || null;
+    const idUser = localStorage.getItem("idUser") || null;
 
     let arrIdPort8 = [];
     let arrIdFilePort8 = [];
@@ -170,15 +173,15 @@ const CreateCertificate = () => {
       let model = {
         data: {
           numberPage: page,
-          iduser: 1,
+          iduser: idUser,
           idPort: idPort,
         },
       };
 
       // let arr = [...certificates];
 
-      for (var i=0; i<certificates.length; i++){
-        let cer = certificates[i]
+      for (var i = 0; i < certificates.length; i++) {
+        let cer = certificates[i];
         model.data.title = cer.title;
         if (cer.id >= 0) {
           await axios
@@ -205,7 +208,7 @@ const CreateCertificate = () => {
             });
         }
 
-        if(typeof cer.file == "object"){
+        if (typeof cer.file == "object") {
           if (cer.id >= 0 && cer.file) {
             const form = new FormData();
             form.append("files", cer.file);
@@ -273,6 +276,7 @@ const CreateCertificate = () => {
         localStorage.setItem("idFilePort8", arrIdFilePort8);
       }
     }
+    router.push("/create-portfolio/download");
   };
 
   return (
@@ -417,14 +421,12 @@ const CreateCertificate = () => {
       </div>{" "}
       <hr className="border-gray-4 mb-4" />
       <div className="flex justify-center items-center">
-        <Link href="/create-portfolio/download">
-          <button
-            className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
-            onClick={onSubmit}
-          >
-            บันทึกข้อมูล{" "}
-          </button>{" "}
-        </Link>{" "}
+        <button
+          className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
+          onClick={onSubmit}
+        >
+          บันทึกข้อมูล{" "}
+        </button>{" "}
       </div>{" "}
     </div>
   );

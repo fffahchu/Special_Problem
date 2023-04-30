@@ -4,9 +4,11 @@ import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const ListOfContent = () => {
   const coverImage = "/assets/images/portfolio/portfolio-4-3.png";
+  const router = useRouter();
   const route = [
     {
       title: "หน้าหลัก",
@@ -47,7 +49,7 @@ const ListOfContent = () => {
   const getPort = async (idPorts) => {
     let arr = [];
     for (var i = 0; i < idPorts.length; i++) {
-      let idport = idPorts[i]
+      let idport = idPorts[i];
       await axios
         .get(`http://localhost:1337/api/port-step-4s/${idport}`)
         .then((data) => {
@@ -88,6 +90,7 @@ const ListOfContent = () => {
   const onSubmit = async () => {
     const idPort = localStorage.getItem("idPort") || null;
     const idPort4 = localStorage.getItem("idPort4") || null;
+    const idUser = localStorage.getItem("idUser") || null;
 
     let arrIdPort4 = [];
 
@@ -100,7 +103,7 @@ const ListOfContent = () => {
         data: {
           title: "",
           number: 1,
-          iduser: 1,
+          iduser: idUser,
           idPort: idPort,
         },
       };
@@ -110,7 +113,10 @@ const ListOfContent = () => {
         model.data.number = topics[i].page;
         if (topics[i].id >= 0) {
           await axios
-            .put(`http://localhost:1337/api/port-step-4s/${topics[i].id}`, model)
+            .put(
+              `http://localhost:1337/api/port-step-4s/${topics[i].id}`,
+              model
+            )
             .then((data) => {
               if (data.status === 200) {
                 console.log("update topic id => ", topics[i].id);
@@ -133,38 +139,11 @@ const ListOfContent = () => {
         }
       }
 
-      // topics.forEach(async (topic) => {
-      //   model.data.title = topic.name;
-      //   model.data.number = topic.page;
-      //   if (topic.id >= 0) {
-      //     await axios
-      //       .put(`http://localhost:1337/api/port-step-4s/${topic.id}`, model)
-      //       .then((data) => {
-      //         if (data.status === 200) {
-      //           console.log("update topic id => ", topic.id);
-      //         }
-      //       })
-      //       .catch((e) => {
-      //         console.log(e);
-      //       });
-      //   } else {
-      //     await axios
-      //       .post("http://localhost:1337/api/port-step-4s", model)
-      //       .then((data) => {
-      //         if (data.status === 200) {
-      //           arrIdPort4.push(data.data.data.id);
-      //         }
-      //       })
-      //       .catch((e) => {
-      //         console.log(e);
-      //       });
-      //   }
-      // });
-
       if (arrIdPort4.length > 0) {
         localStorage.setItem("idPort4", arrIdPort4);
       }
     }
+    router.push("/create-portfolio/personal-record");
   };
 
   return (
@@ -250,14 +229,12 @@ const ListOfContent = () => {
       </div>
       <hr className="border-gray-4 mb-4" />
       <div className="flex justify-center items-center">
-        <Link href="/create-portfolio/personal-record">
-          <button
-            className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
-            onClick={onSubmit}
-          >
-            บันทึกข้อมูล
-          </button>
-        </Link>
+        <button
+          className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
+          onClick={onSubmit}
+        >
+          บันทึกข้อมูล
+        </button>
       </div>
     </div>
   );

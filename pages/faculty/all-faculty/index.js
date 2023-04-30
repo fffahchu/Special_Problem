@@ -92,7 +92,7 @@ const Faculty = () => {
               className="w-[621px] h-[349px] rounded-[12px] hover:scale-110 transition duration-300 ease-in-out"
             />
             <div className="text-center pt-2 font-semibold">
-              CSCamp 15 ค่ายวิทยาการคอมพิวเตอร์พระจอมเกล้าลาดกระบั ง{" "}
+              CSCamp 15 ค่ายวิทยาการคอมพิวเตอร์พระจอมเกล้าลาดกระบัง{" "}
             </div>{" "}
           </Link>{" "}
         </div>{" "}
@@ -166,11 +166,11 @@ const Faculty = () => {
         <div className="text-[18px] font-semibold pl-[56px] my-[8px]">
           ชื่อย่อ (ภาษาไทย){" "}
           <span className="text-[18px] font-normal">
-            : วศ.บ.(วิศวกรรมคอมพิวเตอร์){" "}
+            : วศ.บ. (วิศวกรรมคอมพิวเตอร์){" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] pb-[32px]">
-          ชื่อย่อ (ภาษาอั งกฤษ){" "}
+          ชื่อย่อ (ภาษาอังกฤษ){" "}
           <span className="text-[18px] font-normal">
             : B.Eng. (Computer Engineering){" "}
           </span>{" "}
@@ -190,7 +190,7 @@ const Faculty = () => {
               />
             </div>{" "}
             <div className="text-center pt-2 font-semibold">
-              CESCa ค่ายเยาวชนวิศวกรรมคอมพิวเตอร์ ครั้งที่ 18{" "}
+              CESCa ค่ายเยาวชนวิศวกรรมคอมพิวเตอร์ ครั้งที่18{" "}
             </div>{" "}
           </Link>{" "}
         </div>{" "}
@@ -305,7 +305,7 @@ const Faculty = () => {
               />
             </div>{" "}
             <div className="text-center pt-2 font-semibold">
-              ToBeIT’ 66 @KMITL เสริมความคิด ติดความรู้ ก้าวเข้าสู่เด็กไอที{" "}
+              ToBeIT’66 @KMITL เสริมความคิด ติดความรู้ ก้าวเข้าสู่เด็กไอที{" "}
             </div>{" "}
           </Link>{" "}
         </div>{" "}

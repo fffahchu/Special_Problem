@@ -4,9 +4,11 @@ import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const CreateIntroduction = () => {
   const coverImage = "/assets/images/portfolio/portfolio-4-2.png";
+  const router = useRouter();
   const route = [
     {
       title: "หน้าหลัก",
@@ -43,12 +45,13 @@ const CreateIntroduction = () => {
   const onSubmit = async () => {
     const idPort = localStorage.getItem("idPort") || null;
     const idPort3 = localStorage.getItem("idPort3") || null;
+    const idUser = localStorage.getItem("idUser") || null;
 
     if (idPort) {
       let model = {
         data: {
           preface: preface,
-          idUser: 1,
+          idUser: idUser,
           idPort: idPort,
         },
       };
@@ -77,6 +80,7 @@ const CreateIntroduction = () => {
           });
       }
     }
+    router.push("/create-portfolio/listofcontent");
   };
 
   return (
@@ -119,14 +123,12 @@ const CreateIntroduction = () => {
       </div>{" "}
       <hr className="border-gray-4 mb-4" />
       <div className="flex justify-center items-center">
-        <Link href="/create-portfolio/listofcontent">
-          <button
-            className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
-            onClick={onSubmit}
-          >
-            บันทึกข้อมูล{" "}
-          </button>{" "}
-        </Link>{" "}
+        <button
+          className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
+          onClick={onSubmit}
+        >
+          บันทึกข้อมูล{" "}
+        </button>{" "}
       </div>{" "}
     </div>
   );

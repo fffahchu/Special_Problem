@@ -30,7 +30,7 @@ const Alleducation = () => {
     },
     {
       image: "../assets/images/course/c3.jpg",
-      title: "Complete Arduino htmlFor Beginner",
+      title: "Complete Arduino For Beginner",
       content: "borntodev.com",
       link: "#",
     },
@@ -42,7 +42,7 @@ const Alleducation = () => {
     },
     {
       image: "../assets/images/course/c5.jpg",
-      title: "Programming htmlFor Everyone X",
+      title: "Programming For Everyone X",
       content: "borntodev.com",
       link: "#",
     },
@@ -140,7 +140,7 @@ const Alleducation = () => {
                         target="_blank"
                         className="flex transition text-[#0f172a] hover:text-indigo-500 hover:underline duration-200"
                       >
-                        <ur> 5. Lab #6 โจทย์พร้อมเฉลย</ur>
+                        <ur> 5. Lab#6 โจทย์พร้อมเฉลย</ur>
                       </Link>
                     </div>
                     <div className="text-[18px]">

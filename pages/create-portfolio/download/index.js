@@ -3,8 +3,6 @@ import Breadcrumb from "@components/Breadcrumb";
 import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
 import { FacebookShareButton } from "next-share";
-import Link from "next/link";
-import axios from "axios";
 
 const Download = () => {
   const route = [

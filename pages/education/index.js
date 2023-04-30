@@ -81,7 +81,7 @@ const Alleducation = () => {
             </div>{" "}
           </div>
           <div className="flex justify-between items-center mt-[150px]">
-            <div className="text-[25px] font-semibold"> แบบฝึกหั ด </div>{" "}
+            <div className="text-[25px] font-semibold"> แบบฝึกหัด </div>{" "}
             <a href="education/exercise" className="font-semibold underline">
               ดูทั้งหมด{" "}
             </a>{" "}

@@ -4,9 +4,11 @@ import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const CreateActivity = () => {
   const coverImage = "/assets/images/portfolio/portfolio-4-6.png";
+  const router = useRouter();
   const route = [
     {
       title: "หน้าหลัก",
@@ -73,9 +75,9 @@ const CreateActivity = () => {
 
   const getPort = async (idPorts, idFilePorts) => {
     let arr = [];
-    for (var i =0; i<idPorts.length; i++){
-      let index = i
-      let idport = idPorts[i]
+    for (var i = 0; i < idPorts.length; i++) {
+      let index = i;
+      let idport = idPorts[i];
       await axios
         .get(`http://localhost:1337/api/port-step-7s/${idport}`)
         .then(async (data) => {
@@ -172,6 +174,7 @@ const CreateActivity = () => {
     const idPort = localStorage.getItem("idPort") || null;
     const idPort7 = localStorage.getItem("idPort7") || null;
     const idFilePort7 = localStorage.getItem("idFilePort7") || null;
+    const idUser = localStorage.getItem("idUser") || null;
 
     let arrIdPort7 = [];
     let arrIdFilePort7 = [];
@@ -184,15 +187,15 @@ const CreateActivity = () => {
       let model = {
         data: {
           numberPage: page,
-          iduser: 1,
+          iduser: idUser,
           idPort: idPort,
         },
       };
 
       // let arr = [...ports];
 
-      for (var i= 0; i<ports.length; i++) {
-        let port = ports[i]
+      for (var i = 0; i < ports.length; i++) {
+        let port = ports[i];
         model.data.namePort = port.namePort;
         model.data.detailPort = port.detailPort;
         if (port.id >= 0) {
@@ -289,6 +292,7 @@ const CreateActivity = () => {
         localStorage.setItem("idFilePort7", arrIdFilePort7);
       }
     }
+    router.push("/create-portfolio/certificate");
   };
 
   return (
@@ -448,14 +452,12 @@ const CreateActivity = () => {
       </div>{" "}
       <hr className="border-gray-4 mb-4" />
       <div className="flex justify-center items-center">
-        <Link href="/create-portfolio/certificate">
-          <button
-            className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
-            onClick={onSubmit}
-          >
-            บันทึกข้อมูล{" "}
-          </button>{" "}
-        </Link>{" "}
+        <button
+          className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
+          onClick={onSubmit}
+        >
+          บันทึกข้อมูล{" "}
+        </button>{" "}
       </div>{" "}
     </div>
   );

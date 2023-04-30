@@ -87,9 +87,9 @@ const FacultyofScience = () => {
           ชื่อปริญญาและสาขาวิชา{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] my-[8px]">
-          ชื่อเต็ม(ภาษาไทย){" "}
+          ชื่อเต็ม (ภาษาไทย){" "}
           <span className="text-[18px] font-normal">
-            : วิทยาศาสตรบัณฑิต(วิทยาการคอมพิวเตอร์){" "}
+            : วิทยาศาสตรบัณฑิต (วิทยาการคอมพิวเตอร์){" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px]">
@@ -101,13 +101,13 @@ const FacultyofScience = () => {
         <div className="text-[18px] font-semibold pl-[56px] my-[8px]">
           ชื่อย่อ (ภาษาไทย){" "}
           <span className="text-[18px] font-normal">
-            : วท.บ.(วิทยาการคอมพิวเตอร์){" "}
+            : วท.บ. (วิทยาการคอมพิวเตอร์){" "}
           </span>{" "}
         </div>{" "}
         <div className="text-[18px] font-semibold pl-[56px] pb-[32px]">
           ชื่อย่อ (ภาษาอังกฤษ){" "}
           <span className="text-[18px] font-normal">
-            : B.Sc.(Computer Science){" "}
+            : B.Sc. (Computer Science){" "}
           </span>{" "}
         </div>{" "}
       </div>{" "}
@@ -121,7 +121,7 @@ const FacultyofScience = () => {
             className="w-[621px] h-[349px] rounded-[12px] hover:scale-110 transition duration-300 ease-in-out"
           />
           <div className="text-center pt-2 font-semibold">
-            CSCamp 15 ค่ายวิทยาการคอมพิวเตอร์ พระจอมเกล้าลาดกระบั ง{" "}
+            CSCamp 15 ค่ายวิทยาการคอมพิวเตอร์ พระจอมเกล้าลาดกระบัง{" "}
           </div>{" "}
         </Link>{" "}
         <Link
@@ -153,7 +153,7 @@ const FacultyofScience = () => {
           <div className="text-center pt-2 font-semibold">
             ภาควิชาวิทยาการคอมพิวเตอร์ เปิดรับสมัครผู้สนใจเข้าร่วมค่าย Young
             Computer Scientist Camp #1 ในหัวข้อ Social Media And Beyond
-            ระหว่างวันที่ 16 – 20 มีนาคม 2563
+            ระหว่างวันที่ 16–20 มีนาคม 2563
           </div>
         </Link>
         <Link
@@ -183,7 +183,7 @@ const FacultyofScience = () => {
             />
           </div>{" "}
           <div className="text-center pt-2 font-semibold">
-            22 - 23 ธันวาคม 2562: ขอเชิญนักเรียนและผู้สนใจเข้าร่วมงาน Open House
+            22-23 ธันวาคม 2562: ขอเชิญนักเรียนและผู้สนใจเข้าร่วมงาน Open House
             Computer Science{" "}
           </div>{" "}
         </Link>{" "}

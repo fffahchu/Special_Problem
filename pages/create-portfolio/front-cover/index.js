@@ -4,9 +4,11 @@ import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const CreateFrontCover = () => {
   const coverImage = "/assets/images/portfolio/portfolio-4.png";
+  const router = useRouter();
   const [file, setFile] = useState("");
   const [nameTh, setNameTh] = useState("");
   const [nameEng, setNameEng] = useState("");
@@ -73,6 +75,7 @@ const CreateFrontCover = () => {
     try {
       const idPort = localStorage.getItem("idPort") || null;
       let idPort2 = localStorage.getItem("idPort2") || null;
+      const idUser = localStorage.getItem("idUser") || null;
 
       if (idPort) {
         let model = {
@@ -80,7 +83,7 @@ const CreateFrontCover = () => {
             fullnameTH: nameTh,
             fullnameEN: nameEng,
             school: school,
-            iduser: 1,
+            iduser: idUser,
             idPort: idPort,
           },
         };
@@ -120,6 +123,7 @@ const CreateFrontCover = () => {
     } catch (e) {
       console.log(e);
     }
+    router.push("/create-portfolio/introduction");
   };
 
   return (
@@ -245,14 +249,12 @@ const CreateFrontCover = () => {
       </div>{" "}
       <hr className="border-gray-4 mb-4" />
       <div className="flex justify-center items-center">
-        <Link href="/create-portfolio/introduction">
-          <button
-            className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
-            onClick={onSubmit}
-          >
-            บันทึกข้อมูล{" "}
-          </button>{" "}
-        </Link>{" "}
+        <button
+          className="flex items-center bg-[#D9D9D9] px-5 py-2.5 rounded-[20px]"
+          onClick={onSubmit}
+        >
+          บันทึกข้อมูล{" "}
+        </button>{" "}
       </div>{" "}
     </div>
   );

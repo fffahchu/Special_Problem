@@ -39,7 +39,7 @@ const Learning = () => {
     },
     {
       image: "../assets/images/course/c3.jpg",
-      title: "Complete Arduino htmlFor Beginner",
+      title: "Complete Arduino For Beginner",
       content: "borntodev.com",
       link: "#",
     },
@@ -51,7 +51,7 @@ const Learning = () => {
     },
     {
       image: "../assets/images/course/c5.jpg",
-      title: "Programming htmlFor Everyone X",
+      title: "Programming For Everyone X",
       content: "borntodev.com",
       link: "#",
     },
@@ -87,7 +87,7 @@ const Learning = () => {
       <div className="flex">
         <div className="flex-1">
           <div className="flex justify-between items-center mt-[80px]">
-            <div className="text-[23px] font-semibold"> คอร์ สเรียนเสริม </div>{" "}
+            <div className="text-[23px] font-semibold"> คอร์สเรียนเสริม </div>{" "}
           </div>{" "}
           <hr className="mt-[12px] mb-4" />
         </div>{" "}
