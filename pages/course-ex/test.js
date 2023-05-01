@@ -128,25 +128,25 @@ function Test() {
                         </div>
                         <div className="flex flex-col">
                             <div className="font-semibold text-[22px] mt-[32px] mx-[310px]">แบบทดสอบหลังเรียน</div>
-                            <hr class="class-1" />
+                            <p className="mx-[20px] mt-[24px] opacity-50">---------------------------------------------------------------------------------------------------------------------------</p>
                             <div className="font-semibold text-[20px] mt-[48px] underline ml-[42px]">คำชี้แจง</div>
-                            <div className="text-[18px] mt-[36px] mx-[42px]">แบบทดสอบชุดนี้จัดทำขึ้น โดยมีวัตถุประสงค์เพื่อประเมินความรู้ความเข้าใจในการเรียนผ่านระบบ ComPort กรณีที่ต้องการขอรับวุฒิบัตร ท่านต้องสอบผ่านไม่น้อยกว่า 70% ของคะแนนโดยรวมทั้งหมด</div>
+                            <div className="text-[18px] mt-[36px] mx-[42px]">แบบทดสอบชุดนี้จัดทำขึ้น โดยมีวัตถุประสงค์เพื่อประเมินความรู้ความเข้าใจในการเรียนผ่านระบบ Com-Port กรณีที่ต้องการขอรับวุฒิบัตร ท่านต้องสอบผ่านไม่น้อยกว่า 70% ของคะแนนโดยรวมทั้งหมด</div>
                             <div className="flex flex-row">
                                 <div className="text-[18px] mt-[56px] ml-[42px]">จำนวนคำถาม</div>
                                 <div className="text-[18px] mt-[56px] ml-[147px]">5 ข้อ</div>
                             </div>
-                            <hr class="class-2" />
+                            <p className="mx-[20px] mt-[25px] mx-[42px] opacity-50">--------------------------------------------------------------------------------------------------------------------</p>
                             <div className="flex flex-row">
                                 <div className="text-[18px] mt-[25px] ml-[42px]">จำกัดเวลา</div>
                                 <div className="text-[18px] mt-[25px] ml-[171px]">15 นาที</div>
                             </div>
-                            <hr class="class-2" />
+                            <p className="mx-[20px] mt-[25px] mx-[42px] opacity-50">--------------------------------------------------------------------------------------------------------------------</p>
                             <div className="flex flex-row">
                                 <div className="text-[18px] mt-[25px] ml-[42px]">เกณฑ์การทำข้อสอบ</div>
                                 <div className="text-[18px] mt-[25px] ml-[96px]">ผู้เรียนต้องทำคะแนนให้ได้เกณฑ์มากกว่า 70 %</div>
                             </div>
-                            <hr class="class-2" />
-                            <a href="#" className="text-[16px] mt-[20px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] text-center w-[155px] h-[52px] py-[13px] bg-[#FFCA61] rounded-[8px] mx-auto">เริ่มแบบทดสอบ</a>
+                            <p className="mx-[20px] mt-[25px] mx-[42px] opacity-50">--------------------------------------------------------------------------------------------------------------------</p>
+                            <a href="#" className="text-[16px] mt-[20px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] text-center py-[14px] px-[26px] bg-[#FFCA61] rounded-[8px] mx-[338px] ">เริ่มแบบทดสอบ</a>
                         </div>
                     </div>
                 </div>

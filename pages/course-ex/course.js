@@ -51,7 +51,7 @@ function Course() {
               เข้าเรียน
             </a>
             <a
-              href="/course-ex/summary"
+              href="/course-ex/summary1"
               className="pl-[29px] my-[13px] py-[14px] px-[11px]"
             >
               ผลการเรียน
@@ -79,7 +79,7 @@ function Course() {
                     </div>
                     <a
                       href="#"
-                      className="w-[339px] h-[48px] text-[#ffa400] ml-[12px] cursor-pointer"
+                      className="w-[339px] h-[48px] text-[#FFCA61] ml-[12px] cursor-pointer"
                     >
                       ดาวน์โหลดเอกสาร
                     </a>
@@ -227,23 +227,9 @@ function Course() {
               </div>
               <a
                 href="/course-ex/topic1"
-                className="flex items-center justify-center rounded-[8px] mt-[28px] ml-[680px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] bg-[#FFCA61] w-[108px] h-[41px]"
+                className="flex items-center justify-center rounded-[8px] mt-[28px] ml-[680px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] bg-[#FFCA61] w-[108px] h-[41px] text-[16px] mr-[6px]"
               >
-                <div className="text-[16px] mr-[6px]">ถัดไป</div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  class="w-[21px] h-[21px]"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
+                ถัดไป 🡺
               </a>
             </div>
           </div>

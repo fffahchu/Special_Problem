@@ -1,0 +1,47 @@
+[
+    {
+      "question": "1. ข้อใดต่อไปนี้ กล่าวถึง Source Code ถูกต้อง",
+      "answerOptions": [
+        { "answer": "โปรแกรมที่อยู่ในรูปภาษาคอมพิวเตอร์ระดับสูง ยังไม่พร้อมใช้งาน", "isCorrect": true },
+        { "answer": "โปรแกรมที่อยู่ในรูปภาษาคอมพิวเตอร์ระดับสูง พร้อมใช้งานแล้ว" },
+        { "answer": "โปรแกรมที่อยู่ในรูปภาษาคอมพิวเตอร์ระดับต่ำ" },
+        { "answer": "ผิดทุกข้อ" }
+      ]
+    },
+    {
+      "question": "2. ข้อใดต่อไปนี้ ใช้ในการแปลโปรแกรมจากภาษาระดับสูงให้เป็นภาษาระดับเครื่องในกระบวนการแปลโปรแกรม",
+      "answerOptions": [
+        { "answer": "Executer" },
+        { "answer": "Source Code" },
+        { "answer": "C Language" },
+        { "answer": "Compiler", "isCorrect": true }
+      ]
+    },
+    {
+      "question": "3. ข้อใดเรียงลำดับกระบวนการแปลโปรแกรมถูกต้อง",
+      "answerOptions": [
+        { "answer": "Source Code > Compiler Check > Compiler Generator > Execute Program", "isCorrect": true },
+        { "answer": "Source Code > Compiler Generator > Compiler Check > Execute Program" },
+        { "answer": "Source Code > Machine Code > Compiler > Execute Program" },
+        { "answer": "Machine Code > Source Code > Compiler > Execute Program" }
+      ]
+    },
+    {
+      "question": "4. ข้อใดไม่ใช่ประโยชน์และข้อจำกัดของผังงาน",
+      "answerOptions": [
+        { "answer": "แก้ไขไวยากรณ์ของภาษาซีที่ผิดได้ตรงจุด", "isCorrect": true },
+        { "answer": "สื่อความหมายด้วยภาพ" },
+        { "answer": "ง่ายต่อการนำไปเขียนโปรแกรมในภาษาต่าง ๆ" },
+        { "answer": "เปลี่ยนแปลงโปรแกรมได้ง่าย" }
+      ]
+    },
+    {
+        "question": "5. ต้องการเขียนผังงานการทำงานของโปรแกรม “คำนวณพื้นที่สี่เหลี่ยม” โดยมีข้อมูลนำเข้าคือ ขนาดความกว้างและความยาว คำนวณ แล้วแสดงคำตอบทางหน้าจอ ถามว่า ผังงานดังกล่าว เป็นผังงานในลักษณะใด",
+        "answerOptions": [
+          { "answer": "ลำดับ", "isCorrect": true },
+          { "answer": "ทางเลือก" },
+          { "answer": "วนรอบ" },
+          { "answer": "ถูกทุกข้อ" }
+        ]
+    }
+  ]  

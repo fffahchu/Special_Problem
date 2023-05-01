@@ -24,7 +24,7 @@ const route = [
     },
 ];
 
-function TopicThree() {
+function Test() {
 
     return (
         <div className="py-[29px]">
@@ -90,52 +90,63 @@ function TopicThree() {
                                                 <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                                             </svg>
                                         </div>
-                                        <a href="#" className="w-[200px] h-[96px] ml-[28px] text-[#FFCA61]">บทที่ 3 การพัฒนาโปรแกรมคอมพิวเตอร์ที่ทำงานบนระบบปฏิบัติการดอสด้วยภาษาซี</a>
+                                        <a href="#" className="w-[200px] h-[96px] text-black ml-[28px]">บทที่ 3 การพัฒนาโปรแกรมคอมพิวเตอร์ที่ทำงานบนระบบปฏิบัติการดอสด้วยภาษาซี</a>
                                     </div>
                                 </li>
-                                <li class="border-l-2 border-[#C5C5C5]">
+                                <li class="border-l-2 border-[#FFCA61]">
                                     <div class="md:flex flex-start">
-                                        <div class="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                                        <div class="bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-3 h-3">
                                                 <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                                             </svg>
                                         </div>
-                                        <div className="w-[200px] h-[72px] text-black ml-[28px]">บทที่ 4 การเขียนโปรแกรมแบบทางเลือก</div>
+                                        <a href="#" className="w-[200px] h-[72px] text-black ml-[28px]">บทที่ 4 การเขียนโปรแกรมแบบทางเลือก</a>
                                     </div>
                                 </li>
-                                <li class="border-l-2 border-[#C5C5C5]">
+                                <li class="border-l-2 border-[#FFCA61]">
                                     <div class="md:flex flex-start">
-                                        <div class="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                                        <div class="bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-3 h-3">
                                                 <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                                             </svg>
                                         </div>
-                                        <div className="w-[200px] h-[72px] text-black ml-[28px]">บทที่ 5 การเขียนโปรแกรมแบบทำซ้ำ</div>
+                                        <a href="#" className="w-[200px] h-[72px] text-black ml-[28px]">บทที่ 5 การเขียนโปรแกรมแบบทำซ้ำ</a>
                                     </div>
                                 </li>
                                 <li class="border-l-2 border-white">
                                     <div class="md:flex flex-start">
-                                        <div class="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                                        <div class="bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white" class="w-3 h-3">
                                                 <path d="M2.695 14.763l-1.262 3.154a.5.5 0 00.65.65l3.155-1.262a4 4 0 001.343-.885L17.5 5.5a2.121 2.121 0 00-3-3L3.58 13.42a4 4 0 00-.885 1.343z" />
                                             </svg>
 
                                         </div>
-                                        <div className="w-[200px] h-[48px] text-[#C5C5C5] ml-[12px]">แบบทดสอบหลังเรียน</div>
+                                        <a href="#" className="w-[200px] h-[48px] text-[#FFCA61] ml-[12px]">แบบทดสอบหลังเรียน</a>
                                     </div>
                                 </li>
                             </ol>
                         </div>
-                        <div className="flex flex-col mx-auto">
-                        <iframe width="800" height="450" src="https://www.youtube.com/embed/62BLWJdIUME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className="mt-[20px] rounded-[11px]" allowfullscreen></iframe>
-                            <div className="flex justify-between items-center">
-                                <a href="#" className="flex items-center justify-center rounded-[8px] mt-[15px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] bg-white border-[1px] border-[#AEAEAE] w-[108px] h-[41px] text-[16px]">
-                                    🡸 ก่อนหน้า
-                                </a>
-                                <a href="/course-ex/topic4" className="flex items-center justify-center rounded-[8px] mt-[15px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] bg-[#FFCA61] w-[108px] h-[41px] text-[16px]">
-                                    ถัดไป 🡺
-                                </a>
+                        <div className="flex flex-col">
+                            <div className="font-semibold text-[22px] mt-[32px] mx-[310px]">แบบทดสอบหลังเรียน</div>
+                            <hr class="class-1" />
+                            <div className="font-semibold text-[20px] mt-[48px] underline ml-[42px]">คำชี้แจง</div>
+                            <div className="text-[18px] mt-[36px] mx-[42px]">แบบทดสอบชุดนี้จัดทำขึ้น โดยมีวัตถุประสงค์เพื่อประเมินความรู้ความเข้าใจในการเรียนผ่านระบบ ComPort กรณีที่ต้องการขอรับวุฒิบัตร ท่านต้องสอบผ่านไม่น้อยกว่า 70% ของคะแนนโดยรวมทั้งหมด</div>
+                            <div className="flex flex-row">
+                                <div className="text-[18px] mt-[56px] ml-[42px]">จำนวนคำถาม</div>
+                                <div className="text-[18px] mt-[56px] ml-[147px]">5 ข้อ</div>
                             </div>
+                            <hr class="class-2" />
+                            <div className="flex flex-row">
+                                <div className="text-[18px] mt-[25px] ml-[42px]">จำกัดเวลา</div>
+                                <div className="text-[18px] mt-[25px] ml-[171px]">15 นาที</div>
+                            </div>
+                            <hr class="class-2" />
+                            <div className="flex flex-row">
+                                <div className="text-[18px] mt-[25px] ml-[42px]">เกณฑ์การทำข้อสอบ</div>
+                                <div className="text-[18px] mt-[25px] ml-[96px]">ผู้เรียนต้องทำคะแนนให้ได้เกณฑ์มากกว่า 70 %</div>
+                            </div>
+                            <hr class="class-2" />
+                            <a href="/course-ex/test2" className="text-[16px] mt-[20px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] text-center w-[155px] h-[52px] py-[13px] bg-[#FFCA61] rounded-[8px] mx-auto">เริ่มแบบทดสอบ</a>
                         </div>
                     </div>
                 </div>
@@ -144,4 +155,4 @@ function TopicThree() {
     );
 }
 
-export default TopicThree;
+export default Test;

@@ -121,7 +121,7 @@ function Score() {
                                             </svg>
 
                                         </div>
-                                        <a href="#" className="w-[200px] h-[48px] text-[color:#FFA400] ml-[12px]">แบบทดสอบหลังเรียน</a>
+                                        <a href="#" className="w-[200px] h-[48px] text-[color:#FFCA61] ml-[12px]">แบบทดสอบหลังเรียน</a>
                                     </div>
                                 </li>
                             </ol>
@@ -130,8 +130,8 @@ function Score() {
                             <div className="font-semibold text-[22px] mt-[32px] mx-[310px]">แบบทดสอบหลังเรียน</div>
                             <hr class="class-1" />
                             <div className="flex flex-col items-center">
-                            <div className="text-[32px] text-[color:#FFA400] font-semibold mt-[13px]">ผ่าน</div>
-                            <div className="text-[16px] text-[color:#FFA400] font-semibold mt-[11px] mb-[42px]">คะแนนของคุณ 4/5 คะแนน</div>
+                            <div className="text-[32px] text-[color:#FFCA61] font-semibold mt-[13px]">ผ่าน</div>
+                            <div className="text-[16px] text-[color:#FFCA61] font-semibold mt-[11px] mb-[42px]">คะแนนของคุณ 4/5 คะแนน</div>
                             <ul class="chart-skills3">
                                 <li>
                                 </li>
@@ -152,7 +152,7 @@ function Score() {
                                 <div className="text-[18px] mt-[25px] ml-[96px]">ผู้เรียนต้องทำคะแนนให้ได้เกณฑ์มากกว่า 70 %</div>
                             </div>
                             <hr class="class-2" />
-                            <a href="#" className="text-[16px] mt-[20px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] text-center py-[14px] px-[26px] bg-[#FFCA61] rounded-[8px] mx-[338px] ">ผลการเรียน</a>
+                            <a href="/course-ex/summary2" className="text-[16px] mt-[20px] drop-shadow-[0px_4px_0px_rgba(0,0,0,0.25)] text-center py-[14px] px-[26px] bg-[#FFCA61] rounded-[8px] mx-[338px] ">ผลการเรียน</a>
                         </div>
                     </div>
                 </div>

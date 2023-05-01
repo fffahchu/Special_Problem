@@ -21,7 +21,7 @@ const PortfolioExample = () => {
       <MoveToTop />
       <Breadcrumb route={route} />{" "}
       <div className="text-center text-[28px] font-semibold my-12">
-        ตั วอย่ างแฟ้ มสะสมผลงาน{" "}
+        ตัวอย่างแฟ้มสะสมผลงาน{" "}
       </div>{" "}
       <hr className="mt-[39px] mb-[72px] border-[#BFBFBF]" />
       <div className="grid grid-cols-4 mt-[40px] mb-[104px] mx-auto max-w-[1232px]">
