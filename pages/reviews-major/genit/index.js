@@ -15,12 +15,12 @@ const ReviewGenneral = () => {
       link: "/faculty/all-faculty",
     },
     {
-      title: "วิศวะคอม",
-      link: "/faculty/ce",
+      title: "ไอที",
+      link: "/faculty/it",
     },
     {
       title: "รีวิวทั่วไป",
-      link: "/reviews/general",
+      link: "/reviews-major/genit",
     },
   ];
 

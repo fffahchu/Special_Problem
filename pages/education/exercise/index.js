@@ -12,7 +12,7 @@ const Exercise = () => {
     },
     {
       title: "คลังความรู้",
-      link: "/education/all",
+      link: "/education",
     },
     {
       title: "แบบฝึกหัด",

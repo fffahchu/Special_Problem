@@ -97,7 +97,7 @@ function FirstPage() {
             เมื่อเรียนจบมีใบรับรองด้วย ครบ...จบในที่เดียว✨ ที่นี่เลย
           </p>
           <a
-            href="#_"
+            href="/register"
             className="inline-flex items-center drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] justify-center mt-[38px] px-[28px] py-[14px] text-[18px] font-semibold text-black whitespace-no-wrap bg-[#FFCA61] rounded-[25px] shadow-sm hover:bg-[#FFEC85]"
           >
             เริ่มต้นใช้งาน
@@ -166,10 +166,10 @@ function FirstPage() {
       <div className="px-[104px]">
         <div className="flex justify-between items-center mt-[128px]">
           <div className="text-left text-[25px] font-semibold">
-            ค่าย/กิจกรรมที่จะเปิดรับสมัครเร็ว ๆ นี้
+            กิจกรรม/ค่ายที่จะเปิดรับสมัครเร็ว ๆ นี้
           </div>
           <a
-            href="/faculty/cs"
+            href="/news/camp"
             className="text-right text-[16px] font-semibold underline"
           >
             ดูทั้งหมด
@@ -186,7 +186,7 @@ function FirstPage() {
             ตัวอย่างแฟ้มสะสมผลงาน
           </div>
           <a
-            href="/faculty/cs"
+            href="/portfolio-ex"
             className="text-right text-[16px] font-semibold underline"
           >
             ดูทั้งหมด

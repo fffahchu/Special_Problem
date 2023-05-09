@@ -13,11 +13,11 @@ const Learning = () => {
   const route = [
     {
       title: "หน้าหลัก",
-      link: "#",
+      link: "/member",
     },
     {
       title: "คลังความรู้",
-      link: "/education/all",
+      link: "/education",
     },
     {
       title: "คอร์สเรียนเสริม",

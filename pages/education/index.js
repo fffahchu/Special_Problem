@@ -65,7 +65,7 @@ const Alleducation = () => {
         <div className="flex-1">
           <div className="flex justify-between items-center">
             <div className="text-[25px] font-semibold"> คอร์สเรียนเสริม </div>{" "}
-            <a href="education/learning" className="font-semibold underline">
+            <a href="/education/learning" className="font-semibold underline">
               ดูทั้งหมด{" "}
             </a>{" "}
           </div>
@@ -82,7 +82,7 @@ const Alleducation = () => {
           </div>
           <div className="flex justify-between items-center mt-[150px]">
             <div className="text-[25px] font-semibold"> แบบฝึกหัด </div>{" "}
-            <a href="education/exercise" className="font-semibold underline">
+            <a href="/education/exercise" className="font-semibold underline">
               ดูทั้งหมด{" "}
             </a>{" "}
           </div>{" "}

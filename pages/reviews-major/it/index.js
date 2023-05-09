@@ -16,7 +16,7 @@ const ReviewIt = () => {
     },
     {
       title: "ไอที",
-      link: "/faculty/ce",
+      link: "/faculty/it",
     },
     {
       title: "รีวิวคณะ/สาขา",

@@ -32,7 +32,7 @@ const FacultyofEngineering = () => {
         </div>{" "}
       </div>{" "}
       <div className="flex justify-center gap-32 my-[150px]">
-        <Link href="#" className="flex flex-row gap-2">
+        <Link href="/reviews-major/ce" className="flex flex-row gap-2">
           <div className="relative overflow-hidden rounded-full">
             <img
               src="https://cdn-icons-png.flaticon.com/256/8988/8988906.png"
@@ -41,7 +41,7 @@ const FacultyofEngineering = () => {
           </div>{" "}
           <div className="font-semibold pt-[48px]"> รีวิวคณะ/สาขา </div>{" "}
         </Link>{" "}
-        <Link href="#" className="flex flex-row gap-2">
+        <Link href="/reviews-activity/ce" className="flex flex-row gap-2">
           <div className="relative overflow-hidden rounded-full">
             <img
               src="https://cdn-icons-png.flaticon.com/256/9028/9028927.png"
@@ -50,7 +50,7 @@ const FacultyofEngineering = () => {
           </div>{" "}
           <div className="font-semibold pt-[48px]"> รีวิวกิจกรรม/ค่าย </div>{" "}
         </Link>{" "}
-        <Link href="#" className="flex flex-row gap-2">
+        <Link href="/reviews-major/gence" className="flex flex-row gap-2">
           <div className="relative overflow-hidden rounded-full">
             <img
               src="https://cdn-icons-png.flaticon.com/256/9028/9028950.png"

@@ -10,18 +10,18 @@ import Card from "@components/Card";
 
 function Info() {
     const route = [
-        {
-            title: "หน้าหลัก",
-            link: "/member",
-        },
-        {
-            title: "ข่าวประชาสัมพันธ์",
-            link: "#",
-        },
-        {
-            title: "ข่าวสาร",
-            link: "#",
-        },
+      {
+        title: "หน้าหลัก",
+        link: "/member",
+      },
+      {
+        title: "ข่าวประชาสัมพันธ์",
+        link: "/news",
+      },
+      {
+        title: "ข่าวสาร",
+        link: "/news/info",
+      },
     ];
 
     const article = [

@@ -125,7 +125,10 @@ const Member = () => {
             />
             <span className="font-semibold"> สร้างแฟ้มสะสมผลงานใหม่ </span>{" "}
           </Link>{" "}
-          <button className="flex items-center gap-2 py-3 px-6 rounded-full bg-orange">
+          <Link
+            href="/portfolio-ex"
+            className="flex items-center gap-2 py-3 px-6 rounded-full bg-orange"
+          >
             <img
               src="assets/icons/eye.svg"
               alt="icon-plus"
@@ -133,8 +136,11 @@ const Member = () => {
               height="21"
             />
             <span className="font-semibold"> ดูตัวอย่างแฟ้มสะสมผลงาน </span>{" "}
-          </button>{" "}
-          <button className="flex items-center gap-2 py-3 px-6 rounded-full bg-orange">
+          </Link>{" "}
+          <Link
+            href="/upload"
+            className="flex items-center gap-2 py-3 px-6 rounded-full bg-orange"
+          >
             <img
               src="assets/icons/icon-image.svg"
               alt="icon-plus"
@@ -142,7 +148,7 @@ const Member = () => {
               height="21"
             />
             <span className="font-semibold"> เพิ่มรูปผลงานใหม่ </span>{" "}
-          </button>{" "}
+          </Link>{" "}
         </div>{" "}
       </div>{" "}
       <div className="flex gap-[51px] px-[108px] pb-[110px]">
@@ -164,9 +170,9 @@ const Member = () => {
                 คุณ{" "}
               </div>{" "}
               <div className="mt-[10px] text-xl font-semibold">
-                สุธิดา มานะยิ่ง{" "}
+                ชื่อผู้ใช้งาน{" "}
               </div>{" "}
-              <div className="mt-1 text-[11px] text-gray"> @aom_suthida </div>{" "}
+              <div className="mt-1 text-[11px] text-gray"> @Username </div>{" "}
               <div className="flex text-[11px] gap-[15px] mt-4">
                 <div className="flex items-center gap-1.5">
                   <img src="assets/icons/location.svg" alt="icon-location" />
@@ -178,9 +184,12 @@ const Member = () => {
                 </div>{" "}
               </div>{" "}
             </div>{" "}
-            <div className="flex justify-center text-lg font-semibold rounded-b-xl cursor-pointer bg-orange py-4">
+            <Link
+              href="/edit-profile"
+              className="flex justify-center text-lg font-semibold rounded-b-xl cursor-pointer bg-orange py-4"
+            >
               แก้ไขโปรไฟล์{" "}
-            </div>{" "}
+            </Link>{" "}
           </div>{" "}
           <div>
             <div className="flex justify-between items-center">
@@ -193,7 +202,7 @@ const Member = () => {
                   height="24"
                 />
               </div>{" "}
-              <a href="#" className="font-semibold underline">
+              <a href="/news" className="font-semibold underline">
                 ดูทั้งหมด{" "}
               </a>{" "}
             </div>{" "}
@@ -304,7 +313,10 @@ const Member = () => {
               </div>{" "}
               <div className="flex items-center mt-5 gap-[8px]">
                 <div className="text-[13px]"> การเพิ่มผลงาน กดปุ่ม </div>{" "}
-                <button className="flex items-center gap-2 py-2 px-5 rounded-full bg-orange">
+                <Link
+                  href="/upload"
+                  className="flex items-center gap-2 py-2 px-5 rounded-full bg-orange"
+                >
                   <img
                     src="assets/icons/icon-image.svg"
                     alt="icon-plus"
@@ -314,7 +326,7 @@ const Member = () => {
                   <span className="text-[13px] font-semibold">
                     เพิ่มรูปผลงานใหม่{" "}
                   </span>{" "}
-                </button>{" "}
+                </Link>{" "}
               </div>{" "}
             </div>{" "}
           </div>{" "}
@@ -324,9 +336,9 @@ const Member = () => {
         <div className="flex-1">
           <div className="flex justify-between items-center">
             <div className="text-[25px] font-semibold">
-              ค่าย/กิจกรรมที่จะเปิดรับสมัครเร็ว ๆ นี้{" "}
+              กิจกรรม/ค่ายที่จะเปิดรับสมัครเร็ว ๆ นี้{" "}
             </div>{" "}
-            <a href="#" className="font-semibold underline">
+            <a href="/news/camp" className="font-semibold underline">
               ดูทั้งหมด{" "}
             </a>{" "}
           </div>{" "}
@@ -341,7 +353,7 @@ const Member = () => {
         <div className="flex-1 mt-12">
           <div className="flex justify-between items-center">
             <div className="text-[25px] font-semibold"> บทความยอดนิยม </div>{" "}
-            <a href="#" className="font-semibold underline">
+            <a href="/news/article" className="font-semibold underline">
               ดูทั้งหมด{" "}
             </a>{" "}
           </div>{" "}
@@ -358,7 +370,7 @@ const Member = () => {
             <div className="text-[25px] font-semibold">
               คอร์สแนะนำจาก ComPort{" "}
             </div>{" "}
-            <a href="#" className="font-semibold underline">
+            <a href="/education/learning" className="font-semibold underline">
               ดูทั้งหมด{" "}
             </a>{" "}
           </div>{" "}

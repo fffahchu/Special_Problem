@@ -12,7 +12,7 @@ const Alleducation = () => {
     },
     {
       title: "คลังความรู้",
-      link: "/education/all",
+      link: "/education",
     },
   ];
   const course = [

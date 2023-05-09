@@ -16,7 +16,7 @@ const ActivityIt = () => {
     },
     {
       title: "ไอที",
-      link: "/faculty/ce",
+      link: "/faculty/it",
     },
     {
       title: "รีวิวค่าย/กิจกรรม",

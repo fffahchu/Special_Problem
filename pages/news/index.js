@@ -5,14 +5,14 @@ import Link from "next/link";
 
 const AllNews = () => {
     const route = [
-        {
-            title: "หน้าหลัก",
-            link: "/member",
-        },
-        {
-            title: "ข่าวประชาสัมพันธ์",
-            link: "/faculty/all-faculty",
-        },
+      {
+        title: "หน้าหลัก",
+        link: "/member",
+      },
+      {
+        title: "ข่าวประชาสัมพันธ์",
+        link: "/news",
+      },
     ];
 
     return (
@@ -30,7 +30,7 @@ const AllNews = () => {
             กิจกรรม/ค่าย
           </div>
           <a
-            href="/faculty/cs"
+            href="/news/camp"
             className="text-right text-[16px] font-semibold underline"
           >
             ดูทั้งหมด
@@ -277,7 +277,7 @@ const AllNews = () => {
         <div className="flex justify-between items-center">
           <div className="text-left text-[25px] font-semibold">ข่าวสาร</div>
           <a
-            href="/faculty/ce"
+            href="/news/info"
             className="text-right text-[16px] font-semibold underline"
           >
             ดูทั้งหมด
@@ -523,7 +523,7 @@ const AllNews = () => {
         <div className="flex justify-between items-center">
           <div className="text-left text-[25px] font-semibold">บทความ</div>
           <a
-            href="/faculty/it"
+            href="/news/article"
             className="text-right text-[16px] font-semibold underline"
           >
             ดูทั้งหมด
