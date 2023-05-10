@@ -16,9 +16,11 @@ const Cardedu = ({ item, type }) => {
             <div className="px-5 text-[14px] font-bold">{item.title}</div>
             <div className="px-5 mt-[4px] pb-16 text-xs">{item.content}</div>
             <div className="inline-block">
-              <button className="justify-center bg-[#fef9c3] w-[260px] h-[33px] text-[15px] transition hover:font-bold hover:bg-[#fb923c] duration-300">
-                เข้าเรียน
-              </button>
+              <a href="/course-ex">
+                <button className="justify-center bg-[#fef9c3] w-[260px] h-[33px] text-[15px] transition hover:font-bold hover:bg-[#fb923c] duration-300">
+                  เข้าเรียน
+                </button>
+              </a>
             </div>
           </div>
           <div className="flex justify-between">

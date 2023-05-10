@@ -21,7 +21,7 @@ const route = [
   },
   {
     title: "การเขียนโปรแกรมคอมพิวเตอร์พื้นฐาน ด้วยภาษาซี 1",
-    link: "/education/learning/course-ex/course",
+    link: "/course-ex/course",
   },
 ];
 
