@@ -6,22 +6,22 @@ import MoveToTop from "@components/MoveToTop";
 import Link from "next/link";
 
 const route = [
-    {
-        title: "หน้าหลัก",
-        link: "/member",
-    },
-    {
-        title: "คลังความรู้",
-        link: "#",
-    },
-    {
-        title: "คอร์สเรียนเสริม",
-        link: "#",
-    },
-    {
-        title: "การเขียนโปรแกรมคอมพิวเตอร์พื้นฐาน ด้วยภาษาซี 1",
-        link: "#",
-    },
+  {
+    title: "หน้าหลัก",
+    link: "/member",
+  },
+  {
+    title: "คลังความรู้",
+    link: "/education",
+  },
+  {
+    title: "คอร์สเรียนเสริม",
+    link: "/education/learning",
+  },
+  {
+    title: "การเขียนโปรแกรมคอมพิวเตอร์พื้นฐาน ด้วยภาษาซี 1",
+    link: "/course-ex",
+  },
 ];
 
 function App() {
