@@ -13,15 +13,15 @@ const route = [
   },
   {
     title: "คลังความรู้",
-    link: "#",
+    link: "/education",
   },
   {
     title: "คอร์สเรียนเสริม",
-    link: "#",
+    link: "/education/learning",
   },
   {
     title: "การเขียนโปรแกรมคอมพิวเตอร์พื้นฐาน ด้วยภาษาซี 1",
-    link: "#",
+    link: "/education/learning/course-ex/course",
   },
 ];
 
@@ -61,14 +61,14 @@ function Course() {
           <div className="flex flex-row-2">
             <div className="flex w-[311px] h-[800px] bg-white drop-shadow-[4px_4px_4px_rgba(0,0,0,0.25)]">
               <ol className="ml-[40px] mt-[32px]">
-                <li class="border-l-2 border-[#FFCA61]">
-                  <div class="md:flex flex-start">
-                    <div class="bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                <li className="border-l-2 border-[#FFCA61]">
+                  <div className="md:flex flex-start">
+                    <div className="bg-[#FFCA61] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="white"
-                        class="w-5 h-5"
+                        className="w-5 h-5"
                       >
                         <path
                           fill-rule="evenodd"
@@ -85,14 +85,14 @@ function Course() {
                     </a>
                   </div>
                 </li>
-                <li class="border-l-2 border-[#C5C5C5]">
-                  <div class="md:flex flex-start">
-                    <div class="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                <li className="border-l-2 border-[#C5C5C5]">
+                  <div className="md:flex flex-start">
+                    <div className="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="white"
-                        class="w-3 h-3"
+                        className="w-3 h-3"
                       >
                         <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                       </svg>
@@ -102,14 +102,14 @@ function Course() {
                     </div>
                   </div>
                 </li>
-                <li class="border-l-2 border-[#C5C5C5]">
-                  <div class="md:flex flex-start">
-                    <div class="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                <li className="border-l-2 border-[#C5C5C5]">
+                  <div className="md:flex flex-start">
+                    <div className="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="white"
-                        class="w-3 h-3"
+                        className="w-3 h-3"
                       >
                         <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                       </svg>
@@ -119,14 +119,14 @@ function Course() {
                     </div>
                   </div>
                 </li>
-                <li class="border-l-2 border-[#C5C5C5]">
-                  <div class="md:flex flex-start">
-                    <div class="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                <li className="border-l-2 border-[#C5C5C5]">
+                  <div className="md:flex flex-start">
+                    <div className="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="white"
-                        class="w-3 h-3"
+                        className="w-3 h-3"
                       >
                         <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                       </svg>
@@ -137,14 +137,14 @@ function Course() {
                     </div>
                   </div>
                 </li>
-                <li class="border-l-2 border-[#C5C5C5]">
-                  <div class="md:flex flex-start">
-                    <div class="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                <li className="border-l-2 border-[#C5C5C5]">
+                  <div className="md:flex flex-start">
+                    <div className="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="white"
-                        class="w-3 h-3"
+                        className="w-3 h-3"
                       >
                         <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                       </svg>
@@ -154,14 +154,14 @@ function Course() {
                     </div>
                   </div>
                 </li>
-                <li class="border-l-2 border-[#C5C5C5]">
-                  <div class="md:flex flex-start">
-                    <div class="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                <li className="border-l-2 border-[#C5C5C5]">
+                  <div className="md:flex flex-start">
+                    <div className="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="white"
-                        class="w-3 h-3"
+                        className="w-3 h-3"
                       >
                         <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                       </svg>
@@ -171,14 +171,14 @@ function Course() {
                     </div>
                   </div>
                 </li>
-                <li class="border-l-2 border-white">
-                  <div class="md:flex flex-start">
-                    <div class="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
+                <li className="border-l-2 border-white">
+                  <div className="md:flex flex-start">
+                    <div className="bg-[#C5C5C5] w-6 h-6 flex items-center justify-center rounded-full -ml-3.5">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         fill="white"
-                        class="w-3 h-3"
+                        className="w-3 h-3"
                       >
                         <path d="M2.695 14.763l-1.262 3.154a.5.5 0 00.65.65l3.155-1.262a4 4 0 001.343-.885L17.5 5.5a2.121 2.121 0 00-3-3L3.58 13.42a4 4 0 00-.885 1.343z" />
                       </svg>
@@ -213,7 +213,7 @@ function Course() {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
-                      class="w-7 h-7 mx-auto mt-[38px]"
+                      className="w-7 h-7 mx-auto mt-[38px]"
                     >
                       <path
                         fillRule="evenodd"

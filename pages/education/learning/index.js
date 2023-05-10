@@ -29,7 +29,7 @@ const Learning = () => {
       image: "../assets/images/course/c1.png",
       title: "การเขียนโปรแกรมคอมพิวเตอร์พื้นฐาน ด้วยภาษาซี 1",
       content: "",
-      link: "#",
+      link: "/education/learning/course-ex/course",
     },
     {
       image: "../assets/images/course/c2.jpg",

@@ -197,34 +197,34 @@ function FirstPage() {
           {/* col 1 */}
           <div className="flex flex-col gap-y-5">
             <Link href="/portfolio-ex/example">
-              <div class="relative overflow-hidden rounded-[20px]">
+              <div className="relative overflow-hidden rounded-[20px]">
                 <img
                   src="/assets/images/example/ex1.png"
-                  class="w-[294px] h-[208px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
+                  className="w-[294px] h-[208px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
                 />
               </div>
             </Link>
             <Link href="#">
-              <div class="relative overflow-hidden rounded-[20px]">
+              <div className="relative overflow-hidden rounded-[20px]">
                 <img
                   src="/assets/images/example/ex2.png"
-                  class="w-[294px] h-[208px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
+                  className="w-[294px] h-[208px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
                 />
               </div>
             </Link>
             <Link href="#">
-              <div class="relative overflow-hidden rounded-[12px]">
+              <div className="relative overflow-hidden rounded-[12px]">
                 <img
                   src="/assets/images/example/ex7.png"
-                  class="w-[294px] h-[416px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
+                  className="w-[294px] h-[416px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
                 />
               </div>
             </Link>
             <Link href="#">
-              <div class="relative overflow-hidden rounded-[12px]">
+              <div className="relative overflow-hidden rounded-[12px]">
                 <img
                   src="/assets/images/example/ex13.png"
-                  class="w-[294px] h-[416px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
+                  className="w-[294px] h-[416px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
                 />
               </div>
             </Link>
@@ -233,34 +233,34 @@ function FirstPage() {
           {/* col 2 */}
           <div className="flex flex-col gap-y-5">
             <Link href="#">
-              <div class="relative overflow-hidden rounded-[12px]">
+              <div className="relative overflow-hidden rounded-[12px]">
                 <img
                   src="/assets/images/example/ex3.png"
-                  class="w-[294px] h-[416px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
+                  className="w-[294px] h-[416px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
                 />
               </div>
             </Link>
             <Link href="https://cscamp.net/">
-              <div class="relative overflow-hidden rounded-[20px]">
+              <div className="relative overflow-hidden rounded-[20px]">
                 <img
                   src="/assets/images/example/ex8.png"
-                  class="w-[294px] h-[208px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
+                  className="w-[294px] h-[208px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
                 />
               </div>
             </Link>
             <Link href="#">
-              <div class="relative overflow-hidden rounded-[20px]">
+              <div className="relative overflow-hidden rounded-[20px]">
                 <img
                   src="/assets/images/example/ex9.png"
-                  class="w-[294px] h-[208px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
+                  className="w-[294px] h-[208px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
                 />
               </div>
             </Link>
             <Link href="#">
-              <div class="relative overflow-hidden rounded-[12px]">
+              <div className="relative overflow-hidden rounded-[12px]">
                 <img
                   src="/assets/images/example/ex14.png"
-                  class="w-[294px] h-[416px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
+                  className="w-[294px] h-[416px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
                 />
               </div>
             </Link>
@@ -269,34 +269,34 @@ function FirstPage() {
           {/* col 3 */}
           <div className="flex flex-col gap-y-5">
             <Link href="#">
-              <div class="relative overflow-hidden rounded-[20px]">
+              <div className="relative overflow-hidden rounded-[20px]">
                 <img
                   src="/assets/images/example/ex4.png"
-                  class="w-[294px] h-[208px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
+                  className="w-[294px] h-[208px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
                 />
               </div>
             </Link>
             <Link href="#">
-              <div class="relative overflow-hidden rounded-[12px]">
+              <div className="relative overflow-hidden rounded-[12px]">
                 <img
                   src="/assets/images/example/ex5.png"
-                  class="w-[294px] h-[208px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
+                  className="w-[294px] h-[208px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
                 />
               </div>
             </Link>
             <Link href="#">
-              <div class="relative overflow-hidden rounded-[12px]">
+              <div className="relative overflow-hidden rounded-[12px]">
                 <img
                   src="/assets/images/example/ex10.png"
-                  class="w-[294px] h-[416px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
+                  className="w-[294px] h-[416px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
                 />
               </div>
             </Link>
             <Link href="#">
-              <div class="relative overflow-hidden rounded-[12px]">
+              <div className="relative overflow-hidden rounded-[12px]">
                 <img
                   src="/assets/images/example/ex15.png"
-                  class="w-[294px] h-[416px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
+                  className="w-[294px] h-[416px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
                 />
               </div>
             </Link>
@@ -305,34 +305,34 @@ function FirstPage() {
           {/* col 4 */}
           <div className="flex flex-col gap-y-5">
             <Link href="#">
-              <div class="relative overflow-hidden rounded-[12px]">
+              <div className="relative overflow-hidden rounded-[12px]">
                 <img
                   src="/assets/images/example/ex6.png"
-                  class="w-[294px] h-[416px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
+                  className="w-[294px] h-[416px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
                 />
               </div>
             </Link>
             <Link href="https://cscamp.net/">
-              <div class="relative overflow-hidden rounded-[20px]">
+              <div className="relative overflow-hidden rounded-[20px]">
                 <img
                   src="/assets/images/example/ex11.png"
-                  class="w-[294px] h-[208px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
+                  className="w-[294px] h-[208px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
                 />
               </div>
             </Link>
             <Link href="#">
-              <div class="relative overflow-hidden rounded-[20px]">
+              <div className="relative overflow-hidden rounded-[20px]">
                 <img
                   src="/assets/images/example/ex12.png"
-                  class="w-[294px] h-[208px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
+                  className="w-[294px] h-[208px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
                 />
               </div>
             </Link>
             <Link href="#">
-              <div class="relative overflow-hidden rounded-[12px]">
+              <div className="relative overflow-hidden rounded-[12px]">
                 <img
                   src="/assets/images/example/ex16.png"
-                  class="w-[294px] h-[416px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
+                  className="w-[294px] h-[416px] rounded-[20px] hover:scale-110 transition duration-300 ease-in-out"
                 />
               </div>
             </Link>
