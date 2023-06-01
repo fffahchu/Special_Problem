@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Breadcrumb from "@components/Breadcrumb";
 import StateCreate from "@components/StateCreate";
 import MoveToTop from "@components/MoveToTop";
-import { FacebookShareButton } from "next-share";
+import { FacebookShareButton, TwitterShareButton } from "next-share";
 
 const Download = () => {
   const route = [
@@ -219,20 +219,27 @@ const Download = () => {
                 </div> */}
                 </div>
               </FacebookShareButton>
-              <div className="flex bg-[#03A9F4] rounded-[6px] divide-x-2 divide-[#0690CF] cursor-pointer">
-                <div className="flex items-center py-3 px-3.5">
-                  <img
-                    src="/assets/icons/twitter-white.svg"
-                    alt="comport"
-                    width={24}
-                    height={24}
-                  />
-                </div>
-                {/* <div className="py-2 px-2.5">
+              <TwitterShareButton
+                url={
+                  "https://drive.google.com/drive/folders/19-LE3MBW0MSbloGQTlr1PQO7lhvqmTMd?usp=sharing"
+                  // "http://localhost:1337/uploads/portfolio_2022_04_01_c763c3fb7d.pdf?updated_at=2023-04-16T17:51:02.560Z"
+                }
+              >
+                <div className="flex bg-[#03A9F4] rounded-[6px] divide-x-2 divide-[#0690CF] cursor-pointer">
+                  <div className="flex items-center py-3 px-3.5">
+                    <img
+                      src="/assets/icons/twitter-white.svg"
+                      alt="comport"
+                      width={24}
+                      height={24}
+                    />
+                  </div>
+                  {/* <div className="py-2 px-2.5">
                   <div className="text-xs text-white">แชร์บน</div>
                   <div className="font-semibold text-white">Twitter</div>
                 </div> */}
-              </div>
+                </div>
+              </TwitterShareButton>
               <div className="flex bg-gradient-to-br from-[#94349F] via-[#FE1F1F] to-[#FD973C] rounded-[6px] divide-x-2 divide-[#C01A33] cursor-pointer">
                 <div className="flex items-center py-3 px-3.5">
                   <img
